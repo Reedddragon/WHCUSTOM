@@ -8609,7 +8609,14 @@ Attacks characteristic of 8.</characteristic>
     <entryLink import="true" name="Dreadwing Interptors" hidden="false" id="1309-fc3d-0912-1dc6" type="selectionEntry" targetId="4c18-2487-f95a-f245"/>
     <entryLink import="true" name="Firewing Damocles" hidden="false" id="6cc2-6a29-8bd9-c624" type="selectionEntry" targetId="e5d1-12bd-838d-d2d9"/>
     <entryLink import="true" name="Knight Praetor" hidden="false" id="a0a6-74fe-b871-3223" type="selectionEntry" targetId="c601-6cbf-739a-28a9"/>
-    <entryLink import="true" name="Ironwing Forge-Wright" hidden="false" id="3598-3ccb-9e0b-60d0" type="selectionEntry" targetId="64c0-7739-cbfb-08de"/>
+    <entryLink import="true" name="Ironwing Forge-Wright" hidden="false" id="3598-3ccb-9e0b-60d0" type="selectionEntry" targetId="64c0-7739-cbfb-08de">
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="208e-f254-5c96-d068" primary="true" name="Character"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ironwing Contemptor Dreadnought" hidden="false" id="9daa-278b-532f-d3a6" type="selectionEntry" targetId="df23-716c-13f4-c3b9"/>
+    <entryLink import="true" name="Ironwing Deredeo Dreadnought" hidden="false" id="2dd1-3d1f-1eae-a0ec" type="selectionEntry" targetId="a62b-0dcd-cf90-22de"/>
+    <entryLink import="true" name="Ironwing Leviathan Dreadnought" hidden="false" id="e526-4ef9-5b89-5cc5" type="selectionEntry" targetId="3ca3-4909-0c79-786a"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Primarch of the First Legion" hidden="false" id="a400-f511-a59-fca7">
