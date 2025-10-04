@@ -4153,17 +4153,17 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee options" id="5a75-c939-1162-8ffb" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Titus&apos; Chainsword" hidden="false" id="994b-2f3e-1960-1f63">
+                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="994b-2f3e-1960-1f63">
                       <profiles>
-                        <profile name="Titus&apos; Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c411-b586-d979-9a5f">
+                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c411-b586-d979-9a5f">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">[Anti-Infantry 3+]</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4552,24 +4552,6 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee options" id="a5f8-5120-a466-8e4a" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Titus&apos; Chainsword" hidden="false" id="31b5-dde6-b925-5b7f">
-                      <profiles>
-                        <profile name="Titus&apos; Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ee43-99a3-2786-95c3">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">[Anti-Infantry 3+]</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <categoryLinks>
-                        <categoryLink name="Melee Weapon" hidden="false" id="eead-fe34-b384-d300" targetId="ccdd-3987-11ed-90cd" primary="false"/>
-                      </categoryLinks>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="1e86-6414-51a3-c08a" collective="true">
                       <profiles>
                         <profile name="Power Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="caad-ca32-ccd3-9faa">
@@ -4634,6 +4616,24 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                       <entryLinks>
                         <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a83b-78e0-8e4c-d04c" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
                       </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="aa76-2ee8-aec5-6cf3">
+                      <profiles>
+                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1c9e-4b3b-6f3f-b093">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <categoryLinks>
+                        <categoryLink name="Melee Weapon" hidden="false" id="38c7-857e-b9db-bc7c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
