@@ -3378,6 +3378,13 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is still in unit cohesion even if it is 12&quot; horizontally of another unit, Each model can do a different action and mortal wounds do not spill over per model.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="edc9-aeb1-a351-babd">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Verdian Talasa Squad</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Oath of Moment" id="a0a0-fc0c-ca95-d049" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
