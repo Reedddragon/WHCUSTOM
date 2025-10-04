@@ -6001,6 +6001,9 @@ In addition, each time a model in this unit makes an attack that targets your Oa
       <infoLinks>
         <infoLink name="Damaged: 1-8 wounds remaining" id="bd18-ec7c-00d4-4ca4" hidden="false" targetId="4362-2036-1522-de2e" type="profile"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a12-703b-9f6e-7024" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stormwing Breecher " hidden="false" id="5ce2-b38a-2de7-3acc">
       <costs>
