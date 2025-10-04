@@ -3381,7 +3381,6 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
       </profiles>
       <infoLinks>
         <infoLink name="Oath of Moment" id="a0a0-fc0c-ca95-d049" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
-        <infoLink name="Templar Vows" id="eb7d-9636-1446-17cf" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5ddc-c489-dee0-b84e" includeChildSelections="true" includeChildForces="true"/>
@@ -3389,52 +3388,6 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="29f4-57d6-d681-f856" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="f3c6-ee77-6161-2da6" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="5ddc-c489-dee0-b84e" id="756b-ca3e-ec86-3d22">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2d7f-1892-2fd0-e29c" shared="true" id="5244-3cfc-9d63-10c2" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5bd8-882d-302b-48f3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="2" field="5ddc-c489-dee0-b84e" id="63f1-4420-281e-e10a">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2d7f-1892-2fd0-e29c" shared="true" id="bcbe-41de-c0b2-f93e" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5bd8-882d-302b-48f3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="roster" childId="2d7f-1892-2fd0-e29c" shared="true" id="ea8b-04b9-7ae3-b47e" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="3" field="5ddc-c489-dee0-b84e" id="8914-2de8-81e6-29e0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="atLeast" value="3" field="selections" scope="roster" childId="2d7f-1892-2fd0-e29c" shared="true" id="1513-85b3-6a92-eb41" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5bd8-882d-302b-48f3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="2" field="selections" scope="roster" childId="2d7f-1892-2fd0-e29c" shared="true" id="da81-bb69-bf80-6787" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="cddd-cab3-987d-4b08" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Grenades" hidden="false" id="62cd-9039-6f82-921a" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
@@ -3762,7 +3715,6 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                         </profile>
                       </profiles>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dec6-235a-f5a1-46b2"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="380f-084c-ee98-6cfc"/>
                       </constraints>
                     </selectionEntry>
@@ -4164,7 +4116,6 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                         </profile>
                       </profiles>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f925-1b95-f1ea-de31"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc3e-22b4-bb81-7541"/>
                       </constraints>
                     </selectionEntry>
@@ -4564,7 +4515,6 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                         </profile>
                       </profiles>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b77-adf7-1602-2d43"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca1a-092c-a28e-1f29"/>
                       </constraints>
                     </selectionEntry>
