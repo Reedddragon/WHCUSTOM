@@ -6956,6 +6956,7 @@ Attacks characteristic of 8.</characteristic>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="22ab-a6d5-2110-1fba" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Techmarine" hidden="false" id="d9f4-4878-a107-d3fa" targetId="b957-d9cd-ee81-560" primary="false"/>
         <categoryLink targetId="d615-dc7e-0263-dd2f" id="b5da-8557-d2f9-d49e" primary="false" name="Ironwing"/>
+        <categoryLink targetId="aab1-4f05-fabe-5ba5" id="e8af-f06f-9b79-9707" primary="false" name="Faction: Dark Angels"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="a8e8-496c-60fd-d767" hidden="false" sortIndex="4">
