@@ -7733,6 +7733,7 @@ Attacks characteristic of 8.</characteristic>
     <entryLink import="true" name="Dreadwing Interptors" hidden="false" id="1309-fc3d-0912-1dc6" type="selectionEntry" targetId="4c18-2487-f95a-f245"/>
     <entryLink import="true" name="Firewing Damocles" hidden="false" id="6cc2-6a29-8bd9-c624" type="selectionEntry" targetId="e5d1-12bd-838d-d2d9"/>
     <entryLink import="true" name="Knight Praetor" hidden="false" id="a0a6-74fe-b871-3223" type="selectionEntry" targetId="c601-6cbf-739a-28a9"/>
+    <entryLink import="true" name="Ironwing Forge-Wright" hidden="false" id="3598-3ccb-9e0b-60d0" type="selectionEntry" targetId="64c0-7739-cbfb-08de"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Primarch of the First Legion" hidden="false" id="a400-f511-a59-fca7">
