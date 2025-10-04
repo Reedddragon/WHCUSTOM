@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="157" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="160" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -33738,6 +33738,145 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="05eb-f1e9-6c43-172a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Bombers" hidden="false" id="d18d-393c-4995-8e9d">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bombmaster" hidden="false" id="1901-07ed-9829-df92">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6877-282e-64f4-8959"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c371-b127-e469-ef37"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Death Bomber laspistol" hidden="false" id="d93e-4d05-3be1-a785" type="selectionEntry" targetId="fc15-bc4e-eb84-5e15"/>
+            <entryLink import="true" name="Death Bomber Frag Shovel" hidden="false" id="9275-fc89-dc46-d42e" type="selectionEntry" targetId="f44d-3b03-c942-da28"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Bombmaster" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="edf7-2de1-66b0-3aa2">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
+              </characteristics>
+              <attributes>
+                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+              </attributes>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="2-5 Death Bombers" id="75e6-b665-94bc-b7af" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Death Bombers" hidden="false" id="775f-b477-414c-da1b">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7030-a997-0ef7-ebfb"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="b391-e514-0c4c-40b8"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Death Bomber Frag Shovel" hidden="false" id="01a6-9fb6-e5a3-13db" type="selectionEntry" targetId="f44d-3b03-c942-da28"/>
+                <entryLink import="true" name="Death Bomber laspistol" hidden="false" id="6ad2-6a31-d97f-bd32" type="selectionEntry" targetId="fc15-bc4e-eb84-5e15"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Death Bombers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="017f-d70b-1664-5786">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                  </attributes>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="150" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="d18d-393c-4995-8e9d" childId="model" shared="true" id="34b0-c1e7-d82c-cba3" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Final Destination" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aeb4-d7ca-3dd5-52de">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">reduce 2 from hazardous roll, add 2 to deadly demise roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deadman Running" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d621-52d8-9c89-b396">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit contains a Bombmaster, this unit can advance and charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="4d68-38ee-d65d-f175" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D2" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ea48-046e-ccb8-23b1" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Bomber laspistol" hidden="false" id="fc15-bc4e-eb84-5e15">
+      <profiles>
+        <profile name="Death Bomber laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e2fa-8aa4-6ddf-6032">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&apos;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault" id="744f-ef33-7fef-b9a3" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d10-6a1b-c712-f766"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e695-7409-ddf6-6476"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Bomber Frag Shovel" hidden="false" id="f44d-3b03-c942-da28">
+      <profiles>
+        <profile name="Death Bomber Frag Shovel" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2ae8-76d3-a2a5-2f58">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Hazardous</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="787e-0748-8ac8-52f0"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cba-a18f-441a-1db7"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
