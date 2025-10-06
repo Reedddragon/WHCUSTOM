@@ -8644,15 +8644,15 @@ Attacks characteristic of 8.</characteristic>
                     <profile name="➤ Hellfire plasma carronade - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="62f2-c362-5f08-fa02">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
                       </characteristics>
                       <modifiers>
-                        <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                        <modifier type="set" value="10" field="3bb-c35f-f54-fb08">
                           <conditions>
                             <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
                           </conditions>
@@ -8662,7 +8662,7 @@ Attacks characteristic of 8.</characteristic>
                             <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
                           </conditions>
                         </modifier>
-                        <modifier type="set" value="Twin-Linked" field="7f1b-8591-2fcf-d01c">
+                        <modifier type="set" value="Twin-Linked, Sustained Hits 1" field="7f1b-8591-2fcf-d01c">
                           <conditions>
                             <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
                           </conditions>
@@ -8672,15 +8672,15 @@ Attacks characteristic of 8.</characteristic>
                     <profile name="➤ Hellfire plasma carronade - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c7db-3201-a005-b496">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Sustained Hits 1</characteristic>
                       </characteristics>
                       <modifiers>
-                        <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                        <modifier type="set" value="10" field="3bb-c35f-f54-fb08">
                           <conditions>
                             <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
                           </conditions>
@@ -8690,7 +8690,7 @@ Attacks characteristic of 8.</characteristic>
                             <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
                           </conditions>
                         </modifier>
-                        <modifier type="set" value="Twin-Linked, Hazardous" field="7f1b-8591-2fcf-d01c">
+                        <modifier type="set" value="Twin-Linked, Hazardous, Sustained Hits 1" field="7f1b-8591-2fcf-d01c">
                           <conditions>
                             <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
                           </conditions>
@@ -8699,7 +8699,8 @@ Attacks characteristic of 8.</characteristic>
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Hazardous" id="012a-6f9e-b8c2-dc11" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+                    <infoLink name="Sustained Hits" id="012a-6f9e-b8c2-dc11" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+                    <infoLink name="Hazardous" id="71f1-c67d-ea63-8777" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
