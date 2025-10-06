@@ -2113,7 +2113,6 @@
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Ravenwing Black Knight" hidden="false" id="b25b-5cf6-a398-dd27">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ace-8c04-ae93-b15e"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="d874-d20e-83a7-d9cf"/>
               </constraints>
               <profiles>
@@ -2218,7 +2217,7 @@
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Ravenwing Black Knight w/ Grenade Launcher" hidden="false" id="5b52-4d5d-a5cf-67c6" page="31">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d874-d20e-83a7-d9cf"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="d874-d20e-83a7-d9cf"/>
               </constraints>
               <profiles>
                 <profile name="Ravenwing Black Knight" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4fdd-d999-22cc-3968" page="31">
