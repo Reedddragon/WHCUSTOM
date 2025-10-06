@@ -3840,7 +3840,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="55c3-d6a2-7284-1517" shared="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" value="5" field="d29d-cf75-fc2d-34a4">
+                    <modifier type="set" value="7" field="d29d-cf75-fc2d-34a4">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="afa6-3f85-0075-ab7f" shared="true"/>
                       </conditions>
@@ -5731,6 +5731,13 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="Twin-Linked" field="893f-9000-ccf7-648e">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="b095-62a3-ee23-847a" childId="178e-8c7d-a4c9-1280" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <constraints>
@@ -7341,7 +7348,7 @@ Attacks characteristic of 8.</characteristic>
                 <condition type="atLeast" value="1" field="selections" scope="a0a6-74fe-b871-3223" childId="55c3-d6a2-7284-1517" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="5" field="d29d-cf75-fc2d-34a4">
+            <modifier type="set" value="7" field="d29d-cf75-fc2d-34a4">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="a0a6-74fe-b871-3223" childId="afa6-3f85-0075-ab7f" shared="true"/>
               </conditions>
@@ -7671,9 +7678,9 @@ Attacks characteristic of 8.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, Take half the Damage characteristic of that attack.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Destroyer of Evil" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ceb6-c728-1bc7-262f">
+        <profile name="Devoted to Destruction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="true" id="a8d3-dd8f-c7c8-abae">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 of the same weapon, those weapons get Twin-Linked.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 of the same arm weapon add 2 to the Attacks characteristic of those weapon. also gains the ability Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7719,7 +7726,7 @@ Attacks characteristic of 8.</characteristic>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="69a7-5c8d-479c-ef51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Siege claw and meltagun" hidden="false" id="da43-26f0-37c1-415a" collective="false">
+                <selectionEntry type="upgrade" import="true" name="Leviathan Siege claw and meltagun" hidden="false" id="da43-26f0-37c1-415a" collective="false">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b107-cf0c-013e-4586" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -7740,6 +7747,23 @@ Attacks characteristic of 8.</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="7" field="2337-daa1-6682-b110">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="da43-26f0-37c1-415a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="da43-26f0-37c1-415a" childId="da43-26f0-37c1-415a" shared="true"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="set" value="Twin-Linked" field="893f-9000-ccf7-648e">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="da43-26f0-37c1-415a" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <costs>
@@ -7765,7 +7789,7 @@ Attacks characteristic of 8.</characteristic>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Siege drill  and meltagun" hidden="false" id="da1b-c459-1a0b-75dd" collective="false">
+                <selectionEntry type="upgrade" import="true" name="Leviathan Siege drill  and meltagun" hidden="false" id="da1b-c459-1a0b-75dd" collective="false">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8275-2c21-d1d0-c0d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -7786,6 +7810,23 @@ Attacks characteristic of 8.</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-VEHICLE 3+, Anti-MONSTER 3+</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="6" field="2337-daa1-6682-b110">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="da1b-c459-1a0b-75dd" shared="true"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="da1b-c459-1a0b-75dd" shared="true"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="set" value="Twin-Linked, Anti-VEHICLE 3+, Anti-MONSTER 3+" field="893f-9000-ccf7-648e">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="da1b-c459-1a0b-75dd" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -7813,6 +7854,61 @@ Attacks characteristic of 8.</characteristic>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Leviathan Storm cannon" hidden="false" id="6082-2222-13a1-025c" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0b75-681d-ffc9-de5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="1f4e-fb29-4164-b1f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Leviathan Storm cannon" hidden="false" id="d64b-370f-f17d-d143" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5ad-7866-a6b9-53cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4865-260e-5dce-4573" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Leviathan Storm cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="982f-71b8-e0ce-9f27">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">11</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="6082-2222-13a1-025c" shared="true"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="6082-2222-13a1-025c" shared="true"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="set" value="Twin-Linked" field="7f1b-8591-2fcf-d01c">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="6082-2222-13a1-025c" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="980b-5e17-7ad8-f0f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -7925,7 +8021,7 @@ Attacks characteristic of 8.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="215"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -7950,9 +8046,9 @@ Attacks characteristic of 8.</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="Even In Death I Serve" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8dff-d4e1-535a-e219">
+        <profile name="Devoted to destruction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8dff-d4e1-535a-e219">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 6 wounds remaining.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 of the same arm weapon add 2 to the Attacks characteristic of those weapon. also gains the ability Twin-Linked</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8203-4fb7-6903-5a5c">
@@ -7960,9 +8056,9 @@ Attacks characteristic of 8.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Destroyer of Evil" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5959-e4c6-cd4e-3211">
+        <profile name="Even In Death I Serve" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a5d5-a08f-0cc6-7f72">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 of the same weapon, those weapons get Twin-Linked.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 6 wounds remaining.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8052,48 +8148,6 @@ Attacks characteristic of 8.</characteristic>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="89cb-bed4-9875-8cd1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy plasma cannon" hidden="false" id="b871-1fe9-5690-bb50" collective="false">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7626-85e6-bc3f-4ba5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="➤ Heavy plasma cannon - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="87a9-0f3b-c8e2-d97f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="➤ Heavy plasma cannon - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f89c-0b48-5660-8f1e">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Hazardous" id="34fe-4b3f-133a-7341" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                    <infoLink name="Blast" id="ff2b-0481-6255-efdf" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="aa1e-701f-b2a4-4400" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
-                  <categoryLinks>
-                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="24fa-4a98-e26f-0334" targetId="e993-e086-6de1-12af" primary="false"/>
-                  </categoryLinks>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Kheres assault cannon" hidden="false" id="1554-f862-ca32-d013" collective="false">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9d90-3f92-f248-06f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -8104,11 +8158,28 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="1554-f862-ca32-d013" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="1554-f862-ca32-d013" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked, Devastating Wounds" field="7f1b-8591-2fcf-d01c">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="1554-f862-ca32-d013" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -8136,6 +8207,23 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-VEHICLE 3+, Anti-MONSTER 3+</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="6" field="2337-daa1-6682-b110">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="c7e5-a48b-bbac-78e4" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="c7e5-a48b-bbac-78e4" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked, Anti-VEHICLE 3+, Anti-MONSTER 3+" field="893f-9000-ccf7-648e">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="c7e5-a48b-bbac-78e4" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -8163,6 +8251,23 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="7" field="2337-daa1-6682-b110">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="4635-3107-fb04-80c1" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="4635-3107-fb04-80c1" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked" field="893f-9000-ccf7-648e">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="9daa-278b-532f-d3a6" childId="4635-3107-fb04-80c1" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <costs>
@@ -8317,9 +8422,9 @@ Attacks characteristic of 8.</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="Deredeo Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0615-42ff-4d41-d8df">
+        <profile name="Deredeo Destruction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0615-42ff-4d41-d8df">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack that targets a unit that is not Below Half-strength, you can re-roll the Hit roll and re-roll wound roll of 1 and 2.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack that targets a unit that is not Below Half-strength, you can re-roll the Hit roll, wound roll and Damage roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invunerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2ccf-1dcf-975d-8d31">
@@ -8327,9 +8432,9 @@ Attacks characteristic of 8.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Destroyer of Evil" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ff03-c5fc-bf6c-9786">
+        <profile name="Devoted to Destruction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="true" id="a5d2-b3a6-610d-3317">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 of the same weapon, those weapons get Twin-Linked.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 of the same main weapon add 2 to the Attacks characteristic of those weapon. also gains the ability Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8448,16 +8553,30 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">11</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="08a2-5cd2-beea-9c50" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="08a2-5cd2-beea-9c50" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked" field="7f1b-8591-2fcf-d01c">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="08a2-5cd2-beea-9c50" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink name="Twin-linked" id="7a6e-ab79-1d24-a4db" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
-                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
@@ -8472,11 +8591,28 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+4</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="5" field="3bb-c35f-f54-fb08">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="a13e-839e-13be-a4e9" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="a13e-839e-13be-a4e9" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked" field="7f1b-8591-2fcf-d01c">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="a13e-839e-13be-a4e9" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <costs>
@@ -8498,6 +8634,23 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked" field="7f1b-8591-2fcf-d01c">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                     <profile name="➤ Hellfire plasma carronade - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c7db-3201-a005-b496">
                       <characteristics>
@@ -8509,6 +8662,23 @@ Attacks characteristic of 8.</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" value="Devoted to Destruction" field="annotation" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Twin-Linked, Hazardous" field="7f1b-8591-2fcf-d01c">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2dd1-3d1f-1eae-a0ec" childId="97e9-799c-6782-aac8" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -8797,7 +8967,7 @@ Attacks characteristic of 8.</characteristic>
           <profiles>
             <profile name="Ironwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="196e-02a1-ba74-3525">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to this model&apos;s Toughness characteristic.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 3 to this model&apos;s Toughness characteristic.</characteristic>
               </characteristics>
             </profile>
           </profiles>
