@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="81" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="82" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a43a-4cf6-6443-f48e" name="Aleya" hidden="false"/>
     <categoryEntry id="5386-42fc-f4d0-7d64" name="Allarus Custodians" hidden="false"/>
@@ -4614,9 +4614,7 @@
 ■ DACATARAI BULLETS
 Ranged weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability. add 1 to [SUSTAINED HITS X] if weapon already has it.
 ■ RENDAX BULLETS
-Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.
-
-</characteristic>
+Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7737,7 +7735,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <profile id="3b8-714a-5645-c3ef" name="Solerite power gauntlet" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
@@ -7832,7 +7830,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <profile id="ed23-bf4a-d3d4-d9c5" name="Solerite power talon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>

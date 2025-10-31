@@ -1858,30 +1858,9 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="ef65-b7e9-e00a-9d07" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
+                    <entryLink import="true" name="Neo-volkite Pistol" hidden="false" id="17e8-dcc8-2aa4-3232" type="selectionEntry" targetId="09aa-d5c1-dda5-b41b"/>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Neo-volkite Pistol" hidden="false" id="cfbf-2f35-eb4c-672b">
-                      <profiles>
-                        <profile name="Neo-volkite Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1793-a95e-c732-11a7">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Devastating Wounds" id="888c-ccde-9bc6-447d" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                        <infoLink name="Pistol" id="ca7a-ee2b-ee6a-3a00" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2331-0a07-e3b7-4ce5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="0339-7ee2-46e9-2df8" collective="true">
                       <profiles>
                         <profile name="Bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="90e5-38a5-98b4-1212">
@@ -1935,7 +1914,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -2556,30 +2535,9 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="e561-01ee-affe-352b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
+                    <entryLink import="true" name="Neo-volkite Pistol" hidden="false" id="7a02-a47e-605e-d1aa" type="selectionEntry" targetId="09aa-d5c1-dda5-b41b"/>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Neo-volkite Pistol" hidden="false" id="dc9a-73bf-f9cf-be14">
-                      <profiles>
-                        <profile name="Neo-volkite Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="926d-b586-648c-6729">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Devastating Wounds" id="683d-e1e4-3247-9e40" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                        <infoLink name="Pistol" id="8fa6-800c-f176-cfc3" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="42b4-f243-8afd-387c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="4b1d-dacc-1421-62c4" collective="true">
                       <profiles>
                         <profile name="Bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8bf4-d23a-5b6d-733d">
@@ -2714,7 +2672,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
@@ -2757,7 +2715,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                 </profile>
                 <profile name="Gunstrike and Armor Reinforcement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0faf-473f-5327-fabb">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If Vespasius is in this unit, For every Melee Wound done by this unit roll D6, on 4+ use your pistol to gunstrike and do 1 mortal wound, on 6+ do a mortal wound and add 1 to the armor save roll of the model that did the gunstrike</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If Vespasius is in this unit, For every Melee Wound done by this unit roll D6(max of 1 per model), on 4+ use your pistol to gunstrike and do 1 mortal wound, on 6+ do a mortal wound and add 1 to the armor save roll of the model that did the gunstrike until its used up.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2772,7 +2730,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Decimus" hidden="false" id="91ac-4c22-c8f7-53ae">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb97-75ad-b28a-3d0f"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eb97-75ad-b28a-3d0f"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15bd-99c4-a96d-87e7"/>
               </constraints>
               <selectionEntryGroups>
@@ -2787,30 +2745,9 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="989c-dc4f-6b80-cd53" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
+                    <entryLink import="true" name="Neo-volkite Pistol" hidden="false" id="c334-17c8-dd1f-8d72" type="selectionEntry" targetId="09aa-d5c1-dda5-b41b"/>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Neo-volkite Pistol" hidden="false" id="5a86-21fa-e4e0-d047">
-                      <profiles>
-                        <profile name="Neo-volkite Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bd92-d608-84b2-8c82">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Devastating Wounds" id="54a5-293b-c3a9-4287" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                        <infoLink name="Pistol" id="e66b-37ac-2995-b9c3" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6f18-31e0-785f-9d5d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="ae2e-02f1-d9c0-3dfc" collective="true">
                       <profiles>
                         <profile name="Bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2701-7532-819c-11f7">
@@ -2889,7 +2826,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
@@ -3014,6 +2951,9 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                       </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fcf-765c-ada9-4f57"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -3037,7 +2977,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                 </profile>
                 <profile name="Melee Champion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e536-3a3d-81d6-14e0">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Twice per game, After Charging a unit, that unit is battle-shocked. If fighting a battle-shocked unit after using this ability, add 1 to wound roll on attacks made. </characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Twice per game, After Charging a unit, that unit is battle-shocked. If fighting a battle-shocked unit after using this ability, add 1 to wound roll on attacks made.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3865,9 +3805,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                 </profile>
                 <profile name="Righteous Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bfcc-c256-8090-91f6">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, if the Lieutenant Titus model is in this unit, gain the Feel No Wounds 5+ ability and increase the damage by 1 of all this unit’s Melee weapons
-
-</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, if the Lieutenant Titus model is in this unit, gain the Feel No Wounds 5+ ability and increase the damage by 1 of all this unit’s Melee weapons</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4684,6 +4622,41 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Neo-volkite Pistol" hidden="false" id="09aa-d5c1-dda5-b41b">
+      <profiles>
+        <profile name="Neo-volkite Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d18d-97cf-8176-56d9">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="a354-c1c8-a745-f9e3">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="roster" childId="09aa-d5c1-dda5-b41b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="a354-c1c8-a745-f9e3">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="roster" childId="09aa-d5c1-dda5-b41b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="eeae-56ae-301c-3646" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Pistol" id="a717-bb74-3927-a47f" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+        <infoLink name="Neo-Volkite Destruction" id="3a92-e882-a8c4-48e5" hidden="false" type="rule" targetId="d9e5-e6a8-b941-570e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="8f71-f8bd-a080-754d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Sicarius" hidden="false" id="8fee-e096-4a53-3790"/>
@@ -4763,4 +4736,9 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Neo-Volkite Destruction" id="d9e5-e6a8-b941-570e" hidden="false">
+      <description>If this unit only targets one unit with neo-volkite pistols, increase damage profile to total amount of neo-volkite pistols in this unit.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
