@@ -17599,10 +17599,12 @@ In addition, each time a model in this unit makes an attack after using dark pac
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">gain feel no pain 6 and invuln save 6 if this unit is on a objective</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormwing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e245-7dea-80d7-c9eb">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Stormwing Assault" id="1f18-7b46-f9f2-173a" hidden="false" type="rule" targetId="9aa9-6ab4-0785-44c2"/>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -17754,10 +17756,12 @@ In addition, each time a model in this unit makes an attack after using dark pac
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by this unit gains Twin-Linked</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormwing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5ff-382f-7ed4-0bbc">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Stormwing Assault" id="2e91-54e2-fab1-7603" hidden="false" type="rule" targetId="9aa9-6ab4-0785-44c2"/>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -17909,10 +17913,12 @@ In addition, each time a model in this unit makes an attack after using dark pac
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by this unit gains Lance</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormwing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9d55-7a96-ba8a-f6a0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Stormwing Assault" id="c928-816b-2ffd-5269" hidden="false" type="rule" targetId="9aa9-6ab4-0785-44c2"/>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -21236,7 +21242,7 @@ In addition, each time a model in this unit makes an attack after using dark pac
         </profile>
         <profile name="Shield of Calloson" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1830-3e95-2a5d-e8d6" page="19">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, This Unit has the Feel No Pain 5+ ability </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, This Unit has the Feel No Pain 5+ ability</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60b2-d38e-56d7-fede" page="19">
@@ -23470,11 +23476,11 @@ In addition, each time a model in this unit makes an attack after using dark pac
     <rule name="Endbringers" id="9045-edd9-1e8e-3a7e" hidden="false">
       <description>Once per game, Automatically pass dark pacts.</description>
     </rule>
-    <rule name="Stormwing Assault" id="9aa9-6ab4-0785-44c2" hidden="false">
-      <description>If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</description>
-    </rule>
     <rule name="Endbringer" id="fb79-6a1e-f194-93f5" hidden="false">
       <description>If your unit has Deathwing, Dreadwing, Firewing, Stormwing, Ironwing, and Ravenwing keyword, they gain Endbringers ability, once per game, automatically pass Dark pacts</description>
+    </rule>
+    <rule name="Stormwing Assault" id="9aa9-6ab4-0785-44c2" hidden="false">
+      <description/>
     </rule>
   </sharedRules>
   <sharedProfiles>
