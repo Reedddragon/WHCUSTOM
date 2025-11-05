@@ -2697,6 +2697,7 @@
     <entryLink import="true" name="Ironwing Leviathan Dreadnought" hidden="false" id="f577-b2f8-8204-9471" type="selectionEntry" targetId="2684-cf2b-c911-3e41"/>
     <entryLink import="true" name="Ironwing Deredeo Dreadnought" hidden="false" id="b5a6-493e-594a-6990" type="selectionEntry" targetId="24ee-e563-4d70-f445"/>
     <entryLink import="true" name="Ironwing Contemptor Dreadnought" hidden="false" id="b09d-bef6-674f-5e0c" type="selectionEntry" targetId="bd62-f481-fef2-23f0"/>
+    <entryLink import="true" name="Stormwing Whirlwind" hidden="false" id="c302-d350-de08-0da6" type="selectionEntry" targetId="64ab-1585-e7be-3509"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e296-4a38-d9a5-289c" name="Detachment" hidden="false" collective="false" import="true" type="upgrade">
@@ -9062,6 +9063,11 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack with a ranged weapon, you can ignore any or all modifiers to the Hit roll and any or all modifiers to the Ballistic Skill characteristic of that weapon.</characteristic>
           </characteristics>
         </profile>
+        <profile id="6548-c7e8-bfbe-a0d2" name="Dark Faith Aim" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Dark Pact, until the end of the phase, each time a model in this unit makes an ranged attack, Add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="aa31-1de-f897-81ef" name="Dark Pacts" hidden="false" targetId="fd69-68cc-5d63-c84d" type="rule"/>
@@ -9116,74 +9122,138 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="108e-4533-55ca-e8a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="841-f169-aff1-fd43" collective="false">
+                    <selectionEntry type="upgrade" import="true" name="Havoc autocannon" hidden="false" id="6914-d727-504b-a0f7" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4bf-1d93-4d2a-6028" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2130-c70b-2acc-c45b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Havoc autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e6e5-b251-6f9d-2456">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Havoc heavy bolter" hidden="false" id="f31a-0b5f-86aa-e4fa" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5544-e472-ea00-ac6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f0-8f27-b9bb-c18f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Havoc heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5dd1-e68f-c76d-51fc">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                       <infoLinks>
-                        <infoLink name="Flamer" id="977c-308c-a6d8-3340" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
+                        <infoLink name="Sustained Hits" id="a1fb-0bc1-7fcd-248d" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b1bf-884b-aea9-786e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Havoc lascannon" hidden="false" id="463f-4b00-4963-3996" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6634-ddca-b21e-b83a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d41d-63e7-db3d-07ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Havoc lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="cd03-25d2-309e-7898">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Havoc missile launcher" hidden="false" id="c98c-83f7-73f2-4822" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ad9-0786-6347-8a4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c7-8fb1-df6d-f016" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="➤ Havoc missile launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4f60-5e7e-171d-4e74">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="➤ Havoc missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5457-8334-1948-f6fe">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Blast" id="7549-1f5e-106b-6681" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
                       <categoryLinks>
-                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="4cfc-2414-94d7-17a9" targetId="e993-e086-6de1-12af" primary="false"/>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="ef29-b38b-42e7-355c" targetId="e993-e086-6de1-12af" primary="false"/>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="ee64-4944-76b7-4c54" targetId="4986-bf86-beb4-13ac" primary="false"/>
                       </categoryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="e139-b828-1a77-d4e6" collective="false">
-                      <infoLinks>
-                        <infoLink name="Meltagun" id="3d4d-1dd3-8e44-23ae" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
-                      </infoLinks>
+                    <selectionEntry type="upgrade" import="true" name="Havoc reaper chaincannon" hidden="false" id="46b7-69f2-f666-ef69" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f3b-61c7-cd81-dcce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaaf-4f85-ce96-71e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Havoc reaper chaincannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ce48-2df2-c089-c3c5">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="042a-7b47-43f6-964d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                      <categoryLinks>
-                        <categoryLink name="Damage Dx Weapon" hidden="false" id="2978-acce-40f1-8146" targetId="4986-bf86-beb4-13ac" primary="false"/>
-                      </categoryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="dc0b-cdb9-4123-782" collective="false">
-                      <infoLinks>
-                        <infoLink name="Plasma gun" id="b100-364c-4bd9-73e" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5122-69d9-66f3-1d13" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="450a-87e4-98ff-485f" collective="false" targetId="14a5-4b2-415a-c1d" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ab7b-243d-1359-69fb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Accursed weapon" hidden="false" id="9175-7a45-64dc-e398" collective="false" targetId="4f12-4c0a-d156-4cf0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" value="-1" field="68ef-111e-4c5b-a3ce"/>
-                      </modifiers>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="70d6-0720-0b80-6817" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Power fist" hidden="false" id="4e8-a554-ac97-f86c" collective="false" targetId="cb16-d239-4f7a-91be" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" value="-1" field="b51d-11cf-234a-514d"/>
-                      </modifiers>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6f46-c3a2-4389-5401" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Boltgun" hidden="false" id="1d7c-ccf1-52f6-a080" type="selectionEntry" targetId="96f5-8be7-2cd8-f84f">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="316b-8c95-91c1-d3f8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -16096,24 +16166,6 @@ In addition, each time a model in this unit makes an attack after using dark pac
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapon" id="8770-26fe-c508-99fb" hidden="false" defaultSelectionEntryId="6399-da3e-f8d0-2dd0" collective="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="f4fb-da74-ef9f-60fa" collective="false">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8caf-6192-8b08-bfc1"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Storm Bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="cd3e-c94b-e15f-c249">
-                          <characteristics>
-                            <characteristic name="Range" hidden="false" id="e922-4b7a-1929-bb27" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" hidden="false" id="d176-d544-edc5-7efe" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" hidden="false" id="3dd1-88ae-35e8-e767" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" hidden="false" id="e60b-680e-68a7-63f6" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" hidden="false" id="20e0-eef6-8282-2ae0" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" hidden="false" id="1879-8a0d-80c8-a22e" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" hidden="false" id="10ff-eddf-e623-e1aa" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="960c-2101-182f-7108" collective="false">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b001-950b-cd8c-6e94"/>
@@ -23479,9 +23531,7 @@ In addition, each time a model in this unit makes an attack after using dark pac
     <rule name="Endbringer" id="fb79-6a1e-f194-93f5" hidden="false">
       <description>If your unit has Deathwing, Dreadwing, Firewing, Stormwing, Ironwing, and Ravenwing keyword, they gain Endbringers ability, once per game, automatically pass Dark pacts</description>
     </rule>
-    <rule name="Stormwing Assault" id="9aa9-6ab4-0785-44c2" hidden="false">
-      <description/>
-    </rule>
+    <rule name="Stormwing Assault" id="9aa9-6ab4-0785-44c2" hidden="false"/>
   </sharedRules>
   <sharedProfiles>
     <profile id="63e7-7452-2edb-99dc" name="Boltgun" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">

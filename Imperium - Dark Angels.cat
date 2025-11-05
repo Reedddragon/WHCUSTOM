@@ -6133,10 +6133,12 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">gain feel no pain 6 and invuln save 6 if this unit is on a objective</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormwing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e7f-3dee-bb56-db51">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Stormwing Assault" id="cc2a-957f-ba34-726f" hidden="false" type="rule" targetId="d432-8757-1370-6205"/>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -6280,9 +6282,13 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by this unit gains Twin-Linked</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormwing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a19f-f1a4-e54f-deb4">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Stormwing Assault" id="188b-865e-af9a-13cd" hidden="false" type="rule" targetId="d432-8757-1370-6205"/>
             <infoLink name="Scouts" id="bc18-b49d-1f21-a0ed" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
               <modifiers>
                 <modifier type="append" value="8" field="name"/>
@@ -6432,10 +6438,12 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by this unit gains Lance</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormwing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e245-7dea-80d7-c9eb">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Stormwing Assault" id="bd73-22b5-55ab-b3b1" hidden="false" type="rule" targetId="d432-8757-1370-6205"/>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -10531,6 +10539,7 @@ Attacks characteristic of 8.</characteristic>
     <entryLink import="true" name="Ironwing Castraferrum Mortis Dreadnought" hidden="false" id="a7a1-fc01-c93b-bfc7" type="selectionEntry" targetId="51f3-670d-bfb8-7dec"/>
     <entryLink import="true" name="Firewing Exsecutor" hidden="false" id="604f-bd11-af2e-2c25" type="selectionEntry" targetId="da14-4d3f-9a22-2c6d"/>
     <entryLink import="true" name="Calloson" hidden="false" id="2a4a-a438-6234-ea2f" type="selectionEntry" targetId="b107-bac0-11a3-d698"/>
+    <entryLink import="true" name="Stormwing Whirlwind" hidden="false" id="56ba-089f-2c7a-9ad7" type="selectionEntry" targetId="64ab-1585-e7be-3509"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Primarch of the First Legion" hidden="false" id="a400-f511-a59-fca7">
