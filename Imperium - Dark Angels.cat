@@ -3755,7 +3755,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         </profile>
         <profile name="Emnity for the Unworthy" hidden="false" id="884d-4284-89ea-32d5" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a Character unit, add 1 to the Hit roll and Damage.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a melee attack that targets a Character unit, add 1 to the Hit roll and Damage.</characteristic>
           </characteristics>
         </profile>
         <profile name="Dreadwing" hidden="false" id="5b2b-aaa9-7d89-c753" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -3831,7 +3831,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits, Lance</characteristic>
                       </characteristics>
                       <modifiers>
@@ -3845,12 +3845,12 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                     <profile name="➤ Calibanite Greatsword - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="45b5-9b55-6f1e-fab9">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 2</characteristic>
                       </characteristics>
                       <modifiers>
                         <modifier type="set" value="Sustained Hits 1, Precision" field="893f-9000-ccf7-648e">
@@ -6872,7 +6872,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin Heavy Needle Pistol" hidden="false" id="84fd-a083-d1cc-f889" collective="true">
                   <profiles>
-                    <profile name="Heavy Needle Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="24b1-9874-7817-eaf8">
+                    <profile name="Twin Heavy Needle Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="24b1-9874-7817-eaf8">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
@@ -7532,12 +7532,12 @@ Attacks characteristic of 8.</characteristic>
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee weapon" id="77ba-f29a-72b7-87b3" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Calibanite Greatsword" hidden="false" id="75e0-dbb0-6b5a-c37e" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Calibanite Black Greatsword" hidden="false" id="75e0-dbb0-6b5a-c37e" collective="true">
                   <profiles>
                     <profile name="➤ Calibanite Greatsword - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ba5e-f579-3b06-6df4">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
@@ -7555,12 +7555,12 @@ Attacks characteristic of 8.</characteristic>
                     <profile name="➤ Calibanite Greatsword - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="57ca-e8f7-657f-e4ce">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 2</characteristic>
                       </characteristics>
                       <modifiers>
                         <modifier type="set" value="Sustained Hits 1, Precision" field="893f-9000-ccf7-648e">
@@ -7586,7 +7586,7 @@ Attacks characteristic of 8.</characteristic>
                         <profile name="Calibanite Power Hunter Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ab9b-df8d-4930-844c">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -10048,8 +10048,8 @@ Attacks characteristic of 8.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1eab-c8f0-16d0-2bc6" includeChildSelections="true"/>
       </constraints>
       <rules>
-        <rule name="Firewing" id="53f6-3467-23a0-d08a" hidden="false">
-          <description>Cannot gain Charge bonus againts infantry, mounted, beast units unless the enemy unit charged has a character model. If this unit is in engagement range of a Character Unit, This unit gains Fights First</description>
+        <rule name="Firewing " id="53f6-3467-23a0-d08a" hidden="false">
+          <description>If this unit is in engagement range of a Character Unit, This unit gains Fights First</description>
         </rule>
       </rules>
       <selectionEntries>
