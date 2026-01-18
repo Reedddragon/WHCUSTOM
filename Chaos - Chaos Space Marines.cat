@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="164" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="145" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <profileTypes>
     <profileType id="3084-68b8-1d20-2f26" name="Marks of Chaos">
       <characteristicTypes>
@@ -9,6 +9,11 @@
     <profileType id="796e-cfd7-cc85-240d" name="Warmaster">
       <characteristicTypes>
         <characteristicType id="2008-312b-5ac0-60ee" name="Ability"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="The Archtraitor" id="2253-f21f-76a4-a81e" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Ability" id="ed79-be76-246a-3650"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -124,7 +129,7 @@
     <categoryEntry name="Warband Champion" id="9121-8f12-b83b-ce9d" hidden="false">
       <comment>Crusade content</comment>
     </categoryEntry>
-    <categoryEntry name="Unit Champion" id="176e-3014-9548-d326" hidden="true"/>
+    <categoryEntry name="Horus Heresy The 40k" id="a95e-9187-46ab-73dd" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="bb73-b206-9ef3-6644" name="Detachment" hidden="false" collective="false" import="true" targetId="e296-4a38-d9a5-289c" type="selectionEntry"/>
@@ -2742,7 +2747,7 @@
     <entryLink import="true" name="Renegade Enforcer [Legends]" hidden="false" type="selectionEntry" id="36e5-70be-fee9-569e" targetId="5b66-39e6-aeb5-8011"/>
     <entryLink import="true" name="Renegade Heavy Weapons Squad [Legends]" hidden="false" type="selectionEntry" id="2ba-6922-1007-6f70" targetId="9df-7c70-84d2-e095"/>
     <entryLink import="true" name="Renegade Plague Ogryns [Legends]" hidden="false" type="selectionEntry" id="3e50-11c7-9a5e-4a38" targetId="a7bb-ec24-40e6-5b8c"/>
-    <entryLink import="true" name="Mutilators [Legends]" hidden="false" type="selectionEntry" id="3fb5-3c6b-ec33-8a14" targetId="7299-5b5-2b56-ef50"/>
+    <entryLink import="true" name="Mutilators" hidden="false" type="selectionEntry" id="3fb5-3c6b-ec33-8a14" targetId="7299-5b5-2b56-ef50"/>
     <entryLink import="true" name="Mutoid Vermin [Legends]" hidden="false" type="selectionEntry" id="5850-54e1-e687-b1cc" targetId="afed-8173-a1e0-cbae"/>
     <entryLink import="true" name="Gellerpox Infected [Legends]" hidden="false" type="selectionEntry" id="9248-ff76-9f06-d737" targetId="e1c2-8417-403a-68"/>
     <entryLink import="true" name="Renegade Ogryn Brutes [Legends]" hidden="false" type="selectionEntry" id="9cba-46ed-63b8-ecad" targetId="24c4-fa24-67ff-eef"/>
@@ -2771,6 +2776,8 @@
         <entryLink import="true" name="Chaos Warbands" hidden="false" id="dace-44fd-5035-6bcb" type="selectionEntryGroup" targetId="052b-4112-c3de-20b5"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Horus Heresy" hidden="false" id="bc50-c11a-ea24-c9fc" type="selectionEntry" targetId="c124-e6c3-73c7-e7cc"/>
+    <entryLink import="true" name="Alpha Discordsmith" hidden="false" id="33db-305d-7d73-7e8e" type="selectionEntry" targetId="db78-f671-582d-2c46"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e296-4a38-d9a5-289c" name="Detachment" hidden="false" collective="false" import="true" type="upgrade">
@@ -2790,6 +2797,18 @@
           <selectionEntries>
             <selectionEntry id="53dd-68f7-7c1f-3e5d" name="Pactbound Zealots" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
+                <profile id="ebae-28c1-8652-7e1b" name="- Marks of Chaos" hidden="false" typeId="3084-68b8-1d20-2f26" typeName="Marks of Chaos">
+                  <characteristics>
+                    <characteristic name="Ability" typeId="26ae-f701-feee-96e9">When mustering your army, when you select a ^^Heretic Astartes^^ unit to include in your army, if that unit is not an ^^Epic Hero^^ and does not already have one of the following keywords, you must select one for that unit to gain and note it on your Army Roster: ^^Khorne, Tzeentch, Nurgle, Slaanesh, Chaos Undivided^^.
+
+Each time a unit with one of these keywords gains a weapon ability as the result of a Dark Pact and does not fail the resulting Leadership test, until the end of the phase, that unit gains the associated ability below.
+
+RESTRICTIONS
+- You cannot select the ^^Khorne^^ keyword for a ^^Psyker^^ unit.
+- A ^^Character^^ unit can only be attached to a unit if both units share the same keyword from the list below.
+- A unit can only embark within (or start the battle embarked within) a ^^Transport^^ if both of those units share the same keyword from the list above.’</characteristic>
+                  </characteristics>
+                </profile>
                 <profile id="f5e9-d620-78a2-c552" name="KHORNE" hidden="false" typeId="3084-68b8-1d20-2f26" typeName="Marks of Chaos">
                   <characteristics>
                     <characteristic name="Ability" typeId="26ae-f701-feee-96e9">[LETHAL HITS]: Each time a model in this unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
@@ -2820,98 +2839,97 @@
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
-              <rules>
-                <rule name="Marks of Chaos" id="009d-9d09-08c7-82e5" hidden="false">
-                  <description>When mustering your army, when you select a ^^Heretic Astartes^^ unit to include in your army, if that unit is not an ^^Epic Hero^^ and does not already have one of the following keywords, you must select one for that unit to gain and note it on your Army Roster: ^^Khorne, Tzeentch, Nurgle, Slaanesh, Chaos Undivided^^.
-
-
-Each time a unit with one of these keywords gains a weapon ability as the result of a Dark Pact and does not fail the resulting Leadership test, until the end of the phase, that unit gains the associated ability below.
-
-
-RESTRICTIONS
-- You cannot select the ^^Khorne^^ keyword for a ^^Psyker^^ unit.
-- A ^^Character^^ unit can only be attached to a unit if both units share the same keyword from the list below.
-- A unit can only embark within (or start the battle embarked within) a ^^Transport^^ if both of those units share the same keyword from the list above.’</description>
-                </rule>
-              </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Veterans of the Long War" hidden="false" id="a5ea-d708-db75-226c">
-              <rules>
-                <rule name="Focus of Hatred" id="6f2f-8cf6-20e7-4c4c" hidden="false">
-                  <description>At the start of your Command phase, select one unit from your opponent&apos;s army to be your focus of hatred. Until the start of your next Command phase, each time a ^^**Heretic Astartes**^^ model from your army (excluding ^^**Damned**^^ models) makes an attack that targets your focus of hatred, you can re-roll the Hit roll.</description>
-                </rule>
-              </rules>
+              <profiles>
+                <profile name="Focus of Hatred" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4589-66cc-1121-2113">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, select one unit from your opponent&apos;s army to be your focus of hatred. Until the start of your next Command phase, each time a ^^Heretic Astartes^^ model from your army (excluding ^^Damned^^ models) makes an attack that targets your focus of hatred, you can re-roll the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Deceptors" hidden="false" id="4972-a08d-9d88-5f7a">
-              <rules>
-                <rule name="Masters of Misdirection" id="ea79-5d28-1dc3-b123" hidden="false">
-                  <description>In the Declare Battle Formations step, you can select a number of ^^**Legionaries**^^ and ^^**Cultist Mob**^^ units from your army; until the end of the battle, those units, and any ^^**Character**^^ units attached to them (excluding ^^**Epic Heroes**^^), have the Infiltrator ability. The maximum number of units you can select in this way depends on the battle size, as shown below.
-
+              <profiles>
+                <profile name="Masters of Misdirection" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5e61-f570-a397-c05b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Declare Battle Formations step, you can select a number of ^^Legionaries^^ and ^^Cultist Mob^^ units from your army; until the end of the battle, those units, and any ^^Character^^ units attached to them (excluding ^^Epic Heroes^^), have the Infiltrator ability. The maximum number of units you can select in this way depends on the battle size, as shown below.
 
 **Battle Size | Legionaries | Cultist Mobs**
 Incursion | Up to 2 units | Up to 2 units
 Strike Force | Up to 3 units | Up to 3 units
-Onslaught | Up to 4 units | Up to 4 units</description>
-                </rule>
-              </rules>
+Onslaught | Up to 4 units | Up to 4 units</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Renegade Raiders" hidden="false" id="b906-aa42-9cd9-c6f2">
-              <rules>
-                <rule name="Raiders and Reavers" id="4fef-0ab4-2b60-48c4" hidden="false">
-                  <description>Ranged weapons equipped by ^^**Heretic Astartes**^^ models from your army have the [ASSAULT] ability, and each time a ^^**Heretic Astartes**^^ model from your army makes an attack that targets a unit within range of an objective marker, improve the Armour Penetration characteristic of that attack by 1.</description>
-                </rule>
-              </rules>
+              <profiles>
+                <profile name="Raiders and Reavers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9c5c-fdf9-fc16-c184">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by ^^Heretic Astartes^^ models from your army have the [ASSAULT] ability, and each time a ^^Heretic Astartes^^ model from your army makes an attack that targets a unit within range of an objective marker, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Dread Talons" hidden="false" id="d11c-e4a9-32c7-b761">
-              <rules>
-                <rule name="Terror Descends (Aura)" id="2731-f494-9e83-4c7c" hidden="false">
-                  <description>In the Battle-shock step of your opponent&apos;s Command phase, if an enemy unit that is below its Starting Strength is within 12&quot; of one or more ^^**Heretic Astartes**^^ units from your army, that enemy unit must take a Battle-shock test.
-Each time an enemy unit within 12&quot; of one or more ^^**Heretic Astartes**^^ units from your army takes a Battle-shock test, subtract 1 from the result.
-Enemy units affected by this Detachment rule do not need to take any other Battle-shock tests in the same phase.</description>
-                </rule>
-              </rules>
+              <profiles>
+                <profile name="Terror Descends (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="31e9-6670-7f6f-b345">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Battle-shock step of your opponent&apos;s Command phase, if an enemy unit that is below its Starting Strength is within 12&quot; of one or more ^^Heretic Astartes^^ units from your army, that enemy unit must take a Battle-shock test.
+Each time an enemy unit within 12&quot; of one or more ^^Heretic Astartes^^ units from your army takes a Battle-shock test, subtract 1 from the result.
+Enemy units affected by this Detachment rule do not need to take any other Battle-shock tests in the same phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fellhammer Siege-host" hidden="false" id="89a5-170b-1bf3-7016">
-              <rules>
-                <rule name="Iron Fortitude" id="eb25-bc78-6c52-aaad" hidden="false">
-                  <description>Each time a ranged attack targets a ^^**Heretic Astartes**^^ unit from your army (excluding ^^**Damned**^^ units), if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.</description>
-                </rule>
-              </rules>
+              <profiles>
+                <profile name="Iron Fortitude" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f790-5f78-595a-e9f3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets a ^^Heretic Astartes^^ unit from your army (excluding ^^Damned^^ units), if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chaos Cult" hidden="false" id="6cec-4da4-a89d-fb98">
-              <rules>
-                <rule name="Desperate Devotion" id="bb86-b97c-b67c-a1b9" hidden="false">
-                  <description>Each time a ^^**Damned**^^ unit from your army with the Dark Pacts ability is selected to make a Normal or Advance move or declare a charge (excluding units that arrived from Reserves this turn) it can make a Desperate Pact. If it does, until the end of the phase, add 2&quot; to the Move characteristic of models in that unit and add 2 to Charge rolls made for that unit.
-
+              <profiles>
+                <profile name="Desperate Devotion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5350-e746-7413-9e84">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ^^Damned^^ unit from your army with the Dark Pacts ability is selected to make a Normal or Advance move or declare a charge (excluding units that arrived from Reserves this turn) it can make a Desperate Pact. If it does, until the end of the phase, add 2&quot; to the Move characteristic of models in that unit and add 2 to Charge rolls made for that unit.
 
 Desperate Pacts
-Each time a unit makes a Desperate Pact, it must first take a Leadership test; if that test is failed, the unit suffers D3 mortal wounds before any effects of the Desperate Pact are resolved.</description>
-                </rule>
-              </rules>
+Each time a unit makes a Desperate Pact, it must first take a Leadership test; if that test is failed, the unit suffers D3 mortal wounds before any effects of the Desperate Pact are resolved.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Soulforged Warpack" hidden="false" id="a523-e0fe-4e1c-bc70">
-              <rules>
-                <rule name="Debt to the Soulforge" id="2f24-2a2c-c245-fc6a" hidden="false">
-                  <description>Each time a ^^**Heretic Astartes Daemon Vehicle**^^ model from your army makes a Dark Pact, it can invoke its contract. If it does, subtract 1 from the resulting Leadership test when making that Dark Pact and, until the end of the phase:
+              <profiles>
+                <profile name="Debt to the Soulforge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8e00-1e2a-c36a-c96c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ^^Heretic Astartes Daemon Vehicle^^ model from your army makes a Dark Pact, it can invoke its contract. If it does, subtract 1 from the resulting Leadership test when making that Dark Pact and, until the end of the phase:
 - Each time a model in that unit makes a ranged attack, add 1 to the Wound roll.
-- Add 2 to the Attacks characteristic of melee weapons equipped by models in that unit.</description>
-                </rule>
-              </rules>
+- Add 2 to the Attacks characteristic of melee weapons equipped by models in that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Creations of Bile" hidden="false" id="1c30-e099-1aca-8708">
-              <rules>
-                <rule name="Creations of Bile" id="baec-58bb-7156-3bde" hidden="false">
-                  <description>At the start of the battle, select which augmentations are active for ^^**Heretic Astartes Infantry**^^ models (excluding ^^**Damned**^^ models) from your army until the end of the battle. To do so, either select one from the list below, or randomly determine two by rolling two D6. If ^^**Fabius Bile**^^ is your ^^**Warlord**^^, when randomly determining your augmentations, you can re‑roll one or both of the dice. Duplicated augmentations have no additional effect.
-
+              <profiles>
+                <profile name="Creations of Bile" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9ae-b921-5895-6ace">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select which augmentations are active for ^^Heretic Astartes Infantry^^ models (excluding ^^Damned^^ models) from your army until the end of the battle. To do so, either select one from the list below, or randomly determine two by rolling two D6. If ^^Fabius Bile^^ is your ^^Warlord^^, when randomly determining your augmentations, you can re‑roll one or both of the dice. Duplicated augmentations have no additional effect.
 
 1 - **Cholinergic Accelerants:** Add 1 to the Attacks characteristic of melee weapons equipped by this model.
 2 - **Hyperadrenal Infusion:** Add 2&quot; to the Move characteristic of this model.
 3 - **Paraneural Reactions:** Improve the Weapon Skill characteristic of melee weapons equipped by this model by 1.
 4 - **Supracutaneous Chitination:** Improve the Toughness characteristic of this model by 1.
 5 - **Macrotensile Sinews:** Add 1 to the Strength characteristic of melee weapons equipped by this model.
-6 - **Ophthalmic Enhancement:** Improve the Ballistic Skill characteristic of ranged weapons equipped by this model by 1.</description>
-                </rule>
-              </rules>
+6 - **Ophthalmic Enhancement:** Improve the Ballistic Skill characteristic of ranged weapons equipped by this model by 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cabal of Chaos" hidden="false" id="9e8b-efe2-7ff2-6b36">
               <rules>
@@ -2925,16 +2943,6 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes P
 
 **Monstrous Manifestation**
 While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes Daemon Prince^^** or ^^**Heretic Astartes Daemon Prince with Wings^^** models, improve the Armour Penetration characteristic of melee weapons equipped by models in this unit by 1.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nightmare Hunt" hidden="false" id="f96f-5896-93c2-fc05">
-              <rules>
-                <rule name="Terror Made Manifest" id="0185-23fb-27a7-56d4" hidden="false">
-                  <description>In the Battle‑shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 12&quot; of one or more ^^**Heretic Astartes^^** units from your army, that enemy unit must take a Battle‑shock test, subtracting 1 from the result. Enemy units affected by this Detachment rule do not need to take any other Battle‑shock tests in the same phase. 
-Each time a ^^**Heretic Astartes^^** model from your army makes an attack that targets a unit that is Below Half‑strength, add 1 to the Hit roll. 
-Each time an attack targets a ^^**Heretic Astartes^^** unit from your army, if the attacking model is Battle‐shocked, subtract 1 from the Hit roll. 
-Each time a ^^**Heretic Astartes^^** model from your army makes an attack that targets a Battle‐shocked unit, add 1 to the Wound roll.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -3124,13 +3132,6 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c8da-e875-58f7-f6d6" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="d93f-6d73-1792-cb18" name="Haarken Worldclaimer" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -3386,18 +3387,11 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="71b0-8be9-72a0-7b11" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
+        <entryLink id="71b0-8be9-72a0-7b11" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Crusade" id="e1d6-78b1-df9c-1fb4" hidden="false" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mighty Champions" hidden="false" id="4ea3-2717-3aa4-b284" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="9bbd-a535-a4ef-9680" name="Heretic Astartes Daemon Prince" publicationId="48fc-15aa-b307-9443" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -3470,11 +3464,7 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
         <entryLink id="d2d1-8cc2-89f6-bc3e" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
         <entryLink id="4d79-1563-357b-ae11" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink id="242f-eb21-ba0b-3b57" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="5"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="ae76-f582-fd21-719c" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Ascension to Daemonhood" hidden="false" id="df01-5bd7-19a4-2a8e" type="selectionEntry" targetId="0929-a3cf-83c0-63b9"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="ae76-f582-fd21-719c" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
@@ -3715,11 +3705,7 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
         <entryLink id="ec96-c569-95e0-6816" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
         <entryLink id="3aba-549d-8ee7-7be1" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink id="4d65-d4ed-1a4-3a73" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="5"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="9950-74f6-0b92-c8ad" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Ascension to Daemonhood" hidden="false" id="bccc-9dad-64a3-0f0b" type="selectionEntry" targetId="0929-a3cf-83c0-63b9"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="9950-74f6-0b92-c8ad" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
@@ -3912,12 +3898,12 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
         </profile>
         <profile id="3942-42f4-fc46-6b8e" name="Surgeon Acolyte" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an attack is allocated to a model in this unit, if this unit contains ^^**Fabius Bile**^^, you can change the Damage characteristic of that attack to 0.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an attack is allocated to a model in this unit, if this unit contains FABIUS BILE, you can change the Damage characteristic of that attack to 0.</characteristic>
           </characteristics>
         </profile>
         <profile id="8f97-ea59-d469-e0bc" name="Chirurgeon" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this unit’s ^^**Fabius Bile^^** model is destroyed, at the end of the phase, roll one D6: on a 2+, set it back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with its full wounds remaining. If that model was attached to a unit when it was destroyed, it must be set up attached to that unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this unit’s FABIUS BILE model is destroyed, roll one D6: on a 2+, set it back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with its full wounds remaining. If that model was attached to a unit when it was destroyed, it must be set up attached to that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4098,12 +4084,7 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
         <entryLink id="df9-b763-373b-c8bf" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusade" id="1319-345f-fae4-fcef" hidden="false" sortIndex="1">
@@ -5101,12 +5082,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
         <entryLink import="true" name="Crusade" hidden="false" id="ed8e-c9ce-6869-8ba2" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -5632,6 +5608,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
       </profiles>
       <infoLinks>
         <infoLink id="db3-926b-d725-9966" name="Dark Pacts" hidden="false" targetId="fd69-68cc-5d63-c84d" type="rule"/>
+        <infoLink id="7f79-3be8-282a-466" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f865-dfcb-f1f8-450" name="Faction: Heretic Astartes" hidden="false" targetId="1e42-dfae-cbdd-207d" primary="false"/>
@@ -6792,18 +6769,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink id="4eeb-165a-ea8-4bcd" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink targetId="4026-8a3e-9922-eec" id="f0e9-5f9a-f65d-9c07" primary="false" name="Damned"/>
         <categoryLink name="Faction: Heretic Astartes" hidden="false" id="afed-10ae-b10e-fd1a" targetId="1e42-dfae-cbdd-207d" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="70b8-2569-a442-2b05" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink name="Grenades" hidden="false" id="bd46-fb1a-2756-9e52" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-        <categoryLink name="Dark Commune" hidden="false" id="45ff-6c21-110f-2f4e" targetId="d56f-b456-5b8-8907" primary="false"/>
-        <categoryLink name="Chaos" hidden="false" id="1774-6655-3506-e4d4" targetId="4c00-2578-faf5-6918" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb0a-a62e-ad62-8a49" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="862d-4e77-e658-b96e" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="2a9c-f875-862c-924e" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="862d-4e77-e658-b96e" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
@@ -6895,6 +6864,12 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="faca-ed3a-ad0f-cdf4" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+                <categoryLink name="Grenades" hidden="false" id="99b0-dd41-8b38-3eb3" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+                <categoryLink name="Chaos" hidden="false" id="991f-1d9-1c96-96a" targetId="4c00-2578-faf5-6918" primary="false"/>
+                <categoryLink name="Dark Commune" hidden="false" id="f3d1-596e-b592-9037" targetId="d56f-b456-5b8-8907" primary="false"/>
+              </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Commune blade" hidden="false" id="2feb-4328-b1c4-af3d" collective="true">
                   <constraints>
@@ -6940,6 +6915,12 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="af5e-519-aeb7-78d7" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+                <categoryLink name="Grenades" hidden="false" id="8f9c-983f-5782-6946" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+                <categoryLink name="Chaos" hidden="false" id="8c90-b0ce-c732-571f" targetId="4c00-2578-faf5-6918" primary="false"/>
+                <categoryLink name="Dark Commune" hidden="false" id="3be-4554-8ec4-d552" targetId="d56f-b456-5b8-8907" primary="false"/>
+              </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="5c28-6755-4396-1124" collective="false">
                   <constraints>
@@ -7018,7 +6999,11 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </profile>
               </profiles>
               <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="82f9-e48b-94a7-7476" targetId="cf47-a0d7-7207-29dc" primary="false"/>
                 <categoryLink name="Psyker" hidden="false" id="85b0-a9e8-1703-5aac" targetId="13bf-2bee-3ae0-b414" primary="false"/>
+                <categoryLink name="Grenades" hidden="false" id="4542-7710-dcb8-77e7" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+                <categoryLink name="Chaos" hidden="false" id="f7eb-9498-4737-d7bc" targetId="4c00-2578-faf5-6918" primary="false"/>
+                <categoryLink name="Dark Commune" hidden="false" id="ff0b-ead1-22d7-4546" targetId="d56f-b456-5b8-8907" primary="false"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="9a1d-4814-24fc-7fc7" collective="false">
@@ -7111,8 +7096,11 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </profile>
               </profiles>
               <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="4647-5448-8324-aa19" targetId="cf47-a0d7-7207-29dc" primary="false"/>
                 <categoryLink name="Character" hidden="false" id="a2c3-9da8-7ec5-b7bd" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
-                <categoryLink name="Cult Demagogue" hidden="false" id="f9a1-d21e-a423-8898" targetId="c675-ba2b-cd63-a9a4" primary="false"/>
+                <categoryLink name="Grenades" hidden="false" id="a2a9-234e-2090-79fb" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+                <categoryLink name="Chaos" hidden="false" id="d252-5e94-d773-e9e8" targetId="4c00-2578-faf5-6918" primary="false"/>
+                <categoryLink name="Dark Commune" hidden="false" id="69ed-dfeb-75e5-d8e8" targetId="d56f-b456-5b8-8907" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -7820,8 +7808,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <infoLinks>
                         <infoLink id="b525-c393-8b97-dca2" name="Hazardous" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
                         <infoLink id="110-f2dc-8004-ae16" name="Rapid Fire" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="594d-4fba-7444-2853" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="a8ed-098e-c599-10fe" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink id="c80c-e551-d77e-7463" name="Plasma gun" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -8203,24 +8190,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Unit Champion" hidden="false" id="0e0b-c2fe-a3e4-c0f1" targetId="176e-3014-9548-d326" primary="false"/>
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Chaos Boons" hidden="false" id="5124-d95a-ee4d-31cd" type="selectionEntryGroup" targetId="aea5-51c4-142c-460d"/>
-          </entryLinks>
-          <profiles>
-            <profile name="Cultist Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7843-1eb8-dfef-b68c">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Cultist w/ autopistol and brutal assault weapon" hidden="false" id="8331-d762-2987-76a" collective="false" sortIndex="3">
           <constraints>
@@ -8267,12 +8236,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </selectionEntries>
       <entryLinks>
         <entryLink id="9c6-93be-cec9-3cdb" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="97c6-6c51-4157-addc" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="bba3-ed95-d7f2-4dbb" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-            <entryLink import="true" name="Favoured for Dark God Glory" hidden="false" id="9ac6-1008-1647-309a" type="selectionEntry" targetId="9ec1-2e21-d8dd-ea56"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="97c6-6c51-4157-addc" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
@@ -8486,11 +8450,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </selectionEntries>
       <entryLinks>
         <entryLink id="901f-a81b-50f3-4728" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="1df6-cd8a-cf6c-eb38" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="0836-9f81-0e09-0c33" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1df6-cd8a-cf6c-eb38" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
@@ -9001,7 +8961,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Unholy Patronage upgrade" hidden="false" id="c6f3-f3cb-d8bc-27ce" type="selectionEntry" targetId="070c-664e-3e05-b8e9"/>
-                <entryLink import="true" name="Chaos Boons" hidden="false" id="dbe0-8149-879c-918a" type="selectionEntryGroup" targetId="aea5-51c4-142c-460d"/>
               </entryLinks>
               <profiles>
                 <profile name="Terminator Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2be6-9097-0821-41d7">
@@ -9017,18 +8976,11 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Unit Champion" hidden="false" id="67f2-7b54-2264-44b1" targetId="176e-3014-9548-d326" primary="false"/>
-          </categoryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="19b1-1a0f-3909-33b7" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="34b7-28b9-6d1d-b201" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Favoured for Dark God Glory" hidden="false" id="ee97-9782-75dc-e965" type="selectionEntry" targetId="9ec1-2e21-d8dd-ea56"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="34b7-28b9-6d1d-b201" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
@@ -10044,7 +9996,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Unholy Patronage upgrade" hidden="false" id="d331-874e-b9e0-1e37" type="selectionEntry" targetId="070c-664e-3e05-b8e9"/>
-                <entryLink import="true" name="Chaos Boons" hidden="false" id="4563-213a-f82a-6925" type="selectionEntryGroup" targetId="aea5-51c4-142c-460d"/>
               </entryLinks>
               <profiles>
                 <profile name="Chosen Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="be15-dce4-7744-161b">
@@ -10060,9 +10011,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Unit Champion" hidden="false" id="639c-e11b-61eb-3bf9" targetId="176e-3014-9548-d326" primary="false"/>
-          </categoryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -10072,11 +10020,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <association min="1" max="1" scope="4e85-615b-5d49-dfa4" childId="model" name="Chaos Icon" id="d67b-d1df-5299-48c8"/>
           </associations>
         </entryLink>
-        <entryLink import="true" name="Crusade" hidden="false" id="f206-5e5a-6abb-7950" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Favoured for Dark God Glory" hidden="false" id="bcb2-6743-7b51-663c" type="selectionEntry" targetId="9ec1-2e21-d8dd-ea56"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f206-5e5a-6abb-7950" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
@@ -10545,24 +10489,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Chaos Boons" hidden="false" id="3305-3ece-ce39-7ec4" type="selectionEntryGroup" targetId="aea5-51c4-142c-460d"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Unit Champion" hidden="false" id="4ab3-5526-bb90-79b3" targetId="176e-3014-9548-d326" primary="false"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Biker Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cad1-0236-369c-8eac">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -10784,10 +10710,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="425d-e826-77e0-9bba" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Hazardous" id="9807-6b7b-8110-3f27" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                        <infoLink name="Rapid Fire" id="f139-14dd-2ff1-5f81" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="5241-9e8f-4612-12f8" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="12e7-a4be-c9d2-ef36" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink id="84a1-e734-a296-8df" name="Plasma gun" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -10885,11 +10808,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <association min="1" max="1" scope="parent" childId="model" name="Chaos Icon" id="f26-8ab7-a246-93ba"/>
           </associations>
         </entryLink>
-        <entryLink import="true" name="Crusade" hidden="false" id="e7fc-e7bc-2516-f248" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Favoured for Dark God Glory" hidden="false" id="1b08-3a95-8c98-86dc" type="selectionEntry" targetId="9ec1-2e21-d8dd-ea56"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="e7fc-e7bc-2516-f248" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -11008,7 +10927,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
     </selectionEntry>
     <selectionEntry id="acb5-dbf2-e3a6-ad94" name="Raptors" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="210">
+        <modifier type="set" field="51b2-306e-1021-d207" value="170">
           <conditions>
             <condition field="selections" scope="acb5-dbf2-e3a6-ad94" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
           </conditions>
@@ -11053,7 +10972,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink id="4380-cbff-4460-942e" name="Jump Pack" hidden="false" targetId="dda2-bb0a-215e-ad9c" primary="false"/>
         <categoryLink id="d5f-77dd-fe4b-78cc" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="90db-215-c794-f8e9" name="Raptors" hidden="false" targetId="2e8b-c1fc-6226-877c" primary="false"/>
-        <categoryLink name="Grenades" hidden="false" id="d8b4-1472-3a37-f624" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="18e1-abb5-5a31-1ccb" name="Raptor Champion" hidden="false" collective="false" import="true" type="model" sortIndex="2">
@@ -11070,17 +10988,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7b0-6a0d-b10f-29ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Astartes chainsword" hidden="false" id="2bf9-7e2f-8c22-ff95" collective="false" targetId="44ae-a376-590b-6349" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7897-a56d-c7bb-a5c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Accursed weapon" hidden="false" id="6f79-c80d-699b-870d" collective="false" targetId="4f12-4c0a-d156-4cf0" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9396-11d8-04f3-f6e8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Heavy melee weapon" hidden="false" id="105d-af48-77cc-f0c7" type="selectionEntry" targetId="45d1-cad9-e49e-4388"/>
+                    <entryLink import="true" name="Astartes chainsword" hidden="false" id="2bf9-7e2f-8c22-ff95" collective="false" targetId="44ae-a376-590b-6349" type="selectionEntry"/>
+                    <entryLink import="true" name="Accursed weapon" hidden="false" id="6f79-c80d-699b-870d" collective="false" targetId="4f12-4c0a-d156-4cf0" type="selectionEntry"/>
+                    <entryLink import="true" name="Power fist" hidden="false" id="b40b-c22f-4126-623e" collective="false" targetId="cb16-d239-4f7a-91be" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Pistol" id="ad7e-33c-5811-472c" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7db-f051-952e-d094">
@@ -11089,16 +10999,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="400-90c7-5e68-5466" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="b7db-f051-952e-d094" collective="false" targetId="ce4a-6df3-3c24-621b" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6ec4-0ee9-3ffd-d7c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="6e69-781-c780-1285" collective="false" targetId="14a5-4b2-415a-c1d" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e267-2159-b996-e0b0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="b7db-f051-952e-d094" collective="false" targetId="ce4a-6df3-3c24-621b" type="selectionEntry"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="6e69-781-c780-1285" collective="false" targetId="14a5-4b2-415a-c1d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -11110,18 +11012,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <entryLinks>
             <entryLink import="true" name="Unholy Patronage upgrade" hidden="false" id="318f-aa7f-55a1-74ca" type="selectionEntry" targetId="070c-664e-3e05-b8e9"/>
           </entryLinks>
-          <profiles>
-            <profile name="Raptor Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d0cf-efd5-4f35-148d">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -11133,7 +11023,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <selectionEntries>
             <selectionEntry id="b6c1-f5f5-550f-cb87" name="Raptor" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2571-2255-b796-6f2" type="max" automatic="true"/>
+                <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2571-2255-b796-6f2" type="max"/>
+                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3069-b7f8-62a-a048" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="63c2-efb6-3485-3d33" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
@@ -11154,126 +11045,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 <modifier type="decrement" value="1" field="2571-2255-b796-6f2">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="a76b-f5f1-ddc6-2780" shared="true" roundUp="false" includeChildSelections="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="62dd-c15f-6a10-9c52" shared="true" roundUp="false" includeChildSelections="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="340f-c113-9aa9-8a42" shared="true" roundUp="false" includeChildSelections="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="d733-cfda-380d-6de3" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
-                <modifier type="floor" value="1" field="2571-2255-b796-6f2"/>
               </modifiers>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Raptor w/ plasma pistol" hidden="false" id="d733-cfda-380d-6de3" collective="false">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="98c7-8619-1682-2c43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Astartes chainsword" hidden="false" id="e5e4-b8fb-c906-9453" collective="false" targetId="c297-6f9c-b046-f2ad" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb2e-2d1b-8416-7388" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Plasma pistol" hidden="false" id="8a2a-6402-6003-4053" collective="false" targetId="c668-d63-5427-7e32" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="877a-6d63-9ab9-db5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="add" value="Max 2 plasma pistols per 5 models" field="error" id="7d0f-4280-875f-720a">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="08a5-1728-d29a-b7c3" includeChildSelections="true"/>
-                        <condition type="greaterThan" value="2" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="d733-cfda-380d-6de3" shared="true" id="73f1-151e-ec86-a21f" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Raptor w/ heavy melee weapon" hidden="false" id="62dd-c15f-6a10-9c52" collective="false">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a62f-2f50-4f77-0dc0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Heavy melee weapon" hidden="false" id="81d8-8bc1-467a-8600" collective="false" targetId="45d1-cad9-e49e-4388" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59b5-c549-07bf-3da3-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59b5-c549-07bf-3da3-max" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="1a24-3324-a1bc-5764" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a348-dbe7-51f4-74e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="add" value="Max 2 heavy melee weapons per 5 models" field="error" id="3fbc-d68b-7b12-82dc">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="34a8-0c3a-82a8-615f" includeChildSelections="true"/>
-                        <condition type="greaterThan" value="2" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="62dd-c15f-6a10-9c52" shared="true" id="2adc-b2b1-1b78-cd26" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Raptor w/ mutations" hidden="false" id="340f-c113-9aa9-8a42" collective="false">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6c73-2f46-45c0-c787" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="636f-0760-bb83-d407" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="436e-f64d-a058-c780" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="add" value="Max 1 mutations per 5 models" field="error" id="406e-5780-117e-a7a4">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="181e-6894-b6fd-5525" includeChildSelections="true"/>
-                        <condition type="greaterThan" value="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="340f-c113-9aa9-8a42" shared="true" id="9fed-b7e9-4e10-4d6d" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Mutations" hidden="false" id="d8ed-526e-470a-8c53">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ce0-0ed3-c329-3022-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce0-0ed3-c329-3022-max" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Mutations" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4d86-fc84-8e95-cb5b">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -11291,12 +11065,64 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2735-c489-2f96-942d" includeChildSelections="false"/>
+                <constraint field="selections" scope="acb5-dbf2-e3a6-ad94" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ffc-cc-34f0-72b0" type="max"/>
               </constraints>
               <selectionEntries>
+                <selectionEntry id="ce9e-eb86-e99c-44c8" name="Raptor w/ plasma pistol" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="e5e4-b8fb-c906-9453" name="Astartes chainsword" hidden="false" collective="false" import="true" targetId="c297-6f9c-b046-f2ad" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2e-2d1b-8416-7388" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8a2a-6402-6003-4053" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="c668-d63-5427-7e32" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="877a-6d63-9ab9-db5" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2e3c-266e-4b70-66d" name="Raptor w/ flamer" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="204c-7dc1-ac2b-94aa" name="Flamer" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72cc-8abd-c2d5-56af" type="min"/>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="922c-6c05-b592-c965" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="bffc-e9e8-1c24-4f7b" name="Flamer" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="44a8-2989-04af-5726" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="167f-7261-eaf6-d27d" name="Close combat weapon" hidden="false" collective="false" import="true" targetId="3854-44a6-5746-d602" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e24e-e0b-9faa-ef0b"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                </selectionEntry>
                 <selectionEntry id="dcd9-54f0-e40-634c" name="Raptor w/ meltagun" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="4b66-8d44-ffdb-997c" name="Meltagun" hidden="false" collective="true" import="true" type="upgrade">
@@ -11305,8 +11131,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5de-19b4-a9bb-1047" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Meltagun" id="ca4b-fa46-2467-603c" hidden="false" type="profile" targetId="c833-886b-dc38-1a08"/>
-                        <infoLink name="Melta" id="d6b2-064c-621c-4abf" hidden="false" targetId="7cdb-fb99-44a9-8849" type="rule"/>
+                        <infoLink id="9612-5fa3-ddce-ddd4" name="Meltagun" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -11322,31 +11147,14 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ad2-8f45-faeb-3a7c"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="d34c-e2e7-8c6e-4344" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="833d-e137-f969-b711" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
-                  <modifiers>
-                    <modifier type="add" value="Max 1 meltagun per 5 models" field="error" id="eec7-05d7-c099-5168">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="47c8-93a6-6fb6-d71b" includeChildSelections="true"/>
-                            <condition type="greaterThan" value="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="dcd9-54f0-e40-634c" shared="true" id="a048-6b24-331d-7ebf" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </selectionEntry>
                 <selectionEntry id="90e9-e59a-ce0a-eb1d" name="Raptor w/ plasma gun" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="eb5c-1314-f10e-d761" name="Plasma gun" hidden="false" collective="true" import="true" type="upgrade">
@@ -11355,10 +11163,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2768-a6ba-7e5c-fe58" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Hazardous" id="d6af-c460-a1a2-04a1" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                        <infoLink name="Rapid Fire" id="6deb-30d2-4c17-f049" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="bdd3-d1e3-e8b8-afbd" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="9361-711e-6803-dfb4" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink id="c25a-1692-2e00-9781" name="Plasma gun" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -11371,78 +11176,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="382c-ea1d-8d2f-d075"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="cb94-095f-6b09-8cec" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cc0-f93a-feed-5a3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
-                  <modifiers>
-                    <modifier type="add" value="Max 1 plasma gun per 5 models" field="error" id="f932-6790-8ba9-c2ec">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="1472-4fc4-3a4c-c7b8" includeChildSelections="true"/>
-                            <condition type="greaterThan" value="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="90e9-e59a-ce0a-eb1d" shared="true" id="cd38-2060-a8fd-1ac4" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Raptor w/ flamer" hidden="false" id="5222-cd14-f5e1-d585" collective="false">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0bf9-0a34-4114-575d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="95b9-c6e0-aa5a-87ef" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffe1-bcf9-076c-e641" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9550-1c15-129c-b057" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink name="Ignores Cover" id="e569-82f4-d0e1-299d" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
-                        <infoLink name="Torrent" id="7c67-b52d-50e2-484e" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
-                        <infoLink name="Flamer" id="3fde-808a-47c0-3ed4" hidden="false" type="profile" targetId="24af-e727-aa06-d6cc"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                      <categoryLinks>
-                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="4240-41a3-e95c-85b3" targetId="e993-e086-6de1-12af" primary="false"/>
-                      </categoryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="83f1-8ef6-dc96-f575" collective="false" targetId="3854-44a6-5746-d602" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9df-1d81-b0fa-c097"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="635c-ea0a-675e-efcc" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26e2-3a4c-03fc-fe5d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="add" value="Max 1 flamer per 5 models" field="error" id="51ec-003d-ffa7-0a9d">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="3aca-e581-f37c-06cd" includeChildSelections="true"/>
-                            <condition type="greaterThan" value="1" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="5222-cd14-f5e1-d585" shared="true" id="32e3-41ab-1733-ebec" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -11454,12 +11191,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <entryLink import="true" name="Crusade" hidden="false" id="8bb3-a793-f80c-3230" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -11566,12 +11298,22 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="cb88-f335-eb36-54ff" includeChildSelections="true"/>
       </constraints>
       <profiles>
+        <profile id="9a12-5b76-ffe2-aaca" name="Warp Talons" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
         <profile id="5e3-b390-a556-823e" name="Warp Strike" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the Fight phase, if this unit destroyed one or more enemy units this phase and is not within Engagement Range of one or more enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves.</characteristic>
           </characteristics>
         </profile>
-        <profile id="6337-78b8-5b75-b620" name="Invulnerable Save (5+)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="6337-78b8-5b75-b620" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
@@ -11589,7 +11331,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink id="75a0-a4c6-f7b4-9a8b" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="4970-b24a-fccf-3d83" name="Daemon" hidden="false" targetId="9c0e-7e25-4580-e439" primary="false"/>
         <categoryLink id="e1ec-923d-cf32-1fc7" name="Warp Talons" hidden="false" targetId="db10-7557-1767-f9d0" primary="false"/>
-        <categoryLink name="Grenades" hidden="false" id="68e8-0271-2043-5cd5" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2ef2-cf26-b22f-47a9" name="5-10 Warp Talons" hidden="false" collective="false" import="true" defaultSelectionEntryId="b625-42e1-d356-acd4" sortIndex="2">
@@ -11598,10 +11339,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ced0-2043-4957-7ee1" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b625-42e1-d356-acd4" name="Warp Talon Champion" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="b625-42e1-d356-acd4" name="Warp Talon" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a2f-86b2-1446-499a-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a2f-86b2-1446-499a-max" includeChildSelections="false"/>
+                <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b4-9519-c544-a688" type="max"/>
+                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19df-32bc-3b52-5798" type="min"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -11643,73 +11384,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
               <entryLinks>
                 <entryLink import="true" name="Unholy Patronage upgrade" hidden="false" id="ab31-6d0d-f04f-6d12" type="selectionEntry" targetId="070c-664e-3e05-b8e9"/>
               </entryLinks>
-              <profiles>
-                <profile name="Warp Talon Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f79b-5d01-87f8-6a09">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Warp Talon" hidden="false" id="8dbf-6289-75ca-98e6" collective="false">
-              <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f7fe-952a-2fe5-f822" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e8fa-b357-dc28-bea3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Wargear" id="fb73-e0a5-0930-7937" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Warp claws" hidden="false" id="e19e-9836-dee8-a214" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d72b-67ca-ac23-3273" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9c1-673e-deaa-f738" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Warp claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="10b9-b1a6-7aa5-8fe9">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Twin-linked" id="aaa8-6ac5-be78-7745" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2994-fc57-8bce-9811" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <profiles>
-                <profile name="Warp Talons" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9a12-5b76-ffe2-aaca">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11862,9 +11536,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="841-f169-aff1-fd43" collective="false">
                       <infoLinks>
-                        <infoLink name="Ignores Cover" id="a13f-912a-fd2f-4b8d" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
-                        <infoLink name="Torrent" id="556e-1397-364e-be52" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
-                        <infoLink name="Flamer" id="1d13-a8cb-fae4-8d55" hidden="false" type="profile" targetId="24af-e727-aa06-d6cc"/>
+                        <infoLink name="Flamer" id="977c-308c-a6d8-3340" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -11878,8 +11550,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="e139-b828-1a77-d4e6" collective="false">
                       <infoLinks>
-                        <infoLink name="Melta" id="3797-8001-7d8d-9853" hidden="false" targetId="7cdb-fb99-44a9-8849" type="rule"/>
-                        <infoLink name="Meltagun" id="80f9-a02d-2989-a5db" hidden="false" type="profile" targetId="c833-886b-dc38-1a08"/>
+                        <infoLink name="Meltagun" id="3d4d-1dd3-8e44-23ae" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -11893,10 +11564,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="dc0b-cdb9-4123-782" collective="false">
                       <infoLinks>
-                        <infoLink name="Hazardous" id="7085-834f-651a-b8d6" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                        <infoLink name="Rapid Fire" id="6566-0f6d-75e5-b366" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="47c2-a1fb-433f-a3bb" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="4603-d2ef-4fd1-d95b" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink name="Plasma gun" id="b100-364c-4bd9-73e" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -12340,7 +12008,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <profiles>
         <profile id="1d0e-bd07-97ab-6322" name="Warp Rift Firepower" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, during the Shooting phase, this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, during the Shooting phase this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="54b2-a2e1-aea7-7662" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -13253,11 +12921,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d289-21db-6fb8-da6c" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="3fd5-5daa-9bac-a593" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="3891-791b-47c8-dca0" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3fd5-5daa-9bac-a593" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -13710,11 +13374,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bc1a-348f-58c8-13ea" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="d6bc-12da-743e-1e78" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="822e-2e2d-340e-5765" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d6bc-12da-743e-1e78" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -13971,11 +13631,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </selectionEntries>
       <entryLinks>
         <entryLink id="f522-bdce-fce2-4108" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="079a-9ea5-d97d-a702" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="d0af-3a15-0616-9aba" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="079a-9ea5-d97d-a702" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
@@ -15505,12 +15161,11 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <entryLink import="true" name="Crusade" hidden="false" id="a56e-2a94-4b46-acb5" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -17948,7 +17603,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -18153,10 +17808,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="e887-9459-7793-497d">
                       <infoLinks>
-                        <infoLink name="Hazardous" id="7517-ab28-351d-db6b" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                        <infoLink name="Rapid Fire" id="805c-10a5-b5e6-41d0" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="6d1d-9ca6-9e60-085e" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="3e10-064b-5d40-1eaa" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink name="Plasma gun" hidden="false" type="infoGroup" id="f1f4-a693-9c5d-d2dc" targetId="38a7-7b6c-0f3d-6547"/>
                       </infoLinks>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8dc6-b48f-a2dc-9287" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -18510,10 +18162,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="785c-d1cb-02f8-ee99" collective="false">
                       <infoLinks>
-                        <infoLink name="Hazardous" id="d1da-faee-6a80-3213" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                        <infoLink name="Rapid Fire" id="1b78-4364-70ba-6e72" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="e978-5f02-be0e-d2f4" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="ba44-bc43-811e-d58b" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink name="Plasma gun" id="65b8-4b42-c1cd-13ca" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -22745,11 +22394,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="2d39-a1f3-afda-5ab5" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="1415-4b10-1d22-db70" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="2d39-a1f3-afda-5ab5" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -22947,11 +22592,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <entryLink id="6191-d92d-f2ed-b96" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink id="e163-e44b-1c2f-4a8a" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
         <entryLink import="true" name="Mark of Chaos" hidden="false" type="selectionEntryGroup" id="7aaf-b62e-c607-e6c7" targetId="5581-5d38-90b8-f8cd" sortIndex="5"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="b165-e676-f497-bc9b" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="1346-6856-f7c8-e18d" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="b165-e676-f497-bc9b" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" hidden="false" type="rule" id="7d1b-81e1-e933-600" targetId="b4dd-3e1f-41cb-218f"/>
@@ -23291,11 +22932,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Mark of Chaos" hidden="false" type="selectionEntryGroup" id="9eb4-c41b-f186-8799" targetId="5581-5d38-90b8-f8cd" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="b56e-3bb4-18e6-32d1" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="2e13-eedb-0107-94bb" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="b56e-3bb4-18e6-32d1" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Heavy Weapons Team" hidden="false" id="6978-2f62-d12d-1392" sortIndex="2">
@@ -23689,11 +23326,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="aca9-cd18-224b-428f" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="8ae7-3148-77c8-5027" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="58d4-0768-d14c-3a8f" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8ae7-3148-77c8-5027" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -23763,7 +23396,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mutilators [Legends]" hidden="false" id="7299-5b5-2b56-ef50">
+    <selectionEntry type="unit" import="true" name="Mutilators" hidden="false" id="7299-5b5-2b56-ef50">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
       </costs>
@@ -23790,7 +23423,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </profile>
         <profile name="Death Frenzy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="28fc-aa8-d207-225b">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 3+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
         <profile name="Mutilators" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="cc65-19a8-cdbf-49dc">
@@ -23817,9 +23450,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
                 </profile>
@@ -23830,7 +23463,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
                 </profile>
@@ -23954,11 +23587,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Mark of Chaos" hidden="false" type="selectionEntryGroup" id="e67c-7d72-c36d-ddb9" targetId="5581-5d38-90b8-f8cd" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="4b49-bcae-0931-15e3" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="e714-9626-ca4c-73dc" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="4b49-bcae-0931-15e3" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <profiles>
         <profile name="Ogryn Combat Stimms" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a6c-9596-4911-4869">
@@ -24153,11 +23782,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <entryLink import="true" name="Mark of Chaos" hidden="false" type="selectionEntryGroup" id="89fd-2e82-dddb-e565" targetId="5581-5d38-90b8-f8cd" sortIndex="5"/>
         <entryLink id="a76d-b3a8-755c-1184" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink id="b792-2e2f-a24c-4b9a" name="Warlord" hidden="false" collective="false" import="true" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry" sortIndex="2"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="5a44-d335-5093-7f16" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="3af9-47bb-a4c5-6671" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5a44-d335-5093-7f16" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac75-4f41-6604-d6b7" type="max"/>
@@ -24415,11 +24040,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Mark of Chaos" hidden="false" type="selectionEntryGroup" id="9fdb-6db6-8ae2-bda7" targetId="5581-5d38-90b8-f8cd" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="e2a7-0514-a388-8b64" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="4162-df30-9b6d-68ee" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="e2a7-0514-a388-8b64" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -24984,11 +24605,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Mark of Chaos" hidden="false" type="selectionEntryGroup" id="58bb-99c0-5f2c-94dd" targetId="5581-5d38-90b8-f8cd" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="d1b7-9112-6281-ed16" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="ae2c-35d4-cb1a-5e81" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d1b7-9112-6281-ed16" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -26432,11 +26049,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <entryLink import="true" name="Enhancements" hidden="false" id="676c-850a-fc8c-d6f6" type="selectionEntryGroup" targetId="f4dd-5662-f7ca-a614" sortIndex="3"/>
         <entryLink import="true" name="Warlord" hidden="false" id="1d5c-f04c-525-a01f" type="selectionEntry" targetId="1a34-f1cc-ec01-ca32" sortIndex="2"/>
         <entryLink import="true" name="Mark of Chaos" hidden="false" id="a5b8-7c92-100-3a92" type="selectionEntryGroup" targetId="5581-5d38-90b8-f8cd" sortIndex="5"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="c72a-3a54-d06d-d07c" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="56db-7e4f-7a1b-d527" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="c72a-3a54-d06d-d07c" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ad9f-850b-b879-c1dd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -27040,11 +26653,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Mark of Chaos" hidden="false" id="770d-c395-1ee0-b90a" collective="false" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="e439-89a4-51cb-ae15" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Mortal Empowerment" hidden="false" id="29b3-b516-a830-e1c5" type="selectionEntry" targetId="c50c-9e1a-6492-67a3"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="e439-89a4-51cb-ae15" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
@@ -27436,9 +27045,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="f7dc-a17d-aece-165a" collective="false">
                       <infoLinks>
                         <infoLink name="Hazardous" id="b62a-a124-7f44-1893" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-                        <infoLink name="Rapid Fire" id="1e9c-66a4-a3c6-b7b6" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                        <infoLink name="➤ Plasma gun - standard" id="ed35-717d-f7a9-2bc5" hidden="false" type="profile" targetId="38ff-30e0-10e1-fb2a"/>
-                        <infoLink name="➤ Plasma gun - supercharge" id="cf1f-6320-8dac-b1ce" hidden="false" type="profile" targetId="8416-1e2b-edc1-7acf"/>
+                        <infoLink name="Rapid Fire" id="545d-6067-6a51-b45e" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+                        <infoLink name="Plasma gun" id="85b3-d832-3b4d-75a6" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -28172,43 +27780,377 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ascension to Daemonhood" hidden="false" id="0929-a3cf-83c0-63b9">
+    <selectionEntry type="model" import="true" name="Horus Heresy" hidden="false" id="c124-e6c3-73c7-e7cc" collective="false">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7f6-0b8f-1f63-c909" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="539b-e8d1-d151-4646" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mortal Empowerment" hidden="false" id="c50c-9e1a-6492-67a3">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0f6-6351-8fd9-c29d" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4026-8a3e-9922-eec" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Favoured for Dark God Glory" hidden="false" id="9ec1-2e21-d8dd-ea56">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b505-a774-ea3a-ce31" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy melee weapon" hidden="false" id="45d1-cad9-e49e-4388" collective="true">
       <profiles>
-        <profile name="Heavy melee weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="332b-2bbb-f15b-b7e8">
+        <profile name="Horus Heresy" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="41c0-75e9-77fa-dcf6">
           <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">18</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Archtraitor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="912a-82d3-68eb-4536">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one Archtraitor ability. Until the start of your next Command phase, this model has that ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Your Son Has Returned" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="318a-e058-9a79-4b37">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this model is destroyed, place into reserves with half wounds. Once the model is redeployed, melee weapons will have a permanent increase of attacks by +2, strength by +3, damage by +3, and armor penetration by +1. Leadership tests done by this model will be done with 3D6 along with a +2. If passed, both abilities will be given; if failed, a D6 is rolled instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Soul of Lupercal [Aura]" typeId="2253-f21f-76a4-a81e" typeName="The Archtraitor" hidden="false" id="d822-a0b1-eb24-02ec">
+          <characteristics>
+            <characteristic name="Ability" typeId="ed79-be76-246a-3650">While a friendly Heretic Astartes unit is within 6” of this model, you can re-roll Charge rolls of 1. If the unit has successfully passed a Dark Pact roll, critical hits go off on an unmodified hit roll +5.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The End and the Death Part III" typeId="2253-f21f-76a4-a81e" typeName="The Archtraitor" hidden="false" id="3196-cdf1-ee18-08f5">
+          <characteristics>
+            <characteristic name="Ability" typeId="ed79-be76-246a-3650">Can only be selected once this model has been deployed into the battlefield through reserves after having been destroyed. This model can ignore any or all modifiers to its Move characteristic and can advance and charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wrath of the Warmaster [Aura]" typeId="2253-f21f-76a4-a81e" typeName="The Archtraitor" hidden="false" id="018f-dfc5-096c-4102">
+          <characteristics>
+            <characteristic name="Ability" typeId="ed79-be76-246a-3650">While a friendly Heretic Astartes unit is within 6” of this model, you can re-roll Leadership and Battle-shock tests taken for that unit and re-roll Wound rolls of 1. If the unit has successfully passed a Dark Pact roll, you can re-roll the Wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ccb1-378c-3b26-7581">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+■ CHAOS TERMINATOR SQUAD
+■ CHOSEN</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc17-f5ed-3a31-d3e2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save. When this model comes back from reserves it after being destroyed, This model has a 4+ invulnerable save</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fratricide" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a260-19d9-1d9c-a4f7">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, once this model has been deployed into the battlefield through reserves after having been destroyed, this model’s Talons of the Archtraitor gains the Extra Attack ability and the Fights First ability for the first battle it takes. If facing another model with the Fights First ability, this model will have priority for as long as this ability is active.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <comment>Raptors</comment>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="585f-ad8f-e1df-9914" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink name="Dark Pacts" id="e6c7-a720-d58f-7d99" hidden="false" targetId="fd69-68cc-5d63-c84d" type="rule"/>
+        <infoLink name="Deadly Demise" id="8c54-74a8-cc8a-3120" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="set" value="d6" field="annotation"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="a11d-c32b-a420-fca4" targetId="1e42-dfae-cbdd-207d" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="9078-73e0-1617-0563" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Epic Hero" hidden="false" id="abea-af44-1a22-3415" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Chaos Undivided" hidden="false" id="e7d1-4d0d-762a-8e0a" targetId="2c5c-6ca6-777-c633" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="05da-600b-5520-8f81" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Monster" hidden="false" id="4592-9e8e-4e47-604a" targetId="9693-cf84-fe69-37a9" primary="false"/>
+        <categoryLink targetId="a95e-9187-46ab-73dd" id="12b1-c103-ab86-9d5c" primary="false" name="Horus Heresy The 40k"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Talons of The Archtraitor" hidden="false" id="a851-280a-c0ac-c149" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eac9-fab3-26e7-b6ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1de-2e23-8656-fe8f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Talons of The Archtraitor" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8191-d904-1762-3a43">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Talons of The Archtraitor" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5d27-fc3c-1ea5-3dc6">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sustained Hits" id="393b-b4f8-a565-65a9" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+            <infoLink name="Devastating Wounds" id="67ea-11a1-7309-2a93" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Worldbreaker" hidden="false" id="5bbf-d384-c46b-8689" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb78-acc8-3b2b-df87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c66f-3441-b937-b143" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Worldbreaker - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a364-b4ab-5bf1-543e">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">15</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+            <profile name="➤ Worldbreaker - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cb5d-03e6-5b68-1b7c">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">13</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="00fc-9218-746c-1c8c" collective="false" targetId="1a34-f1cc-ec01-ca32" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf3c-7f81-c553-f5ff"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="cf3c-7f81-c553-f5ff">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4-7448-3997-8618" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Alpha Discordsmith" hidden="false" id="db78-f671-582d-2c46" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1436-989c-4e73-51fe" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4aed-eb00-0818-a8d5">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Alpha Discordsmith" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="082f-42dd-1b37-f761">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="GTA protocol" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee13-70c8-bb17-27a7">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, If a dedicated transport is [Damaged] within 3&quot; and has no models using it, roll 2d6 againts its toughness, if you roll higher or equal to its thoughness, commandeer and embark that vehicle as if it was yours. roll 3d6 againts Battleshocked Vehicles</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Machine Killer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b5e2-3165-fa91-8833">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">6&quot; aura, Vehicles in the area must take a LD test, if that LD test is passed, reduce movement by 2&quot; and increase ap of weapons targeting the Vehicle by 1. if LD test is failed Take d3 mortal wounds and reduce 1 damage on damage of weapons. -1 to LD test taken by Vehicles</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Dark Pacts" id="20f2-40fa-dfee-4a89" hidden="false" targetId="fd69-68cc-5d63-c84d" type="rule"/>
+        <infoLink name="Lone Operative" id="28aa-6ba7-ead9-bd02" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="8c70-cafe-808c-8be2" targetId="1e42-dfae-cbdd-207d" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="d0ee-0979-bb7c-cfa3" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="fe9a-3c43-acb3-9590" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="6967-57e4-4727-d3b4" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="0218-fc12-21a2-2ee6" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Epic Hero" hidden="false" id="7edc-4026-2601-2a10" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="26e9-2119-14be-13db" hidden="false" sortIndex="4">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Twin Serpent Blades" id="6903-c94d-2300-883e" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcae-7a06-f705-f459">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5de-48ac-1614-a474" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a98b-5d68-6cf4-2574" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin Serpent Blades" hidden="false" id="75e6-390c-767a-fb55" collective="false">
+                  <profiles>
+                    <profile name="Twin Serpent Blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="082f-d2ae-9512-e2d0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">twin-linked, precision</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7835-f69e-92fe-7eac" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Warp Tech Corrupter" id="eb9c-5f49-8776-4b84" hidden="false" collective="false" import="true" defaultSelectionEntryId="f119-af6d-d48e-a1d2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9ef-e754-be1b-f45e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5de0-4d4f-a511-f61f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Warp Tech Corrupter" hidden="false" id="7cf7-cfa5-4fa3-a615" collective="false">
+                  <profiles>
+                    <profile name="➤ Warp Tech Corrupter - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4ee4-e36d-7ee0-1ac8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Anti-Vehicle 5+</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Warp Tech Corrupter - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ab52-b81e-73c9-4c8f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol, Devastating Wounds, Anti-Vehicle 4+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Hazardous" id="0d44-e443-dbbb-0a22" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+                    <infoLink name="Pistol" id="47dc-796e-ab7d-c0b4" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+                    <infoLink name="Anti-" id="5f85-82e2-2e8d-8bcd" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                    <infoLink name="Devastating Wounds" id="47c4-f856-32b7-0bdd" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="1c2e-2268-8e6d-3e1e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Mark of Chaos" hidden="false" id="aa1f-5a14-f8cb-a691" collective="false" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="230b-2c94-20f1-997b" collective="false" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditions>
+                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="2" field="bd28-cba3-da09-f61c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="2438-c7ca-94ed-0311">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -28218,7 +28160,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8de4-2e34-c378-2697" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="e357-6558-923e-61e2" name="Talisman of Burning Blood" hidden="false" collective="false" import="true" type="upgrade" sortIndex="32">
+        <selectionEntry id="e357-6558-923e-61e2" name="Talisman of Burning Blood" hidden="false" collective="false" import="true" type="upgrade" sortIndex="28">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -28271,7 +28213,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry id="6ba0-8b1e-9e0d-20fd" name="Eye of Tzeentch" hidden="false" collective="false" import="true" type="upgrade" sortIndex="29">
+        <selectionEntry id="6ba0-8b1e-9e0d-20fd" name="Eye of Tzeentch" hidden="false" collective="false" import="true" type="upgrade" sortIndex="25">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28310,7 +28252,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </costs>
           <comment>Zealots</comment>
         </selectionEntry>
-        <selectionEntry id="f2ce-c4b6-6976-e1d5" name="Orbs of Unlife" hidden="false" collective="false" import="true" type="upgrade" sortIndex="31">
+        <selectionEntry id="f2ce-c4b6-6976-e1d5" name="Orbs of Unlife" hidden="false" collective="false" import="true" type="upgrade" sortIndex="27">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28349,7 +28291,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </costs>
           <comment>Zealots</comment>
         </selectionEntry>
-        <selectionEntry id="8d30-bc8b-6d57-ef08" name="Intoxicating Elixir" hidden="false" collective="false" import="true" type="upgrade" sortIndex="30">
+        <selectionEntry id="8d30-bc8b-6d57-ef08" name="Intoxicating Elixir" hidden="false" collective="false" import="true" type="upgrade" sortIndex="26">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28395,7 +28337,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warmaster&apos;s Gift" hidden="false" id="9a33-6b21-25e3-b5ac" sortIndex="44">
+        <selectionEntry type="upgrade" import="true" name="Warmaster&apos;s Gift" hidden="false" id="9a33-6b21-25e3-b5ac" sortIndex="40">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28430,7 +28372,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Veterans</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Eager for Vengeance" hidden="false" id="bb91-cc38-e79d-7ce0" sortIndex="41">
+        <selectionEntry type="upgrade" import="true" name="Eager for Vengeance" hidden="false" id="bb91-cc38-e79d-7ce0" sortIndex="37">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28465,7 +28407,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Veterans</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Eye of Abaddon" hidden="false" id="b06a-cbc9-6820-6a93" sortIndex="42">
+        <selectionEntry type="upgrade" import="true" name="Eye of Abaddon" hidden="false" id="b06a-cbc9-6820-6a93" sortIndex="38">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28500,7 +28442,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Veterans</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mark of Legend" hidden="false" id="aaa6-f20e-362a-f55d" sortIndex="43">
+        <selectionEntry type="upgrade" import="true" name="Mark of Legend" hidden="false" id="aaa6-f20e-362a-f55d" sortIndex="39">
           <profiles>
             <profile name="Mark of Legend" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="134f-6a3c-ce86-fda0">
               <characteristics>
@@ -28686,7 +28628,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Deceptors</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Despot&apos;s Claim" hidden="false" id="18c9-6770-6371-582b" sortIndex="33">
+        <selectionEntry type="upgrade" import="true" name="Despot&apos;s Claim" hidden="false" id="18c9-6770-6371-582b" sortIndex="29">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28714,7 +28656,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Raiders</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Dread Reaver" hidden="false" id="a3f6-e18b-d9e6-b841" sortIndex="34">
+        <selectionEntry type="upgrade" import="true" name="Dread Reaver" hidden="false" id="a3f6-e18b-d9e6-b841" sortIndex="30">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28742,7 +28684,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Raiders</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mark of the Hound" hidden="false" id="b5e6-8586-a9a9-b6b" sortIndex="35">
+        <selectionEntry type="upgrade" import="true" name="Mark of the Hound" hidden="false" id="b5e6-8586-a9a9-b6b" sortIndex="31">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28777,7 +28719,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tyrant&apos;s Lash" hidden="false" id="8ee0-de8d-3895-b1ac" sortIndex="36">
+        <selectionEntry type="upgrade" import="true" name="Tyrant&apos;s Lash" hidden="false" id="8ee0-de8d-3895-b1ac" sortIndex="32">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -28872,7 +28814,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Dread Talons</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Forge&apos;s Blessing" hidden="false" id="5bd4-e482-a053-1184" sortIndex="37">
+        <selectionEntry type="upgrade" import="true" name="Forge&apos;s Blessing" hidden="false" id="5bd4-e482-a053-1184" sortIndex="33">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -29249,7 +29191,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Dread Talons</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Invigorated Mechatendrils" hidden="false" id="3bc1-957b-473-faa0" sortIndex="38">
+        <selectionEntry type="upgrade" import="true" name="Invigorated Mechatendrils" hidden="false" id="3bc1-957b-473-faa0" sortIndex="34">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -29285,7 +29227,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Soulforged</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Soul Harvester" hidden="false" id="da72-b2d6-58a6-b821" sortIndex="39">
+        <selectionEntry type="upgrade" import="true" name="Soul Harvester" hidden="false" id="da72-b2d6-58a6-b821" sortIndex="35">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -29313,7 +29255,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </constraints>
           <comment>Soulforged</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tempting Addendum" hidden="false" id="a82c-bf6-f3dd-81ac" sortIndex="40">
+        <selectionEntry type="upgrade" import="true" name="Tempting Addendum" hidden="false" id="a82c-bf6-f3dd-81ac" sortIndex="36">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -29692,172 +29634,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e79b-9439-7c1f-5789" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Greyveil Hex" hidden="false" id="b019-acb6-def0-253e" sortIndex="25">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="544c-7152-ce3a-a85c" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="f96f-5896-93c2-fc05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>Nightmare Hunt</comment>
-          <profiles>
-            <profile name="Greyveil Hex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5edc-b1da-f76b-d2e0">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in the bearer&apos;s unit have the Stealth ability.
-
-While the bearer’s unit is within range of one or more objective markers you control, that unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e7c3-f266-5664-433a" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Stealth" id="2f31-a015-9749-51de" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warp-fuelled Thrusters" hidden="false" id="05d5-4799-82fd-af53" sortIndex="28">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d880-9968-2ed9-5a21" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="f96f-5896-93c2-fc05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>Nightmare Hunt</comment>
-          <profiles>
-            <profile name="Warp-fuelled Thrusters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8672-abfa-3586-4a10">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent’s Fight phase, if the bearer’s unit is not within Engagement Range of one or more enemy units, you can remove the bearer’s unit from the battlefield and place it into Strategic Reserves.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e8bc-0cb0-6b2f-946b" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sorrowscent Vulture" hidden="false" id="b2c2-46f6-27b5-7082" sortIndex="26">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d880-9968-2ed9-5a21" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="f96f-5896-93c2-fc05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>Nightmare Hunt</comment>
-          <profiles>
-            <profile name="Sorrowscent Vulture" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1e43-c5b8-0f99-cb0f">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in the bearer’s unit have the Scouts 6&quot; ability.
-In the Declare Battle Formations step, the bearer can be attached to a Warp Talons unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Scouts" id="ae79-56b5-75d3-e299" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
-              <modifiers>
-                <modifier type="append" value="6&quot;" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="014b-fe4d-4d7d-5f61" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Terrorglut Parasite" hidden="false" id="69c2-d22c-7296-c8d8" sortIndex="27">
-          <profiles>
-            <profile name="Terrorglut Parasite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0835-daa9-b24f-281f">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle‑shock test, subtracting 1 from the result.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="f96f-5896-93c2-fc05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>Nightmare Hunt</comment>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="57a1-25ac-53b7-766e" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="-1" field="8de4-2e34-c378-2697">
@@ -30016,29 +29792,17 @@ In the Declare Battle Formations step, the bearer can be attached to a Warp Talo
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="53dd-68f7-7c1f-3e5d" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="bb9d-299a-ed60-2d8a" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="53dd-68f7-7c1f-3e5d" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="d4ae-1dc8-3dfe-e03a">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5581-5d38-90b8-f8cd" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="bb9d-299a-ed60-2d8a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="5581-5d38-90b8-f8cd" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -30800,8 +30564,8 @@ In the Declare Battle Formations step, the bearer can be attached to a Warp Talo
                   <modifiers>
                     <modifier type="append" value="Book of Fate" field="annotation" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", " arg="+0"/>
                     <modifier type="append" value="Book of Fate" field="annotation" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", " arg="+0"/>
-                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", " arg="+0"/>
-                    <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", " arg="+0"/>
+                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", " arg="+0"/>
+                    <modifier type="increment" value="1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", " arg="+0"/>
                     <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
                     <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
                     <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" position="-1"/>
@@ -31027,7 +30791,7 @@ In the Declare Battle Formations step, the bearer can be attached to a Warp Talo
                         </conditionGroup>
                       </conditionGroups>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="d56f-b456-5b8-8907" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c675-ba2b-cd63-a9a4" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -31439,49 +31203,16 @@ In the Declare Battle Formations step, the bearer can be attached to a Warp Talo
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9c0e-7e25-4580-e439" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="0929-a3cf-83c0-63b9" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4026-8a3e-9922-eec" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="176e-3014-9548-d326" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4026-8a3e-9922-eec" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="c50c-9e1a-6492-67a3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="9ec1-2e21-d8dd-ea56" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="176e-3014-9548-d326" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4026-8a3e-9922-eec" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" value="You must select &quot;Ascension to Daemonhood&quot; on this model to take Chaos Boons" field="info">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="0929-a3cf-83c0-63b9" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9c0e-7e25-4580-e439" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="0c7c-7877-d13c-f26c">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c50c-9e1a-6492-67a3" shared="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="9ec1-2e21-d8dd-ea56" shared="true" includeChildSelections="true"/>
-              </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -32110,51 +31841,76 @@ In the Declare Battle Formations step, the bearer can be attached to a Warp Talo
       </characteristics>
       <comment>Crusade content</comment>
     </profile>
-    <profile name="➤ Plasma gun - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="38ff-30e0-10e1-fb2a">
-      <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-        <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="➤ Plasma gun - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8416-1e2b-edc1-7acf">
-      <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Rapid Fire 1</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Meltagun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c833-886b-dc38-1a08">
-      <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="24af-e727-aa06-d6cc">
-      <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
-      </characteristics>
-    </profile>
   </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="2876-732d-4e10-55d8" name="Flamer" hidden="false">
+      <profiles>
+        <profile id="24af-e727-aa06-d6cc" name="Flamer" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2888-a8d7-3858-abce" name="Ignores Cover" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
+        <infoLink id="136e-7a61-60e9-8aff" name="Torrent" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="93cd-96f9-0791-f9f4" name="Meltagun" hidden="false">
+      <profiles>
+        <profile id="6325-cd07-ba33-a7db" name="Meltagun" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f896-c259-ffb5-ad44" name="Melta" hidden="false" targetId="7cdb-fb99-44a9-8849" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="38a7-7b6c-0f3d-6547" name="Plasma gun" hidden="false">
+      <profiles>
+        <profile id="38ff-30e0-10e1-fb2a" name="➤ Plasma gun - standard" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ea2-1a87-4e19-1c17" name="➤ Plasma gun - supercharge" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="caea-d003-f342-dce8" name="Hazardous" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+        <infoLink id="8089-ef67-fe9b-fb5e" name="Rapid Fire" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
   <catalogueLinks>
     <catalogueLink id="b11f-30ad-a74b-1172" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="c287-6415-94ea-c4da" name="Chaos - Daemons Library" targetId="b45c-af22-788a-dfd6" type="catalogue" importRootEntries="true"/>
