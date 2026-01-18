@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="73" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="72" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="cb5b-3605-7522-c561" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="2e06-13ae-6789-b591" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -800,7 +800,7 @@
         <categoryLink targetId="ff0e-8156-6e6b-8e60" id="af35-b35d-972-853" primary="false" name="Ragnar Blackmane"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="148b-5408-9dec-dac2" targetId="b273-b85e-4018-a0cd">
+        <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="148b-5408-9dec-dac2" targetId="b273-b85e-4018-a0cd">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2784-9ec3-db07-1d31"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb8e-96cc-92e2-7ebd"/>
@@ -928,7 +928,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ed6e-7858-f136-a390" targetId="caa-f869-3cbd-b48e"/>
-        <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="a097-9d79-ece-1b2c" targetId="b273-b85e-4018-a0cd">
+        <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="a097-9d79-ece-1b2c" targetId="b273-b85e-4018-a0cd">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c45-9a9d-f37f-2bd3"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b03f-e032-1f77-16c6"/>
@@ -1025,7 +1025,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="3938-10f8-6e20-e3ee" targetId="caa-f869-3cbd-b48e"/>
-        <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="341f-6670-344e-22bf" targetId="b273-b85e-4018-a0cd">
+        <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="341f-6670-344e-22bf" targetId="b273-b85e-4018-a0cd">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c45-9a9d-f37f-2bd3"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b03f-e032-1f77-16c6"/>
@@ -1695,7 +1695,7 @@ You can attach this model to one of the above units even if one Captain or Chap
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11d-6bcf-c721-4747"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="f547-6f84-d14a-7390" type="selectionEntry" targetId="b273-b85e-4018-a0cd">
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="f547-6f84-d14a-7390" type="selectionEntry" targetId="b273-b85e-4018-a0cd">
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="0f75-c9c5-7805-3727" hidden="false" flatten="true">
                       <entryLinks>
@@ -2164,7 +2164,7 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c7c-8655-89e7-e298"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="6181-cb77-a8da-988" type="selectionEntry" targetId="b273-b85e-4018-a0cd">
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="6181-cb77-a8da-988" type="selectionEntry" targetId="b273-b85e-4018-a0cd">
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="9c8e-f64d-4309-9611" hidden="false" flatten="true">
                       <entryLinks>
@@ -3535,7 +3535,7 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
       <profiles>
         <profile name="Rugged Resilience" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b2ea-319f-b86-ab13">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 4 from the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Wolf Guard Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="53e9-9024-f706-ff18">

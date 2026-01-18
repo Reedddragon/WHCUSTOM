@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="160" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="171" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -3411,7 +3411,7 @@
                     <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3032-3f4c-f0f4-772e">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -11799,7 +11799,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="406f-5469-61f8-e367" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Wargear Options" hidden="false" id="9085-72ab-adc6-a996" type="selectionEntryGroup" targetId="947a-b0d1-6bb2-336a"/>
             <entryLink import="true" name="Twin heavy bolter" hidden="false" id="a6c5-1875-a8c4-b71a" type="selectionEntry" targetId="d5d2-be01-7a54-78c3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cd9-1149-6d68-4eb5"/>
@@ -11856,6 +11855,98 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear Options" id="cc81-9f5a-4d8f-bc1d" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Sponsons" id="c966-7f2a-8956-c119" hidden="false" defaultSelectionEntryId="a66b-b49e-c29-75dd" sortIndex="1">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="2 Twin Heavy Flamers" hidden="false" id="45fd-4107-1a7b-5a6e">
+                      <entryLinks>
+                        <entryLink import="true" name="Twin heavy flamer" hidden="false" id="944d-04e6-6107-97a9" type="selectionEntry" targetId="7a20-9d32-3e1b-259f">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eda3-f40e-454b-e934"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf88-6716-a0a4-f589"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="e591-c607-064f-afd0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="2 Twin Heavy Bolters" hidden="false" id="af88-2996-4d1e-80cb">
+                      <entryLinks>
+                        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="7dcf-f46e-0ca4-f6f0" type="selectionEntry" targetId="d5d2-be01-7a54-78c3">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="311c-7e12-9154-caa2"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5874-91e8-073a-1382"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="8fbf-63bf-feae-1882" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7138-42ff-6b8f-2e4f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b90-a00d-51b5-0a43"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Additional sponsons" id="f0a4-4b7d-8574-6345" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d41-b68d-1eac-d91e"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="2 Lascannons and 2 Twin Heavy Bolters" hidden="false" id="f921-0392-4cbf-69c1">
+                      <entryLinks>
+                        <entryLink import="true" name="Lascannon" hidden="false" id="05c4-1249-5b74-c404" type="selectionEntry" targetId="af85-b936-7f-430c">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="59a3-25ce-e25a-db09"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8090-1e2c-2130-85d3"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="9d01-1e4b-ccd1-d837" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="55fd-dd6b-da64-8995" type="selectionEntry" targetId="d5d2-be01-7a54-78c3">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="082b-a42e-e74e-11ec"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfbe-90b4-bac3-321e"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="0f10-abdb-405a-c861" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="2 Lascannons and 2 Twin Heavy Flamers" hidden="false" id="1f2f-bfab-c271-c593">
+                      <entryLinks>
+                        <entryLink import="true" name="Lascannon" hidden="false" id="b2c0-6ee4-ef59-788a" type="selectionEntry" targetId="af85-b936-7f-430c">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ffa1-1d31-da75-145c"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d4c4-2e96-9492-645c"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="b56c-daeb-a65a-67be" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Twin heavy flamer" hidden="false" id="d1c7-8e98-521b-cf87" type="selectionEntry" targetId="7a20-9d32-3e1b-259f">
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="809e-1a9c-e94c-e93c"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ad50-8a1d-9802-4e4a"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="7107-1115-aa1d-5825" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <comment>Includes Stormsword heavy flamer variants</comment>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -15226,6 +15317,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <categoryLinks>
         <categoryLink name="Attacks Dx Weapon" hidden="false" id="5b7a-83a8-2cf1-7071" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
+      <comment>S5</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin heavy bolter" hidden="false" id="d5d2-be01-7a54-78c3">
       <profiles>
@@ -27212,7 +27304,14 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Venator [Legends]" hidden="false" id="a95f-9dd6-de66-fa59">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -28202,6 +28301,11 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <profile name="Transport" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="bcbe-fbe2-d0d3-31a7">
           <characteristics>
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 Astra Militarum Infantry models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each Ogryn model takes up the space of 3 models. It cannot transport Artillery models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mobile Command Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0bc-373a-a8e4-4da3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, one **^^Officer^^** model embarked within this **^^Transport^^** can issue Orders even though it is not on the battlefield. When doing so, measure distances to and from this **^^Transport^^**.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -32396,6 +32500,11 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the Fire Coordinator model is on the battlefield, each time a Heavy Weapons Gunner model is destroyed, roll one D6: one a 3+, do not remove it from play. The destroyed model can shoot after the attacking model&apos;s unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Embarking" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fbec-4a9f-afcc-dc83">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While embarked within a **^^Transport^^**, each Heavy Weapons Gunner model takes up the space of 2 models, and each weapon equipped by these models is considered to be 2 models&apos; weapons for the purposes of the Firing Deck ability.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="3 Heavy Weapons Gunners" id="55a3-9a75-c917-e922" hidden="false" defaultSelectionEntryId="0707-563e-2d7d-09b2" sortIndex="3">
@@ -32578,9 +32687,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="Embarking" id="14ea-c60d-8c5c-6386" hidden="false" type="profile" targetId="5b59-38a0-a158-05b9"/>
-      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="a7cd-ba00-aabf-9cf1" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
       </entryLinks>
@@ -33739,144 +33845,29 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Ranged Weapon" hidden="false" id="05eb-f1e9-6c43-172a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Bombers" hidden="false" id="d18d-393c-4995-8e9d">
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Bombmaster" hidden="false" id="1901-07ed-9829-df92">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6877-282e-64f4-8959"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c371-b127-e469-ef37"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Death Bomber laspistol" hidden="false" id="d93e-4d05-3be1-a785" type="selectionEntry" targetId="fc15-bc4e-eb84-5e15"/>
-            <entryLink import="true" name="Death Bomber Frag Shovel" hidden="false" id="9275-fc89-dc46-d42e" type="selectionEntry" targetId="f44d-3b03-c942-da28"/>
-          </entryLinks>
-          <profiles>
-            <profile name="Bombmaster" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="edf7-2de1-66b0-3aa2">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
-              </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="2-5 Death Bombers" id="75e6-b665-94bc-b7af" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Death Bombers" hidden="false" id="775f-b477-414c-da1b">
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7030-a997-0ef7-ebfb"/>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="b391-e514-0c4c-40b8"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Death Bomber Frag Shovel" hidden="false" id="01a6-9fb6-e5a3-13db" type="selectionEntry" targetId="f44d-3b03-c942-da28"/>
-                <entryLink import="true" name="Death Bomber laspistol" hidden="false" id="6ad2-6a31-d97f-bd32" type="selectionEntry" targetId="fc15-bc4e-eb84-5e15"/>
-              </entryLinks>
-              <profiles>
-                <profile name="Death Bombers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="017f-d70b-1664-5786">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="150" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="d18d-393c-4995-8e9d" childId="model" shared="true" id="34b0-c1e7-d82c-cba3" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry type="upgrade" import="true" name="Twin heavy flamer" hidden="false" id="7a20-9d32-3e1b-259f">
       <profiles>
-        <profile name="Final Destination" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aeb4-d7ca-3dd5-52de">
+        <profile name="Twin heavy flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="339d-667a-f582-ac59">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">reduce 2 from hazardous roll, add 2 to deadly demise roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Deadman Running" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d621-52d8-9c89-b396">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit contains a Bombmaster, this unit can advance and charge</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Deadly Demise" id="4d68-38ee-d65d-f175" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
-          <modifiers>
-            <modifier type="append" value="D2" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ea48-046e-ccb8-23b1" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Bomber laspistol" hidden="false" id="fc15-bc4e-eb84-5e15">
-      <profiles>
-        <profile name="Death Bomber laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e2fa-8aa4-6ddf-6032">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&apos;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Assault" id="744f-ef33-7fef-b9a3" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+        <infoLink name="Twin-linked" hidden="false" type="rule" id="fbbc-8990-1cd5-b617" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" id="3c0a-a319-f46d-f72d" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Torrent" hidden="false" type="rule" id="2ea5-6182-cc8a-cd77" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d10-6a1b-c712-f766"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e695-7409-ddf6-6476"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Bomber Frag Shovel" hidden="false" id="f44d-3b03-c942-da28">
-      <profiles>
-        <profile name="Death Bomber Frag Shovel" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2ae8-76d3-a2a5-2f58">
-          <characteristics>
-            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Hazardous</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="787e-0748-8ac8-52f0"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cba-a18f-441a-1db7"/>
-      </constraints>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="d242-d0bb-257b-50c1" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
+      <comment>S6</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -34336,87 +34327,80 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Combined Arms" hidden="false" id="67ce-ebd5-b428-e4f7">
-          <profiles>
-            <profile name="Born Soldiers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dca5-9eb0-b65f-d1c1">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in a **^^Regiment^^** unit from your army makes a ranged attack that targets a visible unit (excluding **^^Monsters^^** and **^^Vehicles^^**) that attack has the **[LETHAL HITS]** ability.
-
-Each time a model in a **^^Squadron^^** unit from your army makes a ranged attack that targets a visible **^^Monster^^** or **^^Vehicle^^** unit, that attack has the **[LETHAL HITS]** ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink name="Lethal Hits" hidden="false" type="rule" id="dac0-f686-9164-51ca" targetId="d1d1-611e-5191-1095"/>
           </infoLinks>
+          <rules>
+            <rule name="Born Soldiers" id="b65e-c54b-b8fe-e8e2" hidden="false">
+              <description>Each time a model in a **^^Regiment^^** unit from your army makes a ranged attack that targets a visible unit (excluding **^^Monsters^^** and **^^Vehicles^^**) that attack has the **[LETHAL HITS]** ability.
+
+Each time a model in a **^^Squadron^^** unit from your army makes a ranged attack that targets a visible **^^Monster^^** or **^^Vehicle^^** unit, that attack has the **[LETHAL HITS]** ability.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bridgehead Strike" hidden="false" id="7afb-a0f6-b95d-e791">
-          <profiles>
-            <profile name="Only The Best" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ddb1-7849-1959-3a91">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an **^^Astra Militarum Infantry^^** model from your army makes a ranged attack, re‐roll a Hit roll of 1.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Fire Zone Purge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8cb7-eb05-f6c3-179f">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a **^^Militarum Tempestus^^** model from your army makes a ranged attack in a turn in which it was set up on the battlefield from Reserves or it disembarked from a **^^Transport^^**, add 1 to the Hit roll.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Keywords" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f342-50ad-488e-211e">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a **^^Militarum Tempestus Officer^^** model from your army is your **^^Warlord^^**, **^^Tempestus Scions^^** units from your army gain the **^^Battleline^^** keyword, and while such a unit is not Battle shocked, add 1 to the Objective Control characteristic of **^^Tempestus Scions^^** models in that unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Only The Best" id="4437-da10-a69e-d131" hidden="false">
+              <description>Each time an **^^Astra Militarum Infantry^^** model from your army makes a ranged attack, re‐roll a Hit roll of 1.</description>
+            </rule>
+            <rule name="Keywords" id="0903-7a22-316d-c7dc" hidden="false">
+              <description>If a **^^Militarum Tempestus Officer^^** model from your army is your **^^Warlord^^**, **^^Tempestus Scions^^** units from your army gain the **^^Battleline^^** keyword, and while such a unit is not Battle shocked, add 1 to the Objective Control characteristic of **^^Tempestus Scions^^** models in that unit.</description>
+            </rule>
+            <rule name="Fire Zone Purge" id="c0cb-43e7-e7e6-11ea" hidden="false">
+              <description>Each time a **^^Militarum Tempestus^^** model from your army makes a ranged attack in a turn in which it was set up on the battlefield from Reserves or it disembarked from a **^^Transport^^**, add 1 to the Hit roll.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Siege Regiment" hidden="false" id="87b5-6072-b2c5-0cdc">
-          <profiles>
-            <profile name="Artillery Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdd5-a984-d0dc-9808">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, select one of the following types of artillery support.
+          <infoLinks>
+            <infoLink name="Stealth" id="e6da-6a8a-8201-eada" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+          </infoLinks>
+          <rules>
+            <rule name="Artillery Support" id="faf3-6fc0-6682-dfa9" hidden="false">
+              <description>At the start of the battle round, select one of the following types of artillery support.
 
-- **Creeping Barrage:** Roll one D6 for each enemy unit that is more than 12&quot; from every model from your army that is on the battlefield: On a 5+ until the end of the battle round, that unit is shaken. While a unit is shaken, subtract 2&quot; from its Move characteristic and subtract 2 from Charge rolls made for it. The maximum number of units that can be shaken by this rule in each battle round depends on the battle size, as shown below.
+- **Creeping Barrage:** Roll one D6 for each enemy unit that is more than 12&quot; from every model from your army that is on the battlefield: On a 5+ until the end of the battle round, that unit is shaken. While a unit is shaken, subtract 2&quot; from its Move characteristic and subtract 2 from Charge rolls made for it. The maximum number of units that can be shaken by this rule in each battle round depends on the battle size, as shown below.
 
-- **Incendiary Bombardment:** Select a number of enemy units more than 12&quot; from every model from your army that is on the battlefield. Until the end of the battle round, those enemy units are scattered. While a unit is scattered, it cannot have the Benefit of Cover. The maximum number of units you can select this way depends on the battle size, as shown below.
+- **Incendiary Bombardment:** Select a number of enemy units more than 12&quot; from every model from your army that is on the battlefield. Until the end of the battle round, those enemy units are scattered. While a unit is scattered, it cannot have the Benefit of Cover. The maximum number of units you can select this way depends on the battle size, as shown below.
 
 - **Smoke Shells:** Select a number of units from your army. Until the end of the battle round, those units have the Stealth ability. The maximum number of units you can select in this way depends on the battle size, as shown below.
 
 **Battle Size - Maximum Number of Units**
 Incursion - 2
 Strike Force - 3
-Onslaught - 4</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Stealth" id="e6da-6a8a-8201-eada" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
-          </infoLinks>
+Onslaught - 4</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mechanised Assault" hidden="false" id="05ed-772d-bd3a-a790">
-          <profiles>
-            <profile name="Armoured Fist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a5d1-17e9-bc5a-7b02">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an **^^Astra Militarum^^** model from your army makes a ranged attack in a turn in which it disembarked from a **^^Transport^^**, add 1 to the Wound roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Armoured Fist" id="5e37-69a6-b478-2cd5" hidden="false">
+              <description>Each time an **^^Astra Militarum^^** model from your army makes a ranged attack in a turn in which it disembarked from a **^^Transport^^**, add 1 to the Wound roll.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hammer of the Emperor" hidden="false" id="97fc-2d9c-9008-f363">
-          <profiles>
-            <profile name="Iron Tread" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="19a9-cd6b-135d-38df">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a **^^Squadron^^** unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6&quot; to the Move characteristics of models in that unit, and when making that Advance move, that unit can move within Engagement Range of enemy models but cannot end that move within Engagement Range of enemy models.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Iron Tread" id="4f39-4662-ab91-2be4" hidden="false">
+              <description>Each time a **^^Squadron^^** unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6&quot; to the Move characteristics of models in that unit, and when making that Advance move, that unit can move within Engagement Range of enemy models but cannot end that move within Engagement Range of enemy models.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Recon Element" hidden="false" id="3d9f-5d9a-4a18-21aa">
-          <profiles>
-            <profile name="Masters of Camouflage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60fd-7085-f182-a1e4">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Astra Militarum Walker^^** and **^^Regiment^^** models from your army have the Benefit of Cover. While such a model has the Benefit of Cover for any other reason (e.g. because it is wholly within a **^^Ruin^^**), improve the Save characteristic of that model by 1 (to a maximum of 3+).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <rules>
+            <rule name="Masters of Camouflage" id="9878-8c91-dee3-c0a1" hidden="false">
+              <description>**^^Astra Militarum Walker^^** and **^^Regiment^^** models from your army have the Benefit of Cover. While such a model has the Benefit of Cover for any other reason (e.g. because it is wholly within a **^^Ruin^^**), improve the Save characteristic of that model by 1 (to a maximum of 3+).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grizzled Company" hidden="false" id="cc4e-a30b-f987-c984">
+          <rules>
+            <rule name="Ruthless Discipline" id="875a-bbfc-8184-0f73" hidden="false">
+              <description>Add 1 to the number of Orders each **^^Astra Militarum Officer^^** model from your army can issue, as stated on their datasheet.
+
+While an **^^Astra Militarum^^** unit from your army is affected by an Order, each time a model in that unit makes an attack, re‑roll a Hit roll of 1. If the target of that attack is within range of an objective marker, re‑roll a Wound roll of 1 as well.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -35297,6 +35281,170 @@ Onslaught - 4</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e946-0630-3cff-30b4"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Grizzled Company Enhancements" hidden="false" id="6c5d-71eb-dbef-4b2c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="cc4e-a30b-f987-c984" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Abhuman Detail" hidden="false" id="4d65-dad2-8df9-10fa">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf38-2338-aa71-ed56" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Abhuman Detail" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5cf9-4483-4579-1c7b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Commissar^^** model only. Add the **^^Ogryn^^** keyword to the list of units this model can issue Orders too (as stated on its datasheet).
+
+In the Declare Battle Formations step, the bearer can be attached to an **^^Ogryn Squad^^** or **^^Bullgryn squad^^** unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cae-7c67-343a-d537"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="829a-8b84-1780-542d" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Aquilan Eye" hidden="false" id="2dbd-2e75-155c-936f">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="fa45-57e-930e-602b" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Aquilan Eye" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="898e-b8e5-c1c1-93b2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Astra Militarum Officer^^** model only. Each time you select an Order for the bearer to issue, you can select the Order below:
+
+**Target Weak Spot (Order):** Each time a model in this unit makes a ranged attack that targets an enemy unit within 12&quot;, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7292-715d-d0fd-7fca"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="344f-f1af-541e-e23b" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Laud Hailer" hidden="false" id="1712-afc7-0611-0189">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="fa45-57e-930e-602b" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe32-7fee-de57-f858"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bf84-c112-1394-64d4" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Laud Hailer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="31c3-e3c7-fb9d-00fb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Astra Militarum Officer^^** model only. Each time you select a unit for this **^^Officer^^** model to issue an Order to, that unit can be within 12&quot; instead of within 6&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Spec Ops Veteran" hidden="false" id="0b3e-6398-9ca6-7aeb">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="fa45-57e-930e-602b" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Spec Ops Veteran" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b921-67ff-8a51-1e9c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Astra Militarum Infantry Officer^^** model only. Each time you select an Order for the bearer to issue, you can select the Order below:
+
+**Move to the Shadows (Order):** Each time a ranged attack targets this unit, until those attacks are resolved, models in this unit have the Stealth ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a85-4fe6-f3b5-5abf"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2573-8c9c-2670-c858" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Stealth" id="77fa-455e-9496-2720" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff6e-0f0c-f6ac-12b2"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="76e4-8025-c921-3cc9" includeChildSelections="true" includeChildForces="true"/>
@@ -35642,7 +35790,6 @@ Onslaught - 4</characteristic>
         <entryLink import="true" name="Experience Points" hidden="false" id="0631-5cf6-40a6-5603" type="selectionEntry" targetId="2dbf-4d49-5d74-85c9" sortIndex="1"/>
         <entryLink import="true" name="Legendary Veterans" hidden="false" id="0a0b-7a59-2199-5511" type="selectionEntry" targetId="1511-18fe-f51e-7b9d" sortIndex="2"/>
         <entryLink import="true" name="Battle Scars" hidden="false" id="d74f-9a93-4579-7930" type="selectionEntryGroup" targetId="1576-e816-033f-828d" sortIndex="5" collapsible="true"/>
-        <entryLink import="true" name="Personal Commendations" hidden="false" id="3c46-3c55-7eb7-aedc" type="selectionEntryGroup" targetId="4e94-8963-9a76-7514" sortIndex="6" collapsible="true"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -35696,6 +35843,7 @@ Onslaught - 4</characteristic>
             </entryLink>
             <entryLink import="true" name="Tyrannic War Battle Honours" hidden="false" id="dd5f-cb11-c8e4-6d2a" type="selectionEntryGroup" targetId="1927-d905-041e-b914"/>
             <entryLink import="true" name="Pariah Nexus Blackstone Upgrades" hidden="false" id="23cc-f892-9846-c0ac" type="selectionEntryGroup" targetId="66c2-2a46-e7ed-a935"/>
+            <entryLink import="true" name="Personal Commendations" hidden="false" id="3c46-3c55-7eb7-aedc" type="selectionEntryGroup" targetId="4e94-8963-9a76-7514" collapsible="true"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -36474,16 +36622,8 @@ Onslaught - 4</characteristic>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Trench Fighters" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d6c4-ffd7-35b6-0da6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Lethal Hits" field="7f1b-8591-2fcf-d01c" scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d6c4-ffd7-35b6-0da6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Trench Fighters" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="Lethal Hits" field="893f-9000-ccf7-648e" scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -36760,7 +36900,7 @@ Onslaught - 4</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae1-ac00-6e4f-7ee5" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Sacrificus Tempestus" hidden="false" id="5a5e-9756-0265-a06e" sortIndex="16">
+        <selectionEntry type="upgrade" import="true" name="Sacrificus Tempestus" hidden="false" id="5a5e-9756-0265-a06e">
           <profiles>
             <profile name="Sacrificus Tempestus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2bc-747c-327c-b6f9">
               <characteristics>
@@ -36774,22 +36914,28 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9b26-c4c5-8af0-8ea4" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb13-ca7e-00bf-a146" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Steel Armorial" hidden="false" id="09ef-a9e4-baf1-37c3" sortIndex="18">
+        <selectionEntry type="upgrade" import="true" name="Steel Armorial" hidden="false" id="09ef-a9e4-baf1-37c3">
           <profiles>
             <profile name="Steel Armorial" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f988-24c1-3b94-b7e0">
               <characteristics>
@@ -36815,22 +36961,28 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e134-9358-cadd-43cf" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bastion Honour" hidden="false" id="e72c-2c1b-60c2-c3e2" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Bastion Honour" hidden="false" id="e72c-2c1b-60c2-c3e2">
           <profiles>
             <profile name="Bastion Honour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="66f4-5ece-e381-69c0">
               <characteristics>
@@ -36844,6 +36996,11 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <infoLinks>
             <infoLink name="Fights First" id="8907-5354-0480-ada7" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
@@ -36853,16 +37010,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Honourifica Imperialis" hidden="false" id="8eb5-5886-5dc1-bbfb" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Honourifica Imperialis" hidden="false" id="8eb5-5886-5dc1-bbfb">
           <profiles>
             <profile name="Honourifica Imperialis" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9fd1-7022-3053-08e4">
               <characteristics>
@@ -36875,16 +37033,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Celeris Heart" hidden="false" id="0471-9f3f-6aac-7f67" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Celeris Heart" hidden="false" id="0471-9f3f-6aac-7f67">
           <profiles>
             <profile name="Celeris Heart" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="03c2-df1d-a65e-73f5">
               <characteristics>
@@ -36898,22 +37064,28 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2abb-7038-3b8a-175a" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Order of the Adamantine Chain" hidden="false" id="cad2-c231-5844-cc3f" sortIndex="15">
+        <selectionEntry type="upgrade" import="true" name="Order of the Adamantine Chain" hidden="false" id="cad2-c231-5844-cc3f">
           <profiles>
             <profile name="Order of the Adamantine Chain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4762-d01c-f835-5755">
               <characteristics>
@@ -36926,16 +37098,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Merit of the Strategium" hidden="false" id="3d51-a315-6444-0432" sortIndex="13">
+        <selectionEntry type="upgrade" import="true" name="Merit of the Strategium" hidden="false" id="3d51-a315-6444-0432">
           <profiles>
             <profile name="Merit of the Strategium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7498-5d8d-c660-f1b4">
               <characteristics>
@@ -36948,16 +37128,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Diamantine Star" hidden="false" id="a60d-6647-0966-044d" sortIndex="7">
+        <selectionEntry type="upgrade" import="true" name="Diamantine Star" hidden="false" id="a60d-6647-0966-044d">
           <profiles>
             <profile name="Diamantine Star" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d3e-5d07-dc8c-913e">
               <characteristics>
@@ -36971,22 +37159,28 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f459-4cbf-2f7d-979a" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Star of Fidelity" hidden="false" id="31e9-6d52-c5eb-3d43" sortIndex="17">
+        <selectionEntry type="upgrade" import="true" name="Star of Fidelity" hidden="false" id="31e9-6d52-c5eb-3d43">
           <profiles>
             <profile name="Star of Fidelity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e347-afe9-b39f-2764">
               <characteristics>
@@ -36999,16 +37193,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Decree of Dispensation" hidden="false" id="aac4-6b18-7c86-3d45" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Decree of Dispensation" hidden="false" id="aac4-6b18-7c86-3d45">
           <profiles>
             <profile name="Decree of Dispensation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="743e-e942-998a-f5ab">
               <characteristics>
@@ -37018,8 +37220,18 @@ Onslaught - 4</characteristic>
           </profiles>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e4d8-c6a1-7c23-ae25" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -37028,16 +37240,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Auxila Golden Star" hidden="false" id="04f9-dcd7-2130-64bc" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Auxila Golden Star" hidden="false" id="04f9-dcd7-2130-64bc">
           <profiles>
             <profile name="Auxila Golden Star" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f84-cd28-3d6d-b9bc">
               <characteristics>
@@ -37056,22 +37269,28 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75fb-e634-4ad0-d33d" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Departmento Salvage Award" hidden="false" id="5cc4-f574-7fa1-8f9f" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Departmento Salvage Award" hidden="false" id="5cc4-f574-7fa1-8f9f">
           <profiles>
             <profile name="Departmento Salvage Award" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df1a-01cf-69c2-a34b">
               <characteristics>
@@ -37090,22 +37309,28 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bce-5375-6604-dc2f" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Laurels of Purity" hidden="false" id="019c-8e7d-5412-0716" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Laurels of Purity" hidden="false" id="019c-8e7d-5412-0716">
           <profiles>
             <profile name="Laurels of Purity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ebf4-1fd9-00b7-7369">
               <characteristics>
@@ -37120,9 +37345,16 @@ Onslaught - 4</characteristic>
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2be4-e270-fa7f-6d44" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e4d8-c6a1-7c23-ae25" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="2be4-e270-fa7f-6d44" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <infoLinks>
@@ -37133,16 +37365,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Auramite Aquila" hidden="false" id="d0de-45ce-e737-b6be" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Auramite Aquila" hidden="false" id="d0de-45ce-e737-b6be">
           <profiles>
             <profile name="Auramite Aquila" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca2f-4c94-d80e-2693">
               <characteristics>
@@ -37161,13 +37394,19 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="5"/>
             <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
@@ -37176,7 +37415,7 @@ Onslaught - 4</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94e1-e823-6dac-2ad3" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lord Commander&apos;s Sigilum" hidden="false" id="29eb-06fd-59b7-3814" sortIndex="10">
+        <selectionEntry type="upgrade" import="true" name="Lord Commander&apos;s Sigilum" hidden="false" id="29eb-06fd-59b7-3814">
           <profiles>
             <profile name="Lord Commander&apos;s Sigilum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f5bd-b8c5-a2cb-fd90">
               <characteristics>
@@ -37189,16 +37428,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Medal of Laudable Service" hidden="false" id="c252-fd00-a30b-892d" sortIndex="11">
+        <selectionEntry type="upgrade" import="true" name="Medal of Laudable Service" hidden="false" id="c252-fd00-a30b-892d">
           <profiles>
             <profile name="Medal of Laudable Service" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d569-18f8-d148-3244">
               <characteristics>
@@ -37211,16 +37458,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Oculus Laureate" hidden="false" id="f0c6-6a23-c9da-f5e0" sortIndex="14">
+        <selectionEntry type="upgrade" import="true" name="Oculus Laureate" hidden="false" id="f0c6-6a23-c9da-f5e0">
           <profiles>
             <profile name="Oculus Laureate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9200-089d-a5eb-a046">
               <characteristics>
@@ -37230,8 +37485,18 @@ Onslaught - 4</characteristic>
           </profiles>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e4d8-c6a1-7c23-ae25" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -37240,16 +37505,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="4"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Medallion Resolute" hidden="false" id="7242-9b69-7c87-09eb" sortIndex="12">
+        <selectionEntry type="upgrade" import="true" name="Medallion Resolute" hidden="false" id="7242-9b69-7c87-09eb">
           <profiles>
             <profile name="Medallion Resolute" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5517-52c6-1f29-8ffd">
               <characteristics>
@@ -37262,14 +37528,22 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
