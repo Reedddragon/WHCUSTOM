@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="96" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="89" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -31,6 +31,7 @@
     <categoryEntry id="63f-669c-2b61-cb04" name="Manipulus" hidden="false"/>
     <categoryEntry id="5441-b72-c2ad-f28a" name="Technoarcheologist" hidden="false"/>
     <categoryEntry id="2a4e-9018-d675-74f1" name="Skitarii" hidden="false"/>
+    <categoryEntry id="59a9-b5cc-7c11-aaad" name="Tech-Priest" hidden="false"/>
     <categoryEntry id="6fdf-6180-8f3c-a07" name="Kataphron" hidden="false"/>
     <categoryEntry id="7069-de6a-26a0-9d26" name="Secutarii Peltasts" hidden="false"/>
     <categoryEntry id="b6bd-96ba-9704-2166" name="Secutarii Hoplites" hidden="false"/>
@@ -530,9 +531,9 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model starts the game in Hover mode and in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.</characteristic>
           </characteristics>
         </profile>
-        <profile id="fdbf-0314-ebea-88b2" name="Transport" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" noindex="false">
+        <profile id="fdbf-0314-ebea-88b2" name="Transport" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 11 ^^**Skitarii Infantry**^^ or **^^Tech-priest Infantry**^^ models. It cannot transport ^^**Jump Pack, Kataphron**^^ or ^^**Sydonian Skatros**^^ models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 11 SKITARII INFANTRY or TECH-PRIEST INFANTRY models. It cannot transport JUMP PACK, KATAPHRON or SYDONIAN SKATROS models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -700,7 +701,7 @@
         </profile>
         <profile id="9e99-0aa1-2c11-33ca" name="Canticles of the Omnissiah" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, select one of the abilities in the Canticles of the Omnissiah section. Until the start of your next Command phase, this model has that ability.
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one of the abilities in the Canticles of the Omnissiah section.  Until the start of your next Command phase, this model has that ability.
 
 Invocation of Machine Vengeance (Aura): At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, that enemy unit is your Machine Vengeance target. Each time a model in a friendly Adeptus Mechanicus unit makes an attack that targets your Machine Vengeance target, you can re‑roll the Hit roll.
 
@@ -712,7 +713,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </profile>
         <profile id="f172-384f-e1fa-d656" name="Mechanicus Bodyguard" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more other friendly ^^**Adeptus Mechanicus**^^ units, this model has the Lone Operative ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more other friendly ADEPTUS MECHANICUS units, this model has the Lone Operative ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="26a7-711f-28f6-7044" name="Self-repair Mechanisms" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -749,7 +750,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -884,7 +885,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </profile>
         <profile id="03d0-228a-7b7f-9ba4" name="Electro-shock" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) hit by one or more of those attacks. Until the end of your opponent’s next turn, that enemy unit is shocked. While a unit is shocked, subtract 2&quot; from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit (excluding Monsters and Vehicles) hit by one or more of those attacks. Until the end of your opponent’s next turn, that enemy unit is shocked. While a unit is shocked, subtract 2&quot; from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1050,7 +1051,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <profiles>
         <profile id="0d92-84dc-f7da-1aa0" name="Electro-Infusion" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a ^^**Character^^** model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a Character model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="547-98cb-c3d3-c4a3" name="Fulgurite Electro-Priests" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -1243,7 +1244,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
           <selectionEntries>
             <selectionEntry id="2d5d-40b5-4ac8-cedc" name="Ironstrider Ballistarius (Twin cognis autocannon)" hidden="false" collective="false" import="true" type="model">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1309,7 +1310,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
             </selectionEntry>
             <selectionEntry id="8fc1-9168-5137-2b5d" name="Ironstrider Ballistarius (Twin cognis lascannon)" hidden="false" collective="false" import="true" type="model">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1477,12 +1478,12 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <profiles>
         <profile id="6482-3035-fed5-27d0" name="Robotic Bodyguard" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a ^^**Cybernetica Datasmith^^** model is leading this unit, that model has the Feel No Pain 4+ ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a Cybernetica Datasmith model is leading this unit, that model has the Feel No Pain 4+ ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="e6fd-24cc-9af1-16b6" name="Repulsor Grid" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack is allocated to a ^^**Kastelan Robot^^** model in this unit, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack is allocated to a Kastelan Robot model in this unit, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1720,7 +1721,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
           <profiles>
-            <profile name="Kastelan Robot" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3c29-c672-e526-581e" noindex="true">
+            <profile name="Kastelan Robot" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3c29-c672-e526-581e">
               <characteristics>
                 <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
@@ -1841,7 +1842,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </profile>
         <profile id="2621-1ced-08ff-1612" name="Breaching Command" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Hit roll of 1. While this unit is within 6” of one or more friendly ^^**Adeptus Mechanicus Battleline^^** units, you can re-roll the Hit roll instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Hit roll of 1. While this unit is within 6” of one or more friendly Adeptus Mechanicus Battleline units, you can re-roll the Hit  roll instead.</characteristic>
           </characteristics>
         </profile>
         <profile id="a69c-5871-1d48-08ca" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -2264,7 +2265,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </profile>
         <profile id="cc62-f70a-74d5-53a3" name="Emanatus Forcefield (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly ^^**Adeptus Mechanicus Battleline^^** model is wholly within 6&quot; of this model, that ^^**Battleline^^** model has a 4+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly ADEPTUS MECHANICUS BATTLELINE model is wholly within 6&quot; of this model, that BATTLELINE model has a 4+ invulnerable save against ranged attacks.</characteristic>
           </characteristics>
         </profile>
         <profile id="80b6-a242-9b3f-456a" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -2279,7 +2280,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </profile>
         <profile name="Scuttling Walker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="49d6-a6a3-fafb-53e4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly ^^**Monster^^** and ^^**Vehicle^^** models and sections of terrain features that are 4&quot; or less in height.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly Monster and Vehicle models and sections of terrain features that are 4&quot; or less in height.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2655,7 +2656,7 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
     </selectionEntry>
     <selectionEntry id="b31e-5003-5b63-a305" name="Pteraxii Skystalkers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="150">
+        <modifier type="set" field="51b2-306e-1021-d207" value="140">
           <conditions>
             <condition field="selections" scope="b31e-5003-5b63-a305" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -2674,11 +2675,11 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         </profile>
         <profile id="b4a6-337b-294d-a4d3" name="Ride the Thermals" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can do one of the following:
-- Make a Normal move of up to 6&quot;.
-- Make a Normal move of up to 12&quot;, provided every model in this unit ends that move wholly within 6&quot; of one or more friendly ^^**Adeptus Mechanicus Battleline^^** units.
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can do one of the following: 
+■ Make a Normal move of up to 6&quot;.
+■ Make a Normal move of up to 12&quot;, provided every model in this unit ends that move wholly within 6&quot; of one or more friendly Adeptus Mechanicus Battleline units.
 
-In either case, if it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
+In either case, if it does, until the end of the turn, this unit is not eligible to declare a charge.�</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2823,12 +2824,11 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1381-606c-7843-6274" includeChildSelections="true"/>
@@ -2928,7 +2928,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </profile>
         <profile id="d087-cfde-e93a-f603" name="Searing Conflagaration" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack with a phosphor torch that targets an enemy unit within range of an objective marker, re-roll a Wound roll of 1. If this unit is also within 6&quot; of one or more friendly ^^**Adeptus Mechanicus Battleline^^** units, each time such an attack targets such a unit, you can re-roll the Wound roll instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack with a phosphor torch that targets an enemy unit within range of an objective marker, re-roll a Wound roll of 1. If this unit is also within 6&quot; of one or more friendly Adeptus Mechanicus Battleline units, each time such an attack targets such a unit, you can re-roll the Wound roll instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3203,20 +3203,21 @@ In either case, if it does, until the end of the turn, this unit is not eligible
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
+        <profile id="c749-2b4e-1ebe-87a3" name="Scouts" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">9&quot;</characteristic>
+          </characteristics>
+        </profile>
         <profile id="818e-4451-e543-0907" name="Tactica Obliqua" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9&quot; of this unit, if this unit is not within Engagement Range of one or more enemy units, it can do one of the following:
-- Make a Normal move of up to D6&quot;.
-- Make a Normal move of up to 6&quot;, provided every model in this unit ends that move wholly within 6&quot; of one or more friendly ^^**Adeptus Mechanicus Battleline^^** units.</characteristic>
+■ Make a Normal move of up to D6&quot;.
+■ Make a Normal move of up to 6&quot;, provided every model in this unit ends that move wholly within 6&quot; of one or more friendly Adeptus Mechanicus Battleline units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="4f44-008d-459f-03ad" name="Scouts" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
-          <modifiers>
-            <modifier type="append" value="9&quot;" field="name"/>
-          </modifiers>
-        </infoLink>
+        <infoLink id="4f44-008d-459f-03ad" name="Scouts" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule"/>
         <infoLink name="Doctrina Imperatives" hidden="false" type="rule" id="7f60-ae03-a8f7-8be1" targetId="7a21-a958-e47d-5c0d"/>
         <infoLink name="Invulnerable Save" id="0eaf-1414-cce0-c2d3" hidden="false" type="profile" targetId="8c24-fbe9-b191-175f"/>
       </infoLinks>
@@ -3858,7 +3859,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry id="9b4-26b2-9e6d-a62d" name="Sicarian Infiltrators" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="155">
+        <modifier type="set" field="51b2-306e-1021-d207" value="140">
           <conditions>
             <condition field="selections" scope="9b4-26b2-9e6d-a62d" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -3877,7 +3878,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </profile>
         <profile id="4244-286c-66da-c199" name="Neurostatic Interference (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within 6&quot; of this unit, each time a Battle-shock or Leadership test is taken for that unit, subtract 1 from that test. While this unit is within 6&quot; of one or more friendly ^^**Adeptus Mechanicus Battleline^^** units, subtract 2 from that test instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within 6&quot; of this unit, each time a Battle-shock or Leadership test is taken for that unit, subtract 1 from that test. While this unit is within 6&quot; of one or more friendly Adeptus Mechanicus Battleline units, subtract 2 from that test instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4124,12 +4125,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4a69-027a-5708-20a7" includeChildSelections="true"/>
@@ -4210,7 +4206,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry id="8863-9784-8377-aa7a" name="Sicarian Ruststalkers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="165">
+        <modifier type="set" field="51b2-306e-1021-d207" value="150">
           <conditions>
             <condition field="selections" scope="8863-9784-8377-aa7a" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -4229,7 +4225,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </profile>
         <profile id="2c22-e802-cfdb-cf3f" name="Optimised Gait" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit. While this unit is within 6&quot; of one or more friendly ^^**Adeptus Mechanicus Battleline^^** units, add 2 to Advance and Charge rolls made for this unit instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit. While this unit is within 6&quot; of one or more friendly Adeptus Mechanicus Battleline units, add 2 to Advance and Charge rolls made for this unit instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4392,12 +4388,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2638-738e-b190-60a3" includeChildSelections="true"/>
@@ -4491,8 +4482,8 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         <profile id="b89e-0cbb-251a-793c" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
-- ^^**Skitarii Rangers^^**
-- ^^**Skitarii Vanguard^^**</characteristic>
+■ Skitarii Rangers
+■ Skitarii Vanguard</characteristic>
           </characteristics>
         </profile>
         <profile id="46d1-a9f3-efe5-b4a9" name="Control Edict" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -4502,7 +4493,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         </profile>
         <profile id="3afd-1276-beb2-adf7" name="Servo-skull Uplink" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly ^^**Skitarii^^** unit that is Battle-shocked and within 6&quot; of this model. That unit is no longer Battle-shocked.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly SKITARII unit that is Battle-shocked and within 6&quot; of this model. That unit is no longer Battle-shocked.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d268-963f-d06f-f2c1">
@@ -5155,7 +5146,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="a266-2033-d72e-eddd" name="Rad-saturation (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit (excluding ^^**Vehicle^^** units) is within 3&quot; of this unit, subtract 1 from the Objective Control characteristic of models in that unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit (excluding Vehicle units) is within 3&quot; of this unit, subtract 1 from the Objective Control characteristic of models in that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5654,7 +5645,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="995c-124a-0d6b-f011" name="Blistering Salvoes" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack with a belleros energy cannon that targets an ^^**Infantry^^** unit, add 1 to the Hit roll. Each time this model makes an attack with a ferrumite cannon that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, add 1 to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack with a belleros energy cannon that targets an Infantry unit, add 1 to the Hit roll. Each time this model makes an attack with a ferrumite cannon that targets a Monster or Vehicle unit, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="fd3d-11e4-f436-d59d" name="Damaged: 1-4 wounds remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -5898,12 +5889,12 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="28eb-c1af-6634-4b08" name="Fire Support" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this ^^**Transport^^** this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="f422-608c-f66e-3ffa" name="Skorpius Dunerider" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 ^^**Adeptus Mechanicus Infantry**^^ models. It cannot transport ^^**Jump Pack, Kataphron**^^ or ^^**Sydonian Skatros**^^ models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 ADEPTUS MECHANICUS INFANTRY models. It cannot transport JUMP PACK or KATAPHRON models.</characteristic>
           </characteristics>
         </profile>
         <profile name="Skorpius Dunerider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6f26-d105-b3ab-2144">
@@ -6275,12 +6266,12 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="2d2c-3eb8-963e-c75a" name="Lord of the Machine Cult" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability. If that unit has the ^^**Electro-Priests^^** keyword, models in that unit have the Feel No Pain 4+ ability instead</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability. If that unit has the Electro-Priests keyword, models in that unit have the Feel No Pain 4+ ability instead</characteristic>
           </characteristics>
         </profile>
         <profile id="01b2-8ea8-4fc1-dbe7" name="Data-spike" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, you can select one enemy ^^**Vehicle^^** unit within Engagement Range of this model’s unit and roll one D6: on a 4+, that enemy unit suffers D6 mortal wounds and, until the end of the phase, the Weapon Skill characteristic of melee weapons equipped by that enemy unit is worsened by 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, you can select one enemy Vehicle unit within Engagement Range of this model’s unit and roll one D6: on a 4+, that enemy unit suffers D6 mortal wounds and, until the end of the phase, the Weapon Skill characteristic of melee weapons equipped by that enemy unit is worsened by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6576,7 +6567,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="3325-e5c9-4448-7650" name="Enginseer" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly ^^**Adeptus Mechanicus Vehicle^^** units, unless it is leading a unit, this model has the Lone Operative ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly Adeptus Mechanicus Vehicle units, unless it is leading a unit, this model has the Lone Operative ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="0b5b-a6e8-c618-7ea8" name="Omnissiah&apos;s Blessing" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -6586,7 +6577,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="2aab-7d64-4e7c-6899" name="Vengeance for the Omnissiah" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a friendly ^^**Adeptus Mechanicus Vehicle^^** model is destroyed within 12&quot; of this model, until the end of the battle, this model’s Omnissian axe has an Attacks characteristic of 6.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a friendly Adeptus Mechanicus Vehicle model is destroyed within 12&quot; of this model, until the end of the battle, this model’s Omnissian axe has an Attacks characteristic of 6.</characteristic>
           </characteristics>
         </profile>
         <profile id="e575-a2a0-3c80-d030" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -7236,17 +7227,17 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         <profile id="dba5-946a-cd1c-0845" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model must be attached to the following unit:
-■ ^^**Kastelan Robots^^**
+■ Kastelan Robots
 
 You must attach this model to a Kastelan Robots unit, even if one or more other Cybernetica Datasmith models havealready been attached to it. In such cases, if that bodyguard unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths. If you cannot attach this model to a Kastelan Robots unit, this model cannot be deployed and counts as having been destroyed during the first battle round. While attached to a Kastelan Robots unit, this model loses the INFANTRY keyword.</characteristic>
           </characteristics>
         </profile>
         <profile id="4016-04e6-9751-89e3" name="Battle Protocols" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, if this model is leading a ^^**Kastelan Robots^^** unit, that unit enters Aegis Protocols (see below). In your Command phase, if this model is leading a ^^**Kastelan Robots^^** unit, you can select one protocol from those listed below for that unit to enter. Once a unit enters a protocol, it remains in that protocol until it enters a different one
-- Protector Protocol: Add 2 to the Attacks characteristic of ranged weapons equipped by ^^**Kastelan Robot^^** models in that unit.
-- Conqueror Protocol: Add 2 to the Attacks characteristic of melee weapons equipped by ^^**Kastelan Robot^^** models in that unit.
-- Aegis Protocol: Add 1 to the Toughness characteristic of ^^**Kastelan Robot^^** models in that unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, if this model is leading a Kastelan Robots unit, that unit enters Aegis Protocols (see below). In your Command phase, if this model is leading a Kastelan Robots unit, you can select one protocol from those listed below for that unit to enter. Once a unit enters a protocol, it remains in that protocol until it enters a different one
+■ Protector Protocol: Add 2 to the Attacks characteristic of ranged weapons equipped by Kastelan Robot models in that unit.
+■ Conqueror Protocol: Add 2 to the Attacks characteristic of melee weapons equipped by Kastelan Robot models in that unit.
+■ Aegis Protocol: Add 1 to the Toughness characteristic of Kastelan Robot models in that unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="36a4-bcd8-eb27-5481">
@@ -7449,12 +7440,12 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         </profile>
         <profile id="2110-dbf4-c012-f1aa" name="Titan Guard" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase. When oing so, if there are one or more friendly ^^**Adeptus Titanicus^^** units on the battlefield, you can re-roll the subsequent charge roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase. When  oing so, if there are one or more friendly Adeptus Titanicus units on the battlefield, you can re-roll the subsequent charge roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="b1bf-46f8-3c71-c201" name="Secutarii" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a model from your army with the Leader ability can be attached to a ^^**Skitarii Vanguard^^** unit, it can be attached to this unit instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a model from your army with the Leader ability can be attached to a Skitarii Vanguard unit, it can be attached to this unit instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7849,7 +7840,7 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         </profile>
         <profile id="7603-fabe-8c7b-4eda" name="Secutarii" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a model from your army with the Leader ability can be attached to a ^^**Skitarii Vanguard^^** unit, it can be attached to this unit instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a model from your army with the Leader ability can be attached to a Skitarii Vanguard unit, it can be attached to this unit instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8292,7 +8283,7 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         </profile>
         <profile id="870b-9bd7-ebff-9190" name="Termite Assault" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9&quot; away from all enemy models.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units  ou can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units  embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9&quot; away from all enemy models.</characteristic>
           </characteristics>
         </profile>
         <profile id="b47d-8773-4150-1132" name="Deadly Demise" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -8302,7 +8293,7 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         </profile>
         <profile id="4de6-d8df-ba9d-84d8" name="Terrax-pattern Termite" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 ^^**Adeptus Mechanicus Infantry^^** models. It cannot transport ^^**Jump Pack or Kataphron^^** models</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 Adeptus Mechanicus Infantry models. It cannot transport Jump Pack or Kataphron models</characteristic>
           </characteristics>
         </profile>
         <profile name="Terrax-pattern Termite" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f4ee-a936-cf98-1666">
@@ -8371,7 +8362,7 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">5</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">-9</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
@@ -8692,17 +8683,18 @@ Models in this unit have the Stealth ability.</description>
         </profile>
         <profile name="Mindlock" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="130a-d876-45f9-5e77">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a ^^**Tech-Priest^^** model is leading this model’s unit, improve the Ballistic Skill and Weapon Skill characteristics of this model’s weapons by 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a Tech-Priest model is leading this model’s unit, improve the Ballistic Skill and Weapon Skill characteristics of this model’s weapons by 1.</characteristic>
           </characteristics>
         </profile>
         <profile name="Bound Creation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ae61-c8d4-2a51-9793">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a ^^**Tech-Priest^^** model is leading this model’s unit, that ^^**Tech-Priest^^** model has the Feel No Pain 5+ ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a Tech-Priest model is leading this model’s unit, that Tech-Priest model has the Feel No Pain 5+ ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Servitor Bodyguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abe8-bb77-d6ba-db6c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Declare Battle Formations step, this model can join one other unit from your army that is being led by a ^^**Tech-Priest Infantry^^** model. If it does, until the end of the battle, this model counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Declare Battle Formations step, this model can join one other unit from your army that is being led by a Tech-Priest Infantry model. If it does, until the end of the battle, this model counts as being part of that
+Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9143,7 +9135,7 @@ Models in this unit have the Stealth ability.</description>
         </profile>
         <profile name="Sydonian Sentinel" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4248-c55c-19a7-e46d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model cannot be your ^^**Warlord^^**.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model cannot be your WARLORD.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11239,9 +11231,6 @@ Models in this unit have the Stealth ability.</description>
           </conditions>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Questor Forgepact Enhancements" hidden="false" id="5f1b-c343-a3be-bc7a" type="selectionEntryGroup" targetId="c6b4-5090-67be-ea17"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Codex Battle Traits" id="bd19-4280-05c8-0bc9" hidden="false" collapsible="true">
       <comment>Crusade content</comment>

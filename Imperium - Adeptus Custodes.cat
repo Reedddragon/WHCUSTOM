@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="85" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="86" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a43a-4cf6-6443-f48e" name="Aleya" hidden="false"/>
     <categoryEntry id="5386-42fc-f4d0-7d64" name="Allarus Custodians" hidden="false"/>
@@ -222,16 +222,26 @@
         <profile id="fe8b-58b8-b37c-39b6" name="Allarus Custodian" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
-        <profile id="4bc7-d3e9-f302-7341" name="Golden Shield" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile name="Golden Hour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1c7b-b882-0451-06ec">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, This unit gain Invulnerable Save 2+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Golden Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7860-c806-753a-58d0">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, Each time an attack targets this unit, subtract 1 from the Wound roll and Hit roll; add 1 to save roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Golden Defence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c1c-bea7-b057-6b09">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can either use Golden Hour or Golden Shield only once per game.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1895,6 +1905,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack that targets a Psyker unit, that attack has the PRECISION] and [DEVASTATING WOUNDS] abilities.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Field of Silence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb5f-f6bc-76ba-e2ea">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="7e39-1630-6b58-14de" name="Daughter of the Abyss" hidden="false" targetId="b95d-04e9-97fd-4125" type="profile"/>
@@ -2465,7 +2480,7 @@
         </profile>
         <profile id="ec4f-845a-63a9-62fb" name="Auramite and Adamantite" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" id="9ab5-b6bd-4057-577d" hidden="false" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, each time an attack is allocated to this model, change the Damage characteristic of that attack to 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, each time an attack is allocated to this Unit, change the Damage characteristic of that attack to 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2504,7 +2519,7 @@
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Guardian Spear" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0e1d-9037-73ea-a4e6">
@@ -2524,6 +2539,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Assault" id="1660-4289-24dd-35e1" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                    <infoLink name="Lance" id="a528-95d8-5468-d70e" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="8b71-58a6-f04e-9bec" hidden="false" flatten="true">
@@ -2548,7 +2564,7 @@
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Castellan axe" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1c2c-2282-3f68-6e7b">
@@ -2568,6 +2584,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="Assault" id="3a45-5239-ae54-cc15" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                    <infoLink name="Lance" id="bd46-ed6a-4964-2d76" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="05ce-71a5-1f72-ace4" hidden="false" flatten="true">
@@ -3715,7 +3732,7 @@
         <profile id="12c0-1695-05c0-d219" name="Vertus Praetors" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">18&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
@@ -3898,17 +3915,17 @@
       <modifierGroups>
         <modifierGroup>
           <modifiers>
-            <modifier type="set" field="51b2-306e-1021-d207" value="65">
+            <modifier type="set" field="51b2-306e-1021-d207" value="50">
               <conditions>
                 <condition field="selections" scope="dd2d-568a-9c56-1b6e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="51b2-306e-1021-d207" value="100">
+            <modifier type="set" field="51b2-306e-1021-d207" value="90">
               <conditions>
                 <condition field="selections" scope="dd2d-568a-9c56-1b6e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="greaterThan"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="51b2-306e-1021-d207" value="110">
+            <modifier type="set" field="51b2-306e-1021-d207" value="100">
               <conditions>
                 <condition field="selections" scope="dd2d-568a-9c56-1b6e" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="equalTo"/>
               </conditions>
@@ -3991,6 +4008,7 @@
       <infoLinks>
         <infoLink id="afff-35e7-f063-e392" name="Daughter of the Abyss" hidden="false" targetId="b95d-04e9-97fd-4125" type="profile"/>
         <infoLink name="Talons" id="441e-ab4-8b8f-4323" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
+        <infoLink name="Infiltrators" id="59f4-33db-e424-7861" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2707-20af-84c-7a31" name="Vigilators" hidden="false" targetId="798b-3ac-6731-e3e3" primary="false"/>
@@ -4081,7 +4099,7 @@
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Psyker 4+, Devastating Wounds</characteristic>
@@ -4106,7 +4124,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bdb4-72ce-7a4a-3cb1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -4209,6 +4232,11 @@
         <profile id="6449-d735-2ac6-02b1" name="Sanctified Flames" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit that was hit by one or more of those attacks. That unit must take a Battle-shock test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Null Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ec8e-6cc7-a133-4b2c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield from Reserves cannot be set up within 12&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4343,7 +4371,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="36a1-d7c2-d808-84d0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -4413,10 +4446,10 @@
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
                       </characteristics>
                     </profile>
                     <profile id="61c-b0f6-3f1d-fa1" name="Adrasite spear" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
@@ -4852,11 +4885,6 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="1d2c-eda9-a400-f075" name="Golden Hour" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, This unit gain Invulnerable Save 2+.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="cf57-6e91-6435-b3fd" name="From Golden Light" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your opponent&apos;s turn, if this unit is not whithin Engagement Range of one or more enemy units, you can remove it from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.</characteristic>
@@ -4865,7 +4893,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         <profile id="300d-e6da-b073-49ce" name="Aquilon Custodian" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
@@ -4874,7 +4902,22 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         </profile>
         <profile id="f49f-da9c-6787-1eab" name="Slayer of The Unworthy" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a ^^Infantry, Mounted^^ or ^^Beast^^ unit, you can re-roll the Wound roll and Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a ^^Infantry, Mounted^^ or ^^Beast^^ unit, you can re-roll the Wound roll and Hit/Amount of Hits roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Golden Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4bc7-d3e9-f302-7341">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, Each time an attack targets this unit, subtract 1 from the Wound roll and Hit roll; add 1 to save roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Golden Hour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="02f4-804d-f11d-424c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, This unit gain Invulnerable Save 2+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Golden Defence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a12f-bde3-f4e7-8d99">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can either use Golden Hour or Golden Shield only once per game.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5151,7 +5194,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 2</characteristic>
                       </characteristics>
                     </profile>
@@ -5204,11 +5247,11 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                     <profile id="e244-2bf2-74f7-9a95" name="Adrathic devastator" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">6</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
                       </characteristics>
                     </profile>
@@ -5265,7 +5308,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
                       </characteristics>
                     </profile>
@@ -5967,12 +6010,12 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                     <profile name="Twin adrathic destructor" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0b87-bbb3-1dd8-dadb">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked, Lethal Hits</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7166,7 +7209,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         </profile>
         <profile name="Tokyo Drift" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f2a-2513-54d0-6488">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, This Unit can Disembark, move three times.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, This Unit can Disembark, move three times as long as the sum total movement is 20&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7191,7 +7234,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         <categoryLink id="ed23-1878-0e3e-f0d9" name="Faction: Adeptus Custodes" hidden="false" targetId="eea5-aeaf-bbf0-d5ee" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="300"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="500"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -7423,7 +7466,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         <categoryLink id="be83-0907-b62f-770a" name="Ares Gunship" hidden="false" targetId="a075-bcec-0d00-50f7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -7520,7 +7563,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                 <profile name="Arachnus Micro-blaze cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0f9f-334f-d0e4-0e94">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">20</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">12</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -7737,7 +7780,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -7781,7 +7824,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <profile id="7f4-742a-3d7-18b5" name="Infernus firepike" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -7805,10 +7848,10 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked, Sustained Hits 1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked, Lethal Hits</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7817,7 +7860,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d6d-6342-2517-7688"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Sustained Hits" hidden="false" type="rule" id="f971-17e5-4ca3-ff4d" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Lethal Hits" hidden="false" type="rule" id="f971-17e5-4ca3-ff4d" targetId="d1d1-611e-5191-1095"/>
         <infoLink name="Twin-linked" hidden="false" type="rule" id="4c27-217f-264b-23bf" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
@@ -7832,7 +7875,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -7881,7 +7924,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <profile name="Witchseeker flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fa7d-bddc-8b89-3575">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>

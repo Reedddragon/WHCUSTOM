@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="50c4-3e83-fe54-97c4" name="Imperium - Grey Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="89" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="50c4-3e83-fe54-97c4" name="Imperium - Grey Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="98" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f3e4-7fc3-8f57-6303" importRootEntries="true" targetId="1b6d-dc06-5db9-c7d1"/>
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="575c-d0f9-7fdc-2ddb" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
@@ -1311,7 +1311,7 @@
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, you can select one of the following abilities to apply to models in this Unit until the end of the phase:
 ■ Humanity&apos;s Shield: Each time a saving throw is made for a model in this Unit, Add 1 to the Saving Throw
-■ Deimos&apos; Shield: Each time a Invulnerable saving throw is made for a model in this Unit, re-roll the saving throw</characteristic>
+■ Deimos&apos; Shield: Each time a Invulnerable saving throw is made for a model in this Unit, re-roll the saving throw of 1 and 2</characteristic>
           </characteristics>
         </profile>
         <profile name="Armoured in Faith" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9d3f-cd24-59d2-180c">
@@ -4493,8 +4493,7 @@
         </profile>
         <profile name="Shard of The Primarch" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf12-2ea5-6834-5031">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, Half the Damage Characteristic of that attack
-</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, Half the Damage Characteristic of that attack</characteristic>
           </characteristics>
         </profile>
         <profile name="One With the Warp (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c3e8-c9b9-519a-6552">
@@ -4833,10 +4832,7 @@
 We are the Hammer!:When this model is using Nemesis Force Hammer, an unmodified Wound roll of 5+ scores a Critical Wound.
 The Edge of His Sword!:When this model is using Nemesis Force Sword, an unmodified Hit roll of 5+ scores a Critical Hit.
 The Tip of His Spear: When this model is using Nemesis Force Polearm, for every unsaved wound dealt, deal an additional Mortal Wound.
-A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This melee weapon gain the Ability, [SUSTAINED HITS 2]
-
-
-</characteristic>
+A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This melee weapon gain the Ability, [SUSTAINED HITS 2]</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8525,7 +8521,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <comment> +1 WS</comment>
+      <comment>+1 WS</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd0a-2eec-e9a6-0518"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a550-5780-b87f-b0b5"/>
@@ -11652,6 +11648,9 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
         <entryLink import="true" name="Visions From The Augurium" hidden="false" id="256c-7d28-eb78-6f69" type="selectionEntryGroup" targetId="660e-a0ca-be70-a78b" sortIndex="98" collapsible="true"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Nemesis Saturnine Dreadknight" hidden="false" id="23e1-e462-3537-f52b" targetId="a0a0-2ab6-fae7-a617" type="selectionEntry"/>
+    <entryLink import="true" name="Saturnine Terminator Squad" hidden="false" id="d8f1-2a53-4a8a-da99" targetId="271d-8c9e-0701-3da3" type="selectionEntry"/>
+    <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="f7bb-8c4e-61d1-649b" targetId="87b9-19d7-de11-16b3" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Brother-Captain" hidden="false" id="71ac-a100-1ec8-14e9"/>

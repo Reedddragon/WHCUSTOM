@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="880c-c7e-4a43-a0c1" name="Chaos - Titanicus Traitoris" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="880c-c7e-4a43-a0c1" name="Chaos - Titanicus Traitoris" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="581a-c238-bcf5-7e22">
       <constraints>
@@ -62,5 +62,7 @@
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Order of Battle" hidden="false" id="9140-5337-e443-3e46" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
+    <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="58cb-262c-5418-6076" type="selectionEntry" targetId="9c7b-535b-9a21-905f"/>
+    <entryLink import="true" name="Warmaster Titan" hidden="false" id="c988-5bd5-aed6-9f5b" type="selectionEntry" targetId="008d-7fdf-502c-2f0d"/>
   </entryLinks>
 </catalogue>
