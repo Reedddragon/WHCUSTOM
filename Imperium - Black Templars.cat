@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="52" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="58" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="2137-605d-109a-d3b2" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
   </catalogueLinks>
@@ -5475,11 +5475,9 @@ You can attach this model to one of the above units even if one Captain, Chapter
         </profile>
         <profile name="Vow-sword Bladesmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11d3-d840-57f2-c30e">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> At the start of the fight phase, you can tell Games Workshop to go fuck themselves, you can select one of the following effects to apply to melee weapons equipped by models in this unit until the end of the phase:
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the fight phase, you can tell Games Workshop to go fuck themselves, you can select one of the following effects to apply to melee weapons equipped by models in this unit until the end of the phase:
 Add 1 to the attack characteristics of those weapons.
-Add 1 to the damage characteristics of those weapons.
-
-</characteristic>
+Add 1 to the damage characteristics of those weapons.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5510,10 +5508,17 @@ Add 1 to the damage characteristics of those weapons.
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4" field="750a-a2ec-90d3-21fe">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="3cfd-f9eb-dec2-d1d6" childId="41be-4c19-14c4-0024" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntries>
