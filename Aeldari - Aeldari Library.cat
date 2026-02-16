@@ -8014,7 +8014,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
           <profiles>
             <profile name="Maugetar" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8919-d0aa-fab9-ac56">
               <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>

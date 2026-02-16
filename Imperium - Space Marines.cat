@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="185" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="186" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -9343,7 +9343,7 @@ by 1.</characteristic>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Assault Terminator w/ Thunder Hammer &amp; Storm Shield" hidden="false" id="f5e2-f383-5061-9393">
               <entryLinks>
-                <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="6777-f60f-da01-309b" targetId="4913-96d4-2b1f-2c21">
+                <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="6777-f60f-da01-309b" targetId="d3ac-7659-ad87-a1cb">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbc-31c5-a57a-dfef"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd40-a442-4c55-fa07"/>
@@ -9416,7 +9416,7 @@ by 1.</characteristic>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Thunder Hammer &amp; Storm Shield" hidden="false" id="96bf-3cb4-69ff-a8ce">
                       <entryLinks>
-                        <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="ce72-6aff-3b42-7701" targetId="4913-96d4-2b1f-2c21">
+                        <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="ce72-6aff-3b42-7701" targetId="d3ac-7659-ad87-a1cb">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbc-31c5-a57a-dfef"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd40-a442-4c55-fa07"/>
@@ -37168,6 +37168,28 @@ per turn.</characteristic>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="d3ac-7659-ad87-a1cb" collective="true">
+      <profiles>
+        <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6092-6ccc-91c4-8f98">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>A3 WS 3+ Collective</comment>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="5f94-6c73-0557-5d44" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="e46c-fff4-66d9-fadf" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="90c7-c55c-21e2-2232" name="Rites of Battle" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -37197,7 +37219,7 @@ per turn.</characteristic>
     </profile>
     <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="db19-dee7-9530-ef0e">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+ </characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
       </characteristics>
       <comment>4+</comment>
     </profile>

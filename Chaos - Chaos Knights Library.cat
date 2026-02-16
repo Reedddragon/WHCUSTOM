@@ -328,12 +328,12 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="b0aa-5b7a-4a18-1c9f">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -745,12 +745,12 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="2ba8-ba3f-1a25-cb99">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -979,12 +979,12 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="1df3-61b3-1a11-0900">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1183,12 +1183,12 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="1995-c5fc-e109-31f1">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1382,12 +1382,12 @@
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="f1a4-0645-a8de-81bd">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2224,7 +2224,7 @@
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                   </characteristics>
                 </profile>
@@ -3345,11 +3345,12 @@
         <entryLink import="true" name="Crusade" hidden="false" id="f11f-50ee-c3da-3db8" type="selectionEntryGroup" targetId="e91b-3100-3431-e2f8" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="410"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -4714,11 +4715,12 @@ While using the Houndpack Lance Detachment, the following rules apply:
         <entryLink import="true" name="Crusade" hidden="false" id="600d-5bc6-1c76-7488" type="selectionEntryGroup" targetId="e91b-3100-3431-e2f8" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="365"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -4993,11 +4995,12 @@ While using the Houndpack Lance Detachment, the following rules apply:
         <entryLink import="true" name="Crusade" hidden="false" id="4561-ed51-fd45-f7ac" type="selectionEntryGroup" targetId="e91b-3100-3431-e2f8" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="395"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -6161,12 +6164,12 @@ While using the Houndpack Lance Detachment, the following rules apply:
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="1df3-61b3-1a11-0900">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6cb5-45cf-c626-fa86" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>

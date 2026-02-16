@@ -270,12 +270,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </profile>
             <profile name="Chainbreaker" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="7f8-ef35-95d5-6fc7">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly **^^Imperium^^** unit that is Battle-shocked and within 12&quot; of this model. That unit is no longer Battle-shocked.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack, an unmodified successful Hit roll of 5+ scores a Critical Hit.</characteristic>
               </characteristics>
             </profile>
             <profile name="Legendary Freeblade" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="b927-9dc2-5b23-19dd">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, you can target this model with a Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem in the same phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -620,7 +620,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -630,19 +630,19 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="unset-primary" value="dbd4-63-af05-998" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -859,14 +859,34 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <modifierGroup type="and">
           <comment>Spearhead-at-Arms Battleline</comment>
           <modifiers>
+            <modifier type="set" value="6" field="343f-6550-4c70-e1f8">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="3" field="9a4f-64e1-6ace-8796">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="unset-primary" value="dbd4-63-af05-998" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2293,11 +2313,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <entryLink import="true" name="Crusade" hidden="false" id="7918-f2bd-1d12-18f5" type="selectionEntryGroup" targetId="4c8f-eb91-e2f2-42e5" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="410"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -2549,11 +2570,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <entryLink import="true" name="Crusade" hidden="false" id="b594-da6c-3da9-4f5d" type="selectionEntryGroup" targetId="4c8f-eb91-e2f2-42e5" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="410"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -5589,7 +5611,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5599,19 +5621,19 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="unset-primary" value="dbd4-63-af05-998" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d469-239c-7e4c-4210" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
