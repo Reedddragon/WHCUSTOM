@@ -7844,11 +7844,11 @@ Attacks characteristic of 8.</characteristic>
                         <profile name="Leviathan siege drill" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cdd4-480a-dfe2-e278">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">16</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-VEHICLE 3+, Anti-MONSTER 3+</characteristic>
                           </characteristics>
                           <modifiers>
@@ -7915,16 +7915,16 @@ Attacks characteristic of 8.</characteristic>
                       <profiles>
                         <profile name="Leviathan Storm cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="982f-71b8-e0ce-9f27">
                           <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">11</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
                           </characteristics>
                           <modifiers>
-                            <modifier type="set" value="8" field="3bb-c35f-f54-fb08">
+                            <modifier type="set" value="6" field="3bb-c35f-f54-fb08">
                               <conditions>
                                 <condition type="atLeast" value="2" field="selections" scope="e526-4ef9-5b89-5cc5" childId="6082-2222-13a1-025c" shared="true"/>
                               </conditions>
@@ -8258,11 +8258,11 @@ Attacks characteristic of 8.</characteristic>
                     <profile name="Dreadnought chainfist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="103b-63d1-ced7-6612">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-VEHICLE 3+, Anti-MONSTER 3+</characteristic>
                       </characteristics>
                       <modifiers>
