@@ -3870,7 +3870,7 @@
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -10920,15 +10920,15 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
     </selectionEntry>
     <selectionEntry id="8fcd-44ae-5a3f-ac6a" name="Khorne Elite Berzerkers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="210">
+        <modifier type="set" field="51b2-306e-1021-d207" value="200">
           <conditions>
-            <condition field="selections" scope="8fcd-44ae-5a3f-ac6a" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+            <condition field="selections" scope="8fcd-44ae-5a3f-ac6a" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec4a-b222-ccb5-4012" type="max"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="ed09-55e5-a212-ec8b" includeChildSelections="false"/>
+        <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec4a-b222-ccb5-4012" type="max"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="ed09-55e5-a212-ec8b" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="7aeb-c2da-6a3f-109a" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="443a-57c8-1012-e52c" includeChildSelections="true"/>
       </constraints>
@@ -10938,17 +10938,28 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">On your Charge phase, Select one of the Blessing of Khorne, This blessing is active along with other blessings until your next command phase.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Blood Surge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a67-655c-82a3-6b16">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, each time an enemy unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Blood Surge move. To do so, roll one D6 and add 2 to the roll: models in this unit move a number of inches up to this result, but this unit must finish that move as close as possible to the closest enemy unit (excluding ^^**Aircraft^^**). When doing so, those models can be moved within Engagement Range of that enemy unit. This unit cannot make a Blood Surge move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Blood Surge move per phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3379-9753-7ea9-71f2" name="Attached Unit" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Character unit from your army with the Leader ability can be attached to a Khorne Berzerker, it can be attached to this unit instead.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blessings of Khorne" hidden="false" type="rule" id="9354-fe4b-0e42-d88d" targetId="e68b-b42f-6f7c-4670"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fa7f-edbb-dd09-dbf1" name="Faction: World Eaters" hidden="false" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
-        <categoryLink id="9182-776a-7aaf-defb" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink id="9182-776a-7aaf-defb" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink id="aa49-5367-7e54-288c" name="Grenades" hidden="false" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink id="a564-0d3a-cc9d-8858" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="d693-aec7-67dc-9f84" name="Khorne" hidden="false" targetId="4bd-5ee0-f179-2fc5" primary="false"/>
         <categoryLink id="f3f7-072c-714a-bcb3" name="Berzerkers" hidden="false" targetId="802c-f8e1-e339-84b3" primary="false"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="77b5-b345-6771-7491" primary="true" name="Battleline"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0805-75cd-95e3-fe1b" name="Khorne Elite Berzerker Champion" hidden="false" collective="false" import="true" type="model" sortIndex="2">
@@ -10999,29 +11010,58 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="78df-b035-5769-ec3e" name="4-9 Khorne Elite Berzerkers" hidden="false" collective="false" import="true" defaultSelectionEntryId="b568-8a23-be6f-a14d" sortIndex="3">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c43-209f-1fa7-4ed6" type="min"/>
-            <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46b3-7f8b-6b9f-6f6e" type="max"/>
-          </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Berzerkers with alternate weapons" id="2603-a898-0c3e-afb2" hidden="false">
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Khorne Elite Berzerkers" hidden="false" id="a799-bfb1-19d3-166a" collective="false">
                   <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="63a7-7a63-e6d8-6abc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7e60-3e89-2141-238f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9549-aec1-0850-dcbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Khornate eviscerator" hidden="false" id="a4d6-d1f4-1c48-949b" collective="false" targetId="a3b4-f330-4ed9-8314" type="selectionEntry"/>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="445c-64b8-34c9-2519" collective="false" targetId="6fd1-efa4-7787-db82" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c338-5480-b476-8928" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8854-b9ba-263d-b887" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Khornate eviscerator" hidden="false" id="9a99-e3f3-c838-ce43" collective="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9718-3454-ec82-6795" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac48-5cf6-67d5-5e98" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Khornate eviscerator" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="74e0-66fc-bdac-ffb5">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="1e94-6694-d1af-5824" collective="false">
+                      <infoLinks>
+                        <infoLink name="Pistol" id="648f-8cfd-4dfd-0d16" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+                        <infoLink name="Rapid Fire" id="35e8-23f3-be12-24cd" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+                        <infoLink name="➤ Plasma pistol - standard" id="edfb-12da-df2d-370a" hidden="false" type="profile" targetId="1c84-74f8-f27d-55db"/>
+                        <infoLink name="➤ Plasma pistol - supercharge" id="671e-d39e-64d9-dbc3" hidden="false" type="profile" targetId="7250-9be2-c024-4f64"/>
+                        <infoLink name="Hazardous" id="2850-1205-ae5c-9c8f" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7f7-e9b5-c1c6-c4ce-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7f7-e9b5-c1c6-c4ce-max" includeChildSelections="false"/>
+                      </constraints>
+                      <comment>BS 4+</comment>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -11031,7 +11071,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
       <entryLinks>
         <entryLink id="59d4-27ef-77a7-6b78" name="Icon of Khorne" hidden="false" collective="false" import="true" targetId="8e1d-9846-a460-6002" type="selectionEntry" sortIndex="4">
           <associations>
-            <association min="1" max="1" scope="f909-00c7-8ba4-018a" childId="model" name="Icon of Khorne" id="1da5-a626-11a6-bc6b"/>
+            <association min="1" max="1" scope="8fcd-44ae-5a3f-ac6a" childId="model" name="Icon of Khorne" id="1da5-a626-11a6-bc6b"/>
           </associations>
         </entryLink>
         <entryLink import="true" name="Crusade" hidden="false" id="e5c6-90df-f3f7-7718" type="selectionEntryGroup" targetId="8bbb-e890-a169-863e" sortIndex="1"/>
@@ -14171,7 +14211,7 @@ Until the end of the battle round, each of those models has the VESSEL OF WRATH 
         <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Rapid Fire 1</characteristic>
       </characteristics>
     </profile>
     <profile name="➤ Plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7250-9be2-c024-4f64">
@@ -14182,7 +14222,7 @@ Until the end of the battle round, each of those models has the VESSEL OF WRATH 
         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol, Rapid Fire 1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

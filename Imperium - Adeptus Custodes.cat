@@ -1910,6 +1910,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6b3e-f581-b67d-ab93">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="7e39-1630-6b58-14de" name="Daughter of the Abyss" hidden="false" targetId="b95d-04e9-97fd-4125" type="profile"/>
@@ -4004,6 +4009,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a melee attack targets this unit, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6940-55a2-abcc-713e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="afff-35e7-f063-e392" name="Daughter of the Abyss" hidden="false" targetId="b95d-04e9-97fd-4125" type="profile"/>
@@ -4242,6 +4252,11 @@
         <profile name="Null Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ec8e-6cc7-a133-4b2c">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield from Reserves cannot be set up within 12&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e3fb-3724-4e5e-0ccf">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
           </characteristics>
         </profile>
       </profiles>

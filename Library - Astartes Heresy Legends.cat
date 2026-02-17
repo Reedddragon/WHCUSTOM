@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="21" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="39b9-56da-6787-1880" name="Kratos" hidden="false">
       <constraints>
@@ -6066,9 +6066,9 @@
         <profile name="Greater Blight Drone" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5433-b83e-2c92-e5d3">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">11</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">14</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
