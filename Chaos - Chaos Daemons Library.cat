@@ -318,7 +318,11 @@
     <entryLink import="true" name="Tranceweaver" hidden="false" type="selectionEntry" id="3cf-6042-5a03-a295" targetId="dba-34e3-46f2-56e0"/>
     <entryLink import="true" name="Tzeentch Soul Grinder" hidden="false" type="selectionEntry" id="73ac-1752-3efd-100a" targetId="e1b1-146f-6f77-3a15"/>
     <entryLink import="true" name="Zarakynel [Legends]" hidden="false" type="selectionEntry" id="8d96-ce07-a948-add2" targetId="268e-459c-c6e8-7754"/>
-    <entryLink import="true" name="Ka&apos;Bandha" hidden="false" id="baf0-5237-236b-a7cd" targetId="41f8-6bf7-0404-908c" type="selectionEntry"/>
+    <entryLink import="true" name="Ka&apos;Bandha" hidden="false" id="baf0-5237-236b-a7cd" targetId="41f8-6bf7-0404-908c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="4ffb-7ffa-b559-8fd3" primary="true" name="Epic Hero"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6470-c44a-45f4-3313" name="Detachment" hidden="false" collective="false" import="true" type="upgrade">
