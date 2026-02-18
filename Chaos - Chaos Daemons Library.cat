@@ -318,6 +318,7 @@
     <entryLink import="true" name="Tranceweaver" hidden="false" type="selectionEntry" id="3cf-6042-5a03-a295" targetId="dba-34e3-46f2-56e0"/>
     <entryLink import="true" name="Tzeentch Soul Grinder" hidden="false" type="selectionEntry" id="73ac-1752-3efd-100a" targetId="e1b1-146f-6f77-3a15"/>
     <entryLink import="true" name="Zarakynel [Legends]" hidden="false" type="selectionEntry" id="8d96-ce07-a948-add2" targetId="268e-459c-c6e8-7754"/>
+    <entryLink import="true" name="Ka&apos;Bandha" hidden="false" id="baf0-5237-236b-a7cd" targetId="41f8-6bf7-0404-908c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6470-c44a-45f4-3313" name="Detachment" hidden="false" collective="false" import="true" type="upgrade">
@@ -15101,6 +15102,8 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           </modifiers>
         </infoLink>
         <infoLink name="Damaged: 1-8 wounds remaining" id="825c-4b05-4ce6-969d" hidden="false" type="profile" targetId="771a-49af-ce6c-6757"/>
+        <infoLink name="Warp Rifts" id="c3b9-0458-8054-e718" hidden="false" targetId="877e-cc0c-8a1d-be46" type="rule"/>
+        <infoLink name="The Shadow of Chaos" id="050c-4313-ed72-cd2a" hidden="false" targetId="a312-a2f1-e1c0-30ed" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Ka&apos;Bandha" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b357-d7cd-7600-3a38">
@@ -15126,6 +15129,11 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
         <profile name="First to Blood" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f52c-ff1e-b30d-44c4">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Emissary of the Blood God (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb34-3d45-a3f6-7934">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly KHORNE LEGIONES DAEMONICA unit is within 6&quot; of this model, you can re-roll Battle-shock tests taken for that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
