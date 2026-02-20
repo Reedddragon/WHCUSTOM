@@ -11293,6 +11293,10 @@ Wound roll.</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe"/>
+                    <modifier type="append" value="(Storm shield)" field="name"/>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="1f70-af8a-871e-979f" childId="d576-d444-2286-9eeb" shared="true" includeChildSelections="true"/>
                   </conditions>
