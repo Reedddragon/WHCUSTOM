@@ -3594,41 +3594,6 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Wolf Guard Terminator" hidden="false" id="c169-905a-e3f-8c1">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons" hidden="false" id="fe72-93a8-ada8-7b30" defaultSelectionEntryId="70f9-7a89-bbac-a9a7">
-                  <entryLinks>
-                    <entryLink import="true" name="Storm shield" hidden="false" type="selectionEntry" id="671c-9c01-e58e-53dc" targetId="d576-d444-2286-9eeb">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72b6-18b0-5e2b-bad7"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5d2-d505-2b81-56bb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfa-4202-2768-ef8d"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="70f9-7a89-bbac-a9a7">
-                      <profiles>
-                        <profile name="Storm Bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="64c0-dd07-8e3a-6d3c">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Rapid Fire" id="213f-1e7b-50cb-28f1" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2206-ec94-f634-2226"/>
               </constraints>
@@ -3651,20 +3616,41 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d32b-43c2-2e1f-f2a0-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d32b-43c2-2e1f-f2a0-max" includeChildSelections="false"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Storm shield" hidden="false" id="671c-9c01-e58e-53dc" type="selectionEntry" targetId="d576-d444-2286-9eeb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72b6-18b0-5e2b-bad7"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked Lightning Claws" hidden="false" id="6a0f-e2b7-2cfc-1c34">
+                  <profiles>
+                    <profile name="Twin lightning claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4200-5d24-a46a-e3b9">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="d697-93e7-fd49-83a9" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="931f-6754-7b09-ccd4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Wolf Guard Terminator w/Assault Cannon" hidden="false" id="3e05-9064-404-87d4">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d217-d4e1-284e-92c7"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d367-afd8-574a-a20f"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="1" field="d217-d4e1-284e-92c7" id="ed99-62e7-5faa-dee1">
-                  <conditions>
-                    <condition type="lessThan" value="10" field="selections" scope="ca30-caf3-d7a8-1d32" childId="model" shared="true" id="67f8-a069-45cb-49f8" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <entryLinks>
                 <entryLink import="true" name="Power fist" hidden="false" id="aa70-14eb-1c49-1809" type="selectionEntry" targetId="eb70-5918-e9a-5a3f">
                   <constraints>
@@ -3697,6 +3683,42 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Wolf Guard Terminator w/Great Axe" hidden="false" id="f45c-8258-bc1a-8349">
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c70c-71d6-8c0c-5973"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="aedc-3297-3645-3f45" hidden="false" defaultSelectionEntryId="e469-68a3-630f-754f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c292-61ba-6008-3e55" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="084c-ddd9-0a72-3199" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Relic Great Axe" hidden="false" id="632c-35a8-f7d2-31f3">
+                      <profiles>
+                        <profile name="Relic Great Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8fa3-0e6a-16ea-bd5a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Devastating Wounds" id="7c66-a059-f12a-11be" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="440f-121c-e61d-61c9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3757,17 +3779,6 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Storm Bolter &amp; Master-crafted Power Weapon" hidden="false" id="e469-68a3-630f-754f">
-                  <entryLinks>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="5a23-b62b-b8dc-d0ac" type="selectionEntry" targetId="70f9-7a89-bbac-a9a7">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ac7-efec-f151-55a5-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac7-efec-f151-55a5-max" includeChildSelections="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e26a-c210-21d0-3f71" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="bf02-8951-4f2d-2a64">
                       <profiles>
