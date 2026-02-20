@@ -3624,23 +3624,20 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin-linked Lightning Claws" hidden="false" id="6a0f-e2b7-2cfc-1c34">
+                <selectionEntry type="upgrade" import="true" name="Power Claw Fist" hidden="false" id="6a0f-e2b7-2cfc-1c34">
                   <profiles>
-                    <profile name="Twin lightning claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4200-5d24-a46a-e3b9">
+                    <profile name="Power Claw Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4200-5d24-a46a-e3b9">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink name="Twin-linked" id="d697-93e7-fd49-83a9" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                  </infoLinks>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="931f-6754-7b09-ccd4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
@@ -3700,7 +3697,7 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                         <profile name="Relic Great Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8fa3-0e6a-16ea-bd5a">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -3762,7 +3759,7 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
                     <profile name="Relic Great Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f0cb-e4ef-d525-7bd6">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -7479,9 +7476,8 @@ You must attach this model to the above unit, and can do so even if one or more
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 
-■ Blood Claws
-■ Grey Hunters
-■ Long Fangs
+
+■ Wolf Guard Terminators
 
 You must attach this model to one of the above units, and can do so even if one or more Character units have already been attached to that unit, but a unit can never include more than one Pack Leader model. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths. If it is not possible to attach this model to a unit, it does not take part in the battle and counts as having been destroyed.</characteristic>
           </characteristics>
