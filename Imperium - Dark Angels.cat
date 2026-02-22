@@ -768,7 +768,7 @@
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">16</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
           </characteristics>
@@ -5596,21 +5596,22 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         <infoLink name="Devastating Wounds" id="71b6-5a84-572b-4852" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Praetor Logaine" hidden="false" id="3287-f646-82c9-f08d" page="9">
+    <selectionEntry type="model" import="true" name="Praetor Sammael-Vaer" hidden="false" id="3287-f646-82c9-f08d" page="9">
       <profiles>
-        <profile name="Praetor Logaine" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cba9-dc87-4691-5a8b" page="9">
+        <profile name="Praetor Sammael-Vaer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cba9-dc87-4691-5a8b" page="9">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
         <profile name="Marshal of Firewing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1b5d-b1eb-f345-f455" page="9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">move 6&quot; if a enemy unit gets within 12&quot;</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Stealth ability and that unit cannot be targeted by ranged attacks unless the attacking
+model is within 12&quot;.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf63-da6d-9cb4-e020">
@@ -5624,7 +5625,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
 ■ Firewing Enigmatii</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cut off the Head" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="593c-93a2-534c-3872" page="9">
+        <profile name="Ghost of Caliban" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="593c-93a2-534c-3872" page="9">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">if this model or his unit kills a character, gain 1cp</characteristic>
           </characteristics>
@@ -5644,12 +5645,14 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c52b-4d9f-a7c3-9d39"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="fd56-10cc-3be2-a017" targetId="3b76-4053-ece9-6e7d"/>
@@ -5687,9 +5690,9 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Relic Calibanite Charge Blades" hidden="false" id="23c6-6a24-0614-e509" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Ghost Blade" hidden="false" id="23c6-6a24-0614-e509" collective="true">
           <profiles>
-            <profile name="➤ Relic Calibanite Charge Blades - Melta Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2824-aa44-ed0f-dc50">
+            <profile name="➤ Ghost Blade - Melta Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2824-aa44-ed0f-dc50">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
@@ -5700,7 +5703,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision, Anti-Character 4+, Devastating Wounds</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Relic Calibanite Charge Blades  - Twin Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="edcf-9c4a-9f8b-3bfc">
+            <profile name="➤ Ghost Blade  - Twin Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="edcf-9c4a-9f8b-3bfc">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
@@ -6575,28 +6578,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="1a7e-99c0-84fd-b482" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dreadwing lascannons" hidden="false" id="97d7-6b57-e27c-add5" page="39">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a971-dfe5-6ff3-c566"/>
-              </constraints>
-              <profiles>
-                <profile name="Dreadwing lascannons" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f59e-0f02-59e7-665f">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="f7b0-8cfa-e70b-2b50" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dreadwing Hunter killer missile array" hidden="false" id="3f5a-3453-7911-4e1a" page="39">
+            <selectionEntry type="upgrade" import="true" name="Hunter killer missile array" hidden="false" id="3f5a-3453-7911-4e1a" page="39">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="df6f-8a8a-898d-63ab"/>
               </constraints>
@@ -6633,7 +6615,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                     <profile name="Dreadwing Volkite Carronade" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e962-405e-7f94-0b55">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -6653,7 +6635,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b71-6ccb-cf3d-ebf9"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Secondary Weapon" id="8169-6c16-20a5-e0f5" hidden="false" defaultSelectionEntryId="8d41-a5bb-150b-1230" collective="false">
+            <selectionEntryGroup name="Secondary Dreadwing Weapon" id="8169-6c16-20a5-e0f5" hidden="false" defaultSelectionEntryId="8d41-a5bb-150b-1230" collective="false">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b351-361f-abb2-e6f2"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b334-a3b2-e56b-9f51"/>
@@ -6662,6 +6644,29 @@ In addition, each time a model in this unit makes an attack that targets your Oa
                 <entryLink import="true" name="Dreadwing Plasma Cannon" hidden="false" id="a1a7-b774-be55-9f3e" type="selectionEntry" targetId="6c3b-d900-0596-fd2f"/>
                 <entryLink import="true" name=" Phosphex Incinerator Cannons" hidden="false" id="f341-5739-7bfd-41d0" type="selectionEntry" targetId="2d12-ed8c-93d8-a387"/>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dreadwing lascannons" hidden="false" id="97d7-6b57-e27c-add5" page="39">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a971-dfe5-6ff3-c566"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Dreadwing lascannons" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f59e-0f02-59e7-665f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f7b0-8cfa-e70b-2b50" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -6807,7 +6812,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         </profile>
         <profile name="Smoke Dance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="37ca-8336-7e60-ab0b">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Every odd round(1,3,5), This unit can return to reserves if its not in engagement range.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model is selected to Advance, you can remove it from the battlefield and set it up again anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6824,7 +6829,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         <infoLink name="Deep Strike" id="20f9-3c8c-e24d-7fb4" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6834,7 +6839,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="160" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="e5d1-12bd-838d-d2d9" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -10527,15 +10532,17 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         <infoLink name="Firewing" id="c569-a274-1df0-574a" hidden="false" type="rule" targetId="6761-6e63-307a-e055"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="280" field="51b2-306e-1021-d207">
+        <modifier type="set" value="240" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="f94e-5b04-b35f-f6ad" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -11381,7 +11388,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <profile name="Dreadnought Inferno Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1514-bc18-a34e-d140">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -11468,7 +11475,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -11488,7 +11495,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -11874,7 +11881,14 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ironwing Deredeo Dreadnought" hidden="false" id="a62b-0dcd-cf90-22de" collective="false">
@@ -11967,7 +11981,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                     <profile name="Boreas air defence missiles" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2713-20b9-063f-6943">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
@@ -12058,9 +12072,9 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
                       <modifiers>
@@ -12195,7 +12209,14 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -12219,7 +12240,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         <categoryLink targetId="d615-dc7e-0263-dd2f" id="b738-0df5-a5e2-3706" primary="false" name="Ironwing"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -12361,10 +12382,10 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                       </characteristics>
                       <modifiers>
                         <modifier type="set" value="Melta 2, Twin-Linked" field="7f1b-8591-2fcf-d01c">
@@ -12395,7 +12416,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
                       </characteristics>
                       <modifiers>
@@ -12422,7 +12443,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Sustained Hits 1</characteristic>
                       </characteristics>
                       <modifiers>
                         <modifier type="set" value="Blast, Twin-Linked" field="7f1b-8591-2fcf-d01c">
@@ -12440,7 +12461,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Sustained Hits 1</characteristic>
                       </characteristics>
                       <modifiers>
                         <modifier type="set" value="Blast, Twin-Linked, Hazardous" field="7f1b-8591-2fcf-d01c">
@@ -12470,9 +12491,9 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">16</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
                       </characteristics>
                       <modifiers>
@@ -12596,7 +12617,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ironwing Castraferrum Ironclad Dreadnought" hidden="false" id="1f9b-79bf-2ee5-e507">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -12865,7 +12886,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ironwing Castraferrum Dreadnought" hidden="false" id="7913-906f-d907-13bf">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -13092,10 +13113,10 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -13115,7 +13136,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">16</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
                       </characteristics>
                     </profile>
@@ -13133,7 +13154,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
                       </characteristics>
                     </profile>
@@ -13515,7 +13536,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                 </profile>
                 <profile name="Exsecutor Needle Launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7b96-7d11-ea0f-ed77">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
@@ -14148,7 +14169,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
           <profiles>
             <profile name="Ravenwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c30e-2f23-c92d-9112">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2&quot; to this model&apos;s Move characteristic. and gain Scout 6&quot; </characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2&quot; to this model&apos;s Move characteristic. and gain Scout 6&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
