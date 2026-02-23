@@ -6647,20 +6647,36 @@ of your Command phase, you can choose one of the following:
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="2x Master Crafted Bolt pistol" hidden="false" id="bcb2-2818-20bf-4ed4" collective="false">
+                    <selectionEntry type="upgrade" import="true" name="2x Master Crafted Bolt pistol" hidden="false" id="2a74-cc2e-73f0-ae1c" collective="false">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10b3-8a30-101b-bfba"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="575c-8b37-d2e9-5f36"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Master Crafted Bolt pistol" hidden="false" id="6203-fc09-8df8-dd4f" collective="true">
+                        <selectionEntry type="upgrade" import="true" name="Master Crafted Bolt pistol" hidden="false" id="b386-9c69-01b3-943f" collective="true">
                           <infoLinks>
-                            <infoLink name="Bolt pistol" id="20c7-a532-618a-fb6b" hidden="false" type="profile" targetId="c934-fc40-d6a2-8919"/>
-                            <infoLink name="Pistol" id="e34a-f666-bcde-5366" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                            <infoLink name="Assault" id="d0e4-f0f0-a8df-7d8a" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                            <infoLink name="Pistol" id="da6e-ec48-8b23-a1a6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                            <infoLink name="Assault" id="84c7-091b-df80-0fdd" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                           </infoLinks>
                           <categoryLinks>
-                            <categoryLink name="Ranged Weapon" hidden="false" id="c2dc-1902-2c96-6ad1" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                            <categoryLink name="Ranged Weapon" hidden="false" id="b46b-dc47-76df-22dc" targetId="eeda-8544-a2f3-3fab" primary="false"/>
                           </categoryLinks>
+                          <profiles>
+                            <profile name="Master Crafted Bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3e4f-c3b9-7734-0f3e">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Assault, Rapid Fire 2</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1263-3377-3a39-ac75"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="394d-ed3e-06a5-0f5f"/>
+                          </constraints>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntry>
