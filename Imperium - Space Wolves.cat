@@ -11602,7 +11602,7 @@ Wound roll.</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="47e4-d2c2-36b6-f178" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Teeth and claws" hidden="false" id="7178-c075-bb98-fcd8">
+                    <selectionEntry type="upgrade" import="true" name="Geri&apos;s Fang" hidden="false" id="7178-c075-bb98-fcd8">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca47-1d34-b492-07f2"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4764-e108-1f61-0222"/>
@@ -11620,9 +11620,6 @@ Wound roll.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b4f7-846a-4954-8a58" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
