@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="69" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="78" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="abd0-8ebd-6fbd-2d94" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="9c08-8ffc-d746-7384" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -1828,6 +1828,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         <categoryLink targetId="5179-8ede-45e3-49a2" id="749f-787e-7471-8b31" primary="false" name="Tacticus"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="9a42-3f1b-5c44-bd51" primary="false" name="Fly"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="a612-4dc6-19f1-960e" primary="false" name="Jump Pack"/>
+        <categoryLink name="Death Company" hidden="false" id="0d4c-f000-e07b-c9d7" targetId="7278-781b-ce6c-d23c" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Death Company Marine with Jump Pack" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4d41-5eed-844a-2b1c">
@@ -3317,7 +3318,7 @@ horizontally away from all enemy models.</characteristic>
             </profile>
           </profiles>
           <associations>
-            <association min="1" max="1" scope="parent" childId="8e33-50a5-d053-ee15" name="New Association" id="9621-656a-ffa9-4744"/>
+            <association min="1" max="1" scope="parent" childId="8e33-50a5-d053-ee15" name="Sanguinary Banner" id="9621-656a-ffa9-4744"/>
           </associations>
         </selectionEntry>
       </selectionEntries>
@@ -3606,7 +3607,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="9458-848b-3ef4-a0ad" primary="true" name="Epic Hero"/>
@@ -3672,9 +3680,9 @@ You can attach this model to one of the above units, even if one Captain, Chapt
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2a1d-80af-c167-5ebe" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="13f9-3c4b-b3d-80e9" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="62ac-ef42-27b4-ae7" id="d275-78c5-9120-8ff9" primary="false" name="Faction: Blood Angels"/>
-        <categoryLink targetId="d2c6-5062-e0b8-9e20" id="7086-d5b0-3652-1299" primary="false" name="Sanguinary Priest with Jump Pack"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="f2d4-7de3-4f72-b64" primary="false" name="Fly"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="515f-8220-632f-2dc6" primary="false" name="Jump Pack"/>
+        <categoryLink name="Sanguinary Priest" hidden="false" id="62eb-17ef-0bb2-1d6c" targetId="561f-8606-9555-b3ba" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Sanguinary Priest with Jump Pack" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8edb-5cef-5b8b-6089">
@@ -4403,6 +4411,11 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <infoLinks>
         <infoLink name="Invulnerable Save" id="e4b7-a76f-3668-bbac" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
         <infoLink name="Black Rage" id="3565-0ac7-f0dd-ad20" hidden="false" type="profile" targetId="3e0a-31f-8be-e293"/>
+        <infoLink name="Feel No Pain" id="14cd-4b41-33fb-8c7b" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Death Company Captain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="75c4-36b0-af42-362b">
@@ -5216,45 +5229,45 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Replace Chainsword" id="fff9-ea18-368c-d4a1" hidden="false" defaultSelectionEntryId="c7a8-c7ee-1248-ef35">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="2aba-e045-dbd4-adbd">
-                      <profiles>
-                        <profile name="Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b64e-5d06-ef65-5bdf">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" id="0750-7bd3-6edf-09d2" type="selectionEntry" targetId="3acf-2a72-a5a2-84a2"/>
-                    <entryLink import="true" name="Power Weapon" hidden="false" id="773e-a671-ad57-aa08" type="selectionEntry" targetId="c4b5-68e-2266-f459"/>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" id="0750-7bd3-6edf-09d2" type="selectionEntry" targetId="3acf-2a72-a5a2-84a2">
+                      <categoryLinks>
+                        <categoryLink name="DCo Weapon Swap" hidden="false" id="1205-d6bd-43e1-bfc6" targetId="78e1-92d6-d2d8-0509" primary="false"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="773e-a671-ad57-aa08" type="selectionEntry" targetId="c4b5-68e-2266-f459">
+                      <categoryLinks>
+                        <categoryLink name="DCo Weapon Swap" hidden="false" id="d6e8-c4d4-8704-9328" targetId="78e1-92d6-d2d8-0509" primary="false"/>
+                      </categoryLinks>
+                    </entryLink>
                     <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8b85-90a0-8aca-7fbe" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
+                    <entryLink import="true" name="Power Fist" hidden="false" id="9115-74d2-2830-8f27" type="selectionEntry" targetId="f8d8-7e77-4b71-faac">
+                      <categoryLinks>
+                        <categoryLink name="DCo Weapon Swap" hidden="false" id="70b5-7c55-5fbd-8027" targetId="78e1-92d6-d2d8-0509" primary="false"/>
+                      </categoryLinks>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4761-c7fa-10ea-e343" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce87-a2bb-c305-f66c" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="edee-48a2-1e8a-2539" shared="true" id="4f47-ceb3-a70f-8e21" includeChildSelections="true"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="1" field="4f47-ceb3-a70f-8e21">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="edee-48a2-1e8a-2539" childId="efcd-180-d07-b4d6" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3536-7f35-9308-1da4"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="Max 1 melee weapon swap in squad" field="error">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="3825-ac3a-75ec-fa0d" childId="78e1-92d6-d2d8-0509" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="Max 1 pistol replacement in squad" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="3825-ac3a-75ec-fa0d" childId="f06c-dfec-c720-57f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5326,11 +5339,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
         <modifier type="set" value="6" field="d4b4-df13-559a-8e76">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9d32-d514-00a8-6423" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="Max 1 pistol replacement in squad" field="error">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="3825-ac3a-75ec-fa0d" childId="f06c-dfec-c720-57f1" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5425,7 +5433,8 @@ You can attach this model to one of the above units, even if one Captain, Chapt
         </profile>
         <profile name="Driven by Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="973b-a866-fedb-54d7">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. When doing so, this model can be moved within
+Engagement Range of that enemy unit. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5872,6 +5881,165 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sanguinius" hidden="false" id="7cc3-efbe-1986-a0aa" page="41">
+      <profiles>
+        <profile name="Sanguinius" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="384b-329a-f96d-b921" page="41">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Angel of Blood" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="50fe-19de-0d84-f5dc" page="41">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, select two Angel of Blood abilities. Until the start of your next Command phase, this model has those abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blood Charge [Aura]" typeId="ab67-0e8d-44b2-f015" typeName="Angel of Blood" hidden="false" id="9181-f04e-9084-2729" page="41">
+          <characteristics>
+            <characteristic name="Effect" typeId="d299-be59-ba2a-a91f">While a friendly Adeptus Astartes unit is within 6&quot; of this model. That unit can Advance and Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Avenging Angel [Aura]" typeId="ab67-0e8d-44b2-f015" typeName="Angel of Blood" hidden="false" id="26d9-c034-a1fa-ad60" page="41">
+          <characteristics>
+            <characteristic name="Effect" typeId="d299-be59-ba2a-a91f">While a friendly Adeptus Astartes unit is within 6&quot; of this model. Re‑roll a Wound roll of 1. If such an attack targets an enemy unit that has destroyed one or more Adepta Astartes units from your army during the battle or a Vehicle, Monster Unit or Character, Re‑roll The Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blinding Wings [Aura]" typeId="ab67-0e8d-44b2-f015" typeName="Angel of Blood" hidden="false" id="a889-e44f-687a-2ea0" page="41">
+          <characteristics>
+            <characteristic name="Effect" typeId="d299-be59-ba2a-a91f">While a friendly Adeptus Astartes unit is within 6&quot; of this model. when Attacked, Reduce 1 to the hit roll</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Future Seen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f6d-3067-b4be-71c3" page="41">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per phase, When an attack is is allocated to this model, you can change the damage characteristic of that attack to 0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blood Angels Bodyguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e8d4-d9a9-7ecd-c040" page="41">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly ^^**Adeptus Astartes Infantry^^** units, this model has the Lone Operative ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save 4+" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3d3c-c4e9-7b5f-3e67" page="41">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1ea7-6c96-59aa-150b" page="41">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model reaches 0 wounds while in engagement range, This model can fight as if it was in fight phase even if this model has fought already, after fighting remove this model. All Adeptus Astartes and Blood Angels Units are Battle shocked and can re-roll The Hit roll and Gain Feel no pain 6+. This last until your next turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="255b-47bd-113b-c5e8" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Epic Hero" hidden="false" id="c91a-a8b2-917e-bf77" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Monster" hidden="false" id="c5c4-b13a-a031-2a5d" targetId="9693-cf84-fe69-37a9" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="2311-84e8-57ab-4cb9" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="ed9f-e1a1-84f5-2220" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink name="Primarch" hidden="false" id="3c6f-d6a6-667d-85b3" targetId="6474-0ce3-6b5a-120c" primary="false"/>
+        <categoryLink targetId="62ac-ef42-27b4-ae7" id="0286-7370-811c-0720" primary="false" name="Faction: Blood Angels"/>
+        <categoryLink targetId="2a27-a99d-6350-f010" id="b0ee-b20e-c87b-5b65" primary="false" name="Sanguinius"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="5e2d-55fd-0ced-55e8" primary="false" name="Fly"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6598-db87-9d0a-304d"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Infernus" hidden="false" id="842e-6363-c362-3410" page="41">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea56-c794-bd5a-9a57"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e9-3de8-532a-4dd3"/>
+          </constraints>
+          <profiles>
+            <profile name="Infernus" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8337-2e0b-b3b0-1f41" page="41">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4, Sustained Hits D3, Pistol</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sustained Hits" id="dc69-01af-cab4-bf23" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+            <infoLink name="Pistol" id="3f10-c5e4-9423-5fe1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+            <infoLink name="Melta" id="31f9-2d03-6e3c-84d0" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Weapons of The Great Angel" hidden="false" id="ca45-95d0-7d6f-8c97" page="41">
+          <profiles>
+            <profile name="The Blade Encarmine" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="24c5-aacb-8111-7235" page="41">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Spear of Telesto" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="004b-3000-e64b-66bc" page="41">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">14</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-5</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">6</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Anti-Daemon 3+, Lance</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5447-3087-106f-fe46"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf47-1164-ea62-2236"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastating Wounds" id="a9af-2931-8bb7-5918" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+            <infoLink name="Sustained Hits" id="2190-8a73-c05a-3713" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+            <infoLink name="Lance" id="3983-cf7c-b54b-f4cc" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+            <infoLink name="Anti-" id="5a28-d74b-996b-14a0" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="d994-2629-7a1e-f547" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Oath of Moment" id="4edb-de6c-072c-a9bf" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="df91-1024-c131-0c49" type="selectionEntry" targetId="caa-f869-3cbd-b48e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eed0-90dc-74c0-baf9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5547-24f7-1f14-83e7"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="350"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="86e5-a07c-9157-0196" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="0627-5921-4717-5eb5" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Astorath" hidden="false" id="da64-bc59-71f9-96e8"/>
@@ -5890,12 +6058,13 @@ If a Character unit from your army with the Leader ability can be attached to a
     <categoryEntry name="Lemartes" hidden="false" id="3763-9e4f-abed-718d"/>
     <categoryEntry name="Librarian Dreadnought" hidden="false" id="68e9-6942-27d7-bb11"/>
     <categoryEntry name="Sanguinary Guard" hidden="false" id="d30a-a7c5-389a-e78"/>
-    <categoryEntry name="Sanguinary Priest with Jump Pack" hidden="false" id="d2c6-5062-e0b8-9e20"/>
     <categoryEntry name="The Sanguinor" hidden="false" id="8f39-9585-fc72-ba71"/>
     <categoryEntry name="Death Company Marines with Bolt Rifles" id="3055-9a0b-b062-5f31" hidden="false"/>
     <categoryEntry name="Pistol replacement" id="f06c-dfec-c720-57f1" hidden="true"/>
     <categoryEntry name="Death Company Marines with Boltguns" hidden="false" id="d57c-d980-bdae-2999"/>
     <categoryEntry name="Death Company Marines with Boltguns and Jump Packs" hidden="false" id="f884-eba8-9896-a544"/>
+    <categoryEntry name="DCo Weapon Swap" id="78e1-92d6-d2d8-0509" hidden="false"/>
+    <categoryEntry name="Sanguinius" hidden="false" id="2a27-a99d-6350-f010"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e0a-31f-8be-e293">
@@ -5937,5 +6106,13 @@ If a Character unit from your army with the Leader ability can be attached to a
     <entryLink import="true" name="Death Company Marines" hidden="false" id="585d-874f-7f12-77a4" type="selectionEntry" targetId="3825-ac3a-75ec-fa0d"/>
     <entryLink import="true" name="Death Company Dreadnought" hidden="false" id="be32-1b9e-6b1b-e508" type="selectionEntry" targetId="3b6e-cc3e-c2a4-0cbd"/>
     <entryLink import="true" name="Death Company Marines with Boltguns and Jump Packs [Legends]" hidden="false" id="86aa-d4e6-fbbd-db05" type="selectionEntry" targetId="bcfe-f4fb-5c44-652d"/>
+    <entryLink import="true" name="Sanguinius" hidden="false" id="e7ec-2bb5-ea4a-ca55" targetId="7cc3-efbe-1986-a0aa" type="selectionEntry"/>
   </entryLinks>
+  <profileTypes>
+    <profileType name="Angel of Blood" id="ab67-0e8d-44b2-f015" hidden="false" kind="ability">
+      <characteristicTypes>
+        <characteristicType name="Effect" id="d299-be59-ba2a-a91f"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>
