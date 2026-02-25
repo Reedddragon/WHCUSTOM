@@ -4436,7 +4436,7 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thunderwolf Cavalry" hidden="false" id="7a50-3722-8195-5877">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4454,7 +4454,7 @@ You can attach this model to the above unit even if one Captain or Chapter Mast
         <categoryLink targetId="c6da-5578-9ad5-94ef" id="3768-38de-e622-4f5f" primary="false" name="Thunderwolf Cavalry"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="160" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="7a50-3722-8195-5877" childId="model" shared="true" id="75dd-2178-4086-f46e" includeChildSelections="true"/>
           </conditions>
@@ -11415,12 +11415,12 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Saga of Odin [Aura]" typeId="6128-0fe9-bc6b-7164" typeName="Wolf King of Fenris" hidden="false" id="7cab-c813-366a-32cc" page="41">
           <characteristics>
-            <characteristic name="Effect" typeId="4593-c408-1ef0-324e">While a friendly ^^**Adeptus Astartes^^** unit is within 6&quot; of this model, melee weapons in that unit have the [Anti-Psycher 4+] ability along with [Devastating Wounds]. When this model uses Gungnir, an unmodifed wound roll of 5+ is a critical Wound</characteristic>
+            <characteristic name="Effect" typeId="4593-c408-1ef0-324e">While a friendly ^^**Adeptus Astartes^^** unit is within 6&quot; of this model, melee weapons in that unit have the [Anti-Psycher 4+] ability along with [Devastating Wounds]. When this model uses Gungnir, Spear of the Emperor, an unmodifed wound roll of 5+ is a critical Wound</characteristic>
           </characteristics>
         </profile>
         <profile name="Saga of Thor [Aura]" typeId="6128-0fe9-bc6b-7164" typeName="Wolf King of Fenris" hidden="false" id="96e0-cd59-84d5-9edf" page="41">
           <characteristics>
-            <characteristic name="Effect" typeId="4593-c408-1ef0-324e">While a friendly ^^**Adeptus Astartes^^** unit is within 6&quot; of this model, you can ignore any or all modifiers to that unit&apos;s Move characteristic and to Advance and Charge rolls made for it, and each time a model in that unit makes a Charge move, add 2 to the roll. When this model uses Mjalnar, you can re-roll the damage roll.</characteristic>
+            <characteristic name="Effect" typeId="4593-c408-1ef0-324e">While a friendly ^^**Adeptus Astartes^^** unit is within 6&quot; of this model, you can ignore any or all modifiers to that unit&apos;s Move characteristic and to Advance and Charge rolls made for it, and each time a model in that unit makes a Charge move, add 2 to the roll. When this model uses Mjalnar, the Sword of Balenight, you can re-roll the damage roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="The Emperor&apos;s Executioner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2645-cced-49bb-eccc" page="41">
@@ -11430,7 +11430,7 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Space Wolves Bodyguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b237-2536-e0e1-566d" page="41">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly ^^**Adeptus Astartes Infantry^^** units, this model has the Lone Operative ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly ^^**Adeptus Astartes^^** units, this model has the Lone Operative ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save 4+" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc41-eae5-3d99-99ec" page="41">
@@ -11451,6 +11451,7 @@ Wound roll.</characteristic>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="88a2-1992-813a-241b"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="59ec-e383-5102-a258" includeChildSelections="true"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Scornspitter" hidden="false" id="4a3d-5fdb-d159-fda2" page="41">
@@ -11516,6 +11517,135 @@ Wound roll.</characteristic>
             <infoLink name="Lethal Hits" id="2a76-5067-d395-208c" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
             <infoLink name="Sustained Hits" id="ada1-8f6f-4934-0446" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Freki and Geri" hidden="false" id="7a8f-fb0e-2176-60cd">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+            <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="4842-69c2-357c-85c3" targetId="6e7-40c-58d9-e402" primary="false"/>
+            <categoryLink name="Faction: Space Wolves" hidden="false" id="a8d3-15b3-2633-c528" targetId="a0d9-c115-2a-8330" primary="false"/>
+            <categoryLink name="Beast" hidden="false" id="aa03-0302-cbe6-d441" targetId="4c3e-9310-a516-3590" primary="false"/>
+            <categoryLink name="Character" hidden="false" id="2fd8-219d-1a3a-7f30" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+            <categoryLink name="Imperium" hidden="false" id="810f-c0e7-2f61-f8c8" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+            <categoryLink name="Cyberwolf" hidden="false" id="96cf-51da-1be8-1c09" targetId="3755-99a6-5326-139a" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d8b5-1252-06a6-a48a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Wolves Bodyguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e524-3e8c-9c1c-af5c" page="41">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit’s Leman Russ model is destroyed, all of this unit’s remaining Freki and Geri models are also destroyed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Oath of Moment" id="5d0f-e45f-e96f-014f" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd12-a84f-9c2e-680c"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Freki" hidden="false" id="821a-6634-cc78-5a07">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="1509-dd81-5572-9b76" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Freki&apos;s Claws" hidden="false" id="cc73-9623-f15a-95f1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09c0-491c-6fa1-b161"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b02-f309-b6cc-9d7c"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Freki&apos;s Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff51-1315-b260-a68a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Freki" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7d30-f59a-9988-812f">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="755b-dcbf-e5b4-8ded"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d06e-2bf1-a4f7-d8f7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Geri" hidden="false" id="b7d1-9a7a-8b8f-00d7">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="47e4-d2c2-36b6-f178" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Teeth and claws" hidden="false" id="7178-c075-bb98-fcd8">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca47-1d34-b492-07f2"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4764-e108-1f61-0222"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Geri&apos;s Fang" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="93db-7879-7968-d6be">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b4f7-846a-4954-8a58" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Geri" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4fe2-2ecd-2de7-f10e">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2410-7a99-f92d-ab03"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e7d-5a04-5d90-6468"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
