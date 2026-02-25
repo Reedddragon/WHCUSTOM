@@ -11555,7 +11555,7 @@ Wound roll.</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd12-a84f-9c2e-680c"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Freki" hidden="false" id="821a-6634-cc78-5a07">
+            <selectionEntry type="model" import="true" name="Freki" hidden="false" id="821a-6634-cc78-5a07">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="1509-dd81-5572-9b76" hidden="false">
                   <selectionEntries>
@@ -11598,7 +11598,7 @@ Wound roll.</characteristic>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d06e-2bf1-a4f7-d8f7"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Geri" hidden="false" id="b7d1-9a7a-8b8f-00d7">
+            <selectionEntry type="model" import="true" name="Geri" hidden="false" id="b7d1-9a7a-8b8f-00d7">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="47e4-d2c2-36b6-f178" hidden="false">
                   <selectionEntries>
