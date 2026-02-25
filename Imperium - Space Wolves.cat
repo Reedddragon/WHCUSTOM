@@ -11518,7 +11518,7 @@ Wound roll.</characteristic>
             <infoLink name="Sustained Hits" id="ada1-8f6f-4934-0446" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Freki and Geri" hidden="false" id="7a8f-fb0e-2176-60cd">
+        <selectionEntry type="unit" import="true" name="Freki and Geri" hidden="false" id="7a8f-fb0e-2176-60cd">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
