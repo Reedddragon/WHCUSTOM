@@ -1589,39 +1589,6 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a2c2-a997-602d-54f8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Castigator Railcannon" hidden="false" id="d061-4926-6311-e045">
-                  <profiles>
-                    <profile name="Castigator Railcannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b054-6fde-cea2-0422">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38e0-6c7f-48d6-71da"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Devastating Wounds" id="01d7-ab7b-c322-af1b" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                    <infoLink name="Ignores Cover" id="c76b-3061-0002-d596" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7287-adc9-5eb7-143a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
-                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-                  </costs>
-                </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af36-4f04-209b-706e"/>
@@ -2827,11 +2794,12 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Exorcist" hidden="false" id="684e-4dd3-340a-23ee" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="462d-50e8-52c0-69a2" primary="true" name="Vehicle"/>
@@ -2984,8 +2952,8 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7712-d3cc-c704-9570"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3df-31d6-c96d-f941"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7712-d3cc-c704-9570"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c3df-31d6-c96d-f941"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3533,6 +3501,7 @@ At the start of the Declare Battle Formations step, you can select one BATTLE SI
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5d87-65dd-be8c-b729" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
+            <entryLink import="true" name="Holy Trinity Super Heavies" hidden="false" id="1792-ca71-ec6e-2025" type="selectionEntryGroup" targetId="8c0d-d8f2-23c3-ca70"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="6d60-d6f-ef8c-ed7e">
@@ -7305,6 +7274,7 @@ of your Command phase, you can choose one of the following:
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="11e3-9b3c-4074-5f02" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
+            <entryLink import="true" name="Holy Trinity Super Heavies" hidden="false" id="22c9-05d0-a2da-114d" type="selectionEntryGroup" targetId="8c0d-d8f2-23c3-ca70"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -8045,36 +8015,6 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="2a1c-3a96-742a-deaa" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Repressor twin heavy flamer" hidden="false" id="3cf6-498f-c163-ddc5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5229-3be-7e58-3131"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8251-1576-14a4-3891"/>
-              </constraints>
-              <profiles>
-                <profile name="Repressor twin heavy flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5c8f-4727-31c9-c590">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-Linked</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Twin-linked" id="4e1e-3fdc-1894-7f70" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                <infoLink name="Torrent" id="94a9-2245-6744-5cd2" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-                <infoLink name="Ignores Cover" id="c119-9c20-1309-4f19" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="e913-9b58-0eca-e2e1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-              <categoryLinks>
-                <categoryLink name="Attacks Dx Weapon" hidden="false" id="2215-be7d-4e98-c0fc" targetId="e993-e086-6de1-12af" primary="false"/>
-              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -12183,9 +12123,9 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
             <infoLink name="Sustained Hits" id="8493-6145-fd78-6ee3" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ministorum Flamer cannon" hidden="false" id="94b0-8c70-a5a2-ccc0">
+        <selectionEntry type="upgrade" import="true" name="Ministorum Inferno cannon" hidden="false" id="94b0-8c70-a5a2-ccc0">
           <profiles>
-            <profile name="Ministorum Flamer cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="521a-f898-ec32-15ee">
+            <profile name="Ministorum Inferno cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="521a-f898-ec32-15ee">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
@@ -12202,7 +12142,7 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
             <infoLink name="Torrent" id="3cfb-a477-dddd-e639" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Vulcan bolter" hidden="false" id="dafd-b384-f5a6-48de">
+        <selectionEntry type="upgrade" import="true" name="Magna-melta" hidden="false" id="dafd-b384-f5a6-48de">
           <profiles>
             <profile name="Magna-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b392-377c-37e6-4b93">
               <characteristics>
