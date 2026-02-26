@@ -5978,7 +5978,6 @@ of your Command phase, you can choose one of the following:
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac81-475f-3d1a-7309"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Sister Superior Ranged Weapons" hidden="false" type="selectionEntryGroup" id="ff4b-25f9-3317-d534" targetId="4c22-7a16-82bc-e202"/>
             <entryLink import="true" name="Sister Superior Melee Weapons" hidden="false" type="selectionEntryGroup" id="bc8f-8543-2101-e545" targetId="827b-ad7b-3c7c-71c6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3272-8ec7-c06-1046"/>
@@ -6020,6 +6019,31 @@ of your Command phase, you can choose one of the following:
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Retributor Weapons" id="fc22-100c-393c-5146" hidden="false" defaultSelectionEntryId="a492-fbe3-4a96-5128">
+              <entryLinks>
+                <entryLink import="true" name="Ministorum heavy flamer" hidden="false" id="0aa5-8210-2b50-575c" type="selectionEntry" targetId="609c-5e0-92ba-5250">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f55-ccf2-e691-f677"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="bc56-6c92-b3b7-7b55" type="selectionEntry" targetId="1eae-cf99-54ba-2e0a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97a6-2006-e35a-3d93"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="de5d-5417-0305-1a02" type="selectionEntry" targetId="4342-9072-ac29-3dc6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cdf-3178-1807-8da4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b991-7804-79f0-da34"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b34-24e8-1455-83c3"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
