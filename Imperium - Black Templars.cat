@@ -5613,7 +5613,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5627,7 +5627,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Sword Brethren Terminator w/ Storm Shield" hidden="false" id="c6f6-5fb2-5369-222d">
               <constraints>
-                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="2001-c2b9-7e7f-1331"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2001-c2b9-7e7f-1331"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e668-df24-e461-04f0"/>
               </constraints>
               <entryLinks>
@@ -5703,7 +5703,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sword Brethren Terminator w/ Double Master-Crafted Power Swords" hidden="false" id="eef1-c000-be1e-23d1">
               <constraints>
-                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="f41f-b9c5-d9b6-99d4"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f41f-b9c5-d9b6-99d4"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2cc3-b85c-9097-03c6"/>
               </constraints>
               <profiles>
@@ -5752,6 +5752,120 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sword Brethen Terminator Castellan" hidden="false" id="da93-9075-2ca5-2e48">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9502-5b89-a930-d795"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b10-f795-a7c2-b3b4"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="62f1-bf84-873f-0142" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee Option" id="1136-636b-c6db-569e" hidden="false" defaultSelectionEntryId="de7a-3acb-5169-0755">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Master-crafted Power Axe" hidden="false" id="46db-d4af-0165-74f3">
+                      <profiles>
+                        <profile name="Master-crafted Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="109c-0200-5a09-85dc">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Lethal Hits" id="f179-607f-ab17-8f4e" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                      </infoLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="9db3-9b00-0bf2-fbf1" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="552e-d458-c3b5-1c84" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="0a47-08b3-b390-d988" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <categoryLinks>
+                        <categoryLink name="Power Weapon" hidden="false" id="7785-f34f-f5dd-7147" targetId="72a2-ff76-451c-9d12" primary="false"/>
+                      </categoryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="388d-9c35-132a-941d"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="9e39-50eb-097f-20ca" collective="true">
+                          <profiles>
+                            <profile name="Storm Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="416b-b64d-1251-0ad0">
+                              <characteristics>
+                                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a Wounds characteristic of 4.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a66c-3ceb-b361-3019"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d05-50d8-83bb-c9bd"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Double Master-Crafted Power Swords" hidden="false" id="fadd-ab24-8129-06ac">
+                      <infoLinks>
+                        <infoLink name="Twin-linked" id="fe38-0fee-3faf-8383" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                        <infoLink name="Lethal Hits" id="afb7-2d40-0051-0292" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                      </infoLinks>
+                      <profiles>
+                        <profile name="Double Master-Crafted Power Swords" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="df8d-c610-a50a-2202">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked, Lethal Hits</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c083-b1bd-e3d9-6c2c" includeChildSelections="false"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="968f-1bd6-715b-cc6b" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="d47f-0887-6458-43b6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="6a7f-dad4-780c-330b" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d679-a25b-9400-a812"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Sword Brethen Terminator Castellan" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9978-19aa-5253-4bf5">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4" field="750a-a2ec-90d3-21fe">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="da93-9075-2ca5-2e48" childId="9e39-50eb-097f-20ca" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="71d1-d564-fae9-d515"/>
@@ -5760,7 +5874,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="380" field="51b2-306e-1021-d207">
+        <modifier type="set" value="400" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="f5cf-bd55-0215-8d51" childId="f7a8-ae2e-6d7e-733f" shared="true" id="4045-fc25-6d46-c719" includeChildSelections="true"/>
           </conditions>
