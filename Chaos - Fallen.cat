@@ -103,7 +103,6 @@
     <entryLink id="687c-e5c-da99-96d8" name="Warp Talons" hidden="false" collective="false" import="true" targetId="9f33-ff4a-d948-4636" type="selectionEntry"/>
     <entryLink id="fafa-8442-d6ef-4788" name="Havocs" hidden="false" collective="false" import="true" targetId="946c-d784-c8be-f21" type="selectionEntry"/>
     <entryLink id="b5e5-b8cd-dc7c-5b2b" name="Obliterators" hidden="false" collective="false" import="true" targetId="2311-fa63-364-22a3" type="selectionEntry"/>
-    <entryLink id="add-bf9a-723c-95ce" name="Noctilith Crown" hidden="false" collective="false" import="true" targetId="a3ab-ed12-fa70-2042" type="selectionEntry"/>
     <entryLink id="6bc9-c38b-40fa-49de" name="Chaos Land Raider" hidden="false" collective="false" import="true" targetId="6de7-36d5-6015-7a51" type="selectionEntry"/>
     <entryLink id="bb34-d2c-2f8e-4c73" name="Chaos Predator Annihilator" hidden="false" collective="false" import="true" targetId="279e-62d4-bff1-141" type="selectionEntry"/>
     <entryLink id="390c-50ca-b035-6ef8" name="Chaos Predator Destructor" hidden="false" collective="false" import="true" targetId="3dfb-3b2a-94b-2fbe" type="selectionEntry"/>

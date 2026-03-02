@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="58" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="59" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="2137-605d-109a-d3b2" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
   </catalogueLinks>
@@ -72,7 +72,7 @@
 Banner of the Emperor Victorious: Add 1 to Advance and Charge rolls for this unit
 
 
-Column of the Major Alter: Add 1 to the Toughness characteristic of models in this unit
+Column of the Major Alter: Models in this unit have the Feel No Pain +5 ability. If the Uphold The Honor of The Emperor Vow is active, add +1 to the toughness of this unit
 
 
 Water from the Stoup of Elucidation: Improve the Armour Penetration characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
@@ -87,6 +87,11 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
 ■ Intercessor Squad
 ■ Crusader Squad
 ■ Sword Brethren</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="For Helsreach!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1373-46b2-b09b-ea00">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle at the start of the command phase, this model gains access to all Temple Relic abilities and all enemy units within 12” of this model’s unit can only Charge this unit until the end of your opponent’s turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -245,7 +250,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         <profile name="High Marshal Helbrecht" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a76b-7037-be97-29d7">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
@@ -257,9 +262,9 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Attacks and Strength characteristic of melee weapons equipped by models in that unit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="High Marshal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6e7f-e156-fc38-c2a4">
+        <profile name="Autist Instinct" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6e7f-e156-fc38-c2a4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, select one enemy unit within Engagement Range of this model’s unit and roll one D6, adding 1 to the result for every five models in this model&apos;s unit: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, if this unit is your WARLORD and is on the battlefield, you gain 1CP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="298-2fa3-345c-5083">
@@ -270,6 +275,11 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
 ■ Intercessor Squad
 ■ Crusader Squad
 ■ Sword Brethren</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="High Marshal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3fd2-abc3-64d2-0ba8">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, select one enemy unit within Engagement Range of this model’s unit and roll one D6, adding 1 to the result for every five models in this model&apos;s unit: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -349,11 +359,14 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crusader Squad" hidden="false" id="8bbe-e7fc-44b7-ed94">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusaders" hidden="false" id="6fc8-d787-7895-ec66" sortIndex="2">
@@ -722,7 +735,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="310" field="51b2-306e-1021-d207">
+        <modifier type="set" value="260" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="11" field="selections" scope="8bbe-e7fc-44b7-ed94" childId="6fc8-d787-7895-ec66" shared="true" id="f8f1-a0a-81ed-680b"/>
           </conditions>
@@ -871,9 +884,16 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <profiles>
-        <profile name="Exploit Their Cowardice" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="de7b-731d-90db-dfd9">
+        <profile name="Drive Them Back" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="de7b-731d-90db-dfd9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit within Engagement Range of this unit is selected to Fall Back, after it ends that Fall Back move, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whenever an enemy unit has ended a normal move, advance, charge move, or has shot this unit, once per phase roll a D6 and perform a normal move towards that target or enter within engagement range if close enough.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vow-sword Bladesmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ec29-27c0-5e68-643f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the fight phase, you can tell Games Workshop to go fuck themselves, you can select one of the following effects to apply to melee weapons equipped by models in this unit until the end of the phase:
+Add 1 to the attack characteristics of those weapons.
+Add 1 to the damage characteristics of those weapons.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -882,8 +902,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Sword Brother" hidden="false" id="b3a3-f1ea-c706-bc9">
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c707-6035-e75a-14b8"/>
-                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="6829-3610-2bf6-8870"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6829-3610-2bf6-8870"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Pistol Option" hidden="false" id="f362-37ed-ff1-2cc0" defaultSelectionEntryId="f2a8-18d2-4877-815e">
@@ -962,33 +981,18 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="a4ba-650f-f99a-afcd">
                       <profiles>
-                        <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4dbf-b3ea-afac-a26d">
+                        <profile name="Sword Brethren Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4dbf-b3ea-afac-a26d">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
-                      <constraints>
-                        <constraint type="max" value="0" field="selections" scope="206c-6b4d-4aaa-7e79" shared="true" id="5a0e-cc48-dcf2-596e" includeChildSelections="true"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="5a0e-cc48-dcf2-596e">
-                          <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="da62-2a62-7b9-86a9" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="5a0e-cc48-dcf2-596e">
-                          <conditions>
-                            <condition type="atLeast" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="2504-4842-8136-1944" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                       <selectionEntryGroups>
                         <selectionEntryGroup name="Weapon Upgrades" id="eff8-abef-565d-a12e" hidden="false" flatten="true">
                           <entryLinks>
@@ -997,13 +1001,16 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
+                      <infoLinks>
+                        <infoLink name="Devastating Wounds" id="0a97-4571-c232-3492" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="98d9-b9b5-f2e3-824e">
                       <profiles>
                         <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bdbc-9616-ead8-e35a">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -1078,20 +1085,8 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sword Brother w/ Twin Lightning Claws" hidden="false" id="3378-f713-ff02-3d7c">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c21-80f5-4fe2-dba6"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="81c1-e2ba-d9bb-ca5e"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="c21-80f5-4fe2-dba6">
-                  <conditions>
-                    <condition type="atLeast" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="1f02-cec7-a671-f844" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="c21-80f5-4fe2-dba6">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="a725-5379-0eda-7276" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile name="Primaris Sword Brethren" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5e8a-64f9-08e9-50f7">
                   <characteristics>
@@ -1137,9 +1132,137 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sword Brethen Castellan" hidden="false" id="10f6-5ffd-0b91-8332">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5577-4912-2776-c470"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bb7-5a09-d32d-f7e5"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="ca38-3175-eba0-ca9f" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pistol Option" id="47f8-7f1d-4d52-8ec4" hidden="false" defaultSelectionEntryId="f2a8-18d2-4877-815e">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c52-95ef-1814-22ed"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb1-81b2-87cb-723e"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="9782-3f59-f9e8-4702" type="selectionEntry" targetId="3b8f-1cb7-3c6e-4455">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="5810-8c22-87cc-bef4" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="929f-916b-352e-d988" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="b70e-7723-8613-06b8" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="8826-0e3c-2cbd-905a" type="selectionEntry" targetId="25c2-104f-fa0c-809e">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="206c-6b4d-4aaa-7e79" shared="true" id="6025-04b7-471a-2739" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="2" field="6025-04b7-471a-2739">
+                          <conditions>
+                            <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="f2a1-924a-5420-26d1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="0" field="6025-04b7-471a-2739">
+                          <conditions>
+                            <condition type="lessThan" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="cac1-bc15-7d76-cacf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="0562-676c-9b9a-82eb" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1f1b-0833-e005-5e4b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="09d9-1a34-7951-3a1d" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Pyre Pistol" hidden="false" id="6885-baf7-5c82-a08a" type="selectionEntry" targetId="bb21-4114-6b0c-634d">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="206c-6b4d-4aaa-7e79" shared="true" id="c528-ac30-5eb6-c887" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="4" field="c528-ac30-5eb6-c887">
+                          <conditions>
+                            <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="57e8-fac0-0852-93d0"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="0" field="c528-ac30-5eb6-c887">
+                          <conditions>
+                            <condition type="lessThan" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="ace6-914e-c681-cea8"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="50a8-44bf-05ea-d94c" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="ac37-0324-bd56-410a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="ee5c-a2c1-e067-d48d" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Option" id="3813-c889-8b0e-b67f" hidden="false" defaultSelectionEntryId="de7a-3acb-5169-0755">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Master-crafted Power Axe" hidden="false" id="d307-50b1-f42a-85e7">
+                      <profiles>
+                        <profile name="Master-crafted Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6c23-fd23-b55c-8366">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Lethal Hits" id="2589-3e32-f9bb-3925" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                      </infoLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="c7a2-452f-3edd-3192" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="c458-6b49-653e-7326" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Codex Crusade Relic Upgrades" hidden="false" id="288a-c9ab-a7ff-f486" type="selectionEntryGroup" targetId="eb04-f0c1-5346-7865"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <categoryLinks>
+                        <categoryLink name="Power Weapon" hidden="false" id="b174-632c-6e19-e24d" targetId="72a2-ff76-451c-9d12" primary="false"/>
+                      </categoryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbc4-64c0-adb7-428b"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b13-9fd2-4da8-a7b6"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Castellan Sword Brethren" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ee64-ef06-f2b9-f1a7">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8da3-3774-b522-c800"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8da3-3774-b522-c800"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e8b4-e00d-ddd3-69d6"/>
           </constraints>
         </selectionEntryGroup>
@@ -1150,19 +1273,9 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             <condition type="equalTo" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="model" shared="true" id="8c55-cc1f-8b59-6cc0" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="235" field="51b2-306e-1021-d207">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="6" field="selections" scope="206c-6b4d-4aaa-7e79" childId="model" shared="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="model" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" value="260" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="model" shared="true" id="296d-05da-c4b1-b708" includeChildSelections="true"/>
+            <condition type="atLeast" value="6" field="selections" scope="206c-6b4d-4aaa-7e79" childId="model" shared="true" id="296d-05da-c4b1-b708" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4121,10 +4234,7 @@ You can attach this model to one of the above units even if one Captain or Chap
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5556-141d-0859-95c1">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
-
-■ Crusader Squad
-■ Sword Brethren</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Leader: If a unit is being led by an Emperor’s Champion, High Marshal Helbrecht, or Chaplain Grimaldus, this model can be attached to that unit. Can still be attached to High Marshal Helbrecht if a Castellan or Lieutenant are already attached.</characteristic>
           </characteristics>
         </profile>
         <profile name="Remorseless Persecution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0021-dd8f-9cd5-4221">
@@ -4135,6 +4245,11 @@ You can attach this model to one of the above units even if one Captain or Chap
         <profile name="Condemnatory Annihilation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ac40-1010-2b03-450d">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model&apos;s unit has fought, if one or more enemy units were destroyed as a result of those attacks, each enemy unit within 6&quot; of this model must take a Battle-shock test</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="By The Emperor’s Will" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7fb4-396e-3a34-7bd3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, this model can use this ability. If a model within this unit used a Once Per Battle or Once per Phase ability, they can do so again.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4150,12 +4265,14 @@ You can attach this model to one of the above units even if one Captain or Chap
         <categoryLink targetId="746a-82bd-5c0a-634e" id="ec11-1acd-1c25-b4d6" primary="false" name="Execrator"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b8d9-d86e-5e32-c982"/>
@@ -4439,6 +4556,11 @@ You can attach this model to one of the above units even if one Captain or Chap
 You can attach this model to one of the above units even if one Captain, Chapter Master, Execrator or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Eternal Crusade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0832-4707-1278-f588">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the command phase while a Crusade Ancient is on the battlefield, select one enemy unit as an Eternal Crusade target. Until the end of the battle round, re-roll the Hit rolls when attacking the target. If the target is within range of an objective marker, re-roll wound rolls of 1</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="4aae-9e96-eb47-9192" hidden="false" sortIndex="4">
@@ -4496,12 +4618,14 @@ You can attach this model to one of the above units even if one Captain, Chapter
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="bee0-7be6-4af8-68e9" primary="true" name="Character"/>
