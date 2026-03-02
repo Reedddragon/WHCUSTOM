@@ -6129,7 +6129,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
         <categoryLink targetId="2d7f-1892-2fd0-e29c" id="920c-add3-0d07-5197" primary="false" name="Captain"/>
       </categoryLinks>
       <profiles>
-        <profile name="Chaplain in Terminator Armour" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8da0-6964-900c-31d4">
+        <profile name="Sword Brethren Terminator Captain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8da0-6964-900c-31d4">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
