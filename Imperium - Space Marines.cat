@@ -24587,7 +24587,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
 ■ Sternguard Veteran Squad
 ■ Tactical Squad
 
-You can attach this model to a unit it can lead even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
+You can attach this model to a unit it can lead even if one Captain, Chaplain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -28469,7 +28469,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Command Squad [Legends]" hidden="false" id="78ae-14b4-56d0-cc9d">
+    <selectionEntry type="unit" import="true" name="Command Squad" hidden="false" id="78ae-14b4-56d0-cc9d">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
       </costs>
@@ -28481,7 +28481,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <categoryLink targetId="6e7-40c-58d9-e402" id="64a2-b0fe-df76-4d83" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="aabd-fe6e-cfa4-73c1"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aabd-fe6e-cfa4-73c1"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="e6b4-dbdd-95d4-ffa1" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="bd22-769b-3302-bcbc" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="0c79-526b-9dc4-59e9" includeChildSelections="true"/>
@@ -28491,9 +28491,9 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <infoLink name="Templar Vows" id="e8cc-8a54-ef3d-b708" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="300" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="8d73-833a-2cf6-91a3" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="6" field="selections" scope="78ae-14b4-56d0-cc9d" childId="model" shared="true" id="a191-a02e-d39f-9700"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -28824,7 +28824,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
             <selectionEntry type="model" import="true" name="Company Veterans" hidden="false" id="7fda-f23f-c551-4bfd">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a2fd-a9d2-733a-7023"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f4a2-f437-5762-26b6"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="f4a2-f437-5762-26b6"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Option 1" id="2ec4-e203-332b-f30a" hidden="false" defaultSelectionEntryId="e68d-feb8-fe95-829c">
@@ -28973,6 +28973,28 @@ You can attach this model to one of the above units even if one Captain, Chapte
                           </characteristics>
                         </profile>
                       </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Black Templar Power Sword" hidden="false" id="60ae-a39c-ced3-231a">
+                      <profiles>
+                        <profile name="Black Templar Power Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2923-13bb-0163-02a6">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
