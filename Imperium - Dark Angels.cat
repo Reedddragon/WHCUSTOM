@@ -5566,6 +5566,10 @@ In addition, each time a model in this unit makes an attack that targets your Oa
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fb9-314a-36b7-5f0e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26fe-bdb5-aee2-afbe"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -6728,10 +6732,10 @@ model is within 12&quot;.</characteristic>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">13</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
