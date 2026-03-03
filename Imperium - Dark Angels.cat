@@ -5541,7 +5541,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b959-5dfe-0263-d2f0"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="d647-02e7-94fd-17b6">
+        <selectionEntry type="upgrade" import="true" name="World Burner" hidden="false" id="d647-02e7-94fd-17b6">
           <profiles>
             <profile name="World Burner - Plasma" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="17d4-5020-9e1a-940c">
               <characteristics>
