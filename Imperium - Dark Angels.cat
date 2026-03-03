@@ -186,12 +186,12 @@
         </profile>
         <profile name="Grand Master of the Deathwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c8e-e7f9-5ded-2a58" page="9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a critical wound unsaved attack, deal a mortal wound in addition to the attack done.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit has the Fights First and PRECISION ability. When this unit destroys a unit, gain 1 CP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Unknown Unbreakable" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f47-7e55-2cae-535c" page="9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit gain a stack of Feel no pain, gain 2 stacks when on an objective. This stacks with other sources of Feel no pain</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit gain a stack of Feel no pain, gain 2 stacks when on an objective. This stacks with other sources of Feel no pain(up to 4+)</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ec73-66f5-f92a-addf">
@@ -350,7 +350,7 @@
         </profile>
         <profile name="Grand Master of the Ravenwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8858-35c5-7be5-9f0a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 2 to Advance and Charge rolls made for that unit instead.</characteristic>
           </characteristics>
         </profile>
         <profile name="Cut Off Their Escape" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="226-2678-90ed-5d5" page="11">
@@ -437,7 +437,7 @@
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 2, Devastating Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1078,6 +1078,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Sky Spear" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="92ad-502c-90b8-e42d" page="39">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model makes an Advance move, do not roll a D6 instead add 10&quot; to its movement instead, If this model moves at least 25&quot; it gains [Assault] on its weapons</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Hover" hidden="false" type="rule" id="ce06-f943-10ba-14bd" targetId="eec5-5f54-9c03-c305"/>
@@ -1349,6 +1354,11 @@
         <profile name="DAMAGED: 1-3 WOUNDS REMAINING" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c8eb-9594-8256-8c40" page="37">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Alpha Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="12de-312a-ec07-a4fd" page="37">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack with its Hurricane bolter that targets an enemy unit (excluding MONSTERS and VEHICLES), that attack has the [LETHAL HITS] ability. Each time this model makes an attack with its Rift Cannon that targets an enemy MONSTER or VEHICLE unit, you can re-roll the wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5480,7 +5490,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         </profile>
         <profile name="Master of Dreadwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4fa7-1066-68a7-cd82" page="9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Reroll wound rolls againts oath of moment target for this unit and another Dreadwing unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Reroll wound rolls againts oath of moment target for this unit and another Dreadwing unit that you nominate.</characteristic>
           </characteristics>
         </profile>
         <profile name="Eskaton Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d13-da6e-b3d1-4a7f" page="9">
@@ -5531,6 +5541,32 @@ In addition, each time a model in this unit makes an attack that targets your Oa
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b959-5dfe-0263-d2f0"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="d647-02e7-94fd-17b6">
+          <profiles>
+            <profile name="World Burner - Plasma" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="17d4-5020-9e1a-940c">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Lethal Hits, Pistol, Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="World Burner - Phosporos Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5a53-440f-faa8-5319">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b4e9-186d-26e8-33c1"/>
@@ -5547,41 +5583,6 @@ In addition, each time a model in this unit makes an attack that targets your Oa
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="2c07-aa4f-5320-fe1e" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="cc5a-ca19-5961-583a" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Ranged Weapon" id="9996-1983-46a6-34ec" hidden="false" defaultSelectionEntryId="8d41-a5bb-150b-1230" collective="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Phosphorous Cannon" hidden="false" id="b923-dfdf-f456-c388" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8fa-78fb-cfb7-7127"/>
-              </constraints>
-              <profiles>
-                <profile name="Phosphorous Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2eb7-95a9-14c0-e6ae">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Ignores Cover" id="06d2-7135-c2e5-f75f" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                <infoLink name="Torrent" id="4ecf-a256-9c7e-fdac" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b0f-2248-fe3b-0146"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66a-77e6-9faf-8621"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Dreadwing Plasma Cannon" hidden="false" id="d932-6fe3-c00d-0d87" type="selectionEntry" targetId="6c3b-d900-0596-fd2f"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name=" Phosphex Incinerator Cannons" hidden="false" id="2d12-ed8c-93d8-a387" collective="false">
       <profiles>
@@ -5593,7 +5594,7 @@ In addition, each time a model in this unit makes an attack that targets your Oa
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Devastating Wounds,</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Devastating Wounds, Hazardous</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5697,9 +5698,9 @@ model is within 12&quot;.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ghost Blade" hidden="false" id="23c6-6a24-0614-e509" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Ghost Blades" hidden="false" id="23c6-6a24-0614-e509" collective="true">
           <profiles>
-            <profile name="➤ Ghost Blade - Melta Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2824-aa44-ed0f-dc50">
+            <profile name="➤ Ghost Blades - Melta Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2824-aa44-ed0f-dc50">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
@@ -5710,7 +5711,7 @@ model is within 12&quot;.</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision, Anti-Character 4+, Devastating Wounds</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Ghost Blade  - Twin Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="edcf-9c4a-9f8b-3bfc">
+            <profile name="➤ Ghost Blades  - Twin Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="edcf-9c4a-9f8b-3bfc">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
@@ -6031,7 +6032,7 @@ model is within 12&quot;.</characteristic>
         </profile>
         <profile name="Vengence of Old Night" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7ae0-620a-b728-8932">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, and in the Fight phase, each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot or fight, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target). When this unit uses this ability, This unit cannot be targeted by stratagems for the rest of the turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, and in the Fight phase, each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot or fight, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target). This unit cannot be targeted by stratagems unless a Forge-Wright or Tech-marine is within 12&quot;.</characteristic>
           </characteristics>
         </profile>
         <profile name="Man of Iron" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="35bb-5e76-038f-3e8b">
@@ -6519,7 +6520,7 @@ model is within 12&quot;.</characteristic>
         </profile>
         <profile name="Exterminatus-class" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9887-c9d3-2142-ec71">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When Targeting a Monster or Vehicle, Critical Wounds on 3+ but gain Hazardous keyword on the Dreadwing Weapon used</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can use this ability when Targeting a Monster or Vehicle, When rolling a unmodified wound roll of 3+, That is considered a Critical Wound: but reduce 4 on the Hazardous Roll and add D3 to the Hazardous Damage roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6615,19 +6616,18 @@ model is within 12&quot;.</characteristic>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Dreadwing Volkite Carronade" hidden="false" id="23b6-3171-b027-5b82">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d791-29e9-ee48-9406"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d0a-b1a2-8ff6-5931"/>
                   </constraints>
                   <profiles>
                     <profile name="Dreadwing Volkite Carronade" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e962-405e-7f94-0b55">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">6</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Monster 4+, Anti-Vehicle 4+, Devastating Wounds</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6635,6 +6635,72 @@ model is within 12&quot;.</characteristic>
                     <infoLink name="Anti-" id="4bb6-07af-e3de-2e3d" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                     <infoLink name="Devastating Wounds" id="e886-c231-cc95-90c7" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dreadwing volcano cannon" hidden="false" id="74c9-14c7-88fa-3cb4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d002-71d7-0c99-6ddc"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Dreadwing Volcano Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6560-6a57-bef3-2bbc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">120&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">26</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-5</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">16</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="87ab-60f0-a5a1-dcab" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3de9-7f0b-a131-a77c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dreadwing accelerator cannon" hidden="false" id="081c-eaad-093a-18b0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bcc-42d3-3633-e4cb"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="➤ Dreadwing accelerator cannon - AP shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9b4e-c893-2237-1334">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Dreadwing accelerator cannon - HE shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="83c2-7011-7dde-b161">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Devastating Wounds</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="ccd8-3b69-0f59-5873" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="abee-a7b3-9cc0-38b3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -6877,7 +6943,7 @@ model is within 12&quot;.</characteristic>
                     <profile name="➤ Calibanite Charge Blades  - Twin Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3608-a392-d135-eb57">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -6912,7 +6978,7 @@ model is within 12&quot;.</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Precision, Twin-Linked</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Precision, Twin-Linked, Assault</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6925,6 +6991,7 @@ model is within 12&quot;.</characteristic>
                   </entryLinks>
                   <infoLinks>
                     <infoLink name="Precision" id="9474-adc1-739e-932f" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                    <infoLink name="Assault" id="138f-d080-f34b-551b" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -10532,11 +10599,15 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a Character unit, add 1 to the Hit roll and wound roll. and add 1 to damage characteristic of weapons of this unit</characteristic>
           </characteristics>
         </profile>
+        <profile name="Firewing Head Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a05-582a-37fa-7851">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Cannot gain Charge bonus againts infantry, mounted, beast units unless the enemy unit charged has a character model. If this unit is in engagement range of a Character Unit, This unit gains Fights First</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Oath of Moment" id="f15b-7971-4bd8-4621" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Deep Strike" id="7572-47df-44df-6d86" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
-        <infoLink name="Firewing" id="c569-a274-1df0-574a" hidden="false" type="rule" targetId="6761-6e63-307a-e055"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
@@ -10634,7 +10705,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                   <profiles>
                     <profile name="Firewing Micro Melta Sniper" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5a4c-e9b6-ecf0-e57f">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
@@ -10849,7 +10920,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         </profile>
         <profile name="Dreadwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5340-2b13-2dff-6c13">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit gain feel no pain 6+ when being targeted by a ranged attack</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit gain feel no pain 5+ when being targeted by a ranged attack</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -12605,7 +12676,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         <profile name="Dreadnought Inferno Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ab1f-d8a0-8a8c-05c4">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -13472,9 +13543,14 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this Unit makes an attack that targets a Character Unit, add 1 to the Wound roll and Damage.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Teleport Homer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4eb-bbf2-bf53-040c">
+        <profile name="Firewing Frontlines" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4eb-bbf2-bf53-040c">
           <characteristics>
-            <characteristic name="Description" hidden="false" id="3f2f-db40-7528-fccb" typeId="9b8f-694b-e5e-b573">At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3&quot; horizontally of that token and not within 9&quot; horizontally of any enemy models. That token is then removed.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit is in engagement range of a Character Unit, This unit gains Fights First</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Teleport Homer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4741-986e-5a9d-7673">
+          <characteristics>
+            <characteristic name="Description" hidden="false" id="1115-e8b5-dd7f-135a" typeId="9b8f-694b-e5e-b573">At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3&quot; horizontally of that token and not within 9&quot; horizontally of any enemy models. That token is then removed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13499,11 +13575,6 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9ad2-9f8a-5551-73ac" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1eab-c8f0-16d0-2bc6" includeChildSelections="true"/>
       </constraints>
-      <rules>
-        <rule name="Firewing " id="53f6-3467-23a0-d08a" hidden="false">
-          <description>If this unit is in engagement range of a Character Unit, This unit gains Fights First</description>
-        </rule>
-      </rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Firewing Exsecutor" hidden="false" id="aa7b-1361-4675-2db7">
           <profiles>
@@ -14114,16 +14185,6 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Dreadwing" hidden="false" id="4191-4fd8-89f9-0ef5" collective="false" sortIndex="3">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1780-25b8-ce0b-898d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="Dreadwing" field="name">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="4191-4fd8-89f9-0ef5" shared="true" id="fe5d-b5f2-7517-472b" includeChildSelections="true"/>
@@ -14136,6 +14197,13 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <profiles>
+            <profile name="Dreadwing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fab4-c990-56ca-a7ec">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit gain feel no pain 5+ when being targeted by a ranged attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ironwing" hidden="false" id="afa6-3f85-0075-ab7f" collective="false" sortIndex="3">
           <categoryLinks>
