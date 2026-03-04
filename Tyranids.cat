@@ -9621,7 +9621,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d249-185b-bff2-1d2d"/>
               </constraints>
               <profiles>
-                <profile name="Dire bio-cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d21b-53ef-158e-46d4">
+                <profile name="Emerald Rupture Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d21b-53ef-158e-46d4">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+3</characteristic>
