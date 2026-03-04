@@ -456,7 +456,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
       <profiles>
         <profile name="Crisis Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1597-2952-693f-60f2">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll the wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Commander in Crisis Battlesuit" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1b5b-8bc9-907e-3372">
