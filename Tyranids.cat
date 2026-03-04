@@ -473,9 +473,7 @@
         </profile>
         <profile name="Frontline Tyrant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4514-9f71-ac88-7606">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">his ability can be used once per battle. This unit can perform a Charge even if it has Advanced. If leading Gargoyles, the entire unit can still Charge even after using Winged Swarm.
-
-</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">his ability can be used once per battle. This unit can perform a Charge even if it has Advanced. If leading Gargoyles, the entire unit can still Charge even after using Winged Swarm.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9437,9 +9435,9 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a unit that is Battle-shocked, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Melting Blast" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9746-a65-6ca-1ead">
+        <profile name="Emerald Splash" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9746-a65-6ca-1ead">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> Choose one enemy unit hit by this model’s Range attacks and place a marker down until your next command phase. Enemy units within 9” of that marker suffer D3 Mortal Wounds for every phase they remain there</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Choose one enemy unit hit by this model’s Range attacks and place a marker down until your next command phase. Enemy units within 9” of that marker suffer D3 Mortal Wounds for every phase they remain there</characteristic>
           </characteristics>
         </profile>
         <profile name="Hierophant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b4a6-82bd-fa8f-4235">
@@ -9549,12 +9547,12 @@
               <profiles>
                 <profile name="Bio-plasma torrent" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="db9f-40a6-82da-befd">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3D6</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4D6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Torrent</characteristic>
                   </characteristics>
                 </profile>
@@ -10689,9 +10687,7 @@
 -Select one objective marker your opponent does not control. When this unit is within range of that objective, gain an Objective Control of 15 and when an enemy unit targets this model, worsen the hit roll by 1.
 
 
--At the start of the second battle round, select one objective marker your opponent controls. All enemy units within 9” of the center of that objective marker must take a battle shock test and cannot move. If the battle shock test is failed, the unit&apos;s save roll is worsened by 1 until they are more than 9” away from the objective marker.
-
-</characteristic>
+-At the start of the second battle round, select one objective marker your opponent controls. All enemy units within 9” of the center of that objective marker must take a battle shock test and cannot move. If the battle shock test is failed, the unit&apos;s save roll is worsened by 1 until they are more than 9” away from the objective marker.</characteristic>
           </characteristics>
         </profile>
         <profile name="Norn Assimilator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="36d4-99f2-1830-b57">
@@ -11933,7 +11929,6 @@
         <categoryLink targetId="d1d8-6ae0-1be7-e9e" id="55a5-1538-c768-4e77" primary="false" name="Faction: Tyranids"/>
         <categoryLink targetId="9693-cf84-fe69-37a9" id="5d69-905e-9554-cef5" primary="true" name="Monster"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="7beb-5613-619d-f43e" primary="false" name="Titanic"/>
-        <categoryLink targetId="d666-e2c9-b6cc-5716" id="1851-88d7-3b9d-5b60" primary="false" name="Towering"/>
         <categoryLink targetId="7850-cc5a-c191-b80d" id="eb1b-2a80-eeb6-bed0" primary="false" name="Great Devourer"/>
         <categoryLink targetId="7c32-1278-7a4f-c15a" id="03b4-3f59-6332-3e85" primary="false" name="World-Render"/>
       </categoryLinks>
@@ -11986,6 +11981,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Super-Heavy Walker" id="9258-0778-d36e-9086" hidden="false" type="rule" targetId="5e13-1624-d280-418d"/>
       </infoLinks>
       <profiles>
         <profile name="Damaged: 1-10 wounds remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7b58-b6be-b410-6e6a">
@@ -12284,7 +12280,7 @@
               <profiles>
                 <profile name="Torrasque Strain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df55-94d7-d76e-f645">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this model is destroyed, keep it in play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 4+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 10 wounds remaining. </characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this model is destroyed, keep it in play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 4+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 10 wounds remaining.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
