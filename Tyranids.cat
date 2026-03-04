@@ -9421,7 +9421,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Synapse" id="e2f3-96cc-035c-0b8b" hidden="false" type="rule" targetId="86aa-437f-260b-5cad"/>
-        <infoLink name="Invulnerable Save (5+)" id="3104-4388-0ffb-1b8e" hidden="false" targetId="57fe-61a-b993-2db0" type="profile"/>
+        <infoLink name="Invulnerable Save (4+)" id="3104-4388-0ffb-1b8e" hidden="false" targetId="a2fa-ebfd-7b32-9a75" type="profile"/>
         <infoLink name="Super-Heavy Walker" id="c562-6ec5-a447-563d" hidden="false" type="rule" targetId="5e13-1624-d280-418d"/>
       </infoLinks>
       <profiles>
