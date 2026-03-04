@@ -355,7 +355,7 @@
         </profile>
         <profile name="Cut Off Their Escape" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="226-2678-90ed-5d5" page="11">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of this model’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit within Engagement Range of this model’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests unless they are a vehicle or monster.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -662,7 +662,7 @@
         </profile>
         <profile name="Exemplar of Hate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb36-69d9-6027-34d7" page="15">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the wound roll and you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Feared Interrogator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4483-333d-1b7-1499" page="15">
@@ -13806,7 +13806,12 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
         </profile>
         <profile name="Stormwing Bombardment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c479-22d3-ff89-72cd">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its Stormwing Artillery Battery scored a hit against an enemy Infantry unit, that unit must take a Battle-shock test and reduce 2 from that test.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its Stormwing Artillery Battery scored a hit against an enemy Infantry unit, that unit must take a Battle-shock test and reduce 2 from that test. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Coordinates Recived" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7bd6-b3d3-646c-8c2c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, If this model is shooting a model that can be seen by another ADEPTUS ASTARTES unit, Stormwing Artillery Battery gain [Ignores Cover] Ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13939,7 +13944,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire, Heavy</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="➤ Stormwing Artillery Battery  - Stormfire shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1447-022a-a8f6-f29d">
@@ -13950,7 +13955,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Indirect Fire</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Indirect Fire </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
