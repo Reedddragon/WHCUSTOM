@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="168" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="171" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <profileTypes>
     <profileType id="3084-68b8-1d20-2f26" name="Marks of Chaos">
       <characteristicTypes>
@@ -2778,6 +2778,7 @@
     </entryLink>
     <entryLink import="true" name="Horus Heresy" hidden="false" id="bc50-c11a-ea24-c9fc" type="selectionEntry" targetId="c124-e6c3-73c7-e7cc"/>
     <entryLink import="true" name="Alpha Discordsmith" hidden="false" id="33db-305d-7d73-7e8e" type="selectionEntry" targetId="db78-f671-582d-2c46"/>
+    <entryLink import="true" name="Exodus, The One Who is Many" hidden="false" id="c4ae-9d1b-9483-d786" targetId="cf4b-dfb8-2866-77dc" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e296-4a38-d9a5-289c" name="Detachment" hidden="false" collective="false" import="true" type="upgrade">
@@ -4486,6 +4487,11 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
             <modifier type="set" value="4+" field="94d-8a98-cf90-183e">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3832-4208-11e9-ca22" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf4b-dfb8-2866-77dc" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -27950,6 +27956,204 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditions>
+                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="2" field="bd28-cba3-da09-f61c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="2438-c7ca-94ed-0311">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Exodus, The One Who is Many" hidden="false" id="cf4b-dfb8-2866-77dc" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8f07-eccb-c84d-b7db" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7038-fedd-8814-0ab9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Exodus, The One Who is Many" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7572-6fcf-f7c6-dc29">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pinning Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="07aa-36bc-14ea-522e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this model has resolved its ranged attacks, select one enemy unit that was hit by one or more of those attacks. That unit must take a Battle-Shock test</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Assassin&apos;s Eye" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9738-2a11-4139-6b32">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Dark pact, until the end of the phase ranged weapons equipped by models in this unit have the Devastating Wounds ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Dark Pacts" id="4b96-eea2-13aa-9c1c" hidden="false" targetId="fd69-68cc-5d63-c84d" type="rule"/>
+        <infoLink name="Lone Operative" id="c98a-963c-e6d3-4bd1" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="599c-7d30-daed-f072" targetId="1e42-dfae-cbdd-207d" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="a920-3607-488c-d79c" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="4998-90f6-007e-c2d2" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="f63c-8640-69c7-b328" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="87c4-1daa-f268-8282" targetId="4c00-2578-faf5-6918" primary="false"/>
+        <categoryLink name="Epic Hero" hidden="false" id="fefa-a7b0-499c-cf56" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink targetId="2c5c-6ca6-777-c633" id="c99c-502c-b429-5486" primary="false" name="Chaos Undivided"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="4618-f9b2-0e8c-c781" hidden="false" sortIndex="4">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exodus Power Dagger" id="55ef-8024-d934-3d80" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcae-7a06-f705-f459">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="852f-59be-5fb4-22a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68cf-fbbd-2224-5553" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Instrument" hidden="false" id="9da0-eecd-cace-84f2">
+              <profiles>
+                <profile name="➤ The Instrument - Execution" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8a25-717b-99a6-adfa">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤ The Instrument - Rapid Fire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6ebe-d04e-ac78-df75">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8215-e167-532a-1a00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98b5-2399-96ca-1d1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exodus Power Dagger" hidden="false" id="4930-6162-9338-816c" collective="false">
+              <profiles>
+                <profile name="Exodus Power Dagger" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="de3a-4bd9-ff6e-05eb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="3aaa-bad5-5cf1-b8f7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf7e-712f-c8a8-a7c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89fd-9730-89fb-5e2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="fade-ea24-4c92-05c7" type="selectionEntry" targetId="ce4a-6df3-3c24-621b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="223b-5b35-8ceb-62a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Enhancements" hidden="false" id="e58b-c83f-8d50-c42c" collective="false" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
