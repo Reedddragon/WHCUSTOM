@@ -28352,7 +28352,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <selectionEntryGroups>
         <selectionEntryGroup id="b277-8761-3d67-d84f" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" defaultSelectionEntryId="d30b-b831-35ff-d173" sortIndex="3">
           <constraints>
-            <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f5-a3a4-7f5b-9b55" type="max"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f5-a3a4-7f5b-9b55" type="min"/>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58c8-e858-a893-d2eb" type="max"/>
           </constraints>
           <selectionEntries>
