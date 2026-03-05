@@ -5047,14 +5047,24 @@ You can attach this model to one of the above units, even if one Captain, Chapt
           </conditions>
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9d32-d514-00a8-6423" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="708c-5499-4102-8e25" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8e6-a4b2-c15f-49e2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="6" field="8e4c-cf17-a45a-b02a">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9d32-d514-00a8-6423" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="708c-5499-4102-8e25" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8e6-a4b2-c15f-49e2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -5322,14 +5332,24 @@ You can attach this model to one of the above units, even if one Captain, Chapt
           </conditions>
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9d32-d514-00a8-6423" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="708c-5499-4102-8e25" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8e6-a4b2-c15f-49e2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="6" field="d4b4-df13-559a-8e76">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9d32-d514-00a8-6423" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="708c-5499-4102-8e25" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d8e6-a4b2-c15f-49e2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
