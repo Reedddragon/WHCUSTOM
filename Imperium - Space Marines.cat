@@ -6752,7 +6752,7 @@ While this Mission Tactic is active, each time an ADEPTUS ASTARTES unit from you
                 </modifier>
               </modifiers>
               <rules>
-                <rule name="Vowed Target" id="faf6-7377-c475-6b73" hidden="false">
+                <rule name="Vowed Target" id="1d87-3425-f987-f681" hidden="false">
                   <description>At the start of your Movement phase, select one of the following:
 - Defensive Footing: Select one objective marker you control. Until the start of your next Movement phase, that objective marker is your Vowed objective marker.
 - Aggressive Push: Select one or more objective markers you do not control. Until the start of your next Movement phase, each of those objective markers is one of your Vowed objective markers. If a rule refers to a unit or model being within range of your Vowed objective marker, that rule takes effect if that unit or model is within range of one or more of your Vowed objective markers.
@@ -7288,6 +7288,139 @@ than the Toughness characteristic of your unit or your unit has the ^^**Titus^^
                   </conditions>
                 </modifier>
               </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Deathwing, Neltharion protocol" hidden="false" id="56d5-6a7c-3b24-8894">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="RHINO IMPERATIVES" id="c106-4116-eea2-ae6b" hidden="false">
+                  <description>At your Command Phase you can Select one of the following:  
+
+
+IRONSKIN IMPERATIVE:
+When a DEATHWING unit being is targeted by an Attack, reduce 1 to the wound roll of the attack, If this unit is 6” from an objective marker, also reduce 1 from the hit roll of the attack.
+
+
+
+
+BREAKER IMPERATIVE:
+DEATHWING units are eligible to declare a charge in a turn in which it Advanced. If a DEATHWING unit is 6” from an objective marker, Add 1 to the hit and wound rolls of the attacks done by that unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ironwing, Divine judgement protocol" hidden="false" id="735b-7854-0a89-d62d">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="ALEXANDER IMPERATIVE" id="dae4-3b4a-1544-8996" hidden="false">
+                  <description>All Adeptus Astartes Vehicle models from your army have the Feel No Pain 6+ ability and Adeptus Astartes Walkers models have the Feel No Pain 5+ ability instead.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Firewing. Fatalis Protocol" hidden="false" id="98de-4636-9ad1-d132">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="BLACK FIRE" id="e014-44bd-4443-1bba" hidden="false">
+                  <description>At the end of your opponent’s turn, you can select a number of ADEPTUS ASTARTES units from your army (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:
+
+
+
+
+BATTLE SIZE
+NUMBER OF UNITS
+Incursion
+Up to 2 units
+Strike Force
+Up to 3 units
+Onslaught
+Up to 4 units
+
+
+When a character model dies, take a battleshock test with -2 to the roll to the units around 6&quot; of the location where the model died.
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dreadwing: Alatreon Protocol" hidden="false" id="90bc-f240-df73-e520">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="World Ending Dread" id="d9ab-5a7a-824b-2aa1" hidden="false">
+                  <description>All Dreadwing models from your army have the Feel No Pain 6+ ability against range attacks and Feel No Pain 5+ for mortal wounds.
+
+
+Infernus,hellblasters,desolation,devastators and gravis units get dreadwing keyword</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ravenwing, Nephilim Protocols." hidden="false" id="2b34-3859-3846-1cd8">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="HUNTERS IN BLACK" id="3aca-c7c1-9149-d5dd" hidden="false">
+                  <description>ADEPTUS ASTARTES units from your army are eligible to shoot in a turn in which they Advanced or Fell Back.
+
+
+ADEPTUS ASTARTES MOUNTED units from your army are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.
+
+
+RESTRICTIONS
+Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.
+
+
+KEYWORDS
+OUTRIDER SQUAD units from your army gain the BATTLELINE keyword 
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stormwing. Kushala Daora Protocol." hidden="false" id="93f8-1ff6-c81b-f16c">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="STORM OF WAR" id="362a-c444-0c64-5362" hidden="false">
+                  <description>- for every turn roll a d6, if you roll 5+, gain 1cp, add 1 to the roll for every objective you hold
+
+
+Battleline units gain +1 to hit roll when the unit is within 6&quot; of an objective 
+
+
+Indirect fire weapons gain ignore cover ability, if that weapon already has ignore cover, ignore indirect fire hit roll penalty for that weapon.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -14673,9 +14806,14 @@ by 1.</characteristic>
           </conditions>
         </modifier>
         <modifier type="set" value="6" field="c378-0802-7a7d-6dde">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3036-569f-513b-0683" shared="true" includeChildForces="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2b34-3859-3846-1cd8" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3036-569f-513b-0683" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
