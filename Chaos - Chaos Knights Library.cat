@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="63" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="64" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="99dc-0f47-85e2-75da" name="War Dog" hidden="false">
       <modifiers>
@@ -3687,77 +3687,18 @@ While using the Houndpack Lance Detachment, the following rules apply:
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="850f-b369-61dd-ddc2" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="4ae4-2f73-904c-73ad" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Asterius volkite culverin" hidden="false" id="a895-55eb-d2ea-6b87" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Twin conversion beam cannon" hidden="false" id="58ee-32b1-a0f3-ff45">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e3a6-14f2-387-ad4d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d569-8b74-412c-d6c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fda2-1a42-4c60-16f3"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f100-9737-28cd-38a9"/>
               </constraints>
               <profiles>
-                <profile name="Asterius volkite culverin" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8ef2-44e8-d00c-ebe6">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Devastating Wounds" id="1623-51e0-79b6-c180" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="2887-bb4e-2592-2617" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="506b-fe3c-9d9f-1d55" collective="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b6-942e-3e71-5d82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f53a-33a9-80d1-c7d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Karacnos mortar battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b377-6e1c-4b6d-2681">
+                <profile name="Twin conversion beam cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1e15-4767-07a4-9543">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 2+, Blast, Ignores Cover, Indirect Fire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Anti-" id="2e8c-c8cb-7c15-b760" hidden="false" targetId="4111-82e3-9444-e942" type="rule"/>
-                <infoLink name="Blast" id="d59f-2ba0-3b47-5ae9" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
-                <infoLink name="Ignores Cover" id="6923-bd94-df65-46fe" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
-                <infoLink name="Indirect Fire" id="856c-ee85-28a-71d0" hidden="false" targetId="4ddd-4e29-acdd-5e6d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="1902-69a2-7280-920b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin conversion beam cannon" hidden="false" id="1e7e-f373-3db1-a768" collective="false">
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c8f2-fe3a-e648-ba99" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7547-77ef-7985-6287" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Twin conversion beam cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7322-a1c5-255-ed8b">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">12</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">16</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -3767,27 +3708,82 @@ While using the Houndpack Lance Detachment, the following rules apply:
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Twin-linked" id="7b8a-3301-c32f-63af" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
-                <infoLink name="Sustained Hits" id="5f79-8891-e90e-353d" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+                <infoLink name="Twin-linked" id="9b32-2e15-2bd1-7aea" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                <infoLink name="Sustained Hits" id="5fb7-130f-4017-b2e8" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
               </infoLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
               <rules>
-                <rule name="Conversion" id="b17a-783c-cd7d-a787" hidden="false">
-                  <description>Each time an attack is made with this weapon, if the target is more than 24&quot; from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.</description>
+                <rule name="Conversion" id="58ee-5a95-c7ba-bac1" hidden="false">
+                  <description>Each time an attack is made with this weapon, if the target is more than 12&quot; from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.</description>
+                  <comment>12&quot; variant</comment>
                 </rule>
               </rules>
               <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="a3f5-e4d1-29df-fd60" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="17a2-ac1e-e7fe-16d2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Asterius volkite culverin" hidden="false" id="23c3-4c96-c4d1-dc76">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="549b-c798-f5c9-67d4"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4172-48d8-da5a-7794"/>
+              </constraints>
+              <profiles>
+                <profile name="Asterius volkite culverin" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2268-4bf9-b7de-5968">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="887c-8e53-fa20-3a4d" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="23ee-edd6-22a6-dace" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="e077-39b8-aa51-b61c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00f2-43ce-1d9d-e8a0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="316f-692d-aafa-5ab1"/>
+              </constraints>
+              <profiles>
+                <profile name="Karacnos mortar battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="be1e-e9dc-b978-a52b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Blast, Ignores Cover, Indirect Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="0a18-6f9a-1877-e1b4" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Blast" id="0512-dc71-74fd-182c" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                <infoLink name="Indirect Fire" id="a395-8cf9-a843-6b6c" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
+                <infoLink name="Ignores Cover" id="9799-31ed-bbca-2a49" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="d4b5-0f50-2c7a-9a83" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Titanic feet" hidden="false" id="f107-bee9-8aaa-8945" collective="false" targetId="28a-8545-4104-4ffa" type="selectionEntry">
+            <entryLink import="true" name="Titanic feet" hidden="false" id="5001-6d11-b6a8-0941" type="selectionEntry" targetId="28a-8545-4104-4ffa">
               <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="5d1f-c5d6-39be-9033" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="1cd3-fa53-e57a-895e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13b6-efe0-20ac-f085"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d171-810d-344f-cb8b"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3948,32 +3944,29 @@ While using the Houndpack Lance Detachment, the following rules apply:
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin magna lascannon" hidden="false" id="ab22-ae06-7c8c-48c5" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Twin magna Volcano Cannon" hidden="false" id="b6d7-940a-0712-5158">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a197-c720-c045-de90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3608-72f2-1eb5-7d94" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8da0-6429-8d3a-a05b"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="244f-582f-d130-13d3"/>
               </constraints>
               <profiles>
-                <profile name="Twin magna lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f407-c2ad-122e-228c">
+                <profile name="Twin magna Volcano Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1bac-a5a0-eefc-bc4e">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">24</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-6</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+8</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-linked</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
               <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="7546-10a1-1f7a-b6be" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="921f-6813-ccb3-9191" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
               <categoryLinks>
-                <categoryLink name="Attacks Dx Weapon" hidden="false" id="5e44-dc5d-6756-b8c5" targetId="e993-e086-6de1-12af" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="f861-33e7-1d78-915b" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>

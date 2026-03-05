@@ -3037,9 +3037,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
-        <profile name="Sunderer of Fortresses" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8107-cbfe-4bc2-99e1">
+        <profile name="Sunderer of The Battlefield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8107-cbfe-4bc2-99e1">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a FORTIFICATION, VEHICLE, MONSTER improve the Strength and Damage characteristics of that attack by 2 instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a unit that is not a FORTIFICATION, VEHICLE, MONSTER improve the Attack and Armor penetration characteristics of the Profile of this weapon by 2.</characteristic>
           </characteristics>
         </profile>
         <profile name="Acastus Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b297-911b-2782-6bd2">
@@ -3060,7 +3060,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <infoLink name="Code Chivalric" hidden="false" type="rule" id="6ff1-83ac-2934-cce8" targetId="cbd-943-bc7b-20ec"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="600"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="650"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3161,7 +3161,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <profile name="Twin conversion beam cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="575d-daf8-e4c9-7e55">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">12</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">16</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -3176,8 +3176,8 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </infoLinks>
               <rules>
                 <rule name="Conversion" id="575e-d58f-fa50-d127" hidden="false">
-                  <description>Each time an attack is made with this weapon, if the target is more than 24&quot; from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.</description>
-                  <comment>24&quot; variant</comment>
+                  <description>Each time an attack is made with this weapon, if the target is more than 12&quot; from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.</description>
+                  <comment>12&quot; variant</comment>
                 </rule>
               </rules>
               <entryLinks>
@@ -3193,7 +3193,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <profile name="Asterius volkite culverin" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1a75-a944-d240-6743">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
@@ -3275,6 +3275,11 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When an attack is allocated to this model, Reduce wound roll by 1</characteristic>
           </characteristics>
         </profile>
+        <profile name="Sunderer of Fortresses" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bc0-c0c3-ab99-3b38">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a FORTIFICATION, VEHICLE, MONSTER improve the Strength and Damage characteristics of that attack by 2 instead.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="1a2b-42b8-2132-5324" primary="true" name="Vehicle"/>
@@ -3314,20 +3319,20 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="27a6-c33d-73bf-a9c1" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin magna lascannon" hidden="false" id="1d9a-57f1-78bd-f342">
+            <selectionEntry type="upgrade" import="true" name="Twin magna Volcano Cannon" hidden="false" id="1d9a-57f1-78bd-f342">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dd20-4161-996b-3eb4"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="41ee-58c-f27-d78a"/>
               </constraints>
               <profiles>
-                <profile name="Twin magna lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6f32-c97f-e3e-8dc0">
+                <profile name="Twin magna Volcano Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6f32-c97f-e3e-8dc0">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">24</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-6</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+8</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-linked</characteristic>
                   </characteristics>
                 </profile>

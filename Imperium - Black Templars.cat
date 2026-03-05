@@ -5810,7 +5810,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Double Master-Crafted Power Swords" hidden="false" id="fadd-ab24-8129-06ac">
+                    <selectionEntry type="upgrade" import="true" name="Double Master-Crafted Power Axes" hidden="false" id="fadd-ab24-8129-06ac">
                       <infoLinks>
                         <infoLink name="Twin-linked" id="fe38-0fee-3faf-8383" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                         <infoLink name="Lethal Hits" id="afb7-2d40-0051-0292" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
@@ -5821,8 +5821,8 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked, Lethal Hits</characteristic>
                           </characteristics>
@@ -6274,7 +6274,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
         </profile>
         <profile name="Zeal of a Crusader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4894-0153-cb7d-abd2">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> If this unit has charged, choose one enemy unit within engagement range and roll 6D6. For every 5+ that enemy unit suffers 1 mortal wound.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit has charged, choose one enemy unit within engagement range and roll 6D6. For every 5+ that enemy unit suffers 1 mortal wound.</characteristic>
           </characteristics>
         </profile>
         <profile name="Templar Rites" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cbde-d35c-ecc4-62e8">
@@ -6459,7 +6459,7 @@ Add 1 to the damage characteristics of those weapons.</characteristic>
         </profile>
         <profile name="Reincarnation of Burning Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe1a-4070-fcac-8e8e">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit cannot control objectives nor can it be battle-shocked. </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit cannot control objectives nor can it be battle-shocked.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0993-7f0d-710b-516d">
