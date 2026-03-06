@@ -11240,7 +11240,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
     </selectionEntry>
     <selectionEntry id="9f33-ff4a-d948-4636" name="Warp Talons" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="270">
+        <modifier type="set" field="51b2-306e-1021-d207" value="250">
           <conditions>
             <condition field="selections" scope="9f33-ff4a-d948-4636" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
           </conditions>
