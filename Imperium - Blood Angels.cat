@@ -6098,7 +6098,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Sanguinary Guard" hidden="false" id="f079-1dbb-7afa-4ecb" defaultSelectionEntryId="8e33-50a5-d053-ee15" sortIndex="3">
+        <selectionEntryGroup name="Crimson Terminator" hidden="false" id="f079-1dbb-7afa-4ecb" defaultSelectionEntryId="8e33-50a5-d053-ee15" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Crimson Exemplar" hidden="false" id="325c-db97-4d65-8858">
               <constraints>
@@ -6227,7 +6227,7 @@ If a Character unit from your army with the Leader ability can be attached to a
       <modifiers>
         <modifier type="set" value="240" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="a448-7ed2-fdff-5e01" childId="a448-7ed2-fdff-5e01" shared="true" id="a1ed-232e-4cb1-c4fd" includeChildSelections="true"/>
+            <condition type="atLeast" value="4" field="selections" scope="a448-7ed2-fdff-5e01" childId="f079-1dbb-7afa-4ecb" shared="true" id="a1ed-232e-4cb1-c4fd" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
