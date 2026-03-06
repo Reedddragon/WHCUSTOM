@@ -6695,7 +6695,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="d030-e767-a005-6ea0" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Angel&apos;s Tears" hidden="false" id="d3dd-9829-0854-9a3c" defaultSelectionEntryId="27ea-4039-2794-db20" sortIndex="2">
+        <selectionEntryGroup name="Dawnbreaker " hidden="false" id="d3dd-9829-0854-9a3c" defaultSelectionEntryId="27ea-4039-2794-db20" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Dawnbreaker Champion" hidden="false" id="dec9-8932-d02b-0e09">
               <selectionEntryGroups>
@@ -6766,7 +6766,7 @@ If a Character unit from your army with the Leader ability can be attached to a
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Erelim" hidden="false" id="8aed-3e34-4a87-a978">
+            <selectionEntry type="model" import="true" name="Dawnbreaker " hidden="false" id="8aed-3e34-4a87-a978">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapon" id="cc90-644d-20d4-c244" hidden="false" defaultSelectionEntryId="05ea-4b2e-bcbb-7c9b">
                   <constraints>
