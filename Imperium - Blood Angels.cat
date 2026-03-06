@@ -7338,6 +7338,7 @@ If a Character unit from your army with the Leader ability can be attached to a
     <entryLink import="true" name="Sanguinius" hidden="false" id="e7ec-2bb5-ea4a-ca55" targetId="7cc3-efbe-1986-a0aa" type="selectionEntry"/>
     <entryLink import="true" name="The Angel’s Tears" hidden="false" id="8ad7-e227-4b08-dc03" targetId="ae31-e95a-30df-520f" type="selectionEntry"/>
     <entryLink import="true" name="Dawnbreaker Cohort" hidden="false" id="c367-f206-0d55-62e7" targetId="b2f3-057b-f2fa-5f96" type="selectionEntry"/>
+    <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="da55-dd03-74c6-8728" targetId="888b-928c-1f57-a37d" type="selectionEntry"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Angel of Blood" id="ab67-0e8d-44b2-f015" hidden="false" kind="ability">
