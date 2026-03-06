@@ -26874,7 +26874,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Legionary w/ Nostraman chainglaive" hidden="false" id="7848-a1bb-5e54-a383">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d969-9698-ecc8-ee16" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d969-9698-ecc8-ee16" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="1eb3-e61d-3691-6ee5" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
@@ -26910,7 +26910,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Legionary w/ paired accursed weapons" hidden="false" id="4eac-1303-a0d6-2827">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9461-9f29-70c8-9ad4" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9461-9f29-70c8-9ad4" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="9d85-a91f-d3c6-cf25" collective="false" targetId="5541-daf-9f4a-ce3d" type="selectionEntry">
@@ -26939,6 +26939,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a6a-aa53-deb9-3018" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5f1-f0a3-0d4d-28f9" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
