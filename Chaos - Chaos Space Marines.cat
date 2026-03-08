@@ -146,6 +146,8 @@
     <categoryEntry id="0f68-78b7-8a2e-4b62" name="Konrad Curze" hidden="false"/>
     <categoryEntry id="31d9-6a2c-8f1e-5373" name="Peterturbo" hidden="false"/>
     <categoryEntry name="Tormentor" hidden="false" id="a361-14ea-401d-e281"/>
+    <categoryEntry id="6390-b37b-28b5-eb73" name="Iron Warrior" hidden="false"/>
+    <categoryEntry id="2b29-77ff-9de1-7810" name="Siegebreaker" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="bb73-b206-9ef3-6644" name="Detachment" hidden="false" collective="false" import="true" targetId="e296-4a38-d9a5-289c" type="selectionEntry"/>
@@ -6163,6 +6165,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
         <categoryLink id="1c37-8c8a-3d6d-8384" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink id="78ec-2434-d246-3f14" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="4cb0-8b62-7db6-956f" name="Warpsmith" hidden="false" targetId="2b3b-8232-a809-4b79" primary="false"/>
+        <categoryLink targetId="6390-b37b-28b5-eb73" id="50a3-6850-2344-a441" primary="false" name="Iron Warrior"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5000-51d1-1c34-3393" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="5"/>
@@ -28295,6 +28298,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink id="f102-c45d-431d-6c83" name="Terminator" hidden="false" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink targetId="2c5c-6ca6-777-c633" id="a2ca-1b2f-89f9-e2df" primary="false" name="Chaos Undivided"/>
         <categoryLink targetId="4c81-6302-449d-2a3f" id="5fdf-856e-86bc-d712" primary="false" name="Tyrant Siege Terminators"/>
+        <categoryLink targetId="6390-b37b-28b5-eb73" id="0c5a-cc49-c5a3-7c1d" primary="false" name="Iron Warrior"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b277-8761-3d67-d84f" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" defaultSelectionEntryId="d30b-b831-35ff-d173" sortIndex="3">
@@ -28781,7 +28785,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </profile>
         <profile name="Bulwark of The Iron Tyrant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="00c7-f59b-573c-b96a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When This model is within 6&quot; of another Iron Circle Domitar-Ferrum Class Battle Automata, Tyrant Siege Terminators, Warpsmith, Warsmith, Peterturbo, and Siege Breaker, Those Units Have Feel No Pain 5+ ability, Reduce wound roll by 1 of the attacks allocated to this model.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When This model is within 6&quot; of another Iron Warrior unit, Those Units Have Feel No Pain 5+ ability, Reduce wound roll by 1 of the attacks allocated to this model.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -28798,6 +28802,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink targetId="dbd4-63-af05-998" id="bfb8-b663-2427-0bfb" primary="true" name="Vehicle"/>
         <categoryLink targetId="1e42-dfae-cbdd-207d" id="9af0-eebc-3ac6-fc2f" primary="false" name="Faction: Heretic Astartes"/>
         <categoryLink targetId="2c5c-6ca6-777-c633" id="947d-423d-c534-1896" primary="false" name="Chaos Undivided"/>
+        <categoryLink targetId="c8aa-1441-155c-8670" id="8e41-561c-8866-6fc5" primary="false" name="Iron Circle Domitar-Ferrum Class Battle Automata"/>
+        <categoryLink targetId="6390-b37b-28b5-eb73" id="29c7-c0b8-be53-a14b" primary="false" name="Iron Warrior"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="a37d-9dff-5b82-12e0" hidden="false" sortIndex="4">
@@ -28909,6 +28915,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink id="48da-5c26-d492-f55e" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink targetId="2c5c-6ca6-777-c633" id="e455-1819-7175-012c" primary="false" name="Chaos Undivided"/>
         <categoryLink targetId="5c68-7ab3-86fb-8f11" id="579c-7e35-8793-259d" primary="false" name="Warsmith"/>
+        <categoryLink targetId="6390-b37b-28b5-eb73" id="69d9-e669-8d3c-8aa6" primary="false" name="Iron Warrior"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="638d-7120-a4e1-7e9a" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
@@ -29562,6 +29569,7 @@ Living Iron: This model regains 3 Wounds</characteristic>
         <categoryLink id="e27f-c7cb-f10f-e87c" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink targetId="a361-14ea-401d-e281" id="57ce-b7db-0d97-7908" primary="false" name="Tormentor"/>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="273b-ae8d-d3fd-99c2" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="6390-b37b-28b5-eb73" id="a3be-76a8-ac3b-1c1a" primary="false" name="Iron Warrior"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="9b72-524f-3b6e-a218" hidden="false" sortIndex="2">
@@ -29806,7 +29814,8 @@ Living Iron: This model regains 3 Wounds</characteristic>
         <categoryLink id="d7dc-90b2-4fcd-af82" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink id="da73-cb08-0854-10ce" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink targetId="2c5c-6ca6-777-c633" id="15a5-96fd-2ad9-80fb" primary="false" name="Chaos Undivided"/>
-        <categoryLink targetId="5c68-7ab3-86fb-8f11" id="74ed-915a-ad10-ed9b" primary="false" name="Warsmith"/>
+        <categoryLink targetId="2b29-77ff-9de1-7810" id="7e9e-8ec0-9d0f-94a5" primary="false" name="Siegebreaker"/>
+        <categoryLink targetId="6390-b37b-28b5-eb73" id="823e-62e1-7292-1fa5" primary="false" name="Iron Warrior"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5b67-80fa-1c48-4785" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>
@@ -29824,7 +29833,7 @@ Living Iron: This model regains 3 Wounds</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="67d7-dd7a-b244-5893" hidden="false" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Forge Hammer" hidden="false" id="1a80-69f4-aedf-d68b">
+            <selectionEntry type="upgrade" import="true" name="Siege Hammer" hidden="false" id="1a80-69f4-aedf-d68b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad02-a12f-f704-e9bf" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="323d-d2eb-217e-a366" includeChildSelections="false"/>
@@ -29838,7 +29847,7 @@ Living Iron: This model regains 3 Wounds</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">11</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Anti Monster 5+, Anti Vehicle 5+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
