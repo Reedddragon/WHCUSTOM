@@ -29547,6 +29547,11 @@ Living Iron: This model regains 3 Wounds</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When Peterturbo is embarked in this model, Peterturbo&apos;s Bitter toughness can be used through the Tormentor.</characteristic>
           </characteristics>
         </profile>
+        <profile id="ccd2-c68f-364d-3881" name="PeterTurbo&apos;s Personal Tank(PPT)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="e136-66bf-b79b-c133" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
