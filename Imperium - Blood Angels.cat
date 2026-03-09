@@ -3188,7 +3188,7 @@ horizontally away from all enemy models.</characteristic>
                         <profile name="Encarmine Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5315-e49c-146b-c157">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
@@ -3208,9 +3208,9 @@ horizontally away from all enemy models.</characteristic>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
                           </characteristics>
                         </profile>
@@ -6765,6 +6765,13 @@ If a Character unit from your army with the Leader ability can be attached to a
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Inferno Pistol" hidden="false" id="c97c-5850-1810-4220" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3212-17b8-0ae6-e7d3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dawnbreaker " hidden="false" id="8aed-3e34-4a87-a978">
               <selectionEntryGroups>
@@ -6830,6 +6837,13 @@ If a Character unit from your army with the Leader ability can be attached to a
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Inferno Pistol" hidden="false" id="c262-8194-b67e-7540" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f836-a482-d7a0-a9f0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
