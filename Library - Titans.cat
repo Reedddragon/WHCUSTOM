@@ -1505,7 +1505,7 @@
         </profile>
         <profile name="Octa Void-shields" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="491f-bc1a-082f-99ee">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model gains Feel no pain 5+ unless it is damaged, and 8 uses of Feel no pain 2+ Each time its targeted by an Ranged attack</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model gains Feel no pain 5+ unless it is damaged, and 8 uses of Feel no pain 2+ Each time its targeted by an Ranged attack That last until the end of the phase.</characteristic>
           </characteristics>
         </profile>
         <profile name="Steel Unbreaking" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8016-b9a4-efdb-f2ab">
@@ -1515,7 +1515,7 @@
         </profile>
         <profile name="Plasmatic Locomotors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a236-7b71-a272-64ab">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can Advance and Charge and Shoot</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can Advance and Fallback and Shoot</characteristic>
           </characteristics>
         </profile>
         <profile name="Infusive Supercoolant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2ed-61b7-a677-d8b7">
@@ -1940,22 +1940,22 @@
         </profile>
         <profile name="Steel Unbreaking" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6583-fdc8-3989-fc3a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target this model with a Stratagem, you must spend Five times that Stratagem’s stated CP cost to do so. This unit can Fallback and Charge</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target this model with a Stratagem, you must spend Five times that Stratagem’s stated CP cost to do so. This unit can Fallback and Charge and shoot</characteristic>
           </characteristics>
         </profile>
         <profile name="Octa Void Shunts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e27c-8bc4-b78d-8490">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a melee attack is allocated to this model, halve the Damage characteristic of that attack.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, halve the Damage characteristic of that attack.</characteristic>
           </characteristics>
         </profile>
         <profile name="Kinetic Transducers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48b2-60ab-097f-8886">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can Advance and Charge, If this model Charges it can add Lethal Hits, Sustained Hits 1(add +1 to sustained hits if the melee weapon already has sustained hits) or Lance on its Melee Weapons</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can Advance, Shoot and Charge, If this model Charges it can add Lethal Hits, Sustained Hits 1(add +1 to sustained hits if the melee weapon already has sustained hits) or Lance on its Melee Weapons, a unmodified hit roll of 5+ in melee is considered a Critical Hit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Destruction Itself" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb87-6acb-cb7a-e49d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can reroll 2 rolls every phase</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can reroll 4 rolls every phase</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2230,6 +2230,10 @@
                     <infoLink name="Sustained Hits" id="ce1f-e291-6d2e-bc03" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                     <infoLink name="Extra Attacks" id="996c-068b-11d8-63db" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="374b-3fca-e7d3-b2f5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db0e-4d9b-f082-d97d"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Krius Array" hidden="false" id="bc57-a2ee-a5eb-9d25">
                   <profiles>
@@ -2271,6 +2275,10 @@
                     <infoLink name="Anti-" id="519a-4c9c-bcaf-ca09" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                     <infoLink name="Devastating Wounds" id="a3f0-ada0-35f5-0aed" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faed-fdf6-00bb-0e1f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73c4-5d21-6529-2738"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>

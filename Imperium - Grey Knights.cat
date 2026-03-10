@@ -110,20 +110,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Nemesis force weapon" hidden="false" id="75a7-dcea-5ee0-1d35" type="selectionEntry" targetId="feab-83f0-d48f-071f">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="365b-250e-d54c-6ce5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28db-0e21-8510-a9b9"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Upgrades" id="0d47-adec-f8da-f1be" hidden="false" flatten="true">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a1ee-a06e-6aa9-9fc2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="2a05-6e7b-14b7-c225" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </entryLink>
+            <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="94d6-dc8c-a744-b919" type="selectionEntry" targetId="796a-a3f4-eec5-d872"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -737,53 +724,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="2842-f787-02f4-f899" hidden="false" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Nemesis force weapon" hidden="false" id="fffe-abc5-ac4f-6eda" collective="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbdb-71eb-de4f-dd37"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19f8-8e35-fb0d-507b"/>
-              </constraints>
-              <profiles>
-                <profile name="Nemesis force weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8404-b7bc-4d0f-6136">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="fd57-61c6-39a4-dee3" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Psychic" id="db4-2bff-fa0f-657" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink name="Psychic Weapon" hidden="false" id="32db-48c5-533d-8053" targetId="4546-4a0c-b3be-e84c" primary="false"/>
-                <categoryLink name="Melee Weapon" hidden="false" id="5521-3eb3-29ae-d7ed" targetId="ccdd-3987-11ed-90cd" primary="false"/>
-              </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Upgrades" id="3ec0-7779-84bd-ac70" hidden="false" flatten="true">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c4fc-f47d-064a-4f3d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="65ef-fe14-5d8f-b080" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <comment>Librarian variant</comment>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Vortex of Doom" hidden="false" id="3aa5-b3f3-8ec2-8559">
               <profiles>
                 <profile name="Vortex of Doom" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3820-e568-e53-96f2">
@@ -872,6 +812,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="9359-ae38-adae-4428" type="selectionEntry" targetId="796a-a3f4-eec5-d872"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1800,7 +1743,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="b3e0-f3aa-80fe-9556" type="selectionEntry" targetId="796a-a3f4-eec5-d872"/>
+            <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="28d4-c4d8-588c-3f82" type="selectionEntry" targetId="796a-a3f4-eec5-d872"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4823,7 +4766,7 @@
         </profile>
         <profile name="Attuned Onslaught (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="935d-fb65-54d-274f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Charge move, until the end of the turn, add 1 to the Damage characteristic or add 1 to the Armor penetration characteristic of melee weapons equipped by ^^**Paladin Squad**^^ models in this unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Charge move, until the end of the turn, add 1 to the Attack characteristic or add 1 to the Armor penetration characteristic of melee weapons equipped by ^^**Paladin Squad**^^ models in this unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Purity of Purpose" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fbf2-ca96-3745-ad57">
@@ -8260,7 +8203,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                 <profile name="Nemesis Force Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="11c7-80b5-397a-f525">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -8330,7 +8273,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Lance</characteristic>
@@ -8487,9 +8430,9 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Lance</characteristic>
                   </characteristics>
                   <modifiers>

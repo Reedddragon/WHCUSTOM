@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="172" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="179" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -31,9 +31,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Emplacement Platform" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a04-449d-87ed-e7b4">
           <characteristics>
@@ -115,9 +112,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -668,9 +662,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Rolling Fortress" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="428-ed57-e316-6110">
           <characteristics>
@@ -893,9 +884,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Tremor Quake" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9d96-e786-c41e-8164">
           <characteristics>
@@ -1100,9 +1088,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Armour Obliteration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9488-79da-f341-5163">
           <characteristics>
@@ -1292,9 +1277,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Earthshaker Rounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="883c-f9b4-c57c-b535">
           <characteristics>
@@ -1707,9 +1689,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="21e5-4e9-7904-8d96">
           <characteristics>
@@ -2228,9 +2207,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -2249,9 +2225,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -2310,9 +2283,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -2421,9 +2391,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -2462,9 +2429,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -3081,9 +3045,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Mobile Command Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="892a-b5c8-8a39-46bd">
           <characteristics>
@@ -3354,9 +3315,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Political Overwatch" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ccec-db7f-8187-2ac">
           <characteristics>
@@ -4304,9 +4262,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Deathstrike Missile" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b575-1e86-b37d-68a3">
           <characteristics>
@@ -4513,9 +4468,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Close-range Titan Killer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="160a-6689-b784-4de7">
           <characteristics>
@@ -5046,9 +4998,6 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
             <profile name="Invulnerable Save 5+" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3147-3cc7-728c-2a2e">
               <characteristics>
@@ -5114,9 +5063,6 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -5167,9 +5113,6 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -5221,9 +5164,6 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -5289,9 +5229,6 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <constraints>
@@ -5379,9 +5316,6 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -5775,9 +5709,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Close-quarters Warfare" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9963-3c71-2527-6d0c">
           <characteristics>
@@ -5997,9 +5928,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Flush Them Out" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ff28-8ddd-27ec-ada3">
           <characteristics>
@@ -6267,9 +6195,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Flak Battery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be59-ac64-15c1-e804">
           <characteristics>
@@ -6463,9 +6388,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Been There, Seen it, Killed it" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1852-5055-1320-6d2e">
           <characteristics>
@@ -8064,9 +7986,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="4768-11ce-3c8b-3ce4">
           <characteristics>
@@ -8240,9 +8159,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Furious Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6eb8-16bc-f210-7182">
           <characteristics>
@@ -8587,9 +8503,6 @@
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntries>
@@ -9123,9 +9036,6 @@
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Thunderous Head-butt" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9955-ea22-5ff7-920f">
           <characteristics>
@@ -9240,9 +9150,6 @@ This model cannot be selected as your **^^Warlord^^**.</characteristic>
               </conditions>
             </modifier>
           </modifiers>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Loyal Protector" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3526-ae85-d981-d86a">
           <characteristics>
@@ -9716,9 +9623,6 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <modifierGroups>
@@ -9930,9 +9834,6 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -9989,9 +9890,6 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -10030,9 +9928,6 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -10251,9 +10146,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Vengeance for the Omnissiah" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="346f-5f19-1f4-262d">
           <characteristics>
@@ -10488,9 +10380,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Ablative Plating" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b8f6-f345-fea-2bd6">
           <characteristics>
@@ -10793,9 +10682,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -11054,9 +10940,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Harker’s Hellraisers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6c6a-f2e4-c539-242c">
           <characteristics>
@@ -11169,9 +11052,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <entryLinks>
@@ -11377,9 +11257,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="One-man Army" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f49f-7aa1-4d43-590">
           <characteristics>
@@ -11508,9 +11385,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Mount Up!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="21fa-131-aa20-2f26">
           <characteristics>
@@ -11708,9 +11582,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Concussive Wave" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4b84-adb3-dc5a-6fb7">
           <characteristics>
@@ -11905,9 +11776,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="d520-92fd-8c74-ec6e">
           <characteristics>
@@ -12306,9 +12174,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Rapid Deployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="872a-1012-8ad7-4939">
           <characteristics>
@@ -12493,9 +12358,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Transport" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="314-787-6a48-6754">
           <characteristics>
@@ -13350,9 +13212,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -13399,9 +13258,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Airborne Insertion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5e32-3bdc-afc7-78f5">
           <characteristics>
@@ -13634,9 +13490,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Suppression Bombardment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6e74-fe3e-7f84-91cd">
           <characteristics>
@@ -15430,9 +15283,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -15481,9 +15331,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -15589,9 +15436,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Ancient Conquest" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c6d3-5aff-803c-3315">
           <characteristics>
@@ -15948,9 +15792,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Demolition Charges" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8109-54ee-9d0c-daaa">
           <characteristics>
@@ -16080,9 +15921,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Rugged Reliability" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ffdb-1136-eaeb-9284">
           <characteristics>
@@ -16372,9 +16210,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Battlefield Dominance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b7de-7b7f-8dbc-76b4">
           <characteristics>
@@ -16647,9 +16482,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Armoured Defender" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="668-596e-1a32-97d7">
           <characteristics>
@@ -16906,9 +16738,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Explosive Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b483-db66-2d51-1846">
           <characteristics>
@@ -17172,9 +17001,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Siege Bombardment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d331-32e-5450-e3b0">
           <characteristics>
@@ -17357,9 +17183,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Earthshaker Rounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d54-11fb-5b7d-cbd6">
           <characteristics>
@@ -17538,9 +17361,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Close-range Devastation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1e19-78d7-a49d-e1e6">
           <characteristics>
@@ -17848,9 +17668,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Battlefield Control" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c14f-4e5e-3adc-9fa">
           <characteristics>
@@ -18108,9 +17925,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Tank Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ed48-189a-6ec6-ad31">
           <characteristics>
@@ -18368,9 +18182,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Battlefield Control" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c0ff-cadb-d445-653">
           <characteristics>
@@ -18632,9 +18443,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Targeting Coordinates" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e6f3-644-45fe-8b68">
           <characteristics>
@@ -18872,9 +18680,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Fire Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="89b3-3271-b8ac-723b">
           <characteristics>
@@ -19060,9 +18865,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Tracking Target" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f479-bc1a-5090-81d3">
           <characteristics>
@@ -19271,9 +19073,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Power Overload" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7b48-9163-b5ea-960c">
           <characteristics>
@@ -19499,9 +19298,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Fiery Vengeance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="438e-3105-5c81-228f">
           <characteristics>
@@ -19700,9 +19496,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Agile Dogfighter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bcae-4a47-f5e0-c4a">
           <characteristics>
@@ -19880,9 +19673,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Gunship Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc0-d574-3bd1-37f9">
           <characteristics>
@@ -20158,9 +19948,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <entryLinks>
@@ -20348,9 +20135,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Bomb Drop" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bc93-9111-cddd-f91e">
           <characteristics>
@@ -20660,9 +20444,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -20760,9 +20541,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -20952,9 +20730,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <constraints>
@@ -21071,9 +20846,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Subterranean Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3ead-d0a5-aeb5-57ac">
           <characteristics>
@@ -21228,9 +21000,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Support Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abda-4d48-8c25-5c9e">
           <characteristics>
@@ -21396,9 +21165,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Transport" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="9b1-89f0-1d73-65c3">
           <characteristics>
@@ -21601,9 +21367,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Aerial Deployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e454-247b-2357-642e">
           <characteristics>
@@ -21932,9 +21695,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <constraints>
@@ -22055,9 +21815,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abfa-7ff8-56a4-4204">
           <characteristics>
@@ -22370,9 +22127,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <constraints>
@@ -22769,9 +22523,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Blistering Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1260-8a79-4f5-4a02">
           <characteristics>
@@ -22937,9 +22688,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Overwhelming Short-range Firepower" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d18e-6419-b7bf-be79">
           <characteristics>
@@ -23207,9 +22955,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Tank Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="de83-c749-1bae-d1f0">
           <characteristics>
@@ -23408,9 +23153,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -23459,9 +23201,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -23682,9 +23421,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" id="a2be-eef1-dd8a-7241" hidden="false" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" id="d385-fc54-7c4a-f10" hidden="false" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -23820,9 +23556,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -23868,9 +23601,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Recovery Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8249-2bf0-cb68-a7d6">
           <characteristics>
@@ -24057,9 +23787,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -24131,9 +23858,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Meteoric Descent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8589-14ca-fc31-f3cd">
           <characteristics>
@@ -24388,9 +24112,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -24508,9 +24229,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Rearm, Reload, Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="58fc-b6a-af01-1843">
           <characteristics>
@@ -24681,9 +24399,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Pinning Bombardment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c889-4740-aa6f-d9be">
           <characteristics>
@@ -24901,9 +24616,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Suppression Bombardment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3ee-8636-a4ee-571c">
           <characteristics>
@@ -25073,9 +24785,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Aerial Deployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c4b-5dd7-ba8e-773a">
           <characteristics>
@@ -25233,9 +24942,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Anti-armour Gunship" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7b9-32a1-93d1-ec9c">
           <characteristics>
@@ -25459,9 +25165,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Armoured Frontis" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="29f2-47-a0fe-a59e">
           <characteristics>
@@ -25657,9 +25360,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Summary Execution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8ddc-b1a4-b15b-5664">
           <characteristics>
@@ -25905,9 +25605,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Powerlifter Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2d0-e457-5118-743c">
           <characteristics>
@@ -26084,9 +25781,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Furious Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f1c-d5df-c16-7d62">
           <characteristics>
@@ -26159,9 +25853,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Flak Battery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fffa-2217-e64e-3ce9">
           <characteristics>
@@ -26266,9 +25957,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Suppression Bombardment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7505-6738-c29a-e173">
           <characteristics>
@@ -26515,9 +26203,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <modifiers>
@@ -26831,9 +26516,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Outflank" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d81b-1a9d-6e73-5421">
           <characteristics>
@@ -27041,9 +26723,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Turbo-boost" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="10f1-3cb8-dbab-eb42">
           <characteristics>
@@ -27254,9 +26933,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -27439,9 +27115,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Auspex Surveyor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbd9-90e8-ef-d873">
           <characteristics>
@@ -27618,9 +27291,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Rolling Fortress" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af2c-582b-6a94-dc39">
           <characteristics>
@@ -28200,9 +27870,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Transport" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="bcbe-fbe2-d0d3-31a7">
           <characteristics>
@@ -28558,9 +28225,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Precision Drop" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="efef-192f-d0c0-6b48">
           <characteristics>
@@ -29079,9 +28743,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -29134,9 +28795,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntries>
@@ -29744,9 +29402,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -29765,9 +29420,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -29838,9 +29490,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -29882,9 +29531,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -29965,9 +29611,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -30006,9 +29649,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -30087,9 +29727,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="c4eb-5868-02ac-efe3">
           <characteristics>
@@ -30280,9 +29917,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <constraints>
@@ -30320,9 +29954,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <constraints>
@@ -30366,9 +29997,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <constraints>
@@ -30412,9 +30040,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <constraints>
@@ -30462,9 +30087,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <constraints>
@@ -30502,9 +30124,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <constraints>
@@ -30542,9 +30161,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <constraints>
@@ -30582,9 +30198,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <constraints>
@@ -30622,9 +30235,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <constraints>
@@ -30662,9 +30272,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                       </characteristics>
-                      <attributes>
-                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <constraints>
@@ -30830,9 +30437,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -30954,9 +30558,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Called Shots" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3124-82c3-e183-213e">
           <characteristics>
@@ -31328,9 +30929,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <entryLinks>
@@ -32574,9 +32172,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -32689,9 +32284,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Remorseless Barrage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bafb-2ddf-580c-fea1">
           <characteristics>
@@ -33109,9 +32701,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Well-stocked Supplies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9454-57d0-0f4e-1776">
           <characteristics>
@@ -33330,9 +32919,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -33407,9 +32993,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -33466,9 +33049,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -33530,9 +33110,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -33564,9 +33141,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -33774,9 +33348,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
               </characteristics>
-              <attributes>
-                <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -33803,18 +33374,10 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <modifiers>
                 <modifier type="set" value="0" field="7030-a997-0ef7-ebfb">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="b391-e514-0c4c-40b8">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
                   </conditions>
@@ -34007,6 +33570,201 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cba-a18f-441a-1db7"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Stormsabre" hidden="false" id="cd58-a953-3867-1288">
+      <categoryLinks>
+        <categoryLink targetId="fa45-57e-930e-602b" id="77ef-af59-aff7-66c1" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="c5ab-013b-4a01-b015" primary="false" name="Imperium"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="ebbf-5465-32a7-41cd" primary="false" name="Smoke"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="306d-471c-b2aa-925e" primary="true" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="ae86-dbc8-84c6-17b9" primary="false" name="Titanic"/>
+        <categoryLink targetId="89e8-2916-ab5a-845d" id="d238-e9f9-b077-a7ed" primary="false" name="Stormsabre"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7014-8044-5daa-c615" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="8e79-b8e3-e1e7-dd1b" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="3a8c-a9db-e33e-481e" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e700-0c84-c6b2-de5c" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Stormsabre" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7d33-87d9-2bb3-de86">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stormsabre Fortified Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c605-b677-b884-acf9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When an attack is allocated to this model, reduce wound roll of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="5ada-7ece-46f9-8294" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Damaged: 1-8 Wounds Remaining" id="9206-3f4f-8961-6d7a" hidden="false" type="profile" targetId="e862-4703-fc73-5c46"/>
+        <infoLink name="Deadly Demise" id="4b4d-322f-c5f6-35b9" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D6+2" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="8e79-b8e3-e1e7-dd1b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="3a8c-a9db-e33e-481e">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="e700-0c84-c6b2-de5c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="8e79-b8e3-e1e7-dd1b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d0de-45ce-e737-b6be" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="4ad0-6fe4-0eb0-7025" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stormsabre Odin Cannon" hidden="false" id="4218-eb39-857b-5409">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e69f-1685-cbb8-5f55"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e5-6fff-b8fe-89c1"/>
+              </constraints>
+              <profiles>
+                <profile name="Stormsabre Odin Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8d38-1566-450c-48cc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">128&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">32</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-6</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">18</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Devastating Wounds</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast" id="5d23-262b-adfb-95c5" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                <infoLink name="Heavy" id="295e-a32c-a7c7-ab22" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b9f9-fa8d-6493-48a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stormsabre Wall Ram" hidden="false" id="85ae-a290-6d69-51d7">
+              <profiles>
+                <profile name="Armoured tracks" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="751c-8071-c960-6a42">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e7b-4d4b-c365-ad49" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5150-7695-df2d-75e0" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Twin heavy bolter" hidden="false" id="37f4-a4eb-a1a8-9156" type="selectionEntry" targetId="d5d2-be01-7a54-78c3">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="4055-4450-3700-b2fd"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4101-112d-4cd6-2beb"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="1ef8-8d7a-3f9d-cb6d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -34149,6 +33907,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Provisionally Prepared" id="8bf9-ede9-bd26-78bf" hidden="false"/>
     <categoryEntry name="Hell&apos;s Last" id="2277-1f3a-1f4f-5895" hidden="false"/>
     <categoryEntry name="rand" id="27e6-a1e5-2f16-40e4" hidden="false"/>
+    <categoryEntry name="Stormsabre" hidden="false" id="89e8-2916-ab5a-845d"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -34180,9 +33939,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Shock Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ea09-3364-e6cd-2ffe">
       <characteristics>
@@ -34193,9 +33949,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Death Korps of Krieg" hidden="false" id="11ee-5a7d-7e13-e1ef" typeName="Unit" typeId="c547-1836-d8a-ff4f">
       <characteristics>
@@ -34206,9 +33959,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Catachan Jungle Fighter" hidden="false" id="2af2-467-91d2-c0f6" typeName="Unit" typeId="c547-1836-d8a-ff4f">
       <characteristics>
@@ -34219,9 +33969,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Kasrkin" hidden="false" id="6ed4-694c-ad3b-4b05" typeName="Unit" typeId="c547-1836-d8a-ff4f">
       <characteristics>
@@ -34232,9 +33979,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Munitorum Servitor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="237d-2e28-8c1f-d154">
       <characteristics>
@@ -34245,9 +33989,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Ogryn Squad" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a91e-4361-6555-64a8">
       <characteristics>
@@ -34258,9 +33999,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Bullgryn Squad" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8a6e-a41f-3712-fc55">
       <characteristics>
@@ -34282,9 +34020,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Attilan Rough Rider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c9bb-ee31-dd59-b490">
       <characteristics>
@@ -34295,9 +34030,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Damaged: 1-6 Wounds Remaining" hidden="false" id="30d1-9e89-5aa2-6bde" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
       <characteristics>
@@ -34313,9 +34045,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Damaged: 1-8 Wounds Remaining" hidden="false" id="e862-4703-fc73-5c46" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
       <characteristics>
@@ -34331,9 +34060,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Tempestus Scions" hidden="false" id="2cd7-38d1-8603-afb5" typeName="Unit" typeId="c547-1836-d8a-ff4f">
       <characteristics>
@@ -34344,9 +34070,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Damaged: 1-7 Wounds Remaining" hidden="false" id="4ca9-3652-f045-85ba" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
       <characteristics>
@@ -34367,9 +34090,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Mukaali Rider" hidden="false" id="c5af-46a9-1122-dbc6" typeId="c547-1836-d8a-ff4f" typeName="Unit">
       <characteristics>
@@ -34380,9 +34100,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Unit Composition" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b592-33bc-a25d-b3a9">
       <characteristics>
@@ -34398,9 +34115,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Heavy Weapons Team" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a171-5382-6258-473b">
       <characteristics>
@@ -34411,9 +34125,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Embarking" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5b59-38a0-a158-05b9">
       <characteristics>
@@ -34429,9 +34140,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
     <profile name="Field Ordnance Battery" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1b6b-0a0d-900e-8091">
       <characteristics>
@@ -34442,9 +34150,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
   </sharedProfiles>
   <profileTypes>
@@ -37760,4 +37465,7 @@ Improve the Leadership and Objective Control characteristics of models in this u
       </modifiers>
     </costType>
   </costTypes>
+  <entryLinks>
+    <entryLink import="true" name="Stormsabre" hidden="false" id="199b-e952-dc64-4f91" targetId="cd58-a953-3867-1288" type="selectionEntry"/>
+  </entryLinks>
 </catalogue>
