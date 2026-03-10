@@ -37465,7 +37465,4 @@ Improve the Leadership and Objective Control characteristics of models in this u
       </modifiers>
     </costType>
   </costTypes>
-  <entryLinks>
-    <entryLink import="true" name="Stormsabre" hidden="false" id="199b-e952-dc64-4f91" targetId="cd58-a953-3867-1288" type="selectionEntry"/>
-  </entryLinks>
 </catalogue>
