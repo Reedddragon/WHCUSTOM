@@ -3118,7 +3118,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="140" field="51b2-306e-1021-d207">
+        <modifier type="set" value="120" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="10" field="selections" scope="d631-3ca5-e206-4e6a" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -11846,7 +11846,14 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+        <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -12265,7 +12272,14 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+        <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -13666,11 +13680,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1e4c-ea0e-613e-ea50" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
@@ -13996,11 +14011,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="b880-77d1-0f3c-d63b" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
@@ -14149,11 +14165,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="631c-f570-bc35-4e35" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
@@ -14520,11 +14537,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="2a09-443c-e9e3-4d84" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
@@ -14733,16 +14751,17 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="170" field="51b2-306e-1021-d207">
+        <modifier type="set" value="120" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
