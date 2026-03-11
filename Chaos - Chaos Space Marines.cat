@@ -27750,6 +27750,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink name="Chaos" hidden="false" id="05da-600b-5520-8f81" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Monster" hidden="false" id="4592-9e8e-4e47-604a" targetId="9693-cf84-fe69-37a9" primary="false"/>
         <categoryLink targetId="a95e-9187-46ab-73dd" id="12b1-c103-ab86-9d5c" primary="false" name="Horus Heresy The 40k"/>
+        <categoryLink targetId="6474-0ce3-6b5a-120c" id="306c-06c7-2250-184d" primary="false" name="Primarch"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Talons of The Archtraitor" hidden="false" id="a851-280a-c0ac-c149" collective="false">
@@ -27844,6 +27845,18 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="539b-e8d1-d151-4646">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e75d-06cc-1721-cbbd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6e6-637e-380b-ffdb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Alpha Discordsmith" hidden="false" id="db78-f671-582d-2c46" collective="false">
       <constraints>
@@ -29319,6 +29332,18 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="ef99-9fe2-8c5a-dc78">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c124-e6c3-73c7-e7cc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6e6-637e-380b-ffdb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Peterturbo" hidden="false" id="ec75-c677-e247-1070" collective="false">
       <constraints>
@@ -29340,20 +29365,22 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one Lord of Iron ability. Until the start of your next Command phase, this model has that ability.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Bitter Toughness" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5f45-3994-a831-dd2f">
+        <profile name="Iron Litany" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5f45-3994-a831-dd2f">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Every Command phase, you can select one of the following, They can be only used once per game:
 
-Iron Blood: This model has the Feel no pain 5+ ability
+From iron cometh strength: This model has the Feel no pain 5+ ability
 
-Iron Bones: When an attack is allocated to this model reduce wound roll by 1
+From strength cometh will: When an attack is allocated to this model reduce wound roll by 1
 
-Iron Skin: Attacks are deflected on his skin, When an attack is allocated to this model reduce hit roll by 1
+From will cometh faith: Attacks are deflected on his skin, When an attack is allocated to this model reduce hit roll by 1
 
-Iron Logos: This model has Invulnerable Save 3+
+From faith cometh honor: This model has Invulnerable Save 3+
 
 
-Living Iron: This model regains 3 Wounds</characteristic>
+From honor cometh iron: This model regains 3 Wounds
+-
+This is the unbreakable litany, and may it be forever so.</characteristic>
           </characteristics>
         </profile>
         <profile name="Iron Within [Aura]" typeId="2b36-8144-8cea-fffd" typeName="Lord of Iron" hidden="false" id="8f14-f14d-18b5-cf55">
@@ -29518,6 +29545,18 @@ Living Iron: This model regains 3 Wounds</characteristic>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="13d9-0668-dee5-d818">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c124-e6c3-73c7-e7cc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="971d-c242-c417-c958" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bf4b-dfd6-476f-fe1c" name="Tormentor" hidden="false" collective="false" import="true" type="model">
       <constraints>
