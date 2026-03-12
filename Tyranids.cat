@@ -438,6 +438,7 @@
     <entryLink import="true" name="Hyperadapted Raveners" hidden="false" type="selectionEntry" id="504c-5d1a-b205-c53b" targetId="c10d-772e-a54f-a2b9"/>
     <entryLink import="true" name="Doom of Malan’tai " hidden="false" id="8836-e218-bcfe-7d51" type="selectionEntry" targetId="7c9c-8a54-928f-9fa8"/>
     <entryLink import="true" name="World-Render" hidden="false" id="2297-6fcb-c37c-c431" type="selectionEntry" targetId="f411-4267-9d0a-355a"/>
+    <entryLink import="true" name="Tyranid Prime with lash whip" hidden="false" id="54bf-4e23-6201-7313" targetId="a1d2-d089-f26d-12fb" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="86aa-437f-260b-5cad" name="Synapse" hidden="false">
