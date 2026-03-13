@@ -13224,7 +13224,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         </profile>
         <profile name="Voidblast (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38bc-a406-4760-8ed7">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a range attack, you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, when you select this unit to Shoot, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a range attack that destroys a transport with models inside them. reduce 2 on the roll for emergency disembarking.</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
