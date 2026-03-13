@@ -1333,7 +1333,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -13000,7 +13000,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="92b5-eb10-24fd-4338" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -15813,7 +15813,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c2a0-d684-2b60-0e3f"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -15986,6 +15986,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <entryLink import="true" name="Expanding the Empire" hidden="false" id="d65b-a8be-b71e-6040" type="selectionEntryGroup" targetId="bf95-179f-6414-9db1"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="The Twin Lance" hidden="false" id="3799-5f85-60de-d8c7" targetId="6623-c2cb-6705-580b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" id="fae2-569a-6bec-9167" flatten="false" collapsible="true">
