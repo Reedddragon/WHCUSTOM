@@ -46228,6 +46228,7 @@ This model, and any unit it is joined to, cannot embark within a Transport.</cha
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
