@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="141" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="143" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Codex: Aeldari" shortName="C:Aeldari" publisher="Codex: Aeldari" publicationDate="08/02/2025"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -4080,13 +4080,42 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has a 4+ Invulnerable save</characteristic>
           </characteristics>
         </profile>
+        <profile name="Webway&apos;s Laughing Ghost (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="49cb-25f5-66ca-74eb">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent’s Fight phase, if this unit is not within Engagement Range of one or more enemy units, you can spend 1 Pain token to Empower this unit. Each time you do, remove this unit from the battlefield and place it into Strategic Reserves.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="e417-f9df-fc34-ce6c" targetId="a8a0-8fe7-898-e0f3"/>
-        <infoLink id="2ad-7bee-762d-e247" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="2ad-7bee-762d-e247" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Disparate Paths" id="51f4-3e39-3890-3f66" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
         <infoLink name="Flip Belt" id="cf20-fbb3-f686-7a8b" hidden="false" type="profile" targetId="b783-5813-dfe0-aca5"/>
         <infoLink name="Travelling Players" id="6247-c4e5-e9b7-d225" hidden="false" type="profile" targetId="dc70-ee78-7464-04e6"/>
+        <infoLink name="Power from Pain" id="a956-270c-74a8-d39d" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink id="9b69-61fe-dd19-5067" name="Warlord" hidden="false" collective="false" import="true" targetId="3f04-19ab-bfb0-6c67" type="selectionEntry" sortIndex="2">
@@ -4161,6 +4190,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4172,6 +4202,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4209,7 +4240,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
               <profiles>
                 <profile name="Shrieker Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6ca-5831-21c6-250">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
@@ -8752,14 +8783,43 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by enemy models have the [Hazardous] ability while targeting this model&apos;s unit.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Now you see me, Now you Dont (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4d04-8090-842e-ca24">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In opponent&apos;s Shooting phase you can spend 1 Pain token to Empower this unit, While Empowered, Reduce 1 to Ballistic skill or Weapon Skill characteristic of the attacks allocated to this unit.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Stealth" hidden="false" type="rule" id="9cc8-f6f8-9e4e-876a" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Leader" hidden="false" type="rule" id="f585-5c84-b0aa-4b95" targetId="b4dd-3e1f-41cb-218f"/>
-        <infoLink id="854a-e0e3-fe51-ef8d" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="854a-e0e3-fe51-ef8d" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Travelling Players" id="c4fa-1ad6-a209-8359" hidden="false" type="profile" targetId="dc70-ee78-7464-04e6"/>
         <infoLink name="Flip Belt" id="c297-4608-4e51-aff0" hidden="false" type="profile" targetId="b783-5813-dfe0-aca5"/>
         <infoLink name="Disparate Paths" id="c2eb-0954-2415-25f4" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
+        <infoLink name="Power from Pain" id="81d8-4e83-e84b-663b" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="cc12-4501-ba67-5d29" hidden="false" sortIndex="4">
@@ -8929,6 +8989,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8940,6 +9001,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9656,8 +9718,25 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a482-9507-18c7-28ce" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink id="f791-fe65-878-d3a8" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="f791-fe65-878-d3a8" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Disparate Paths" id="4c70-12e8-018c-c3e2" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
+        <infoLink name="Power from Pain" id="bcb6-b406-1bc2-3bd1" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Skyweaver" hidden="false" id="ca42-3b82-829d-eaf3" sortIndex="2">
@@ -9869,6 +9948,20 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <profiles>
+        <profile name="Sky slip (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="86d3-abfb-0097-91c1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Movement phase you can spend 1 Pain token to Empower this unit, While Empowered, that unit is still eligible to shoot and declare a charge this turn.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="f88f-60c5-3daf-3d2f" name="Solitaire" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -9926,14 +10019,43 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Warning Warning (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d9f-a67d-00ca-d240">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Fight phase you can spend 1 Pain token to Empower this unit, While Empowered, The melee weapon of this model has [Devastating Wounds] Ability.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Fights First" hidden="false" type="rule" id="b2d8-de57-26a-e01c" targetId="24-c886-e8ba-5a89"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="604d-6d88-13c9-7124" targetId="a8a0-8fe7-898-e0f3"/>
-        <infoLink id="707c-42bc-23ee-348b" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="707c-42bc-23ee-348b" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Flip Belt" id="a765-7190-a156-61ab" hidden="false" type="profile" targetId="b783-5813-dfe0-aca5"/>
         <infoLink name="Stealth" id="7d06-51ad-65e7-0609" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Disparate Paths" id="0ade-fc72-82b3-34ea" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
+        <infoLink name="Power from Pain" id="612d-55b1-dc82-af6f" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Solitaire Weapons" hidden="false" id="29f5-6897-79cc-ee2c">
@@ -10289,6 +10411,18 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Fuck it we ball (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="454e-18c3-9bf0-0d09">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Movement phase you can spend 1 Pain token to Empower this unit, While Empowered, Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="362-eea5-9547-deeb" targetId="b68a-5ded-65ac-98c">
@@ -10301,8 +10435,25 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
             <modifier type="append" value="6" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="1bc5-f871-25e2-95c0" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="1bc5-f871-25e2-95c0" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Disparate Paths" id="3e91-d1bd-6e7d-0088" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
+        <infoLink name="Power from Pain" id="e4d6-0702-1a61-3f84" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -12176,6 +12327,18 @@ You can attach this unit to one of the above units, even if Yvraine has already 
 ■ Trickster&apos;s Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Dance Macabre (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="073d-b296-356b-0979">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a melee attack, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="4-11 Players" hidden="false" id="ee36-1cbf-1933-2c96" defaultSelectionEntryId="69be-de22-4d8-ebe3" sortIndex="3">
@@ -12569,6 +12732,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12579,6 +12743,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12594,6 +12759,15 @@ You can attach this unit to one of the above units, even if Yvraine has already 
       <infoLinks>
         <infoLink id="7c82-c361-18b-246b" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
         <infoLink name="Flip Belt" id="276b-47c3-fd3c-7cce" hidden="false" type="profile" targetId="b783-5813-dfe0-aca5"/>
+        <infoLink name="Power from Pain" id="c1e3-acac-3214-5523" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="0e7f-038a-be1f-f9e5" type="selectionEntryGroup" targetId="eef3-eae9-ce7c-7765" sortIndex="1"/>
@@ -12648,6 +12822,18 @@ You can attach this unit to one of the above units, even if Yvraine has already 
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack you can re-roll a Hit roll of 1 and add 1 to the Wound roll.</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Breakdancing  (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="340f-f681-faa3-b779">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a melee attack, you can re-roll the Wound roll.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -12886,6 +13072,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12897,6 +13084,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5ad5-9b0d-a70e-b9ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12910,11 +13098,28 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="758c-6fd4-8f13-4a75" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
-        <infoLink id="495e-b315-280b-d114" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="495e-b315-280b-d114" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Leader" hidden="false" type="rule" id="7407-1bbf-a65d-8f13" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Disparate Paths" id="17cf-fa51-a1f5-cb38" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
         <infoLink name="Flip Belt" id="a6d0-fda7-4053-cf73" hidden="false" type="profile" targetId="b783-5813-dfe0-aca5"/>
         <infoLink name="Travelling Players" id="414b-5f41-4ed5-2753" hidden="false" type="profile" targetId="dc70-ee78-7464-04e6"/>
+        <infoLink name="Power from Pain" id="0fa0-ee3f-9be2-38ca" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -13017,6 +13222,18 @@ You can attach this unit to one of the above units, even if Yvraine has already 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Voidblast (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38bc-a406-4760-8ed7">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a range attack, you can re-roll the Wound roll.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="e657-a35f-c2af-bfe9" type="selectionEntryGroup" targetId="eef3-eae9-ce7c-7765" sortIndex="1"/>
@@ -13027,9 +13244,26 @@ You can attach this unit to one of the above units, even if Yvraine has already 
             <modifier type="append" value="1" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="ce65-e758-911d-6b93" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
+        <infoLink id="ce65-e758-911d-6b93" name="Battle Focus" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Disparate Paths" id="3e5d-f943-2a64-dc3e" hidden="false" type="rule" targetId="10d8-3547-47ae-baab"/>
         <infoLink name="Stealth" id="fdf8-8046-cbaf-f8dc" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Power from Pain" id="dcfa-bdcf-b8a9-de29" hidden="false" type="rule" targetId="5e02-2ddc-f55-e6dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="eaed-5aa5-3edf-15b2" hidden="false" sortIndex="2">
