@@ -4116,6 +4116,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="5d90-801e-5428-06fe" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="9b69-61fe-dd19-5067" name="Warlord" hidden="false" collective="false" import="true" targetId="3f04-19ab-bfb0-6c67" type="selectionEntry" sortIndex="2">
