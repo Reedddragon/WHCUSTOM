@@ -1630,11 +1630,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoGroup>
       </infoGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="375"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1919,11 +1920,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="395"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="375"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -2542,7 +2544,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </profile>
         <profile name="Thundershock" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="c930-deaf-6267-1e1e">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, each time you select a target for this model&apos;s thundercoil harpoon, roll one D6 for the target unit and one D6 for each other enemy unit within 6&quot; of the target unit. On a 4+, the unit being rolled for is struck by arcing energies; after resolving all of this model&apos;s attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, each time you select a target for this model&apos;s thundercoil harpoon, roll one D6 for the target unit and one D6 for each other enemy unit within 6&quot; of the target unit. On a 3+, the unit being rolled for is struck by arcing energies; after resolving all of this model&apos;s attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2659,10 +2661,10 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <profile name="Conflagration cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="feeb-790a-99d5-67fc">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3D6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6+6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                   </characteristics>
@@ -2693,12 +2695,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               <profiles>
                 <profile name="Thundercoil harpoon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2fc1-856c-bd08-2f05">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">24</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-6</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">10</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">16</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
                   </characteristics>
                 </profile>
@@ -4254,10 +4256,10 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <profile name="Acheron flame cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="20a7-a693-187c-3cff">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6+6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Ignores Cover</characteristic>
                   </characteristics>
@@ -4453,11 +4455,12 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoGroup>
       </infoGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="405"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="395"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -5760,7 +5763,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               <profiles>
                 <profile name="...yet shall our legacy be unsullied." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="85f4-ab86-07ca-3af0">
                   <characteristics>
-                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">This model has Feel no pain 6+ ability, If your Army is honored, It has Feel no pain 5+ ability instead.</characteristic>
+                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">This model has Feel no pain 6+ ability, If your Army is honored, It has Feel no pain 5+ ability instead. Improve this model&apos;s Objective Control characteristic by 2 and its Leadership characteristic by 1.</characteristic>
                     <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">5 or 6</characteristic>
                   </characteristics>
                 </profile>
