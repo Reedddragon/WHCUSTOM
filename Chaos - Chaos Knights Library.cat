@@ -8685,17 +8685,17 @@ While using the Houndpack Lance Detachment, the following rules apply:
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="d71a-a59f-aafd-3723" name="Harbingers of Dread" hidden="false">
-      <description>If your Army Faction is ^^**Chaos Knights^^**, each model from your army with this ability gains Dread abilities, depending which are active for your army. The Deathly Terror ability is active for your army from the start of the battle. In addition, at the start of the first, third and fifth battle rounds, you can either select one of the other Dread abilities or randomly select two Dread abilities to apply by rolling two D6 and applying the results rolled, from those numbered 1-6 below.
+      <description>If your Army Faction is ^^**Chaos Knights^^**, each model from your army with this ability gains Dread abilities, depending which are active for your army. The Deathly Terror ability is active for your army from the start of the battle. In addition, at the start of the first, third and fifth battle rounds, you can either select two of the other Dread abilities or randomly select two Dread abilities to apply by rolling two D6 and applying the results rolled, from those numbered 1-6 below.
 
 Any Dread abilities that have been selected are active until the end of the battle. You cannot select the same Dread ability more than once, and any duplicated Dread abilities (as a result of randomly selecting them) have no additional effect.
 
 
 **N/A - Deathly Terror (Aura)**
-While an enemy unit is within 9&quot; of this model, worsen the Leadership characteristic of models in that unit by 1.
+While an enemy unit is within 9&quot; of this model, worsen the Leadership characteristic of models in that unit by 2.
 
 
 **1 - Despair (Aura)**
-While an enemy unit is within 9&quot; of this model, worsen the Leadership characteristic of models in that unit by 1. This is cumulative with the Deathly Terror ability (see above).
+While an enemy unit is within 9&quot; of this model, worsen the Leadership characteristic of models in that unit by 2. This is cumulative with the Deathly Terror ability (see above).
 
 **2 - Doom**
 Each time this model makes an attack, if the target is Battle-shocked, add 1 to the Wound roll.
