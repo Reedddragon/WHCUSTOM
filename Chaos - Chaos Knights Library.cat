@@ -3612,7 +3612,7 @@ While using the Houndpack Lance Detachment, the following rules apply:
       <profiles>
         <profile id="6a7a-a366-3b41-378c" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save </characteristic>
           </characteristics>
         </profile>
         <profile id="6b1e-130c-63fa-2e7d" name="Chaos Acastus Knight Asterius" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -3888,7 +3888,7 @@ While using the Houndpack Lance Detachment, the following rules apply:
       <profiles>
         <profile id="eb6a-d569-aa17-af1d" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save </characteristic>
           </characteristics>
         </profile>
         <profile id="310d-1486-55e8-2d6c" name="Chaos Acastus Knight Porphyrion" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
