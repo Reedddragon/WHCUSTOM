@@ -5760,7 +5760,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               <profiles>
                 <profile name="...yet shall our legacy be unsullied." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="85f4-ab86-07ca-3af0">
                   <characteristics>
-                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">This model has Feel no pain 5+ ability</characteristic>
+                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">This model has Feel no pain 6+ ability, If your Army is honored, It has Feel no pain 5+ ability instead.</characteristic>
                     <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">5 or 6</characteristic>
                   </characteristics>
                 </profile>
