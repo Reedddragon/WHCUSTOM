@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b6d-dc06-5db9-c7d1" name="Imperium - Imperial Knights - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="77" battleScribeVersion="2.03" authorName="BSData Developers" type="catalogue" authorContact="Dunamis55 &amp; AbonShell">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b6d-dc06-5db9-c7d1" name="Imperium - Imperial Knights - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="78" battleScribeVersion="2.03" authorName="BSData Developers" type="catalogue" authorContact="Dunamis55 &amp; AbonShell">
   <rules>
     <rule name="Code Chivalric" id="cbd-943-bc7b-20ec">
       <description>If your Army Faction is **^^Imperial Knights^^**, at the end of the Read Mission Objectives step, you must determine your army&apos;s Oath for the coming battle. An Oath consists of two parts - one Deed and one Quality. There are three options for each part.
@@ -3039,7 +3039,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </profile>
         <profile name="Sunderer of The Battlefield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8107-cbfe-4bc2-99e1">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a unit that is not a FORTIFICATION, VEHICLE, MONSTER improve the Attack and Armor penetration characteristics of the Profile of this weapon by 2.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a unit that is not a FORTIFICATION, VEHICLE, MONSTER improve the Attack and Armor penetration characteristics of the Profile of this weapon by 2 and you can reroll the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Acastus Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b297-911b-2782-6bd2">
@@ -3218,7 +3218,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <profile name="Karacnos mortar battery" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7bef-2b4a-7e72-86d4">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">9</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
@@ -3277,7 +3277,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </profile>
         <profile name="Sunderer of Fortresses" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bc0-c0c3-ab99-3b38">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a FORTIFICATION, VEHICLE, MONSTER improve the Strength and Damage characteristics of that attack by 2 instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack targets a FORTIFICATION, VEHICLE, MONSTER improve the Strength and Damage characteristics of that attack by 2 instead and you can Re-roll the hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
