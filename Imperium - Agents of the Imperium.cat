@@ -17491,9 +17491,45 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Deathwatch Agent [Crucible]" hidden="false" id="ef92-e013-939c-3d68" targetId="9a75-f3a2-bff5-9f08" type="selectionEntry"/>
-    <entryLink import="true" name="Enthroned Agent [Crucible]" hidden="false" id="e9c8-bd07-904c-5e7e" targetId="2b47-b5e8-b297-7bd8" type="selectionEntry"/>
-    <entryLink import="true" name="Martial Agent [Crucible]" hidden="false" id="6a6e-9149-5485-e113" targetId="90e0-c5a9-17c5-fba4" type="selectionEntry"/>
+    <entryLink import="true" name="Deathwatch Agent [Crucible]" hidden="false" id="ef92-e013-939c-3d68" targetId="9a75-f3a2-bff5-9f08" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Enthroned Agent [Crucible]" hidden="false" id="e9c8-bd07-904c-5e7e" targetId="2b47-b5e8-b297-7bd8" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Martial Agent [Crucible]" hidden="false" id="6a6e-9149-5485-e113" targetId="90e0-c5a9-17c5-fba4" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9522-b10f-5943-435d">
