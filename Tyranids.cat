@@ -2366,10 +2366,15 @@
         <categoryLink name="Tyranid Warriors" hidden="false" id="8969-54e1-66c8-2793" targetId="e3d4-6430-ea62-8d6d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="120" field="51b2-306e-1021-d207">
+        <modifier type="set" value="110" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="5815-871c-9260-287a" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -6626,6 +6631,13 @@
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="4" field="bef7-942a-1a23-59f8">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="850e-bee1-4845-820d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -6968,6 +6980,18 @@
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="6" field="fced-3884-5051-1bc7">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="850e-bee1-4845-820d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="850e-bee1-4845-820d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deathspitters with slimer maggots" hidden="false" id="eeb5-f0a8-78b8-6265">
       <profiles>
@@ -7567,11 +7591,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="7660-6640-923b-ab97" type="selectionEntryGroup" targetId="2fa5-0a8d-013e-fc12" sortIndex="1"/>
@@ -12940,7 +12965,7 @@
         <entryLink import="true" name="Weapons" hidden="false" id="b1b0-3d4a-1f7d-567e" type="selectionEntryGroup" targetId="72e5-5efe-3fbc-9290" sortIndex="5"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -16595,7 +16620,7 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
             </modifier>
           </modifiers>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
