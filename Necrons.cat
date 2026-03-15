@@ -7453,7 +7453,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         </profile>
         <profile name="Huntermark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="41f4-59c3-c9b4-1882">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the your command phase, select one unit from your opponent’s army to be this unit’s Huntermark. Each time a model in this unit makes an attack that targets its Huntermark, that attack has the Devastating Wounds ability and you can re‑roll the Hit roll. </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the your command phase, select one unit from your opponent’s army to be this unit’s Huntermark. Each time a model in this unit makes an attack that targets its Huntermark, that attack has the Devastating Wounds ability and you can re‑roll the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b891-0877-4cfc-8cb4">
@@ -8391,6 +8391,13 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c14c-12b1-1df9-d9f">
           <characteristics>
@@ -8499,6 +8506,18 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Necrodermis Hardening" hidden="false" id="d88d-ca5c-d4ba-992c">
+          <profiles>
+            <profile name="Necrodermis Hardening" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8cf-b3b1-6c55-2092">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">necrodermis now reduce damage by half but reduce total wound count of this model to 12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8d8-63ea-6bcd-4bec"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusade" id="444c-7aca-9f00-5edc" hidden="false" sortIndex="1">
@@ -8535,6 +8554,13 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e93-58b3-238-f2e1">
           <characteristics>
@@ -8648,6 +8674,18 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Necrodermis Hardening" hidden="false" id="6457-8077-5b2b-b833">
+          <profiles>
+            <profile name="Necrodermis Hardening" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fced-8ab5-338a-bd6e">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">necrodermis now reduce damage by half but reduce total wound count of this model to 12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0670-79d7-31d6-90d8"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusade" id="b424-8d06-4637-065e" hidden="false" sortIndex="1">
@@ -8684,6 +8722,13 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="efb8-d673-a67a-4c99">
           <characteristics>
@@ -8840,6 +8885,18 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Necrodermis Hardening" hidden="false" id="0ebb-0d4c-b3c8-00ef">
+          <profiles>
+            <profile name="Necrodermis Hardening" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1ab4-f383-e91f-475a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">necrodermis now reduce damage by half but reduce total wound count of this model to 12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6ff-9a08-c348-8d53"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusade" id="ea7c-d567-9fb1-5b7f" hidden="false" sortIndex="1">
@@ -8890,6 +8947,13 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model cannot be given Enhancements.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -9091,6 +9155,20 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Necrodermis Hardening" hidden="false" id="3598-48b5-cbec-c43c">
+          <profiles>
+            <profile name="Necrodermis Hardening" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="79a6-5af9-df8a-c939">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">necrodermis now reduce damage by half but reduce total wound count of this model to 12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12be-8de2-9579-4ba3"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Canoptek Spyders" hidden="false" id="cae9-5277-87f4-54b8">
       <selectionEntries>
@@ -16444,7 +16522,7 @@ When mustering your army, each ^^**Necrons Monster^^** unit from your army has t
     <entryLink import="true" name="Canoptek Reanimator" hidden="false" type="selectionEntry" id="2bf6-b47f-ed31-3280" targetId="7c45-2aab-7526-febe"/>
     <entryLink import="true" name="Hexmark Destroyer" hidden="false" type="selectionEntry" id="7d32-1dff-55a0-7457" targetId="d504-e79e-f4d9-90aa"/>
     <entryLink import="true" name="Lychguard" hidden="false" type="selectionEntry" id="902b-16a7-8dcf-af6c" targetId="c4e3-f6b0-f3aa-9d90"/>
-    <entryLink import="true" name="Deathmarks" hidden="false" type="selectionEntry" id="ff2b-ce68-c268-8720" targetId="b7d7-14c9-63c1-ded5"/>
+    <entryLink import="true" name="Deathmark" hidden="false" type="selectionEntry" id="ff2b-ce68-c268-8720" targetId="b7d7-14c9-63c1-ded5"/>
     <entryLink import="true" name="Flayed Ones" hidden="false" type="selectionEntry" id="2365-c045-7cef-722d" targetId="c219-a708-f5b0-f0e7"/>
     <entryLink import="true" name="Cryptothralls" hidden="false" type="selectionEntry" id="7c8c-7a4-9827-8ada" targetId="ef7a-c413-c779-2d18"/>
     <entryLink import="true" name="Skorpekh Destroyers" hidden="false" type="selectionEntry" id="d353-6bfd-a702-7457" targetId="66e-26f2-7c38-e4d8"/>
@@ -16508,6 +16586,13 @@ When mustering your army, each ^^**Necrons Monster^^** unit from your army has t
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="Each time an attack is allocated to this model, halve the Damage characteristic of that attack." field="9b8f-694b-e5e-b573">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
     <profile name="Enslaved Star God" hidden="false" id="3eeb-1140-c828-a4c5" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
       <characteristics>

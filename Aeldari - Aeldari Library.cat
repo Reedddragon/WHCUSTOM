@@ -19963,7 +19963,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <categoryLink targetId="de72-7478-144e-d12b" id="1d87-99fa-7c8b-3e32" primary="false" name="Blades for Hire"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -23218,7 +23218,7 @@ Before the battle, at the start of the Declare Battle Formations step, you can 
         <categoryLink id="bae6-a153-8caf-39c4" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -37140,7 +37140,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a43-5fd9-0611-5126"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5a43-5fd9-0611-5126"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="9478-4eb4-ca2e-92cd" collective="false">
@@ -37164,67 +37164,6 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Scourge" hidden="false" id="6e9b-38a8-e240-7a50" collective="false">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d7c0-225b-c52e-1e3e" automatic="true"/>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8058-b99a-563e-a10b" includeChildSelections="false" automatic="true"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shardcarbine" hidden="false" id="0b74-9fa9-0c22-855f" collective="true">
-                  <profiles>
-                    <profile name="Shardcarbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bb9f-afc3-44d7-ce0e">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d7-2725-da88-acfe"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a439-5bbf-0872-cad6"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Anti-" id="c583-d35e-861b-6a63" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                    <infoLink name="Assault" id="d5d3-5c6f-290b-7cea" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="f70f-8a88-04de-a302" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2cc-825c-f279-4833"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="726c-43d5-2363-4280"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ab1d-1373-81c5-fb7f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="decrement" value="1" field="d7c0-225b-c52e-1e3e"/>
-                    <modifier type="decrement" value="1" field="8058-b99a-563e-a10b"/>
-                  </modifiers>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="f2d1-4574-223f-998f" childId="313f-6619-806f-c4c7" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8ad6-e8af-74ce-f678"/>
@@ -37237,31 +37176,6 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Option" id="82ba-d85c-1752-1ad6" hidden="false" defaultSelectionEntryId="5768-c5d9-c4d6-360a">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Shardcarbine" hidden="false" id="a1da-6e01-938a-89c7">
-                      <profiles>
-                        <profile name="Shardcarbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a8c6-72dc-ff9b-555c">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Anti-" id="aabc-e844-bfd7-4f3c" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                        <infoLink name="Assault" id="ebfe-06e0-c580-2b97" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="4f97-51ef-dbba-c28a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b63c-c61a-0dfb-2c6a" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="1 Blast pistol and 1 Power weapon" hidden="false" id="cbf7-7f2f-e56b-7b50">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Blast Pistol" hidden="false" id="dd06-edd9-e5be-37fa">
@@ -37376,6 +37290,65 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d66a-17f5-f5cd-1576" includeChildSelections="false"/>
                       </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Blaster" hidden="false" id="99a5-5c93-5551-3a6a" collective="false">
+                      <profiles>
+                        <profile name="Blaster" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a22a-7770-28bd-d829">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Assault" id="9685-d149-95c3-cf11" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shardcarbine" hidden="false" id="7cc2-2c26-72a9-f65f" collective="false">
+                      <profiles>
+                        <profile name="Shardcarbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d6b6-bded-c813-0c2e">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Anti-" id="7c7a-c294-b7a8-e816" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                        <infoLink name="Assault" id="8707-3139-cb3a-33be" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shredder" hidden="false" id="889f-8f36-855b-fcf7">
+                      <profiles>
+                        <profile name="Shredder" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6647-02b3-dc9d-2485">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Torrent</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Assault" id="6f69-bccf-6e62-f639" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                        <infoLink name="Torrent" id="735f-4a0c-7280-9c09" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="7921-ba80-6a88-552d" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>

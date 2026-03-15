@@ -59,7 +59,15 @@
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e3b9-57a9-e909-476f" primary="true" name="Character"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Archtormentor [Crucible]" hidden="false" id="01a7-4e63-3416-af4c" type="selectionEntry" targetId="62f8-6a75-5ffb-e83b"/>
-    <entryLink import="true" name="Flesh Crafter [Crucible]" hidden="false" id="12ba-310f-7b9a-cae7" type="selectionEntry" targetId="b5a1-7e2b-7a1d-bbda"/>
+    <entryLink import="true" name="Archtormentor [Crucible]" hidden="false" id="01a7-4e63-3416-af4c" type="selectionEntry" targetId="62f8-6a75-5ffb-e83b">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e92f-3932-7b68-4e76" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Flesh Crafter [Crucible]" hidden="false" id="12ba-310f-7b9a-cae7" type="selectionEntry" targetId="b5a1-7e2b-7a1d-bbda">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="57c4-594c-f2be-5353" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
 </catalogue>
