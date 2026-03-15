@@ -3857,7 +3857,6 @@
             <selectionEntry type="upgrade" import="true" name="Psychic scream" hidden="false" id="4b19-26b8-1f71-2768" collective="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d9a-0f02-4961-2d3d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c786-f4b8-7924-db1c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile name="Psychic scream" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f1ff-ebef-ac02-b60b">
@@ -4345,7 +4344,6 @@
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f678-de1d-98c4-8593"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="224f-af64-9caf-d958"/>
               </constraints>
               <infoLinks>
@@ -8603,7 +8601,6 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Psychoclastic torrent" hidden="false" id="56f9-bb79-7be0-dbf2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a07e-20c6-cbe5-23a7" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22bc-aff2-db43-dba8" includeChildSelections="true"/>
               </constraints>
               <profiles>
@@ -16620,7 +16617,7 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
             </modifier>
           </modifiers>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
