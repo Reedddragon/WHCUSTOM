@@ -8394,7 +8394,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="d88d-ca5c-d4ba-992c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8557,7 +8557,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="d88d-ca5c-d4ba-992c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8725,7 +8725,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="d88d-ca5c-d4ba-992c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8950,7 +8950,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="d88d-ca5c-d4ba-992c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -16589,7 +16589,7 @@ When mustering your army, each ^^**Necrons Monster^^** unit from your army has t
       <modifiers>
         <modifier type="set" value="Each time an attack is allocated to this model, halve the Damage characteristic of that attack." field="9b8f-694b-e5e-b573">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d88d-ca5c-d4ba-992c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="d88d-ca5c-d4ba-992c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
