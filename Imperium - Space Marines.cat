@@ -38354,6 +38354,10 @@ per turn.</characteristic>
                         </profile>
                       </profiles>
                       <comment>BS2+</comment>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06d4-b2e0-93b8-a343" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6187-64ab-dd00-ea68" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -38385,6 +38389,10 @@ per turn.</characteristic>
                         </profile>
                       </profiles>
                       <comment>BS2+</comment>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5f0-15f7-46ee-a217" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad4-f8e7-5d59-ee65" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
