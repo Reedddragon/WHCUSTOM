@@ -3668,7 +3668,7 @@
       <modifierGroups>
         <modifierGroup>
           <modifiers>
-            <modifier type="set" field="51b2-306e-1021-d207" value="230">
+            <modifier type="set" field="51b2-306e-1021-d207" value="210">
               <conditions>
                 <condition field="selections" scope="918b-c9ed-7af7-74df" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="greaterThan"/>
               </conditions>
@@ -6189,7 +6189,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
         <categoryLink name="Imperium" hidden="false" id="182a-f324-9efb-4b6d" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
