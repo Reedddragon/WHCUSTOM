@@ -12061,12 +12061,23 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                     <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="3" field="164e-1c6a-25d0-c200">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="3" field="caa8-16d6-d8bc-ccef"/>
+                    <modifier type="set" value="3" field="164e-1c6a-25d0-c200"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink import="true" name="Twin lascannon" hidden="false" id="e941-d010-001c-d06e" type="selectionEntry" targetId="34f9-dc04-80a5-4c11">
               <constraints>
@@ -12165,18 +12176,23 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9827-780b-6529-1ca2" includeChildSelections="false" automatic="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="3" field="9827-780b-6529-1ca2">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="d24d-bcc3-b20f-ad46">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e2bc-fc0c-1099-3e75" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="3" field="b36a-b19b-ead2-aa70"/>
+                    <modifier type="set" value="0" field="d24d-bcc3-b20f-ad46"/>
+                    <modifier type="set" value="3" field="9827-780b-6529-1ca2"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink import="true" name="Gatling psilencer" hidden="false" id="fe83-8072-31bb-abde" type="selectionEntry" targetId="5ae4-c05d-2c02-5c5c">
               <constraints>
@@ -12966,7 +12982,11 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
     <entryLink import="true" name="Saturnine Terminator Squad" hidden="false" id="d8f1-2a53-4a8a-da99" targetId="271d-8c9e-0701-3da3" type="selectionEntry"/>
     <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="f7bb-8c4e-61d1-649b" targetId="87b9-19d7-de11-16b3" type="selectionEntry"/>
     <entryLink import="true" name="Champion of Titan [Crucible]" hidden="false" id="d1fc-b0c1-fbd1-e601" targetId="9782-7a59-9b65-21e4" type="selectionEntry"/>
-    <entryLink import="true" name="Dreadknight Champion [Crucible]" hidden="false" id="daac-651b-1a5a-527a" targetId="e60e-8ccf-41b2-292e" type="selectionEntry"/>
+    <entryLink import="true" name="Dreadknight Champion [Crucible]" hidden="false" id="daac-651b-1a5a-527a" targetId="e60e-8ccf-41b2-292e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="e2bc-fc0c-1099-3e75" id="6dc7-8d75-46ac-e57e" primary="false" name="Crucible"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Venerable Daemon Slayer [Crucible]" hidden="false" id="957d-657a-1233-e1b3" targetId="2a2d-1f49-9373-4084" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
