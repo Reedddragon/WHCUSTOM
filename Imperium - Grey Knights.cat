@@ -4221,12 +4221,6 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Interceptor" hidden="false" id="2906-2dfd-6dbe-ca8">
               <entryLinks>
-                <entryLink import="true" name="Nemesis force weapon" hidden="false" id="5031-fb1c-2ea0-e9da" type="selectionEntry" targetId="8194-61a0-7d96-61e2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a416-c8c7-dac9-261a"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11f9-c54f-9ae8-75ce"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="b804-c118-fff3-c60c" type="selectionEntry" targetId="be2a-878d-7003-2f51">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a947-d09d-86fc-ba9f"/>
@@ -4238,6 +4232,42 @@
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7638-86bc-110a-e8ed" includeChildSelections="false"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f6e2-0ecd-1913-9837" includeChildSelections="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Nemesis Force Dual Swords" hidden="false" id="8649-55ca-d992-bc48">
+                  <profiles>
+                    <profile name="Nemesis Force Dual Swords" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="27c8-379f-e150-4867">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Twin-Linked, Sustained Hits 1</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="41a0-1301-112a-e2f2">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="fd57-61c6-39a4-dee3" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Psychic" id="c7dc-1655-9f69-1e37" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+                    <infoLink name="Twin-linked" id="d625-8b09-e0f9-ab57" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1677-136d-7187-8d3e"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5093,6 +5123,11 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit (excluding ^^**Monsters^^** or ^^**Vehicles^^**) hit by one or more of those attacks; until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit&apos;s Move characteristic and subtract 2 from Charge rolls made for it.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Astral Aim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fa80-3c97-1be4-9d40">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability, provided the target of that weapon is visible to one or more other friendly Grey Knights Psyker units</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="ccdc-7e6-7559-e0f0" targetId="7cb5-dd6b-dd87-ad3b"/>
@@ -5191,16 +5226,31 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="71c1-41cb-f7d9-dc48" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Storm bolter" hidden="false" id="8194-4d14-3f38-9ac3" type="selectionEntry" targetId="be2a-878d-7003-2f51">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8def-c1f4-6927-1022"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c75a-5baf-5a03-b1c9"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="216b-76dc-02db-2caf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Heavy Weapons" id="8f93-eccd-f71d-d205" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Incinerator" hidden="false" id="dd21-40f6-a560-2389" type="selectionEntry" targetId="17ed-2f7b-bf3a-3c94" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dca7-fc8e-b000-d903" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ede0-ba8f-3600-1483" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Psilencer" hidden="false" id="bd42-4c8d-d8a1-3938" type="selectionEntry" targetId="d526-d040-807c-34f6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b155-013c-d721-459f" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b75d-0dde-5887-2ad8" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Psycannon" hidden="false" id="24ff-aeda-63ce-bfc8" type="selectionEntry" targetId="e520-9c7-d10c-897d" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="915a-8fc5-9092-4774" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c8e-3ab9-72c5-6ebf" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5327,12 +5377,6 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Purifier" hidden="false" id="2105-9372-a043-df0c">
               <entryLinks>
-                <entryLink import="true" name="Nemesis force weapon" hidden="false" id="82c7-7b6b-1ca0-10cb" type="selectionEntry" targetId="8194-61a0-7d96-61e2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb03-130c-68ff-f4f0"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a6a-81ab-c9b3-2ee2"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="9094-0ab4-1f46-66ea" type="selectionEntry" targetId="be2a-878d-7003-2f51">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07ad-426d-2d87-15fc"/>
@@ -5345,6 +5389,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3772-4c8c-35b8-1578" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="9fa8-fc43-56e8-b758" type="selectionEntry" targetId="53be-9d10-ac58-66da"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -5437,15 +5482,6 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8dd-593c-4f5d-28b7"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Nemesis force weapon" hidden="false" id="362a-0e62-a090-f03c" type="selectionEntry" targetId="8194-61a0-7d96-61e2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc64-33a9-0327-6053"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="066a-c17e-ccab-5973"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="665c-c98f-4bad-7232" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="2293-da67-37b1-fd5a" type="selectionEntry" targetId="be2a-878d-7003-2f51">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a191-63b0-7c56-d304"/>
@@ -5464,6 +5500,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ea82-c93d-5883-4fc0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="e987-bba9-c25b-c9a0" type="selectionEntry" targetId="53be-9d10-ac58-66da"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -5916,18 +5953,13 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Grey Knight" hidden="false" id="2e8c-d8a7-b77c-d2ad">
               <entryLinks>
-                <entryLink import="true" name="Nemesis force weapon" hidden="false" id="65ac-027b-70db-806f" type="selectionEntry" targetId="8194-61a0-7d96-61e2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfc2-0ae6-296e-2dd5"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85e8-68d6-972c-ebbb"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="fcc4-df01-1f16-c3a2" type="selectionEntry" targetId="be2a-878d-7003-2f51">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70d3-4c8e-63d2-698c"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f042-3ff6-441d-e258"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="a98b-b3ab-31a0-2063" type="selectionEntry" targetId="53be-9d10-ac58-66da"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Grey Knight with Heavy Weapon" hidden="false" id="b953-5c1a-5d31-192f">
@@ -5990,15 +6022,6 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e341-5b62-dcfd-8b"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Nemesis force weapon" hidden="false" id="8d79-de48-96cc-a494" type="selectionEntry" targetId="8194-61a0-7d96-61e2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c65f-9cc4-c174-256f"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae6f-7f42-110a-d2f7"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="62f6-bfc3-4c0b-8682" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="8491-e318-34a6-07fc" type="selectionEntry" targetId="be2a-878d-7003-2f51">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ca5-2ceb-2500-a578"/>
@@ -6008,6 +6031,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="e6da-b789-6070-09a3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Nemesis force weapon selection" hidden="false" id="f73e-c470-21bd-f39e" type="selectionEntry" targetId="53be-9d10-ac58-66da"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -8399,7 +8423,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
                 <profile name="Nemesis Force Dual Swords" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3bd4-a122-6d25-e2e3">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
@@ -9710,6 +9734,124 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
           <comment>Crucible modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nemesis force weapon selection" hidden="false" id="53be-9d10-ac58-66da">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Nemesis Weapon Selection" id="67f8-6e5e-b487-8ffd" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Nemesis Force Hammer" hidden="false" id="92f6-041b-2a3a-f888">
+              <profiles>
+                <profile name="Nemesis Force Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="56f4-57ec-6742-8418">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Devastating Wounds</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="fd57-61c6-39a4-dee3" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Psychic" id="931a-ea6e-9be1-7666" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+                <infoLink name="Devastating Wounds" id="501e-8259-8bc4-e924" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee2-3f3f-b48f-ebc8"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nemesis Force Sword" hidden="false" id="72a3-a9df-2cd7-91a9" sortIndex="1">
+              <profiles>
+                <profile name="Nemesis Force Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3b83-3724-1b08-b750">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Lethal Hits</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="fd57-61c6-39a4-dee3" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="e13f-acdc-4332-6d53" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                <infoLink name="Psychic" id="4f34-2999-4a57-2584" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd80-21bc-7462-31fa"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nemesis Force Polearm" hidden="false" id="a4d7-a1b8-5351-8d2e">
+              <profiles>
+                <profile name="Nemesis Force Polearm" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1098-1aac-3b67-cbaf">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Lance</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="fd57-61c6-39a4-dee3" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Psychic" id="16c2-576f-6322-0a88" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+                <infoLink name="Lance" id="7274-5eaf-efed-1658" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dba-39a7-4a3b-9d18"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="163b-de83-5f79-7639"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a2c-9cb6-7ed3-28ca"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f04e-8714-2e98-7edf"/>
+      </constraints>
+      <comment>Non terminator</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
