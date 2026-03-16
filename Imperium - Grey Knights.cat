@@ -661,6 +661,13 @@
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="4eca-4ea7-7423-81a9" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="845e-fc2d-7dd2-5199">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="ebf4-5ffe-19e7-c6c7" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -8309,7 +8316,6 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ff0-6d83-389a-48d6"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf8f-7c35-d5d6-d434"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Nemesis force weapon selection" hidden="false" id="796a-a3f4-eec5-d872">
@@ -8467,7 +8473,6 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
       <comment>+1 WS</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd0a-2eec-e9a6-0518"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a550-5780-b87f-b0b5"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saturnine Terminator Squad" hidden="false" id="271d-8c9e-0701-3da3">
@@ -12470,14 +12475,6 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6ad8-6acb-9a20-2eb6" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Crozius arcanum" hidden="false" id="1e42-63fc-2f8e-ce91" targetId="4e88-c580-e5fa-ae6c" type="selectionEntry">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="7bad-c778-e69b-a167" targetId="0d47-adec-f8da-f1be" type="selectionEntryGroup"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e75-e3d8-6dd6-adfc"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Dreadfists" hidden="false" id="a017-9feb-7a44-ed4c" type="selectionEntry" targetId="597-f5-1f7d-dce5">
               <entryLinks>
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e61e-f0ae-e58d-3543" targetId="0d47-adec-f8da-f1be" type="selectionEntryGroup"/>
@@ -12599,6 +12596,47 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <comment>Crucible variant</comment>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="19f2-b5ff-cae2-8098" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Crozius arcanum" hidden="false" id="a4fe-b43a-9514-0861">
+              <profiles>
+                <profile name="Crozius arcanum" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="376a-15dc-0ffb-3555">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="fd57-61c6-39a4-dee3" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df6d-7318-9d1b-66b5"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="d819-5f92-2792-7651" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="1717-2bf8-c051-7c1f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="a2e1-21da-0777-2ed7" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="b5e8-f283-aa73-2751" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
