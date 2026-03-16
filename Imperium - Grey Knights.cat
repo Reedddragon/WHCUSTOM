@@ -9446,7 +9446,7 @@ A Blade Against Chaos: When this model is using Nemesis Force Dual Swords, This 
         <entryLink import="true" name="Weapons" hidden="false" id="7297-951c-77d4-968f" type="selectionEntryGroup" targetId="7a5b-4d9d-cad2-1def" sortIndex="5"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="290"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
