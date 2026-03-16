@@ -11154,7 +11154,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="9d3f-134e-1f5b-531a" childId="e165-675e-79b2-120d" shared="true" id="6f39-a6b9-5d12-99c9"/>
+            <condition type="atLeast" value="4" field="selections" scope="9d3f-134e-1f5b-531a" childId="e165-675e-79b2-120d" shared="true" id="6f39-a6b9-5d12-99c9"/>
           </conditions>
         </modifier>
       </modifiers>
