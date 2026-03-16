@@ -12172,6 +12172,9 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9827-780b-6529-1ca2" includeChildSelections="false" automatic="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="d24d-bcc3-b20f-ad46"/>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
@@ -12569,6 +12572,7 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="fd0a-2eec-e9a6-0518"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Nemesis greatsword" hidden="false" id="5288-0ca6-5fac-4dbc" type="selectionEntry" targetId="11a4-c85b-ae25-cc95">
@@ -12605,6 +12609,7 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="babc-84e7-7d38-c82c"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Servo-arm" hidden="false" id="f6ef-1258-a97d-ee92" targetId="56a2-d965-8a31-8eec" type="selectionEntry">
@@ -12617,6 +12622,7 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="a439-2174-ed6c-895c"/>
               </modifiers>
             </entryLink>
           </entryLinks>
