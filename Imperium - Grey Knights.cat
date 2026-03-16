@@ -12046,6 +12046,11 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                     <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="597e-f14a-ce19-4511-min">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e2bc-fc0c-1099-3e75" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Fragstorm grenade launcher" hidden="false" id="c3ae-f9a9-04f5-6b12" targetId="4cf7-61b6-ad2e-09f6" type="selectionEntry">
@@ -12169,6 +12174,11 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                 <modifier type="set" value="3" field="9827-780b-6529-1ca2">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="388d-ad8b-7040-1b89" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="d24d-bcc3-b20f-ad46">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e2bc-fc0c-1099-3e75" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12459,6 +12469,13 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5a41-c41c-c751-dd65" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="5d4e-75f0-0faa-5695-min">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e2bc-fc0c-1099-3e75" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <modifiers>
@@ -12539,6 +12556,13 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e39d-722a-e146-c96f"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Nemesis greatsword" hidden="false" id="5288-0ca6-5fac-4dbc" type="selectionEntry" targetId="11a4-c85b-ae25-cc95">
               <constraints>
@@ -12568,11 +12592,25 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0112-b88d-e430-6596"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Servo-arm" hidden="false" id="f6ef-1258-a97d-ee92" targetId="56a2-d965-8a31-8eec" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7524-e0af-5580-8319"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntries>
@@ -12638,6 +12676,13 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="b5e8-f283-aa73-2751" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="388d-ad8b-7040-1b89" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
