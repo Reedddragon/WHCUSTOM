@@ -11055,12 +11055,14 @@ by 1.</characteristic>
                       </selectionEntries>
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cec6-a245-f31b-2011"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7fd-d471-1b65-6aeb"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a7fd-d471-1b65-6aeb"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="set" value="2" field="a7fd-d471-1b65-6aeb">
+                        <modifier type="set" value="1" field="a7fd-d471-1b65-6aeb">
                           <conditions>
-                            <condition type="atLeast" value="2" field="selections" scope="abe7-3409-5585-4773" childId="d0db-b312-856b-4251" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="5508-21bd-a51a-83d6" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="7a98-65b5-d522-91fb" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="3402-2ef0-1f28-2c94" shared="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
