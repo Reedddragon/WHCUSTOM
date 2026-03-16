@@ -11294,6 +11294,18 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="8" field="ab33-d393-96ce-ccba"/>
+                        <modifier type="set" value="-2" field="41a0-1301-112a-e2f2"/>
+                        <modifier type="set" value="3" field="3254-9fe6-d824-513e"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="de0b-37e9-b9f5-d3a6" childId="4d7f-9fc0-6ee6-4abc" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile name="➤ Vaultswords - Hurricanis" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0ca5-2c14-b857-57b2">
                   <characteristics>
@@ -11305,6 +11317,18 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="6" field="ab33-d393-96ce-ccba"/>
+                        <modifier type="set" value="-2" field="41a0-1301-112a-e2f2"/>
+                        <modifier type="set" value="2" field="3254-9fe6-d824-513e"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="de0b-37e9-b9f5-d3a6" childId="4d7f-9fc0-6ee6-4abc" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile name="➤ Vaultswords - Victus" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3b21-e63a-debd-7bb3">
                   <characteristics>
@@ -11316,6 +11340,18 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="12" field="ab33-d393-96ce-ccba"/>
+                        <modifier type="set" value="-3" field="41a0-1301-112a-e2f2"/>
+                        <modifier type="set" value="4" field="3254-9fe6-d824-513e"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="de0b-37e9-b9f5-d3a6" childId="4d7f-9fc0-6ee6-4abc" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
