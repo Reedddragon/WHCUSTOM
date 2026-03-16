@@ -11567,9 +11567,9 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
               </conditions>
             </modifier>
             <modifier type="set" value="9" field="d29d-cf75-fc2d-34a4" scope="parent" affects="profiles.Unit"/>
-            <modifier type="set" value="7" field="750a-a2ec-90d3-21fe" scope="parent" affects="profiles.Unit"/>
+            <modifier type="set" value="8" field="750a-a2ec-90d3-21fe" scope="parent" affects="profiles.Unit"/>
             <modifier type="add" value="740a-892c-8958-defa" field="category" scope="parent"/>
-            <modifier type="set" value="6" field="e703-ecb6-5ce7-aec1" scope="parent" affects="profiles.Unit"/>
+            <modifier type="set" value="6&quot;" field="e703-ecb6-5ce7-aec1" scope="parent" affects="profiles.Unit"/>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Balistus grenade launcher" hidden="false" id="dd05-cde9-e69f-7488" type="selectionEntry" targetId="4863-f443-2b45-e18b">
