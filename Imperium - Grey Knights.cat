@@ -12041,11 +12041,7 @@ The bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Tra
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b3-a2cb-aca1-ace2" includeChildSelections="false"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="597e-f14a-ce19-4511-min">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e2bc-fc0c-1099-3e75" shared="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" value="0" field="597e-f14a-ce19-4511-min"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Fragstorm grenade launcher" hidden="false" id="c3ae-f9a9-04f5-6b12" targetId="4cf7-61b6-ad2e-09f6" type="selectionEntry">
