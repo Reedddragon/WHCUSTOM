@@ -10823,7 +10823,7 @@ by 1.</characteristic>
                             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="95bb-ba84-92b7-3c68"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="0fd7-5fc4-81ad-b3e5">
+                        <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="1106-d67a-0730-520e">
                           <profiles>
                             <profile name="Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c008-9f57-24d7-09c9">
                               <characteristics>
@@ -10865,13 +10865,19 @@ by 1.</characteristic>
                       </selectionEntries>
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d673-909f-cbd3-e773"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0641-7a42-dde5-0801"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0641-7a42-dde5-0801"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="set" value="2" field="0641-7a42-dde5-0801">
-                          <conditions>
-                            <condition type="atLeast" value="2" field="selections" scope="b5f6-4c1c-5265-6b5c" childId="5946-8934-6459-92f2" shared="true"/>
-                          </conditions>
+                        <modifier type="set" value="1" field="0641-7a42-dde5-0801">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="b5f6-4c1c-5265-6b5c" childId="0445-0adb-c780-01e1" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="b5f6-4c1c-5265-6b5c" childId="efa2-0537-af05-469a" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="b5f6-4c1c-5265-6b5c" childId="1106-d67a-0730-520e" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
@@ -11059,11 +11065,15 @@ by 1.</characteristic>
                       </constraints>
                       <modifiers>
                         <modifier type="set" value="1" field="a7fd-d471-1b65-6aeb">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="5508-21bd-a51a-83d6" shared="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="7a98-65b5-d522-91fb" shared="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="3402-2ef0-1f28-2c94" shared="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="5508-21bd-a51a-83d6" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="7a98-65b5-d522-91fb" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="abe7-3409-5585-4773" childId="3402-2ef0-1f28-2c94" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
