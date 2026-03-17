@@ -10960,7 +10960,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
     </selectionEntry>
     <selectionEntry id="acb5-dbf2-e3a6-ad94" name="Raptors" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="170">
+        <modifier type="set" field="51b2-306e-1021-d207" value="190">
           <conditions>
             <condition field="selections" scope="acb5-dbf2-e3a6-ad94" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
           </conditions>
@@ -11036,6 +11036,47 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <entryLink import="true" name="Plasma pistol" hidden="false" id="6e69-781-c780-1285" collective="false" targetId="14a5-4b2-415a-c1d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="Ranged Weapon" id="9143-fe0e-4cb9-f24c" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="5f1c-031c-5318-c38d" collective="true">
+                      <infoLinks>
+                        <infoLink name="Flamer" id="4d96-ed0c-6b95-1285" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="e8c2-830a-a8c4-0c9a" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="7e6f-71cd-2115-45e3" collective="true">
+                      <infoLinks>
+                        <infoLink name="Meltagun" id="93ea-7e45-5f11-d624" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="bd2c-2a07-61d6-a597" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="2f88-bb6e-7f16-56c2" collective="true">
+                      <infoLinks>
+                        <infoLink name="Plasma gun" id="af4f-142f-4d47-674f" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="38b9-1995-0e86-59ad" collective="false" targetId="c668-d63-5427-7e32" type="selectionEntry"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3640-4bfd-ca25-95ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-aca1-f91b-e2c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -11057,47 +11098,14 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <selectionEntry id="b6c1-f5f5-550f-cb87" name="Raptor" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2571-2255-b796-6f2" type="max"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3069-b7f8-62a-a048" type="min"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapon" id="41b9-d756-1eae-36af" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="b3be-4dba-8367-fd29" collective="true">
-                      <infoLinks>
-                        <infoLink name="Flamer" id="aa1c-34d5-c103-6560" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                      <categoryLinks>
-                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="143d-0c55-7d08-9b68" targetId="e993-e086-6de1-12af" primary="false"/>
-                      </categoryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="f7c6-c450-9e09-c02b" collective="true">
-                      <infoLinks>
-                        <infoLink name="Meltagun" id="ef9d-b2ce-e9d3-9d32" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                      <categoryLinks>
-                        <categoryLink name="Damage Dx Weapon" hidden="false" id="3637-129e-c1cf-a6f7" targetId="4986-bf86-beb4-13ac" primary="false"/>
-                      </categoryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="49a0-4390-b86a-e422" collective="true">
-                      <infoLinks>
-                        <infoLink name="Plasma gun" id="3c95-d9e0-f6ff-e4e2" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="02db-346f-ab4e-c65a" collective="false" targetId="c668-d63-5427-7e32" type="selectionEntry"/>
+                    <entryLink import="true" name="Boltgun" hidden="false" id="dd01-376e-8f3f-949d" type="selectionEntry" targetId="b27c-673f-7c7f-cc78"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a148-3917-fd0e-9c86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -11106,24 +11114,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee" id="a830-79bc-2930-8eaa" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Heavy Melee Weapon" hidden="false" id="c655-1c17-5d82-ad7f">
-                      <profiles>
-                        <profile name="Heavy Melee Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bd26-89e9-e8cf-9fc6">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9bb-8379-fa2b-e8d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Accursed Weapon" hidden="false" id="4b74-2e5b-1f0c-c487">
                       <profiles>
                         <profile name="Accursed Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="96ef-62a0-c418-63f3">
@@ -11150,136 +11140,81 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="a76b-f5f1-ddc6-2780" name="2 selections per 5 models" hidden="false" collective="false" import="true">
-              <modifiers>
-                <modifier type="add" value="Max 2 special weapons per 5 models" field="error" id="ffd-99b8-efea-e359">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="model" shared="true" id="fac6-d312-55ad-1d99" includeChildSelections="true"/>
-                        <condition type="greaterThan" value="2" field="selections" scope="acb5-dbf2-e3a6-ad94" childId="a76b-f5f1-ddc6-2780" shared="true" id="f808-e4d0-bac2-7e00" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="db36-4236-46be-9dad" name="Elite Raptor" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="acb5-dbf2-e3a6-ad94" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ffc-cc-34f0-72b0" type="max"/>
+                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39f6-6c73-1aad-41bc" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="ce9e-eb86-e99c-44c8" name="Raptor w/ plasma pistol" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="e5e4-b8fb-c906-9453" name="Astartes chainsword" hidden="false" collective="false" import="true" targetId="c297-6f9c-b046-f2ad" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2e-2d1b-8416-7388" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2e3c-266e-4b70-66d" name="Raptor w/ flamer" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
-                  </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapon" id="651f-d2fc-2a9c-1295" hidden="false">
                   <selectionEntries>
-                    <selectionEntry id="204c-7dc1-ac2b-94aa" name="Flamer" hidden="false" collective="true" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72cc-8abd-c2d5-56af" type="min"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="922c-6c05-b592-c965" type="max"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="d512-dfd6-7e99-59ba" collective="true">
                       <infoLinks>
-                        <infoLink id="bffc-e9e8-1c24-4f7b" name="Flamer" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
+                        <infoLink name="Flamer" id="ef92-b713-08ca-ff76" hidden="false" targetId="2876-732d-4e10-55d8" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
                       <categoryLinks>
-                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="44a8-2989-04af-5726" targetId="e993-e086-6de1-12af" primary="false"/>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="8600-9507-acf2-1c9a" targetId="e993-e086-6de1-12af" primary="false"/>
                       </categoryLinks>
                     </selectionEntry>
-                  </selectionEntries>
-                  <entryLinks>
-                    <entryLink id="167f-7261-eaf6-d27d" name="Close combat weapon" hidden="false" collective="false" import="true" targetId="3854-44a6-5746-d602" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e24e-e0b-9faa-ef0b"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="90e9-e59a-ce0a-eb1d" name="Raptor w/ plasma gun" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af7-f158-bcfa-2bb9" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="eb5c-1314-f10e-d761" name="Plasma gun" hidden="false" collective="true" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d2-c4e6-5116-3e2b" type="min"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2768-a6ba-7e5c-fe58" type="max"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="5c06-ed2a-ce9c-e1e5" collective="true">
                       <infoLinks>
-                        <infoLink id="c25a-1692-2e00-9781" name="Plasma gun" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <entryLinks>
-                    <entryLink id="6661-ebda-ff94-2faf" name="Close combat weapon" hidden="false" collective="false" import="true" targetId="3854-44a6-5746-d602" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="382c-ea1d-8d2f-d075"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Raptor w/ meltagun" hidden="false" id="c2db-b7da-0791-1f45" collective="false">
-                  <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9665-3c44-0c06-8ddf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="feed-1015-e647-e9c5" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b13-eeb7-ddce-ca31" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc46-7826-5f09-725c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink name="Meltagun" id="133d-9902-84de-f6a6" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
+                        <infoLink name="Meltagun" id="9643-a838-5a85-d65a" hidden="false" targetId="93cd-96f9-0791-f9f4" type="infoGroup"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
                       <categoryLinks>
-                        <categoryLink name="Damage Dx Weapon" hidden="false" id="910a-818f-1fec-651f" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="838d-9dab-eb45-cb3a" targetId="4986-bf86-beb4-13ac" primary="false"/>
                       </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="3142-a9a5-42a7-76b9" collective="true">
+                      <infoLinks>
+                        <infoLink name="Plasma gun" id="ab04-85a3-c200-8fed" hidden="false" targetId="38a7-7b6c-0f3d-6547" type="infoGroup"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="f243-3918-2b55-bf68" collective="false" targetId="3854-44a6-5746-d602" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2281-3287-544e-98f5"/>
-                      </constraints>
-                    </entryLink>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="0d84-0fe4-d0e4-8bdd" collective="false" targetId="c668-d63-5427-7e32" type="selectionEntry"/>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="266b-1117-f951-f7b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab6f-32ec-908b-4056" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee" id="52be-45bf-8ad9-e425" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Melee Weapon" hidden="false" id="fa8d-e5ec-2ff7-2f30">
+                      <profiles>
+                        <profile name="Heavy Melee Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2f83-1338-b24a-4982">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40a7-4b2d-2a1a-4a52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce37-a22a-2ce8-b624" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
