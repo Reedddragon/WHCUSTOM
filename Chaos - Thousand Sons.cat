@@ -12154,9 +12154,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Rebinding (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="94bd-5ae8-9743-dc80">
+        <profile name="Rebinding Rubicae(Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="94bd-5ae8-9743-dc80">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, if this model is leading a unit, you can roll one D6: on a 1, that unit suffers D3 mortal wounds, on a 2+, you can return 1 destroyed Bodyguard model to that unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, if this model is leading a unit, you can roll one D6: on a 1, that unit suffers D3 mortal wounds; on a 2-5, you can return 1 destroyed Bodyguard model to that unit; on a 6, you can return up to 2 destroyed Bodyguard models to that unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea79-1a54-105c-e1cb">
@@ -16046,7 +16046,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae5d-b708-3d6e-81fc" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ae5d-b708-3d6e-81fc" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pistols" id="2dd1-6848-5a98-1656" hidden="false" sortIndex="2" defaultSelectionEntryId="none">
