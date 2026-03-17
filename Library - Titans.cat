@@ -1495,7 +1495,7 @@
         </profile>
         <profile name="Warmaster Titan" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6cb7-bed7-c7e6-4ebd">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">24</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">200</characteristic>
@@ -1598,7 +1598,7 @@
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">8</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
                     </profile>
@@ -1609,7 +1609,7 @@
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">12</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">8</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
                       </characteristics>
                     </profile>
@@ -1840,18 +1840,18 @@
                 <profile name="➤ Suzerain-class Plasma Destructors  - Sustained Fire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="74d3-bee0-ad77-88c3">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6D6+6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8D6+6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">8</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Sustained Hits 6</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Sustained Hits 3</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="➤ Suzerain-class Plasma Destructors - Supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9a85-e419-86ae-771e">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6+6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8D6+6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">24</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
@@ -1862,17 +1862,12 @@
                 <profile name="➤ Suzerain-class Plasma Destructors - Ultracharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5287-c1bc-6f58-e4a0">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">120&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">48</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-5</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">24</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Devastating Wounds, Anti-All 4+</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Ultracharge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7577-d124-9d2b-ab23">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">when using Ultracharge as a profile, reduce Hazardous roll by 2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Devastating Wounds, Anti-All 4+, Ultracharge</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1883,6 +1878,11 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ce1-09c6-211c-72b8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <rules>
+                <rule name="Ultracharge" id="9280-3860-50ba-d1a1" hidden="false">
+                  <description>when using Ultracharge as a profile, reduce Hazardous roll by 2</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1930,7 +1930,7 @@
         </profile>
         <profile name="Warmaster Iconoclast Titan" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b195-7d63-d004-ac83">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">16&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">20&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">24</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">200</characteristic>
@@ -2143,7 +2143,7 @@
                     <profile name="Cruciator Gatling Array" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ddeb-42c1-6165-8175">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">69&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">60</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">66</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -2222,7 +2222,7 @@
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">18</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">8</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 3, Extra Attacks</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 4, Extra Attacks</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -2239,7 +2239,7 @@
                   <profiles>
                     <profile name="Krius Grav Imploder " typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4a36-4708-04e1-ac5a">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">Melee</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">6+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">25</characteristic>
@@ -2253,9 +2253,9 @@
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">20</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">25</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-5</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">24</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">28</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
                     </profile>

@@ -29117,7 +29117,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </profile>
         <profile name="The Night Haunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6aa6-8bed-e830-9f68">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one The Night Haunter ability. Until the start of your next Command phase, this model has that ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select two The Night Haunter ability. Until the start of your next Command phase, this model has that ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Fear Itself" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be39-aa26-cb77-a2d2">
@@ -29211,7 +29211,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </profiles>
           <infoLinks>
             <infoLink name="Sustained Hits" id="6ff3-78ef-7806-d225" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
-            <infoLink name="Devastating Wounds" id="9b7c-3df6-2af1-c8b1" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
             <infoLink name="Precision" id="7761-78ad-c365-d999" hidden="false" targetId="9143-31ae-e0a6-6007" type="rule"/>
           </infoLinks>
           <costs>
@@ -29240,7 +29239,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked, Precision</characteristic>
