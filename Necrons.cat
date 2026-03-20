@@ -4660,15 +4660,15 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Staff of light" hidden="false" id="e3b4-5998-8b15-4d65">
                   <profiles>
-                    <profile name="Staff of light" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3bb9-cfd3-a1f4-1d39">
+                    <profile name="➤ Staff of light - Focused Beam" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3bb9-cfd3-a1f4-1d39">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">6</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Staff of light" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7403-f6-6b4-944f">
@@ -4680,6 +4680,17 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Staff of light - Dispersed Beam" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8c86-70c9-1bb0-6e82">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7086,7 +7097,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -7147,7 +7158,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Pistol</characteristic>
                   </characteristics>
                 </profile>
@@ -7966,7 +7977,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skorpekh Destroyers" hidden="false" id="66e-26f2-7c38-e4d8">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -8059,7 +8070,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="120" field="51b2-306e-1021-d207">
+        <modifier type="set" value="140" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="66e-26f2-7c38-e4d8" childId="model" shared="true" id="ef32-2f6b-da53-db48" includeChildSelections="true"/>
           </conditions>
@@ -10938,7 +10949,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lokhust Destroyers" hidden="false" id="6f72-b8f7-fd8d-5c2c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -10953,17 +10964,17 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         <categoryLink targetId="55de-834b-6ae-ed50" id="db0b-f9b5-b53e-2e7" primary="false" name="Lokhust Destroyers"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="50" field="51b2-306e-1021-d207">
+        <modifier type="set" value="40" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="2" field="selections" scope="6f72-b8f7-fd8d-5c2c" childId="model" shared="true" id="37a3-66bd-b138-9f7f" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="75" field="51b2-306e-1021-d207">
+        <modifier type="set" value="60" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="3" field="selections" scope="6f72-b8f7-fd8d-5c2c" childId="model" shared="true" id="37a3-66bd-b138-9f7f" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="150" field="51b2-306e-1021-d207">
+        <modifier type="set" value="120" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="6f72-b8f7-fd8d-5c2c" childId="model" shared="true" id="37a3-66bd-b138-9f7f" includeChildSelections="true"/>
           </conditions>
