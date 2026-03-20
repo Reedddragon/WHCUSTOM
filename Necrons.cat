@@ -8446,7 +8446,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8600,7 +8600,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8759,7 +8759,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8960,7 +8960,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <modifiers>
             <modifier type="set" value="12" field="750a-a2ec-90d3-21fe">
               <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
