@@ -4562,7 +4562,12 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lokhust Lord" hidden="false" id="8725-de36-7ef7-45f6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="7aff-bb60-fad-9c24" primary="false" name="Faction: Necrons"/>
@@ -4660,9 +4665,9 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">15</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
                     </profile>
@@ -11189,11 +11194,12 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="c6c9-4420-6f5d-fa6c" targetId="77d-65cf-d088-2296">
@@ -11236,11 +11242,12 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="13f1-ee43-f166-dcc9" targetId="77d-65cf-d088-2296">
@@ -15579,7 +15586,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nekrosor Ammentar" hidden="false" id="1d4b-a179-ae99-3283">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
