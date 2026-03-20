@@ -5691,11 +5691,12 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Technomancer" hidden="false" id="852a-ba39-e93f-6b62">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="8229-37bb-bbd3-a9eb" primary="false" name="Faction: Necrons"/>
@@ -6876,7 +6877,12 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Canoptek Reanimator" hidden="false" id="7c45-2aab-7526-febe">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Detachment Rules" hidden="false" type="infoGroup" id="d6f3-5b5b-8ab5-4c5a" targetId="4ee-d749-4ddc-323d"/>
@@ -9161,7 +9167,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d907-41df-a80f-76d"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -9372,7 +9378,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="d8cd-19aa-8f80-34a9" primary="false" name="Faction: Necrons"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -9445,7 +9451,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="50" field="51b2-306e-1021-d207">
+        <modifier type="set" value="40" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="259b-a8e3-928f-1d0c" childId="model" shared="true" id="a9ae-d3af-8847-b3be" includeChildSelections="true"/>
           </conditions>
@@ -11337,7 +11343,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Canoptek Doomstalker" hidden="false" id="ff8f-2e43-8af1-3470">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -14800,7 +14806,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Canoptek Macrocytes" hidden="false" id="97d7-4b22-46b7-dae0">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
