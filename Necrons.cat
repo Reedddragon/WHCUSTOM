@@ -13518,7 +13518,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="170" field="51b2-306e-1021-d207">
+        <modifier type="set" value="100" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="a7e1-5b53-1d89-e1e3" childId="model" shared="true" id="8f66-a632-ad59-81d4" includeChildSelections="true"/>
           </conditions>
