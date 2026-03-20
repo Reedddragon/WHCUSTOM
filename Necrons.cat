@@ -4321,11 +4321,12 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skorpekh Lord" hidden="false" id="c401-d95f-c5ce-7738">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="c38a-24bb-46a5-cb13" primary="false" name="Faction: Necrons"/>
@@ -7959,7 +7960,12 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skorpekh Destroyers" hidden="false" id="66e-26f2-7c38-e4d8">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="fdbd-e1cd-3475-c97d" primary="false" name="Faction: Necrons"/>
@@ -8047,7 +8053,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="66e-26f2-7c38-e4d8" childId="model" shared="true" id="ef32-2f6b-da53-db48" includeChildSelections="true"/>
           </conditions>
@@ -9535,11 +9541,12 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ophydian Destroyers" hidden="false" id="c6db-9736-4d53-3ef6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="9aff-9a06-2d18-79e9" primary="false" name="Faction: Necrons"/>
@@ -9553,7 +9560,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         <infoLink name="Deep Strike" hidden="false" type="rule" id="79b6-4004-1655-d9a3" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <modifiers>
-        <modifier type="set" value="160" field="51b2-306e-1021-d207">
+        <modifier type="set" value="120" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="c6db-9736-4d53-3ef6" childId="model" shared="true" id="db70-3966-b824-3330" includeChildSelections="true"/>
           </conditions>
@@ -10925,11 +10932,12 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lokhust Destroyers" hidden="false" id="6f72-b8f7-fd8d-5c2c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="3c00-667-cf53-1d26" primary="false" name="Faction: Necrons"/>
@@ -10939,17 +10947,17 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         <categoryLink targetId="55de-834b-6ae-ed50" id="db0b-f9b5-b53e-2e7" primary="false" name="Lokhust Destroyers"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="60" field="51b2-306e-1021-d207">
+        <modifier type="set" value="50" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="2" field="selections" scope="6f72-b8f7-fd8d-5c2c" childId="model" shared="true" id="37a3-66bd-b138-9f7f" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="90" field="51b2-306e-1021-d207">
+        <modifier type="set" value="75" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="3" field="selections" scope="6f72-b8f7-fd8d-5c2c" childId="model" shared="true" id="37a3-66bd-b138-9f7f" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="150" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="6f72-b8f7-fd8d-5c2c" childId="model" shared="true" id="37a3-66bd-b138-9f7f" includeChildSelections="true"/>
           </conditions>
