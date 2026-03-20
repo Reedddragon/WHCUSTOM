@@ -7372,7 +7372,12 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </profile>
         <profile name="Guardian Protocols" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0c6-979e-6276-84d3">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a NOBLE model is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a Character model is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Attached Unit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a86b-1996-0e12-a75f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Character unit from your army with the Leader ability can be attached to a Immortals Unit, it can be attached to this unit instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
