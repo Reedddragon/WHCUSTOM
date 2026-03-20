@@ -5948,7 +5948,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </profile>
         <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1ea7-6c96-59aa-150b" page="41">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model reaches 0 wounds while in engagement range, This model can fight as if it was in fight phase even if this model has fought already, after fighting remove this model. All Adeptus Astartes and Blood Angels Units are Battle shocked and can re-roll The Hit roll and Gain Feel no pain 6+. This last until your next turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model reaches 0 wounds while in engagement range, This model can fight as if it was in fight phase even if this model has fought already and The Blade Encarmine gain Extra Attack ability, after fighting remove this model. All Adeptus Astartes and Blood Angels Units are Battle shocked and can re-roll The Hit roll and Gain Feel no pain 6+. This last until your next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
