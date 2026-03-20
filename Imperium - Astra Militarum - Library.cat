@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="180" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="184" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -625,6 +625,7 @@
         <categoryLink targetId="dbd4-63-af05-998" id="c03e-ebb3-8eac-c3d2" primary="true" name="Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="71be-6ccb-b221-f035" primary="false" name="Titanic"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="131d-5bd1-a728-d065" primary="false" name="Smoke"/>
+        <categoryLink targetId="ae7d-d4d9-578e-4bf6" id="c0de-322c-bc19-97d8" primary="false" name="Baneblade Chassis"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
@@ -860,6 +861,7 @@
         <categoryLink targetId="dbd4-63-af05-998" id="5fc4-14bc-3adc-7a06" primary="true" name="Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="2552-ea4f-a394-47f1" primary="false" name="Titanic"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="476d-eab8-1057-aad1" primary="false" name="Transport"/>
+        <categoryLink targetId="ae7d-d4d9-578e-4bf6" id="fd35-f615-4d9a-b7dd" primary="false" name="Baneblade Chassis"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="acd1-da30-2656-832a" includeChildSelections="true" includeChildForces="true"/>
@@ -1064,6 +1066,7 @@
         <categoryLink targetId="5929-ad51-d006-e008" id="e03a-8e48-cb04-780" primary="false" name="Titanic"/>
         <categoryLink targetId="dbd4-63-af05-998" id="7586-3718-7322-7ece" primary="true" name="Vehicle"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="84aa-d090-ee59-dafe" primary="false" name="Smoke"/>
+        <categoryLink targetId="ae7d-d4d9-578e-4bf6" id="3fbe-0d35-0e7f-3ebc" primary="false" name="Baneblade Chassis"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="acd1-da30-2656-832a" includeChildSelections="true" includeChildForces="true"/>
@@ -4418,6 +4421,7 @@
         <categoryLink targetId="dbd4-63-af05-998" id="45a2-cff5-a0b5-d702" primary="true" name="Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="1fb4-29bf-cf2b-85cc" primary="false" name="Titanic"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="7f0e-8481-187e-8436" primary="false" name="Transport"/>
+        <categoryLink targetId="ae7d-d4d9-578e-4bf6" id="6007-abfc-334a-29e1" primary="false" name="Baneblade Chassis"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="415"/>
@@ -33379,7 +33383,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <modifiers>
                 <modifier type="set" value="0" field="7030-a997-0ef7-ebfb">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -33459,7 +33463,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <modifiers>
                 <modifier type="set" value="0" field="7eeb-e398-4085-dd66">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -33508,18 +33512,18 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           <modifiers>
             <modifier type="append" value="D2" field="name">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="259d-6f7d-e76a-0aad" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="self" childId="259d-6f7d-e76a-0aad" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="self" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="append" value="D3" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="259d-6f7d-e76a-0aad" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="259d-6f7d-e76a-0aad" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="append" value="D6" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="e2be-8374-e45a-ee70" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="c9b6-f051-dbf3-ab07" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -34251,6 +34255,252 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Deathhammer" hidden="false" id="c041-2b5b-1652-ea88">
+      <categoryLinks>
+        <categoryLink targetId="fa45-57e-930e-602b" id="d91f-0c06-1990-fe8d" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e6dd-9cce-3f31-f896" primary="false" name="Imperium"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="d2ef-3bb9-8b82-7bfe" primary="true" name="Vehicle"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="badc-f8e7-9e70-03b7" primary="false" name="Titanic"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="6396-97cf-fe2e-0c00" primary="false" name="Smoke"/>
+        <categoryLink targetId="8f15-bcba-9dbe-610a" id="9bd2-e3da-b184-0f1f" primary="false" name="Deathhammer"/>
+        <categoryLink targetId="ae7d-d4d9-578e-4bf6" id="15c5-d5ca-642b-4489" primary="false" name="Baneblade Chassis"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7a68-f922-3b6c-cd0a" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3cc6-8757-b166-d22d" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="86a8-bde8-e42e-f022" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="0fb7-45f0-b2fe-aa9d" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1fc0-cb38-cb3a-7a21" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Deathhammer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3327-3741-ea8b-7dae">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">13</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warheads" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a08c-5d61-b882-93fd">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model uses Death Hammer Array weapon, you can do the follow based on the profile used:
+
+
+Deathstrike Plasma Warhead - Roll a D6 for every unit within 6&quot; of one of the target, for every 5+, Those units suffer D3 mortal Wounds.
+
+
+Apocalyptic Barrage Warhead - Roll a D6 for every unit within 9&quot; of one of the target, for every 5+, Those units suffer 1 mortal Wounds.
+
+
+Warp Vortex Warhead -  Roll a D6, if rolled a 5+, That unit suffer D6 Moral Wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Damaged: 1-8 Wounds Remaining" id="b729-7c01-5d1a-b7fe" hidden="false" type="profile" targetId="e862-4703-fc73-5c46"/>
+        <infoLink name="Deadly Demise" id="c33e-07d8-057f-5663" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D6+2" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="3cc6-8757-b166-d22d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="86a8-bde8-e42e-f022">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="0fb7-45f0-b2fe-aa9d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3cc6-8757-b166-d22d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d0de-45ce-e737-b6be" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="6082-6755-ba2d-4e49" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Armoured tracks" hidden="false" id="0572-ddf6-4fa4-07a6" type="selectionEntry" targetId="6883-d690-ca12-d222">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dca4-5621-416f-2608" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ed-a2a6-1266-0f21" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="c0ee-797d-dbab-8e99" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Heavy stubber" hidden="false" id="fa1b-7dfc-0a0f-1ba2" type="selectionEntry" targetId="d20f-db4b-d083-7c0a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef53-58ac-7875-069f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fcd-abb7-8363-803b"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="f2f2-72eb-309d-f9e4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Twin heavy bolter" hidden="false" id="a37c-92dc-c0b5-acc3" type="selectionEntry" targetId="d5d2-be01-7a54-78c3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d4f-b3c1-f353-e0fb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71de-f688-bed9-e404"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="9a20-184f-a8b5-882b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Wargear Options" hidden="false" id="b4fc-99bc-49df-dcb5" type="selectionEntryGroup" targetId="947a-b0d1-6bb2-336a"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Death Hammer Array " hidden="false" id="c372-abdf-7dd0-0cdf">
+              <profiles>
+                <profile name="➤Death Hammer Array - Deathstrike Plasma Warhead" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="dba5-4096-8008-cabc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">240&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤Death Hammer Array - Warp Vortex Warhead" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c521-da17-1849-4500">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">240&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-5</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">12</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤Death Hammer Array - Apocalyptic Barrage Warhead" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ceca-8527-70e4-6a0c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">240&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4D6+3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbf7-8cfc-3774-80fe"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef7-0fda-711c-0445"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Earthshaker Side cannon" hidden="false" id="97f0-a316-71ca-9557">
+              <profiles>
+                <profile name="Earthshaker Side cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e494-4325-f615-c0d7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">240&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire,</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast" id="0248-4df4-d91d-fe16" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                <infoLink name="Indirect Fire" id="7373-effb-e345-5f2c" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e18b-28a8-6422-ef09"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e93-b79b-9b71-3c09"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="027c-9773-4da9-94b6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -34397,6 +34647,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Augmented Bone &apos;Ead" id="a061-fa9d-e60c-9aef" hidden="false"/>
     <categoryEntry name="Front-line Commander" id="2463-b9fe-5fbe-f62f" hidden="false"/>
     <categoryEntry name="Sentinel Commander" id="680e-ccbe-ca8c-ffc3" hidden="false"/>
+    <categoryEntry name="Deathhammer" id="8f15-bcba-9dbe-610a" hidden="false"/>
+    <categoryEntry name="Baneblade Chassis" hidden="false" id="ae7d-d4d9-578e-4bf6"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -35956,6 +36208,13 @@ Onslaught - 4</characteristic>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c041-2b5b-1652-ea88" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>Baneblade</comment>
