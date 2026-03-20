@@ -2608,6 +2608,36 @@ When doing so, those models can be moved within Engagement Range of that enemy u
               <categoryLinks>
                 <categoryLink name="Damage Dx+0 Modifier" hidden="false" id="ae54-d31a-6f50-5ca8" targetId="982b-de77-dd2d-d9bd" primary="false"/>
               </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Agnes Tachyon Arrow" hidden="false" id="9e23-fb50-c049-9be6">
+                  <modifiers>
+                    <modifier type="set" value="" field="7f1b-8591-2fcf-d01c" affects="upgrade.profiles.Ranged Weapons" scope="9a5d-4aa6-6149-cd18"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e884-dd7a-a1cd-bad8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Agnes Tachyon Arrow" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d25-0ec2-b469-3808">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Remove this Weapon&apos;s One Shot ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cb3-cd0b-73bb-0974"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
@@ -5943,6 +5973,11 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, at the start of your Command, Movement, Shooting, Charge or Fight phase, you can select one enemy unit within 18&quot; of this model. That unit must take a Battle-shock test, subtracting 1 from the roll when it does so.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Psychosomatic Aim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2afb-f0f1-ecfe-ab11">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When leading a unit, add 1 to the Ballistic skill of range weapons equipped by this unit.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="0fd6-ce88-8ce5-53ef" hidden="false" sortIndex="4">
@@ -6074,7 +6109,12 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chronomancer" hidden="false" id="5b7d-54ea-f7a8-9688">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="c36e-df90-fe41-9e1d" primary="false" name="Faction: Necrons"/>
@@ -6452,11 +6492,12 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Necron Warriors" hidden="false" id="58e9-5212-f5a6-c12d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="551f-274f-9a0-c9ae" primary="false" name="Faction: Necrons"/>
@@ -6575,7 +6616,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="160" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="11" field="selections" scope="58e9-5212-f5a6-c12d" childId="model" shared="true" id="db70-3966-b824-3330" includeChildSelections="true"/>
           </conditions>
@@ -11625,6 +11666,13 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <characteristics>
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 10 NECRON WARRIOR models and 1 NECRONS INFANTRY CHARACTER model.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="This model has a transport capacity of 20 NECRON WARRIOR models and 2 NECRONS INFANTRY CHARACTER model." field="30f2-be70-861d-1b84">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="f09b-e63c-148d-5bf1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Ghost Ark" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="112f-249b-2b31-18b7">
           <characteristics>
@@ -11638,11 +11686,12 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="b421-a12b-5c98-b4cf" primary="false" name="Faction: Necrons"/>
@@ -11763,6 +11812,28 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ghost Barracks" hidden="false" id="f09b-e63c-148d-5bf1">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9550-17f2-7acf-bd07"/>
+          </constraints>
+          <profiles>
+            <profile name="Ghost Barracks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9dd6-0791-0c79-1070">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This transport can now fit 20 Necron Warriors and 2 Necron Infantry Characters.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Night Scythe" hidden="false" id="2a86-2d6-6446-7f1">
       <costs>
@@ -15434,7 +15505,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
         <categoryLink name="Geomancer" hidden="false" id="1a09-589e-5a47-74bc" targetId="95df-800c-ee22-4cac" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -16066,7 +16137,7 @@ Normal move or Return to reserves. If it does so, until the end of the turn, thi
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hyperscientist [Crucible]" hidden="false" id="e884-dd7a-a1cd-bad8">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -16823,18 +16894,4 @@ At the start of each phase, for each ^^**Necrons Monster^^** unit from your army
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>
-  <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Necrodermis Hardening" hidden="false" id="d88d-ca5c-d4ba-992c">
-      <profiles>
-        <profile name="Necrodermis Hardening" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8cf-b3b1-6c55-2092">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">necrodermis now reduce damage by half but reduce total wound count of this model to 12</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8d8-63ea-6bcd-4bec"/>
-      </constraints>
-    </selectionEntry>
-  </selectionEntries>
 </catalogue>
