@@ -16647,7 +16647,7 @@ When mustering your army, each ^^**Necrons Monster^^** unit from your army has t
             <modifier type="set" value="Each time an attack is allocated to this model, halve the Damage characteristic of that attack." field="9b8f-694b-e5e-b573"/>
           </modifiers>
           <conditions>
-            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="greaterThan" value="0" field="selections" scope="self" childId="5920-c4b3-e9d9-c6ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
