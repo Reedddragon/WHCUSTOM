@@ -5997,20 +5997,6 @@ of your Command phase, you can choose one of the following:
               </entryLinks>
             </entryLink>
           </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="80bd-f9ab-bf85-1b69">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62a8-2c97-10de-529e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1aa-76e8-a824-9d6c"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Close combat weapon" hidden="false" type="profile" id="475a-32f4-418-3b22" targetId="8619-2e4f-8e9a-4ccf"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="2253-541c-da99-b6c3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
           <profiles>
             <profile name="Retributor Superior" hidden="false" id="335f-5680-7c89-10b2" typeName="Unit" typeId="c547-1836-d8a-ff4f">
               <characteristics>
@@ -6023,6 +6009,31 @@ of your Command phase, you can choose one of the following:
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Retributor Weapons" id="7839-1949-9359-e793" hidden="false" defaultSelectionEntryId="a492-fbe3-4a96-5128">
+              <entryLinks>
+                <entryLink import="true" name="Ministorum heavy flamer" hidden="false" id="3646-9545-7d9b-4f61" type="selectionEntry" targetId="609c-5e0-92ba-5250">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbda-c3b8-ddd8-8262"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="d446-65f4-16c9-eaa3" type="selectionEntry" targetId="1eae-cf99-54ba-2e0a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e041-221c-48f1-6683"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="11f5-8bde-3c6c-a65b" type="selectionEntry" targetId="4342-9072-ac29-3dc6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6028-4858-9354-e129"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f9c-d882-186d-48a1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bf4-6935-3ac1-b30c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>

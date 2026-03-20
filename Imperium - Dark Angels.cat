@@ -11130,10 +11130,10 @@ EFFECT: Until the end of the turn, you can re-roll Charge rolls made for your un
           </modifiers>
         </infoLink>
         <infoLink name="Oath of Moment" hidden="false" id="79e5-63a6-f77d-992e" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Damaged: 1-8 wounds remaining" id="1cab-3d4e-0a01-5fab" hidden="false" type="profile" targetId="4362-2036-1522-de2e"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="f7ac-e5a0-02f2-45a4" primary="false" name="Vehicle"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e933-d3af-1912-4f20" primary="true" name="Character"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="f7ac-e5a0-02f2-45a4" primary="true" name="Vehicle"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="1605-3618-a601-e238" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="aab1-4f05-fabe-5ba5" id="fdd2-46dc-7961-6931" primary="false" name="Faction: Dark Angels"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="dc49-99a3-26fb-bdf2" primary="false" name="Imperium"/>
