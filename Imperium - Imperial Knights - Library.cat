@@ -6268,7 +6268,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Bellastus Reaper Chainsword" hidden="false" id="b7e0-3fc4-87ae-8c0b">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1da-ac92-2f7a-0bf7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4faf-724f-847c-cfdb"/>
                   </constraints>
                   <profiles>
                     <profile name="➤ Bellastus Reaper Chainsword - sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="799b-0f2c-c0cb-f3a0">
@@ -6340,6 +6340,10 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2a4-c732-b5b3-7f41"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="171a-801b-004a-8c23"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6389,9 +6393,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <categoryLink targetId="4c6f-cd42-a31a-0469" id="dbb8-327b-59c4-d0a3" primary="false" name="Bellastus"/>
         <categoryLink targetId="30d7-dd76-362b-25f1" id="cff0-e7a6-9ffb-2217" primary="false" name="Knight Destrier"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="2560-9b40-8ae6-f00d"/>
-      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
