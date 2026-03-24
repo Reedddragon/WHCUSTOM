@@ -14960,10 +14960,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </profiles>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy Missile Launcher" hidden="false" id="1843-30e7-e3cb-f86e" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c39a-7ca7-837d-a970" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32a9-7608-1912-af5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="➤ Heavy Missile Launcher - Krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="402b-7a3a-c784-b56a">
                       <characteristics>
@@ -30427,8 +30423,8 @@ This is the unbreakable litany, and may it be forever so.</characteristic>
     </selectionEntry>
     <selectionEntry id="8be3-8051-b861-7cf3" name="Kravek Morne" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2378-5907-d69e-d4b3" type="max"/>
-        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="17eb-f3ca-0c81-1980" includeChildSelections="false"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2378-5907-d69e-d4b3" type="max"/>
+        <constraint type="max" value="1" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="17eb-f3ca-0c81-1980" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="14af-ce18-a761-3198" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="deff-2f25-6509-9b4e" includeChildSelections="true"/>
       </constraints>
@@ -30471,11 +30467,12 @@ by 1.</characteristic>
       <categoryLinks>
         <categoryLink id="754e-48ab-2d9d-5497" name="Faction: Heretic Astartes" hidden="false" targetId="1e42-dfae-cbdd-207d" primary="false"/>
         <categoryLink id="52dd-e022-5192-9e10" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink id="aacc-08d7-2e0a-1f61" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink id="aacc-08d7-2e0a-1f61" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink id="7e51-92d9-4529-3671" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink targetId="2c5c-6ca6-777-c633" id="319e-35f0-7546-b639" primary="false" name="Chaos Undivided"/>
         <categoryLink targetId="5c68-7ab3-86fb-8f11" id="6950-9e14-c573-2a17" primary="false" name="Warsmith"/>
         <categoryLink targetId="6390-b37b-28b5-eb73" id="296b-73a1-f395-2a04" primary="false" name="Iron Warrior"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="68a5-8ccc-70dc-00d4" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e050-5746-05eb-e9ce" name="Enhancements" hidden="false" collective="false" import="true" targetId="f4dd-5662-f7ca-a614" type="selectionEntryGroup" sortIndex="3"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Customized" revision="76" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Customized" revision="105" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -506,6 +506,12 @@
       <comment>Flags a weapon that has had a +0 added to a D3/D6 Damage characteristic - used for logic calculations</comment>
     </categoryEntry>
     <categoryEntry id="fec3-1e9f-85e6-317e" name="Faction: Fallen" hidden="false"/>
+    <categoryEntry name="Crucible" id="e2bc-fc0c-1099-3e75" hidden="true">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="632a-6167-3373-0a51" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Bellastus" id="4c6f-cd42-a31a-0469"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -1160,6 +1166,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     </rule>
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
+    </rule>
+    <rule name="Crucible" id="5ce6-a3cf-e871-f081" hidden="false">
+      <description>A **^^Character^^** created using Crucible rules has the Crucible ability. Your army may include up to three units with the Crucible ability and these units cannot be given Enhancements.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
