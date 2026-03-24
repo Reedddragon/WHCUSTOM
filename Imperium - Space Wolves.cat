@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="74" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="75" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="cb5b-3605-7522-c561" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="2e06-13ae-6789-b591" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -11106,9 +11106,9 @@ Wound roll.</characteristic>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                       </characteristics>
                     </profile>
@@ -11174,14 +11174,14 @@ Wound roll.</characteristic>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Relic Great Axe" hidden="false" id="320d-0d3a-dd22-2906">
                   <profiles>
-                    <profile name="Relic Great Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f0cb-e4ef-d525-7bd6">
+                    <profile name="Relic Great Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f50c-a41b-ba55-2dc3">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                       </characteristics>
                     </profile>
@@ -11500,7 +11500,7 @@ Wound roll.</characteristic>
             </profile>
             <profile name="Saga of Hel [Aura]" typeId="6128-0fe9-bc6b-7164" typeName="Wolf King of Fenris" hidden="false" id="93a3-c7b7-8546-4cba" page="41">
               <characteristics>
-                <characteristic name="Effect" typeId="4593-c408-1ef0-324e"> While a friendly ^^**Adeptus Astartes^^** unit is within 6&quot; of this model, melee weapons in that unit have the Ability Sustained Hits 1, if that model already has Sustained Hits, add 1 to x of the ability. When this model uses Axe of Helwinter, an unmodifed Hit roll of 5+ is a Critical Hit.</characteristic>
+                <characteristic name="Effect" typeId="4593-c408-1ef0-324e">While a friendly ^^**Adeptus Astartes^^** unit is within 6&quot; of this model, melee weapons in that unit have the Ability Sustained Hits 1, if that model already has Sustained Hits, add 1 to x of the ability. When this model uses Axe of Helwinter, an unmodifed Hit roll of 5+ is a Critical Hit.</characteristic>
               </characteristics>
             </profile>
             <profile name="Saga of Odin [Aura]" typeId="6128-0fe9-bc6b-7164" typeName="Wolf King of Fenris" hidden="false" id="7cab-c813-366a-32cc" page="41">
