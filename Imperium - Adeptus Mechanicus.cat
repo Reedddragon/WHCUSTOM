@@ -118,6 +118,7 @@
     <entryLink import="true" name="Ursarax Cohort" hidden="false" id="7b81-d768-f810-5b65" targetId="e4be-b971-249d-6aee" type="selectionEntry"/>
     <entryLink import="true" name="Ursarax Cohort" hidden="false" id="ed60-19d8-1138-351d" targetId="e806-7957-8e04-3938" type="selectionEntry"/>
     <entryLink import="true" name="Vultarax Stratos" hidden="false" id="f2e4-2736-3b61-f20a" targetId="22b1-62e5-0cd1-a0e6" type="selectionEntry"/>
+    <entryLink import="true" name="Castellax Battle Automata " hidden="false" id="4371-b4b8-182d-9ba7" targetId="5293-2149-8b26-f324" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7662-5fde-16f1-5267" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" type="model">
@@ -10840,7 +10841,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
         <selectionEntry id="69c6-e88d-04fd-a59d" name="Castellax Battle Automata " hidden="false" collective="false" import="true" type="model" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="76a8-3271-121c-30d4" type="min"/>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d09-dbbc-cc57-0bdd" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d09-dbbc-cc57-0bdd" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Wargear" id="5896-9d47-4f1d-c763" hidden="false" sortIndex="2">
@@ -11878,6 +11879,10 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15a2-241d-1c72-59aa"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b76b-096a-e306-2631"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
