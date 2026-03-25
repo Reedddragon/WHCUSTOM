@@ -7441,6 +7441,11 @@ The Qualities from Oaths you have fulfilled continue to apply to all models in y
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-6 wounds remaining, subtract 4 from this model&apos;s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Damaged: 1-4 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="3f40-52ce-bfae-1276">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-4 wounds remaining, subtract 3 from this model&apos;s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <profileTypes>
     <profileType name="Deed" id="83f0-0039-f52e-a3b4" hidden="false">
