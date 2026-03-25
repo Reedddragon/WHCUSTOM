@@ -3789,7 +3789,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <categoryLink name="Damage Dx Weapon" hidden="false" id="5a10-ae64-2c8e-35de" targetId="4986-bf86-beb4-13ac" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Excruiator Cannon" hidden="false" id="d22a-d1f3-2a22-beaa">
+                <selectionEntry type="upgrade" import="true" name="Inferno Excruiator Cannon" hidden="false" id="d22a-d1f3-2a22-beaa">
                   <profiles>
                     <profile name="Inferno Excruiator Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="75f3-d369-9234-387f">
                       <characteristics>
@@ -3812,7 +3812,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7f03-55bd-1224-1bbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy Reaper autocannon" hidden="false" id="ba8d-bd15-642b-e6bb" collective="false">
+                <selectionEntry type="upgrade" import="true" name="Inferno Reaper autocannon" hidden="false" id="ba8d-bd15-642b-e6bb" collective="false">
                   <profiles>
                     <profile name="Inferno Reaper autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5624-b1bd-55ae-9344">
                       <characteristics>
@@ -3936,7 +3936,6 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades Battle Cannon" hidden="false" id="0fc9-ddfa-cf14-dcc5" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfce-12ee-500f-9c3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ff3-6202-6ca8-b9f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -3964,7 +3963,6 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Ectoplasma Destructor" hidden="false" id="2ace-8cdc-310d-8741" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="162c-60e1-2272-1814" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a58a-a78c-905b-c32d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -3991,6 +3989,10 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfce-12ee-500f-9c3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="162c-60e1-2272-1814" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>

@@ -6618,7 +6618,6 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades Battle Cannon" hidden="false" id="c72a-e474-ca5d-3b97" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c10-178b-b67e-71e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c376-0906-7ad0-f327" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -6646,7 +6645,6 @@
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Ectoplasma Destructor" hidden="false" id="005b-c09f-9b1a-a1f2" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d14-2a82-b8a2-0a2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e19f-933a-f309-b46a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -6673,6 +6671,10 @@
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04b5-e145-78d4-d398" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79c2-fa8f-13a5-4604" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -11442,6 +11444,9 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e05d-32b9-5a86-79d0" name="Red Butchers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>

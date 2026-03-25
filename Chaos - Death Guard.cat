@@ -10005,7 +10005,6 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades Battle Cannon" hidden="false" id="0e8e-8310-deac-0d92" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b8c-0e52-a12c-d627" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0ca-2edd-50f9-5d51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -10033,7 +10032,6 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Ectoplasma Destructor" hidden="false" id="c970-1a80-fc75-a8d8" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c8e-943d-e83c-c44b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbae-f451-a407-4873" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -10060,6 +10058,10 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c8e-943d-e83c-c44b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b8c-0e52-a12c-d627" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>

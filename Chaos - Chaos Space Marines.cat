@@ -14783,7 +14783,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Dark Pact, Until the end of the phase you can re-roll a wound rolls of 1. In addition  when this unit makes a Dark Pact, Before making the resulting leadership test, you can declare it will overcharge its demonforge, If it does:
 ■ IF the resulting leadership test is failed, This model Suffers 3 mortal wounds instead of D3 mortal wounds
-■ Until the end of the phase, Each time this model makes an attack, you can re-roll the Wound roll.</characteristic>
+■ Until the end of the phase, Each time this model makes an attack, you can re-roll the Wound roll.
+
+
+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14880,7 +14883,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <profile name="Excruiator Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a8f5-1348-a39b-6cf2">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6+</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
@@ -15022,7 +15025,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades Battle Cannon" hidden="false" id="8b2e-8a25-bff6-ba5b" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cb3-e9cb-709f-cb61" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0322-fa86-5547-2333" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -15050,7 +15052,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Ectoplasma Destructor" hidden="false" id="b4c2-babe-e580-658d" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d743-2b60-b692-12d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4699-2917-519a-7c42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <profiles>
@@ -15077,6 +15078,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee89-306e-6fa7-cc60" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1009-d0a1-604c-4f64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
