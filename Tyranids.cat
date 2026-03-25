@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="116" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="122" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
   <categoryEntries>
     <categoryEntry name="Synapse" hidden="false" id="4129-a453-686a-d38a"/>
     <categoryEntry id="4f10-fe01-4b80-8d6b" name="Winged Hive Tyrant" hidden="false"/>
@@ -15585,14 +15585,14 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="60ec-bd71-6dee-ce0e" targetId="f715-a306-e448-9c1b" type="selectionEntryGroup"/>
               </entryLinks>
               <modifiers>
-                <modifier type="set" value="2" field="9c6a-d07a-e876-20fe">
+                <modifier type="set" value="2" field="224f-af64-9caf-d958">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9d02-d413-f447-d005" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="9d02-d413-f447-d005" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="2" field="9c6a-d07a-e876-20fe">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="9d02-d413-f447-d005" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
