@@ -10384,18 +10384,6 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">6</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="Thanatar Cavas Siege Automata" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="5e3c-e009-0775-b095" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Thanatar Calix Siege Automata" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="b21a-fac1-d1e2-3d8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -10550,8 +10538,20 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
         <categoryLink targetId="24e6-293d-4191-ac7a" id="2174-5bd6-9b18-99f6" primary="false" name="Thanatar Siege Automata"/>
         <categoryLink targetId="5418-f86b-6e76-c5a" id="2091-c10d-4e7f-e10a" primary="false" name="Faction: Adeptus Mechanicus"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Thanatar Cavas Siege Automata" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="5e3c-e009-0775-b095" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Thanatar Calix Siege Automata" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="b21a-fac1-d1e2-3d8f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Conqueror-class Automata" hidden="false" id="9a4e-1817-2568-c5b1">
+    <selectionEntry type="model" import="true" name="Conqueror-class Automata" hidden="false" id="9a4e-1817-2568-c5b1">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a566-9bbd-9f01-3f25" includeChildSelections="true"/>
       </constraints>
@@ -10804,6 +10804,18 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
         <categoryLink targetId="3b4e-5e61-ac14-93de" id="6481-0a2d-097d-c33d" primary="false" name="Legio Cybernetica"/>
         <categoryLink targetId="f0fc-5a30-199d-bf63" id="c212-4e8a-ecb4-b8bc" primary="false" name="Conqueror-class Automata"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Arlatax-Class Battle-Automata" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="c417-bc87-2b3c-981d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Domitar-Class Battle-Automata" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="f8d0-b4cb-caf1-b9c9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5293-2149-8b26-f324" name="Castellax Battle Automata " hidden="false" collective="false" import="true" type="unit">
       <profiles>
