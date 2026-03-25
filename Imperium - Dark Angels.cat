@@ -6615,6 +6615,7 @@ model is within 12&quot;.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="3a3f-21b6-0ea2-37e9" primary="false" name="Grenades"/>
         <categoryLink targetId="c691-b161-93eb-a3f5" id="2bfb-9d04-2d73-1634" primary="false" name="Firewing Moritat"/>
         <categoryLink targetId="0718-7b86-6f7d-e640" id="d684-cff9-0953-7032" primary="false" name="Firewing"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="8b38-ce29-cb23-0758" primary="false" name="Fly"/>
       </categoryLinks>
       <profiles>
         <profile name="Attached Unit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a07-067f-70b1-d3c5">
@@ -6742,7 +6743,7 @@ model is within 12&quot;.</characteristic>
               <profiles>
                 <profile name="Firewing Moritat" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="557a-fec3-ec4b-f9d8">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>

@@ -11450,7 +11450,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
     </selectionEntry>
     <selectionEntry id="e05d-32b9-5a86-79d0" name="Red Butchers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="300">
+        <modifier type="set" field="51b2-306e-1021-d207" value="220">
           <conditions>
             <condition field="selections" scope="e05d-32b9-5a86-79d0" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -11582,10 +11582,10 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c63e-1b41-48c6-19a2" name="4 - 9 Red Butchers" hidden="false" collective="false" import="true" defaultSelectionEntryId="cfd2-df58-3637-0a6c" sortIndex="3">
+        <selectionEntryGroup id="c63e-1b41-48c6-19a2" name="2 - 5 Red Butchers" hidden="false" collective="false" import="true" defaultSelectionEntryId="cfd2-df58-3637-0a6c" sortIndex="3">
           <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07c2-b227-6b0d-fc88" type="min"/>
-            <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6535-8977-cea6-cf12" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07c2-b227-6b0d-fc88" type="min"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6535-8977-cea6-cf12" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Red Butchers" hidden="false" id="9372-d319-7470-78c5" collective="false">
@@ -11676,7 +11676,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
