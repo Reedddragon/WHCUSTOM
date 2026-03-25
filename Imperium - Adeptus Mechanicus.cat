@@ -10845,9 +10845,27 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Wargear" id="5896-9d47-4f1d-c763" hidden="false" sortIndex="2">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Main Weapon" hidden="false" id="5b34-63ee-9d75-e64b">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Main weapon" id="ac11-0ca8-daf7-c09a" hidden="false">
                   <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Darkfire Cannon" hidden="false" id="adaf-c336-73b3-89b3">
+                      <profiles>
+                        <profile name="Darkfire Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1541-d95c-1130-dd29">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49cc-a5bf-3cfa-4a0b"/>
+                      </constraints>
+                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Mauler Bolt Cannon" hidden="false" id="712e-4cb3-84d2-a083">
                       <profiles>
                         <profile name="Mauler Bolt Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="72cb-0fb5-95a1-83ba">
@@ -10887,31 +10905,57 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37bc-acdf-f90a-5aaa"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Darkfire Cannon" hidden="false" id="adaf-c336-73b3-89b3">
-                      <profiles>
-                        <profile name="Darkfire Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1541-d95c-1130-dd29">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49cc-a5bf-3cfa-4a0b"/>
-                      </constraints>
-                    </selectionEntry>
                   </selectionEntries>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01df-cc56-cc16-5f8a"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26fb-7b12-006e-0a62"/>
                   </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ranged Arm Weapon" hidden="false" id="0ec0-e310-5fb5-7adc">
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapon" id="345b-a058-8b13-547a" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shock Chargers" hidden="false" id="b134-6fd9-04c7-0d02">
+                      <profiles>
+                        <profile name="Shock Chargers" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="38b7-340f-071d-8d13">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1856-0c5d-f1ce-fe32"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Power Saw Blades" hidden="false" id="a79b-d007-4681-bb57">
+                      <profiles>
+                        <profile name="Power Saw Blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c5f0-ec4c-cc90-312d">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f984-376b-da77-175a"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca17-0495-e551-3b35"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16b8-198a-945c-8808"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Ranged Arm Weapon" id="7208-c204-c849-83db" hidden="false">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Twin Boltors" hidden="false" id="add3-1d36-2b1a-be05">
                       <profiles>
@@ -10961,51 +11005,10 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0316-cd9e-655f-4331"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11bd-1276-566b-8f7f"/>
                   </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Melee Weapon" hidden="false" id="f27f-ff1c-6973-320e">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Shock Chargers" hidden="false" id="1aa4-49de-450e-e119">
-                      <profiles>
-                        <profile name="Shock Chargers" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6fd2-516e-ef28-ba34">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="012f-7148-c9c2-15ff"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Power Saw Blades" hidden="false" id="59a5-2a3d-b5cf-a8ff">
-                      <profiles>
-                        <profile name="Power Saw Blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="085c-86d0-0ae2-6f22">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ea-7e38-8f5a-c2fe"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa35-cc94-6ced-3c34"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b29-db2e-cfde-aa4b"/>
-                  </constraints>
-                </selectionEntry>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ranged Arm Weapon" hidden="false" id="0ec0-e310-5fb5-7adc"/>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
