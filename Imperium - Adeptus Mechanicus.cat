@@ -10806,13 +10806,6 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="5293-2149-8b26-f324" name="Castellax Battle Automata " hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="360">
-          <conditions>
-            <condition field="selections" scope="5293-2149-8b26-f324" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="21c8-f300-816d-4baa" name="Defensive Grid" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
