@@ -10365,7 +10365,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
         <categoryLink name="Attacks Dx Weapon" hidden="false" id="78bc-d941-35cb-b7f6" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Thanatar Siege Automata" hidden="false" id="412a-baed-5fd8-eab3">
+    <selectionEntry type="model" import="true" name="Thanatar Siege Automata" hidden="false" id="412a-baed-5fd8-eab3">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="cfc6-dd61-e1c3-e1ff" includeChildSelections="true"/>
       </constraints>
@@ -11000,9 +11000,6 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Ranged Arm Weapon" hidden="false" id="0ec0-e310-5fb5-7adc"/>
-              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -11789,7 +11786,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Vultarax Stratos" hidden="false" id="22b1-62e5-0cd1-a0e6">
+    <selectionEntry type="model" import="true" name="Vultarax Stratos" hidden="false" id="22b1-62e5-0cd1-a0e6">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e438-4604-0bbd-684b" includeChildSelections="true"/>
       </constraints>
