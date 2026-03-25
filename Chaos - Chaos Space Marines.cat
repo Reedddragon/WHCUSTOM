@@ -14783,10 +14783,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Dark Pact, Until the end of the phase you can re-roll a wound rolls of 1. In addition  when this unit makes a Dark Pact, Before making the resulting leadership test, you can declare it will overcharge its demonforge, If it does:
 ■ IF the resulting leadership test is failed, This model Suffers 3 mortal wounds instead of D3 mortal wounds
-■ Until the end of the phase, Each time this model makes an attack, you can re-roll the Wound roll.
-
-
-</characteristic>
+■ Until the end of the phase, Each time this model makes an attack, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14883,7 +14880,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <profile name="Excruiator Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a8f5-1348-a39b-6cf2">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6+</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
