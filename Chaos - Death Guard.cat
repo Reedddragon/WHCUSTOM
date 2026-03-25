@@ -3570,7 +3570,7 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord of Virulence" hidden="false" id="c15c-2b5a-dcab-7627" publicationId="6bb4-8611-986f-58fa">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3832,7 +3832,7 @@ even if one other Leader Model has already been attached to it </characteristic
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6116,7 +6116,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <entryLink import="true" name="Crusade" hidden="false" id="83d5-b3b1-c51d-2e1f" type="selectionEntryGroup" targetId="919f-cbc6-374b-3d02" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6514,11 +6514,12 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <entryLink import="true" name="Crusade" hidden="false" id="c8bb-15c2-145d-01eb" type="selectionEntryGroup" targetId="919f-cbc6-374b-3d02" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6180-d938-0fc0-f989" hidden="false" sortIndex="4">
@@ -6639,7 +6640,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deathshroud Terminators" hidden="false" id="83e8-ebb7-785a-2115" publicationId="6bb4-8611-986f-58fa">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6647,7 +6648,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="240" field="51b2-306e-1021-d207">
+        <modifier type="set" value="220" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="83e8-ebb7-785a-2115" childId="model" shared="true" id="657e-5957-a34-ce02" includeChildSelections="true"/>
           </conditions>
@@ -12823,7 +12824,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <categoryLink name="Lord of Poxes" hidden="false" id="3eba-f8fe-8639-fdd0" targetId="ceb4-54e4-02d8-e84f" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -14656,7 +14657,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tri-lobe Vectors [Crucible]" hidden="false" id="fa2a-1b44-a513-318d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -14802,7 +14803,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <categoryLink name="Plague Sorcerer" hidden="false" id="e11a-d6a3-45c5-fb4d" targetId="279c-74e6-126f-d6c7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -14948,7 +14949,7 @@ While ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of
         <categoryLink name="Plague Lord" hidden="false" id="9561-1caa-92cd-bb59" targetId="aa38-3136-de71-70f3" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
