@@ -15615,6 +15615,11 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
                     <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="2" field="0d9a-0f02-4961-2d3d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6f46-0c77-acd0-3f5d" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Psychoclastic torrent" hidden="false" id="86c3-9862-4549-4951" type="selectionEntry" targetId="56f9-bb79-7be0-dbf2">
@@ -15633,6 +15638,11 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="22bc-aff2-db43-dba8">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6f46-0c77-acd0-3f5d" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
