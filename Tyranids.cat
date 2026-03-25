@@ -15587,12 +15587,12 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
               <modifiers>
                 <modifier type="set" value="2" field="224f-af64-9caf-d958">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="9d02-d413-f447-d005" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6f46-0c77-acd0-3f5d" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="9c6a-d07a-e876-20fe">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="self" childId="9d02-d413-f447-d005" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6f46-0c77-acd0-3f5d" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -15607,7 +15607,7 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
               <modifiers>
                 <modifier type="set" value="2" field="ce38-9c99-d519-8de2">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9d02-d413-f447-d005" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6f46-0c77-acd0-3f5d" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
@@ -15627,7 +15627,7 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
               <modifiers>
                 <modifier type="set" value="2" field="6d5e-003f-0879-3d6c">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9d02-d413-f447-d005" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="6f46-0c77-acd0-3f5d" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
