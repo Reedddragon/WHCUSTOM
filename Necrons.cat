@@ -6965,7 +6965,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </profile>
         <profile name="Nanoscarab Reanimation Beam (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="20e1-eb82-bf57-db38">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly NECRONS unit is within 3&quot; of this model, each time that unit’s Reanimation Protocols activate, that unit reanimates an additional D3 wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly NECRONS unit is within 12&quot; of this model, each time that unit’s Reanimation Protocols activate, that unit reanimates an additional D3 wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
