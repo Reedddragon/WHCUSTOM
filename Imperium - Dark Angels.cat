@@ -796,7 +796,7 @@
         </profile>
         <profile name="The Emperor&apos;s Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="525f-c5d8-d135-e7a1" page="41">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, subtract 1 from the Wound roll. and half the damage characteristic of that attack.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, subtract 1 from the Wound roll. and half the damage characteristic of that attack. on a 6 on a save, Reflect Half of the damage saved.</characteristic>
           </characteristics>
         </profile>
         <profile name="Dark Angels Bodyguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="330c-47ba-cddb-1910" page="41">
