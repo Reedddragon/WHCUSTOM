@@ -5,6 +5,7 @@
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="ff65-1828-b2a0-477" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="95ad-ce51-ebd4-583d" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Unaligned Forces" id="c7e2-a100-b046-bb95" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="28b8-c69d-0b0b-b119" targetId="b45c-af22-788a-dfd6"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="60ed-ab58-d20f-75e7" targetId="57f2-e2d6-47ed-ddd2"/>
@@ -3827,7 +3828,7 @@ While a ^^**Death Guard^^** unit from your army is within 7&quot; of one or more
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 - ^^**Blightlord Terminators^^**
 - ^^**Deathshroud  Terminators^^**
-even if one other Leader Model has already been attached to it </characteristic>
+even if one other Leader Model has already been attached to it</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -16699,6 +16699,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="55ac-b174-dce8-62bd" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="69c5-79ee-a124-6e18" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Unaligned Forces" id="bbbf-cec6-c1e7-6f4e" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="5837-a971-4939-cab5" targetId="b45c-af22-788a-dfd6"/>
   </catalogueLinks>
   <sharedRules>
     <rule name="Cabal of Sorcerers" id="b280-6105-5358-ba2e" hidden="false">

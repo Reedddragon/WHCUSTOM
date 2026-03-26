@@ -237,6 +237,10 @@
     <categoryEntry name="Daemonic Charioteer" id="acf6-41e2-1269-ee18" hidden="false"/>
     <categoryEntry name="Immortal Champion" id="3726-2343-e8d4-44f6" hidden="false"/>
     <categoryEntry name="Summoned" id="01ca-6125-aa97-dba8" hidden="false"/>
+    <categoryEntry name="Faction: Blood Legions" id="2914-64bb-affb-3709" hidden="false"/>
+    <categoryEntry name="Faction: Legions of Excess" id="be29-ad24-823c-5911" hidden="false"/>
+    <categoryEntry name="Faction: Plague Legions" id="2a46-adb6-60fd-63a0" hidden="false"/>
+    <categoryEntry name="Faction: Scintillating Legions" id="750a-594b-46e5-6f10" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="c236-c9e2-b67c-97ab" name="Detachment" hidden="false" collective="false" import="false" targetId="6470-c44a-45f4-3313" type="selectionEntry"/>
