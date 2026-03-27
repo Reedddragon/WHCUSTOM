@@ -12457,7 +12457,7 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
                     <characteristic name="BS" typeId="2c55-58d1-38b-60dd">N/A</characteristic>
                     <characteristic name="S" typeId="8b6b-d3c8-750c-88b3">6</characteristic>
                     <characteristic name="AP" typeId="6c3a-fc79-84fe-5e11">-2</characteristic>
-                    <characteristic name="D" typeId="ff69-87b4-9dea-a132">1</characteristic>
+                    <characteristic name="D" typeId="ff69-87b4-9dea-a132">2</characteristic>
                     <characteristic name="Keywords" typeId="df1a-3aa6-e9f9-c780">Ignores Cover, Devastating Wounds, Torrent</characteristic>
                   </characteristics>
                 </profile>
@@ -12477,7 +12477,7 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
                     <characteristic name="Range" typeId="c8d9-46d-dcd6-1689">24&quot;</characteristic>
                     <characteristic name="A" typeId="aaaa-4f37-91d0-777a">D6+3</characteristic>
                     <characteristic name="BS" typeId="2c55-58d1-38b-60dd">3+</characteristic>
-                    <characteristic name="S" typeId="8b6b-d3c8-750c-88b3">10</characteristic>
+                    <characteristic name="S" typeId="8b6b-d3c8-750c-88b3">14</characteristic>
                     <characteristic name="AP" typeId="6c3a-fc79-84fe-5e11">-3</characteristic>
                     <characteristic name="D" typeId="ff69-87b4-9dea-a132">3</characteristic>
                     <characteristic name="Keywords" typeId="df1a-3aa6-e9f9-c780">Blast, Devastating Wounds, Indirect Fire</characteristic>
@@ -14151,6 +14151,10 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6818-9d27-29ca-7ab6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f362-5a40-6d85-3d50"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Two singularity generators" hidden="false" id="237f-84f1-139b-e9ec">
               <selectionEntries>
@@ -14184,6 +14188,10 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff1a-f4bf-1bf5-90fc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1996-ef1b-76fa-2fdf"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
