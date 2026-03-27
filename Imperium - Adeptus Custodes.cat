@@ -9128,6 +9128,36 @@ When mustering your army, each ^^**Custodian Character^^** model from your army 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07a1-1681-041c-f513"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warhammer " hidden="false" id="b68e-ad45-ed8c-ff30">
+          <profiles>
+            <profile name="Warhammer " typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7409-7f4b-1824-b62b">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">240&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">1+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Warhammer " typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a420-1332-18a2-883b">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">1+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">14</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="40000" field="selections" scope="parent" shared="true" id="e693-74ba-ef0c-0643"/>
+            <constraint type="min" value="40000" field="selections" scope="parent" shared="true" id="b4b5-83f7-eaa6-62c6"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <rules>
         <rule name="Him" id="30de-7896-72cc-e97d" hidden="false">
