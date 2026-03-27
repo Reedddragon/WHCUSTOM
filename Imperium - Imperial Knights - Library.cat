@@ -234,7 +234,15 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Knight Destrier" hidden="false" id="0296-1aa3-d90b-167e" targetId="686d-3eb7-eb06-788e" type="selectionEntry"/>
+    <entryLink import="true" name="Knight Destrier" hidden="false" id="0296-1aa3-d90b-167e" targetId="686d-3eb7-eb06-788e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Canis Rex" id="55fb-9c91-1a4f-3037">
