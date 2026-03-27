@@ -124,6 +124,13 @@
 ■ Vigilators
 ■ Witchseekers</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -134,7 +141,15 @@
             <modifier type="append" value="6&quot;" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d771-e16c-b070-9707" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="d771-e16c-b070-9707" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="9754-4381-7750-9e36" name="Feel No Pain" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
           <modifiers>
             <modifier type="append" value="5+" field="name"/>
@@ -1659,6 +1674,13 @@
 ■ Vigilators
 ■ Witchseekers</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="dea5-7d20-9057-895b" name="Seeker&apos;s Instincts" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -1676,7 +1698,15 @@
         <infoLink id="c870-73c0-d25d-4050" name="Invulnerable Save" hidden="false" targetId="e3cf-4870-44cf-74da" type="profile">
           <comment>5+</comment>
         </infoLink>
-        <infoLink id="cbe3-0a7b-ffd7-5d29" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="cbe3-0a7b-ffd7-5d29" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="c8bf-b7d3-bccd-9349" name="Scouts" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
           <modifiers>
             <modifier type="append" value="6&quot;" field="name"/>
@@ -8480,6 +8510,13 @@ When mustering your army, each ^^**Custodian Character^^** model from your army 
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: ^^**Prosecutors, Vigilators, Witchseekers**^^</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Daughter of the Abyss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c41-4545-b762-7031">
           <characteristics>
@@ -8489,7 +8526,15 @@ When mustering your army, each ^^**Custodian Character^^** model from your army 
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" id="6a74-e010-72bf-2d17" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
-        <infoLink name="Leader" id="bde1-b021-88ca-2a49" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Leader" id="bde1-b021-88ca-2a49" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Scouts" id="1d5d-e6c2-77bb-dcda" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
           <modifiers>
             <modifier type="append" value="6&quot;" field="name"/>
