@@ -1946,7 +1946,7 @@
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f21a-ecda-e64b-279c" includeChildSelections="false" automatic="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -8189,7 +8189,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
             <selectionEntry type="upgrade" import="true" name="Golden Defenders" hidden="false" id="e19e-6234-5f78-ce0f" sortIndex="1">
               <rules>
                 <rule name="Demi-gods Among Mortals" id="3922-faef-2b45-ab6c" hidden="false">
-                  <description>At the start of the first battle round, select one of the Demi-gods among mortals abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all Adeptus Custodies Character Models from your army.
+                  <description>At the start of the battle round, select one of the Demi-gods among mortals abilities listed below. Until the end of the battle Round, those Demi-gods among mortals abilities are active and their effects apply to all Adeptus Custodies Character Models from your army.
 
 
 
@@ -8591,6 +8591,44 @@ When mustering your army, each ^^**Custodian Character^^** model from your army 
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Void Null(Elite Among Elite)" hidden="true" id="8024-605e-cdff-ec5a">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8aa5-fcf0-6300-6220" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1716-1284-3cb1-767a" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="8aa5-fcf0-6300-6220"/>
+                <modifier type="set" value="1" field="1716-1284-3cb1-767a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="447a-9574-8cb1-5089" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="Null Void(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6734-adf3-e2b9-c9ce">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command Phase, you can select one enemy unit that is within 18&quot; of this model, That unit must take a Battle-shock test with -2 to the leadership roll. In addition, This model has Lone Operative ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lone Operative" id="3a25-37ef-e9ae-5a15" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kataphraktoi Exemplar [Crucible]" hidden="false" id="c11a-f70a-2877-ed27">
       <categoryLinks>
