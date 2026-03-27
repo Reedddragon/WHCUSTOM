@@ -185,6 +185,42 @@
             <infoLink name="Devastating Wounds" hidden="false" type="rule" id="fa9d-57c4-632b-ae" targetId="be1e-ac8e-1e2c-3528"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Absolute Silence (Elite Among Elite)" hidden="true" id="0f56-172a-c786-3b17">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1819-738c-1547-60d0" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1ec5-f08c-e4b5-079a" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="1819-738c-1547-60d0"/>
+                <modifier type="set" value="1" field="1ec5-f08c-e4b5-079a"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="6ed7-40ab-b1b3-f3f6" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="Absolute Silence (Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1a35-b094-ea84-39e1">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model is in your army, In your Command Phase, Select up to 3 Adeptus Custodian Characters Models, Until your next Command Phase, Those Models have Lone Operative ability. In addition, This model has Lone Operative ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lone Operative" id="de8c-25bd-916d-499a" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8b5-287d-6e18-4567" includeChildSelections="true"/>
@@ -811,6 +847,19 @@
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="2" field="2337-daa1-6682-b110"/>
+                        <modifier type="increment" value="1" field="ab33-d393-96ce-ccba"/>
+                        <modifier type="increment" value="-1" field="41a0-1301-112a-e2f2"/>
+                        <modifier type="increment" value="1" field="3254-9fe6-d824-513e"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="4238-e7bc-0a34-28d7" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile name="➤ Vaultswords - Hurricanis" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d09f-3496-dc55-e6b4">
                   <characteristics>
@@ -822,6 +871,18 @@
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="3" field="2337-daa1-6682-b110"/>
+                        <modifier type="increment" value="1" field="ab33-d393-96ce-ccba"/>
+                        <modifier type="increment" value="-1" field="41a0-1301-112a-e2f2"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="fab3-9046-6b38-2f42" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
                 <profile name="➤ Vaultswords - Victus" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7ffc-b8d9-10a7-7e4e">
                   <characteristics>
@@ -833,6 +894,19 @@
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="2337-daa1-6682-b110"/>
+                        <modifier type="increment" value="2" field="ab33-d393-96ce-ccba"/>
+                        <modifier type="increment" value="-1" field="41a0-1301-112a-e2f2"/>
+                        <modifier type="increment" value="1" field="3254-9fe6-d824-513e"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="035a-e31a-9c86-936f" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -851,6 +925,44 @@
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="4993-4d96-16f3-ed37" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Golden Stance(Elite Among Elite)" hidden="true" id="2bd6-2e4f-c2cd-7478">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ff72-975f-8fe7-7ef0" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0208-273c-00e0-7dbc" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="ff72-975f-8fe7-7ef0"/>
+                    <modifier type="set" value="1" field="0208-273c-00e0-7dbc"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="6be2-4e75-af34-7b50" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Golden Stance(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="249b-6059-f3bd-3851">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model&apos;s unit is selected to fight, it can use this ability. If it does, until that fight is resolved, both Ka&apos;tah Stances are active for that unit, instead of only one.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Golden Blades(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0b62-f40f-ca3f-be19">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Your Vaultswords is buffed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -946,7 +1058,7 @@
                         <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
@@ -1267,7 +1379,7 @@
                         <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
@@ -1309,7 +1421,7 @@
                         <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                       </characteristics>
@@ -1358,7 +1470,7 @@
                             <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                           </characteristics>
@@ -1390,7 +1502,7 @@
                             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                           </characteristics>
@@ -1827,6 +1939,44 @@
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Null Void(Elite Among Elite)" hidden="true" id="cfe7-0264-fcba-184a">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dbf7-3773-41ca-c585" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f21a-ecda-e64b-279c" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="dbf7-3773-41ca-c585"/>
+                <modifier type="set" value="1" field="f21a-ecda-e64b-279c"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="6799-6144-8aa3-8cdf" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="Null Void(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="93a3-1c98-62ae-1ea6">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your opponent&apos;s Command Phase, you can select one enemy unit that is within 18&quot; of this model, That unit must take a Battle-shock test with -2 to the leadership roll. In addition, This model has Lone Operative ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lone Operative" id="2360-6247-0463-0124" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="3ec3-a4df-fdbf-5507" name="Prosecutors" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
@@ -2140,11 +2290,26 @@
 ■ Custodian Guard
 ■ Custodian Wardens</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="1465-a79f-d4fa-db80" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
-        <infoLink id="3ae4-f5c7-9b91-7a4e" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="3ae4-f5c7-9b91-7a4e" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="8785-0a8f-50b7-9504" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
         <infoLink id="4fa2-c874-889e-4652" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
         <infoLink name="Talons" id="f954-19d2-7e83-ba05" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
@@ -2172,7 +2337,7 @@
                     <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
@@ -2207,6 +2372,9 @@
                 <categoryLink name="Melee Weapon" hidden="false" id="5529-7b90-b7fd-6bcb" targetId="ccdd-3987-11ed-90cd" primary="false"/>
                 <categoryLink name="Ranged Weapon" hidden="false" id="b8c0-9b21-22f1-9ffd" targetId="eeda-8544-a2f3-3fab" primary="false"/>
               </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6f2-02ac-f808-64a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="540a-65ba-1752-f217" name="Castellan Axe" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -2216,7 +2384,7 @@
                     <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
@@ -2251,6 +2419,9 @@
                 <categoryLink name="Melee Weapon" hidden="false" id="a43d-7269-8fba-c6dd" targetId="ccdd-3987-11ed-90cd" primary="false"/>
                 <categoryLink name="Ranged Weapon" hidden="false" id="d906-0156-27ae-a852" targetId="eeda-8544-a2f3-3fab" primary="false"/>
               </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e44e-bc8e-22e1-ec96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="5267-88a7-c874-ba99" name="Sentinel Blade &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -2300,51 +2471,9 @@
                 <categoryLink name="Melee Weapon" hidden="false" id="12a5-800e-9e0a-f84a" targetId="ccdd-3987-11ed-90cd" primary="false"/>
                 <categoryLink name="Ranged Weapon" hidden="false" id="bd2f-044a-421f-926d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
               </categoryLinks>
-            </selectionEntry>
-            <selectionEntry id="9480-c9d0-bef6-c3a4" name="Sentinel Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ac2e-1333-6497-bfc6" name="Sentinel Blade" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7094-b0e1-1aff-cefd" name="Sentinel Blade" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Pistol</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Assault" hidden="false" type="rule" id="e2c1-bddf-8f8c-56b1" targetId="fc8a-8c24-bae9-cc1c"/>
-                <infoLink name="Pistol" hidden="false" type="rule" id="14fe-2183-dce8-760b" targetId="8bf7-8812-923d-29e4"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Upgrades" id="0343-4a68-5e09-5c3e" hidden="false" flatten="true">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f6d3-3638-351d-a4b3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d5b6-316f-ab13-9a06" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <categoryLinks>
-                <categoryLink name="Melee Weapon" hidden="false" id="2203-a751-3e5e-66b3" targetId="ccdd-3987-11ed-90cd" primary="false"/>
-                <categoryLink name="Ranged Weapon" hidden="false" id="4f0e-1899-c24b-63ac" targetId="eeda-8544-a2f3-3fab" primary="false"/>
-              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8a7-f590-dd5e-e4cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Pyrithite Spear &amp; Praesidium shield" hidden="false" id="661f-4fd-3300-5e9b" collective="false">
               <profiles>
@@ -2400,8 +2529,55 @@
                 <categoryLink name="Melee Weapon" hidden="false" id="48e2-ac7a-b164-aab0" targetId="ccdd-3987-11ed-90cd" primary="false"/>
                 <categoryLink name="Ranged Weapon" hidden="false" id="34bd-c821-5a11-6ab5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
               </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81d8-661e-3498-6135" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Golden Blur(Elite Among Elite)" hidden="true" id="6e1f-7982-3ce4-1dd5" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2092-8f31-11f6-bab3" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e749-7e24-fd1f-e0ec" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="2092-8f31-11f6-bab3"/>
+                    <modifier type="set" value="1" field="e749-7e24-fd1f-e0ec"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="5fbe-4376-502d-f4f3" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Golden Blur(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5e8-bddb-50a5-377c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model Consolidates, it can move up to 6&quot; instead of up to 3&quot; with no Directional Restrictions. When it Consolidates into a another Enemy unit, This model can Fight again.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="2" field="ce59-e7af-afdf-d143"/>
+                <modifier type="set" value="2" field="3754-b50a-84b6-89da"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="c6fb-01f5-46f2-31c2" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2504,6 +2680,13 @@
 ■ Allarus Custodians
 ■ Aquilon Custodians</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="ec4f-845a-63a9-62fb" name="Auramite and Adamantite" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -2513,7 +2696,15 @@
       </profiles>
       <infoLinks>
         <infoLink id="b975-b02d-f9e8-1713" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
-        <infoLink id="a340-2780-411c-7eef" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="a340-2780-411c-7eef" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="f739-e713-bea7-025d" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
         <infoLink id="6c41-fdfd-6f76-b9e4" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
         <infoLink name="Talons" id="8375-764e-4b3d-637f" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
@@ -2641,6 +2832,51 @@
               </selectionEntryGroups>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Golden Shield(Elite Among Elite)" hidden="true" id="b91d-e8bb-46b1-736b">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f568-86d8-76d1-4a3a" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb9c-1752-e73a-303d" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="f568-86d8-76d1-4a3a"/>
+                    <modifier type="set" value="1" field="cb9c-1752-e73a-303d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="be0b-9dca-47a4-ef54" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Golden Shield(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6def-e018-ddaf-d8d4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, Each time an attack targets this unit, subtract 1 from the Wound roll and Hit roll; add 1 to save roll.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Golden Hour(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5dcd-3f4e-a75e-04fc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, This unit gain Invulnerable Save 3+.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Golden Defence(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ad55-dcd3-e184-4f37">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can either use Golden Hour or Golden Shield only once per game.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2733,6 +2969,13 @@
 ■ Vertus Praetors
 ■ Agamatus Custodians</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="df6a-c9a7-bfc1-5cf9" name="Sweeping Advance" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -2752,7 +2995,15 @@
       </profiles>
       <infoLinks>
         <infoLink id="c840-8b09-c553-2674" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
-        <infoLink id="655b-53e0-4ccd-f6bb" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="655b-53e0-4ccd-f6bb" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="77d6-9f72-3ac6-da43" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
         <infoLink name="Talons" id="ff02-a8ae-f094-ffe8" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
         <infoLink name="Strategic Mastery" id="c990-3f60-3433-7108" hidden="false" type="profile" targetId="5a38-d608-89c4-6377"/>
@@ -2801,6 +3052,39 @@
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="e9c7-f6a6-389b-d280" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Golden Lance(Elite Among Elite)" hidden="true" id="50c2-2b93-1edb-d8a3">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="463e-9bdf-d981-263d" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5d4f-f28d-df1a-9d1a" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="463e-9bdf-d981-263d"/>
+                    <modifier type="set" value="1" field="5d4f-f28d-df1a-9d1a"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="8f5f-9635-3d7b-00e9" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Golden Lance(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1823-6c0c-b271-d30b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model makes a successful charge move, Add 2 to the attack profile of this model&apos;s Melee weapons. in Addition when rolling a Charge roll of 6+, add 1 to the damage profile.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -2986,6 +3270,13 @@
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="4+" field="9b8f-694b-e5e-b573">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="8cad-b11f-69af-8427" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="a26c-fa45-83a0-13b5" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -2993,6 +3284,13 @@
 ■ Custodian Guard
 ■ Custodian Wardens</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="7797-8174-31bb-6e9f" name="Captain-General" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -3009,7 +3307,15 @@
       </profiles>
       <infoLinks>
         <infoLink id="285f-d874-f6fb-6d64" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="ece6-0f54-b70a-2272" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="ece6-0f54-b70a-2272" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="0b89-378c-65fc-2fbf" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
         <infoLink id="7c0a-3b80-2782-c172" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="60f7-f7b1-bc48-4666" name="Feel No Pain" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
@@ -3083,6 +3389,39 @@
             <infoLink name="Assault" id="39ea-6b34-41cd-a9b3" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="God Emperor&apos;s Golden Gift (Elite Among Elite)" hidden="true" id="6f87-eda6-c515-2914">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9619-fbda-9157-5dbc" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="16cb-e26b-3342-7741" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="9619-fbda-9157-5dbc"/>
+                <modifier type="set" value="1" field="16cb-e26b-3342-7741"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="8ece-99bd-4382-7be4" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="God Emperor&apos;s Golden Gift (Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c1e-b894-2332-d234">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can pick up to 3 Demi-gods Among Mortals instead of 1. in addition, This model has Feel no pain 4+ and you can have both buffs of Moment Shackle at same time instead of choosing one.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e79f-ec67-7b46-8f23" includeChildSelections="true"/>
@@ -3113,6 +3452,13 @@
 ■ Custodian Guard
 ■ Custodian Wardens</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="2397-a41d-fe9e-ed6d" name="Golden Laurels" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -3132,7 +3478,15 @@
           </modifiers>
         </infoLink>
         <infoLink id="a514-3fb7-d264-3a82" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="807f-cd47-ec1e-1f7a" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink id="807f-cd47-ec1e-1f7a" name="Leader" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="e31f-1da6-122f-16b4" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
         <infoLink name="Talons" id="35b-dd48-63f9-a44b" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
@@ -3168,6 +3522,20 @@
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="3" field="3bb-c35f-f54-fb08"/>
+                    <modifier type="increment" value="3" field="2229-f494-25db-c5d3"/>
+                    <modifier type="increment" value="-2" field="9ead-8a10-520-de15"/>
+                    <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3"/>
+                    <modifier type="set" value="Assault, Lethal Hits, Sustained Hits 2, Devastating Wounds" field="7f1b-8591-2fcf-d01c"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="8455-23e2-ddef-fae6" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile id="fc56-bc75-6406-6fd4" name="Gnosis" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
@@ -3184,6 +3552,39 @@
           <infoLinks>
             <infoLink name="Assault" hidden="false" type="rule" id="4ba7-2029-dfeb-600f" targetId="fc8a-8c24-bae9-cc1c"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Golden Gun(Elite Among Elite)" hidden="true" id="0f3d-ec78-17aa-6a42">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7f5b-52ea-4577-a077" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d3b6-02a4-c257-2db2" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="7f5b-52ea-4577-a077"/>
+                <modifier type="set" value="1" field="d3b6-02a4-c257-2db2"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="8972-9203-1ccf-248a" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="Golden Gun(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b6b0-ea5c-ecf7-44d6">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Gun is buffed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -7785,6 +8186,34 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                 </rule>
               </rules>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Golden Defenders" hidden="false" id="e19e-6234-5f78-ce0f" sortIndex="1">
+              <rules>
+                <rule name="Demi-gods Among Mortals" id="3922-faef-2b45-ab6c" hidden="false">
+                  <description>At the start of the first battle round, select one of the Demi-gods among mortals abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all Adeptus Custodies Character Models from your army.
+
+
+
+
+Tactical Adaptation: This model is eligible to shoot and declare a charge in a turn in which it Fell Back. You can re‑roll Advance and Charge rolls made for this model.
+
+
+
+
+Golden Wrath: Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. if that unit made a Charge move this turn, until the end of the phase, add 3 to the Strength and Attack characteristic and add 1 to the Armor Penetration characteristic of melee weapons equipped by models in that unit.
+
+
+
+
+Immortal will: This model has Feel no pain 5+ ability, When an attack is allocated to this model, if the Strength characteristic of that attack is greater than the Toughness characteristic of that Model, subtract 1 from the Wound roll.
+
+
+Restrictions
+
+
+When mustering your army, each ^^**Custodian Character^^** model from your army has the relevant Elite among Elite ability shown on the right, and you must increase the points cost of each of those units by the amount shown in the Munitorum Field Manual. If this causes your army to exceed the points limit for the battle you are playing, you cannot include that unit in your army. Custodian Characters lose the Leader ability.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -8178,7 +8607,54 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <entryLink import="true" name="Crusade" hidden="false" id="153a-f3fc-b01a-da5f" type="selectionEntryGroup" targetId="dffe-91f2-f156-0566" sortIndex="1"/>
         <entryLink import="true" name="Warlord" hidden="false" id="365d-7241-24e7-cc22" type="selectionEntry" targetId="0574-f558-2957-584f" sortIndex="2"/>
         <entryLink import="true" name="Specialisms" hidden="false" id="f5a0-140d-9888-523b" type="selectionEntryGroup" targetId="a393-2559-d897-578a" sortIndex="3"/>
-        <entryLink import="true" name="Abilities" hidden="false" id="3ab1-2d9c-ee41-add1" type="selectionEntryGroup" targetId="e67b-2691-c274-a815" sortIndex="4"/>
+        <entryLink import="true" name="Abilities" hidden="false" id="3ab1-2d9c-ee41-add1" type="selectionEntryGroup" targetId="e67b-2691-c274-a815" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Golden Charge(Elite Among Elite)" hidden="true" id="651c-5cbc-e8cf-c835">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4486-2ff0-1500-6cc7" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="55ba-9712-95c4-ef4f" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="4486-2ff0-1500-6cc7"/>
+                    <modifier type="set" value="1" field="55ba-9712-95c4-ef4f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="f642-64c4-dba6-c7bb" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Golden Charge(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d20b-7bf1-d957-d70e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When This model makes a charge move, Add 5 to the roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="2" field="0a57-f0ca-abc7-3388-min"/>
+                <modifier type="set" value="2" field="0a57-f0ca-abc7-3388-max"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="ce67-a6d9-80b6-4237" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
         <entryLink import="true" name="Weapons" hidden="false" id="b0b4-0063-614a-aded" type="selectionEntryGroup" targetId="4e12-4f65-a7fb-eb4d" sortIndex="5"/>
       </entryLinks>
       <profiles>
@@ -8326,7 +8802,54 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
         <entryLink import="true" name="Crusade" hidden="false" id="070c-6b45-5df4-b21e" type="selectionEntryGroup" targetId="dffe-91f2-f156-0566" sortIndex="1"/>
         <entryLink import="true" name="Warlord" hidden="false" id="8570-fb03-e47d-1b3e" type="selectionEntry" targetId="0574-f558-2957-584f" sortIndex="2"/>
         <entryLink import="true" name="Specialisms" hidden="false" id="f034-19ef-fc70-1478" type="selectionEntryGroup" targetId="a393-2559-d897-578a" sortIndex="3"/>
-        <entryLink import="true" name="Abilities" hidden="false" id="d75e-38e4-7af9-501b" type="selectionEntryGroup" targetId="e67b-2691-c274-a815" sortIndex="4"/>
+        <entryLink import="true" name="Abilities" hidden="false" id="d75e-38e4-7af9-501b" type="selectionEntryGroup" targetId="e67b-2691-c274-a815" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Golden Guardian(Elite Among Elite)" hidden="true" id="988d-71fb-e191-22c2">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be47-d544-9be1-207e" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3da5-9e0e-4c1f-54a5" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="be47-d544-9be1-207e"/>
+                    <modifier type="set" value="1" field="3da5-9e0e-4c1f-54a5"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="6c87-b3eb-32a4-c4e4" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Golden Guardian(Elite Among Elite)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d74e-e4eb-236a-3532">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When This model is at an objective, You can reroll wound rolls and save rolls.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="2" field="0a57-f0ca-abc7-3388-min"/>
+                <modifier type="set" value="2" field="0a57-f0ca-abc7-3388-max"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" id="0edf-17d6-4883-7ede" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
         <entryLink import="true" name="Weapons" hidden="false" id="0512-9a7b-5f6b-25b1" type="selectionEntryGroup" targetId="4e12-4f65-a7fb-eb4d" sortIndex="5"/>
       </entryLinks>
       <profiles>
@@ -8353,6 +8876,11 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="4d7f-9fc0-6ee6-4abc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11049,7 +11577,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                     <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
@@ -11149,7 +11677,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                     <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
@@ -11643,6 +12171,13 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: ^^**Allarus Custodians, Aquilon Custodians**^^</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e19e-6234-5f78-ce0f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
         </selectionEntry>
@@ -11677,6 +12212,9 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
           <infoLinks>
             <infoLink name="Lone Operative" id="7627-b59d-e04e-6e75" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d76-c055-2b57-6902" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Singular Expertise" hidden="false" id="0f7b-628d-bc71-1f5d">
           <profiles>
@@ -11686,6 +12224,9 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e074-60f4-709e-f753" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Swift Onslaught" hidden="false" id="4aa9-8b01-58ae-e497">
           <profiles>
@@ -11695,6 +12236,9 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1554-7247-5994-f1c9" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
