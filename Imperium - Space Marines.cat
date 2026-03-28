@@ -51221,7 +51221,6 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
                 <modifier type="set" value="5" field="d29d-cf75-fc2d-34a4" scope="root-entry" affects="profiles.Unit"/>
                 <modifier type="set" value="2+" field="450-a17e-9d5e-29da" scope="root-entry" affects="profiles.Unit"/>
                 <modifier type="add" value="740a-892c-8958-defa" field="category" scope="root-entry"/>
-                <modifier type="append" value="Terminator Armor" field="e703-ecb6-5ce7-aec1" scope="root-entry" affects="profiles.Unit" join=", "/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
