@@ -2651,19 +2651,13 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ac21-be39-db5d-dc4c" includeChildSelections="true"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Kill Team Intercessor w/ plasma incinerator" id="1309-c8b7-fa8c-86ab" hidden="false">
+            <selectionEntryGroup name="Kill Team Fortis Specialist" id="c346-db09-d839-e0b0" hidden="false">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ plasma pistol and incinerator" hidden="false" id="dd1b-4fab-d15c-bacf" publicationId="4115-3627-e608-39f6" page="23" collective="false">
+                <selectionEntry type="model" import="true" name="Kill Team Hellblasters" hidden="false" id="dd1b-4fab-d15c-bacf" publicationId="4115-3627-e608-39f6" page="23" collective="false">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eacc-3f4d-2843-8aa4"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="eacc-3f4d-2843-8aa4"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="bf56-7941-a1e9-8278" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1946-0116-271f-ef91"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53f7-ed61-c70c-b8d0"/>
-                      </constraints>
-                    </entryLink>
                     <entryLink import="true" name="Plasma pistol" hidden="false" id="2f24-d407-629e-b298" type="selectionEntry" targetId="2902-b665-48b6-bb09">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49b0-f37d-94d9-a26c" includeChildSelections="false"/>
@@ -2671,185 +2665,217 @@
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Plasma incinerator" hidden="false" id="e6aa-739c-e716-e6c3" type="selectionEntry" targetId="386c-b933-68ce-5e31"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="3c06-de7d-01fa-f5f8" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0032-f78d-d604-cf11"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="439a-22af-ea00-9842"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <infoLinks>
                     <infoLink name="Kill Team Intercessor" id="f1d7-d7de-c11d-3c70" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ bolt pistol and incinerator" hidden="false" id="e980-d865-fec5-10d3" publicationId="4115-3627-e608-39f6" page="23" collective="false">
-                  <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d073-b7ad-ee46-c515"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="ba90-9e8a-4746-d836" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5780-bcbc-5485-3588"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="343f-86ae-2018-d9f4"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="8990-e4fe-995a-e7d3" type="selectionEntry" targetId="18b0-8c2-173f-5">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc09-2ab1-66a1-4886" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="402d-221b-4cf4-cc95" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma incinerator" hidden="false" id="12ec-227f-02cb-91df" type="selectionEntry" targetId="386c-b933-68ce-5e31"/>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Kill Team Intercessor" id="46c7-2080-180a-0bc2" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
-                  </infoLinks>
-                </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6bd4-4d5e-3699-0192" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a5bc-84eb-5d5d-8004" includeChildSelections="false"/>
               </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Kill Team Intercessor w/ missile launcher" id="c346-db09-d839-e0b0" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ vengor launcher" hidden="false" id="65e5-1485-c2a9-8cc2" publicationId="4115-3627-e608-39f6" page="23" collective="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd6e-cfe5-6513-6554"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="e179-ad55-8d41-e72e" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4b7-9c47-0634-145c"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d5-cd69-2f5b-f75d"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="c8e8-42c1-17ae-1655" type="selectionEntry" targetId="18b0-8c2-173f-5">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c3c-36b9-52b4-3d6f" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c9f-9c86-05d5-9fa1" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="5fad-cb88-bc24-405f" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8446-b5e3-1308-df19" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e9-7251-76cf-0727" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Vengor Launcher" hidden="false" id="45c4-cf62-c6fb-0a20" type="selectionEntry" targetId="7d58-3576-d40e-b858">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab4a-18b5-2f35-2649-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4a-18b5-2f35-2649-max" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Kill Team Intercessor" id="c3f7-8cd6-b214-9019" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ superfrag missile launcher" hidden="false" id="ccfb-e995-308b-4b7a" publicationId="4115-3627-e608-39f6" page="23" collective="false">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bda6-a9cd-9f70-f31a"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="aabf-9979-4041-bb16" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc49-4617-82de-b7af"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="633d-8bcc-bf1b-caa6"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="e243-f440-4e99-69d3" type="selectionEntry" targetId="18b0-8c2-173f-5">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5152-ba28-40fb-e5f7" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72d0-79e0-9a9a-3b2d" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="4bbe-a651-0949-34cd" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fb2-c11c-7717-d8d2-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fb2-c11c-7717-d8d2-max" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Kill Team Desolators" id="f476-ae7c-85fc-da26" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Superfrag missile launcher" hidden="false" id="7089-6582-2a5d-93f6">
+                    <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ vengor launcher" hidden="false" id="65e5-1485-c2a9-8cc2" publicationId="4115-3627-e608-39f6" page="23" collective="false">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3289-727e-96f4-0b52-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3289-727e-96f4-0b52-max" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd6e-cfe5-6513-6554"/>
                       </constraints>
-                      <profiles>
-                        <profile name="Superfrag missile launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4aaf-3138-04dc-608f">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Castellan Launcher" hidden="false" id="5fad-cb88-bc24-405f" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8446-b5e3-1308-df19" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e9-7251-76cf-0727" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Vengor Launcher" hidden="false" id="45c4-cf62-c6fb-0a20" type="selectionEntry" targetId="7d58-3576-d40e-b858">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab4a-18b5-2f35-2649-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4a-18b5-2f35-2649-max" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Astartes Chainsword" hidden="false" id="18dd-946c-c989-edc9" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed9c-cd98-6c2d-93b2"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e99c-4f54-444c-6dce"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
                       <infoLinks>
-                        <infoLink name="Blast" id="cec7-8162-5d9b-c61d" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                        <infoLink name="Heavy" id="87c7-c360-e02d-0213" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Kill Team Intercessor" id="c3f7-8cd6-b214-9019" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
+                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="d656-03cc-2589-d56f">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="232c-08e8-08bf-3f36" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e167-fd7c-30f9-f6f8" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6eed-019a-ab51-7840">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Pistol" id="49ef-c055-9b43-0e33" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ superkrak missile launcher" hidden="false" id="0690-3f67-1f92-3968" publicationId="4115-3627-e608-39f6" page="23" collective="false">
+                      <constraints>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1be0-f877-5b9d-ee7f"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Castellan Launcher" hidden="false" id="0915-80ce-d6c4-31c1" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73ed-0f6e-7c89-6841" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3c6-7a3e-8c78-ca02" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Astartes Chainsword" hidden="false" id="62c4-da70-1b34-c867" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7745-4b6b-9aa5-7d54"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63eb-514c-28f8-fe71"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Superkrak missile launcher" hidden="false" id="7ab4-5c71-f281-06e1">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6082-605f-a56f-4566" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73aa-c99d-48c0-7e82" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Superkrak missile launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b7a5-8147-72e3-89fe">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Blast" id="e282-67c4-2b87-51d7" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                            <infoLink name="Heavy" id="b99e-5934-1610-d018" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="2930-c52c-365d-3868">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09ac-04c2-9cca-928a" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="813f-9d40-9328-9e39" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="cb82-7b38-c5e9-6799">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Pistol" id="160e-a841-d25e-9933" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <infoLinks>
+                        <infoLink name="Kill Team Intercessor" id="57d8-b7d5-3710-a0eb" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ superfrag missile launcher" hidden="false" id="ccfb-e995-308b-4b7a" publicationId="4115-3627-e608-39f6" page="23" collective="false">
+                      <constraints>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="bda6-a9cd-9f70-f31a"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Castellan Launcher" hidden="false" id="4bbe-a651-0949-34cd" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fb2-c11c-7717-d8d2-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fb2-c11c-7717-d8d2-max" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Astartes Chainsword" hidden="false" id="0fd9-c698-9524-d6f3" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f111-530c-b95f-9e8d"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbb6-a25d-3e17-2e97"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Superfrag missile launcher" hidden="false" id="7089-6582-2a5d-93f6">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3289-727e-96f4-0b52-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3289-727e-96f4-0b52-max" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Superfrag missile launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4aaf-3138-04dc-608f">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
+                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Blast" id="cec7-8162-5d9b-c61d" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                            <infoLink name="Heavy" id="87c7-c360-e02d-0213" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="c13c-ce0a-9dbb-7c1c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ad9-9b60-d815-a956" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dbe-7775-9f51-c92e" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="acea-6d7e-6d28-7432">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Pistol" id="6115-ac41-5178-f88b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <infoLinks>
+                        <infoLink name="Kill Team Intercessor" id="1845-cfdb-f8a3-6596" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
                       </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
-                  <infoLinks>
-                    <infoLink name="Kill Team Intercessor" id="1845-cfdb-f8a3-6596" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ superkrak missile launcher" hidden="false" id="0690-3f67-1f92-3968" publicationId="4115-3627-e608-39f6" page="23" collective="false">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1be0-f877-5b9d-ee7f"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="937b-5475-1274-964c" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79e7-8f40-399d-f028"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aa4-6c18-8130-e192"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ef0c-c761-a7f1-56dd" type="selectionEntry" targetId="18b0-8c2-173f-5">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae1a-7056-ec32-9326" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb15-c4ae-9582-3d6a" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="0915-80ce-d6c4-31c1" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73ed-0f6e-7c89-6841" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3c6-7a3e-8c78-ca02" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Superkrak missile launcher" hidden="false" id="7ab4-5c71-f281-06e1">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6082-605f-a56f-4566" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73aa-c99d-48c0-7e82" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Superkrak missile launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b7a5-8147-72e3-89fe">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Blast" id="e282-67c4-2b87-51d7" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                        <infoLink name="Heavy" id="b99e-5934-1610-d018" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <infoLinks>
-                    <infoLink name="Kill Team Intercessor" id="57d8-b7d5-3710-a0eb" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a5bc-84eb-5d5d-8004" includeChildSelections="false"/>
-              </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
@@ -2859,21 +2885,10 @@
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6daf-acfa-2263-6b64" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="6443-96b2-f81e-91ad" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
+                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="0580-5bf8-bb0d-68b9" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdc1-2812-53e8-5f2d"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2c6-4a83-a1c9-3a03"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="4282-fe37-c9e9-e92e" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33df-f90f-fe8b-8dfa"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c6-2fff-a2cb-7693"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Deathwatch bolt rifle" hidden="false" id="47a5-9e86-6347-9228" type="selectionEntry" targetId="ad6a-c679-52ea-6059">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e82c-d744-6f8c-71ed" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc5d-ecde-f583-8357"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec92-f5b5-4e74-7ca4"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2887,68 +2902,14 @@
               <infoLinks>
                 <infoLink name="Kill Team Intercessor" id="298f-7937-276d-208d" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
               </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ grenade launcher" hidden="false" id="ed4e-ce7a-9fc6-4225" collective="false">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4a42-5c08-1bb6-33a7"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="da18-b750-6753-cfd2" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c521-c729-fab9-3ac8"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a97-0de4-62a4-52d7"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="ea42-7a8a-cc7e-33c5" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5c7-7fb1-e701-3474"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99a0-dacc-93dd-38c8"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Deathwatch bolt rifle" hidden="false" id="3f1b-1b3d-1f21-0726" type="selectionEntry" targetId="ad6a-c679-52ea-6059">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf7-7d55-92dc-4fcb" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="8766-1ee4-06db-55bf" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="a077-e1c9-f8f0-d38" shared="true" id="7179-f79e-2087-1575" includeChildSelections="true"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ba6-5771-4e34-6e15-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba6-5771-4e34-6e15-max" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="7179-f79e-2087-1575">
-                      <conditions>
-                        <condition type="atLeast" value="10" field="selections" scope="a077-e1c9-f8f0-d38" childId="model" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Kill Team Intercessor" id="54c8-2d82-b9a5-b84c" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ heavy bolt pistol" hidden="false" id="3c99-1b17-8b08-ce52" collective="false">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4eb5-3701-0822-639e"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="0580-5bf8-bb0d-68b9" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc5d-ecde-f583-8357"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec92-f5b5-4e74-7ca4"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="874f-5923-626a-cc1c">
+                <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="f36c-078d-0dad-17b5">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="312c-a1cb-012a-2f38" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74cf-1f20-5836-e647" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45d1-0aa3-d8d8-1ed2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e3b-8278-c3e1-fb89" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
-                    <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="df06-ae69-272b-9984">
+                    <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="47de-e82c-e3e0-50d6">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -2961,41 +2922,144 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Pistol" id="28de-cf4c-c252-7676" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                    <infoLink name="Pistol" id="9727-79f7-5617-1eb6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Replace bolt rifle" id="4acb-0096-9317-afdf" hidden="false" defaultSelectionEntryId="204a-238e-5c6d-85aa">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea47-55cc-0d0e-1a08-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea47-55cc-0d0e-1a08-max" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9820-ae66-f471-49b8-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9820-ae66-f471-49b8-max" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Deathwatch bolt rifle" hidden="false" id="204a-238e-5c6d-85aa" type="selectionEntry" targetId="ad6a-c679-52ea-6059">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6719-060f-093d-bf0b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Pyreblaster" hidden="false" id="5297-f558-1d9b-ba03" type="selectionEntry" targetId="2737-cb80-0c3a-3dfa">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4070-865e-7d8c-e9d0" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ grenade launcher" hidden="false" id="ed4e-ce7a-9fc6-4225" collective="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4a42-5c08-1bb6-33a7"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Deathwatch bolt rifle" hidden="false" id="3f1b-1b3d-1f21-0726" type="selectionEntry" targetId="ad6a-c679-52ea-6059">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf7-7d55-92dc-4fcb" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="8766-1ee4-06db-55bf" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="a077-e1c9-f8f0-d38" shared="true" id="7179-f79e-2087-1575" includeChildSelections="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ba6-5771-4e34-6e15-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba6-5771-4e34-6e15-max" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="7179-f79e-2087-1575">
+                      <conditions>
+                        <condition type="atLeast" value="5" field="selections" scope="a077-e1c9-f8f0-d38" childId="7bf3-4c74-4427-717c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="89fc-40a4-70dd-888e" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cce3-bcd6-23c9-e223"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0435-5362-ab5b-0440"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <infoLinks>
-                <infoLink name="Kill Team Intercessor" id="14d6-0269-16fe-5a58" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
+                <infoLink name="Kill Team Intercessor" id="54c8-2d82-b9a5-b84c" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="08be-a098-16a1-317c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d806-4125-4621-3ee5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec84-84ce-f4ca-a685" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="19cd-2b35-1f9d-d3d1">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Pistol" id="3e7d-d9b4-1d2e-a629" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="increment" value="2" field="4a42-5c08-1bb6-33a7">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="a077-e1c9-f8f0-d38" childId="7bf3-4c74-4427-717c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Kill Team Intercessor w/ pyreblaster" hidden="false" id="2061-4f19-0a98-e5ff" collective="false">
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9b86-262d-68c4-3986"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9b86-262d-68c4-3986"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="f82c-7c13-8110-8fb5" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1599-70e6-66e0-fc62"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9418-121d-75a0-8eb9"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="1076-51c1-3fbf-0f77" type="selectionEntry" targetId="c23d-db22-8cc8-dda9" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa36-a0e4-88d6-0541"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b9c-0eab-5b7b-b186"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Pyreblaster" hidden="false" id="6b9e-b8c6-f7ad-228d" type="selectionEntry" targetId="2737-cb80-0c3a-3dfa">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6526-4db5-bfc3-ecf5-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6526-4db5-bfc3-ecf5-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="83a6-e68e-f27b-509d" type="selectionEntry" targetId="efcd-180-d07-b4d6" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1800-3ed8-9540-9325"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6091-2017-e089-9e7f"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Kill Team Intercessor" id="a356-2611-17d6-3af9" hidden="false" type="profile" targetId="c06b-bca8-50c3-b63e"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="b1e2-56be-732d-dc98">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b493-a5fa-f206-720d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae89-26e9-738a-3905" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7e43-f852-15ba-855d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Pistol" id="2926-2f62-c363-c097" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3025,48 +3089,8 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6493-82e0-cc08-10ea-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Replace bolt rifle" id="4acb-0096-9317-afdf" hidden="false" defaultSelectionEntryId="204a-238e-5c6d-85aa">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea47-55cc-0d0e-1a08-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea47-55cc-0d0e-1a08-max" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9820-ae66-f471-49b8-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9820-ae66-f471-49b8-max" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="7459-de94-d52e-9d49" type="selectionEntry" targetId="efcd-180-d07-b4d6">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="edd6-57ff-9824-3e04" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Deathwatch bolt rifle" hidden="false" id="204a-238e-5c6d-85aa" type="selectionEntry" targetId="ad6a-c679-52ea-6059">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="6719-060f-093d-bf0b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="62dc-5b31-9423-2d59" type="selectionEntry" targetId="c4b5-68e-2266-f459">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bed2-4b4f-1fcb-cc90" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Hand Flamer" hidden="false" id="cf73-2b51-b346-a8ae" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="de28-ebfc-e7ee-9af4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Plasma Pistol" hidden="false" id="da0d-ec35-24d6-8096" type="selectionEntry" targetId="25c2-104f-fa0c-809e">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f9c4-4922-9c7c-9700" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Replace CCW" id="b3c3-8a5c-46a6-3094" hidden="false" defaultSelectionEntryId="bc0c-9310-bfcf-de55">
               <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="bc0c-9310-bfcf-de55" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="06ed-6e84-0921-759e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="d15a-fe2c-0919-d1e7" type="selectionEntry" targetId="c4b5-68e-2266-f459">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="43d2-c621-fb57-f33b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -3093,36 +3117,27 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a64-4470-1ecf-a089-max" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Replace bolt rifle" id="3245-6248-a2fa-90c7" hidden="false" defaultSelectionEntryId="204a-238e-5c6d-85aa">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8fb-cb16-100b-aa56" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="327a-89a5-4590-f3f9" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Deathwatch bolt rifle" hidden="false" id="ea6e-d288-c770-2ac6" type="selectionEntry" targetId="ad6a-c679-52ea-6059">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="95c2-48aa-897c-09ad" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Pyreblaster" hidden="false" id="771d-d4b9-2602-20b6" type="selectionEntry" targetId="2737-cb80-0c3a-3dfa">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e190-189f-81d3-e3c6" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="ab02-913c-6cba-5d5c" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="a077-e1c9-f8f0-d38" shared="true" id="8293-0f24-5332-443f" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a06-a34a-5324-b64d" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="8293-0f24-5332-443f">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="a077-e1c9-f8f0-d38" childId="model" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="5a06-a34a-5324-b64d">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="4962-be6c-d809-e206" childId="ad6a-c679-52ea-6059" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="4135-12bf-abc1-dffa" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
             <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="ced4-f796-802a-345f" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-            <entryLink import="true" name="Bolt pistol" hidden="false" id="514c-5b0d-824e-2572" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c97a-3d78-52d8-cd68"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db3e-95d8-c0fe-79fc"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <profiles>
             <profile name="Kill Team Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ef04-837e-5305-2883" publicationId="4115-3627-e608-39f6" page="23">
@@ -3136,6 +3151,30 @@
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy bolt pistol" hidden="false" id="faf9-b56b-2a2d-356f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73a7-9496-415c-5ca2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7776-6c4d-3891-c35f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b664-cd32-9c3d-86be">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="b1b4-0eda-9f94-1d91" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -5485,7 +5524,6 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
               </entryLinks>
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e5c5-5368-2f42-011e" includeChildSelections="false"/>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="729a-ab8d-51d3-543b" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Kill Team Intercessor w/ Jump Pack" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c58a-b496-ac64-9781">
@@ -5580,7 +5618,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="ded5-f13d-cda6-ef2f" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ded5-f13d-cda6-ef2f" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Kill Team Heavy Intercessor w/ Jump Pack" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="32f2-fdf1-ee27-8c68">
@@ -5611,7 +5649,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ba-22d7-eaa6-d046" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="86ba-22d7-eaa6-d046" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Kill Team Intercessor w/ Jump Pack" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fd99-3eb6-0aa2-3864">
@@ -5625,13 +5663,6 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                   </characteristics>
                 </profile>
               </profiles>
-              <modifiers>
-                <modifier type="increment" value="1" field="86ba-22d7-eaa6-d046">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="c679-f252-32b1-ebcc" childId="model" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
