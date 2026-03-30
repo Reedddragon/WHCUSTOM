@@ -6521,7 +6521,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </profile>
         <profile name="Their Number is Legion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a7f5-b25d-40f2-e927">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit’s Reanimation Protocols activate, you can re-roll the dice to see how many wounds are regenerated.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit’s Reanimation Protocols activate, It reanimates D6 Wounds instead of D3 wounds, Unless it is within range of an objective marker you control, in which case it reanimates D3+3 Wounds instead. in Addition, you can reroll the reanimation roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
