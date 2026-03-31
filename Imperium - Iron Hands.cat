@@ -278,5 +278,6 @@ attack has the [LETHAL HITS] ability. Each time a model in this model’s unit 
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Iron Father Feirros" hidden="false" type="selectionEntry" id="545-17a0-487d-d535" targetId="6c9d-4ec3-69dd-90b2"/>
+    <entryLink import="true" name="Caanok Var" hidden="false" id="b1c4-8db9-0e4f-2b24" targetId="efbb-2823-7b70-5a7a" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

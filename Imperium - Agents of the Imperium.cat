@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="129" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="efa3-2cf5-dcfb-b976">
       <categoryLinks>
@@ -2014,7 +2014,7 @@
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
@@ -2375,9 +2375,9 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Up to 2:" hidden="false" id="b215-d3fa-ba6b-3345">
+            <selectionEntryGroup name="Up to 5:" hidden="false" id="b215-d3fa-ba6b-3345">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="506d-946f-a00a-98d7"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="506d-946f-a00a-98d7"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Exaction Vigilant w/ grenade launcher" hidden="false" id="5763-7fb7-35d0-761">
@@ -2386,7 +2386,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="3c64-2ca-4de3-cafd" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Arbites grenade launcher" hidden="false" id="722d-4c1a-89c9-481a">
@@ -2444,7 +2444,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="e22-9f80-8028-d032" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Executioner shotgun" hidden="false" id="6789-eb6d-7f4e-5e7a" collective="true">
@@ -2456,11 +2456,11 @@
                         <profile name="Executioner shotgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="123c-e737-92bb-ddf">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Precision</characteristic>
                           </characteristics>
                         </profile>
@@ -2478,7 +2478,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="4ed2-910e-4619-59e1" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="ce19-6e63-68c1-b0b5">
@@ -2493,7 +2493,7 @@
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
                           </characteristics>
@@ -2511,7 +2511,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="b055-c194-728f-139b" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Webber" hidden="false" id="c3a5-5520-ca9c-4444">
@@ -2553,7 +2553,7 @@
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
@@ -2651,7 +2651,7 @@
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
           </characteristics>
         </profile>
@@ -2769,14 +2769,14 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
-                <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="8af3-95e7-ff50-8235"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8af3-95e7-ff50-8235"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Up to 2:" hidden="false" id="237a-34f3-c1df-693f">
+            <selectionEntryGroup name="Up to 5:" hidden="false" id="237a-34f3-c1df-693f">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="506d-946f-a00a-98d7"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="506d-946f-a00a-98d7"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Vigilant w/ grenade launcher" hidden="false" id="4ef2-72f5-ac3c-461b">
@@ -2785,7 +2785,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="584a-d901-e0bd-3b58" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Arbites grenade launcher" hidden="false" id="e330-b914-7599-e35d">
@@ -2843,7 +2843,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="fc87-e9da-926-dc48" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Executioner shotgun" hidden="false" id="83fb-b012-4dde-968d">
@@ -2855,11 +2855,11 @@
                         <profile name="Executioner shotgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a09f-32fd-de9e-ba9e">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Precision</characteristic>
                           </characteristics>
                         </profile>
@@ -2877,7 +2877,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="b633-665d-332a-c866" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="ee0d-72d2-ad37-4b6b">
@@ -2892,7 +2892,7 @@
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
                           </characteristics>
@@ -2910,7 +2910,7 @@
                     <entryLink import="true" name="Arbites shotpistol" hidden="false" type="selectionEntry" id="1243-7b1e-9fe2-725e" targetId="29d8-67fc-dd00-563"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7d04-f2b6-d9cf-765f"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Webber" hidden="false" id="f5a8-b008-4de1-5acb">
