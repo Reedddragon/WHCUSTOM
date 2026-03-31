@@ -1249,7 +1249,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                 </entryLink>
                 <entryLink import="true" name="Cyclic ion blaster" hidden="false" id="7dc9-1904-171d-80c0" type="selectionEntry" targetId="9e40-f25b-c5dd-6712">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6db-a566-7d4f-fbdb"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d6db-a566-7d4f-fbdb"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="f0a3-2051-363f-decb" hidden="false" flatten="true">
