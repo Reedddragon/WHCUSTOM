@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="155" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="157" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>If your Army Faction is **^^T’au Empire^^**, at the start of your Shooting phase you can select units from your army with this ability to become Observer units.
@@ -400,7 +400,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
@@ -505,19 +505,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="aa22-48f8-b774-5172" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="008b-c9d9-4f3e-cecd" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </entryLink>
-                <entryLink import="true" name="Burst cannon" hidden="false" id="f12e-ee4d-4ca1-3477" type="selectionEntry" targetId="3a5c-c8e4-823f-c18c">
-                  <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2ac6-7fc3-7669-aea5"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="a60f-e0be-14e6-e585" hidden="false" flatten="true">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1b21-a5ab-f2ad-7244" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="348e-0be8-b10d-5177" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -628,6 +615,37 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e2f-57bb-2861-54fd"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c75f-1b87-d98c-aea6"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="High-output burst cannon" hidden="false" id="3450-ad0d-5bdb-f72e">
+                  <profiles>
+                    <profile name="High-output burst cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="aac5-8e79-b362-4ecf">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6848-1e64-3b19-6fab"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="3ed7-b230-f052-d5a4" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9bb4-4df7-df74-e65d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="2faa-342a-7a0c-33a3" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="4211-d8f3-a417-008c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -843,19 +861,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
-                <entryLink import="true" name="Burst cannon" hidden="false" id="ed07-fd69-fdef-2482" type="selectionEntry" targetId="3a5c-c8e4-823f-c18c">
-                  <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e42f-5291-18b1-42a2"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="cb0c-2226-7eed-4897" hidden="false" flatten="true">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ce73-755c-07ea-d070" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="a877-0419-6a39-a6df" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </entryLink>
                 <entryLink import="true" name="Airbursting fragmentation projector" hidden="false" id="7a59-e857-9ead-a189" type="selectionEntry" targetId="437e-0e4a-5c90-dbef">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0099-4c44-cb0d-d795"/>
@@ -962,6 +967,37 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44bf-1636-6434-e319"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a0db-1955-ec77-e4f6"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="High-output burst cannon" hidden="false" id="1239-c34e-f182-027c">
+                  <profiles>
+                    <profile name="High-output burst cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d653-9b1c-4dd1-a882">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a7e5-dbd0-d3ac-1c01"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="607b-b254-5000-c0c8" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="c7fe-dbd5-051e-4b69" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0a0a-ddda-3bd9-ec69" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="6800-a35a-0809-1fb8" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -1145,7 +1181,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bafb-1c3d-b82b-24cb"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="41da-ed53-cc93-2d87"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="d7b8-3d78-8da1-7bb1" hidden="false" flatten="true">
@@ -1185,19 +1221,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="46b4-7e17-a770-38a0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5eff-7288-29be-80be" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </entryLink>
-                <entryLink import="true" name="Burst cannon" hidden="false" id="cad2-eea2-9f64-a2af" type="selectionEntry" targetId="3a5c-c8e4-823f-c18c">
-                  <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="41da-ed53-cc93-2d87"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="66dc-95ab-89bf-68d3" hidden="false" flatten="true">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5d34-7e6a-7668-6a1a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="377e-822b-4950-c267" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -3566,7 +3589,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9538-7372-2536-e9e7" includeChildSelections="true"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Burst cannon" hidden="false" id="be08-5d29-991b-8c91" type="selectionEntry" targetId="1790-25b7-8264-f6ba">
+                    <entryLink import="true" name="High-output burst cannon" hidden="false" id="be08-5d29-991b-8c91" type="selectionEntry" targetId="1f4f-8704-0c7c-cb46">
                       <constraints>
                         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="adf6-96e4-b0e4-2a93"/>
                       </constraints>
@@ -3703,7 +3726,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="750a-7c7b-5e7c-b39e"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Burst cannon" hidden="false" id="e017-d7b4-fe40-0837" type="selectionEntry" targetId="1790-25b7-8264-f6ba">
+                        <entryLink import="true" name="High-output burst cannon" hidden="false" id="e017-d7b4-fe40-0837" type="selectionEntry" targetId="1f4f-8704-0c7c-cb46">
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="0c94-1a5e-1e5e-86e8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
@@ -13416,7 +13439,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="a1f2-2246-32c2-b3b7" hidden="false" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="Burst cannon" hidden="false" id="e0ad-d61c-64db-98f5" type="selectionEntry" targetId="1790-25b7-8264-f6ba">
+                    <entryLink import="true" name="High-output burst cannon" hidden="false" id="e0ad-d61c-64db-98f5" type="selectionEntry" targetId="1f4f-8704-0c7c-cb46">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6426-ec1b-5928-ccfb" includeChildSelections="false"/>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2deb-f036-2e6d-44ac" includeChildSelections="false"/>
@@ -13494,7 +13517,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b848-2dd4-9148-2b42" includeChildSelections="false"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Burst cannon" hidden="false" id="2b4b-6b4e-001a-4c3c" type="selectionEntry" targetId="1790-25b7-8264-f6ba">
+                        <entryLink import="true" name="High-output burst cannon" hidden="false" id="2b4b-6b4e-001a-4c3c" type="selectionEntry" targetId="1f4f-8704-0c7c-cb46">
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="8c9d-6587-215e-01cc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
@@ -16506,6 +16529,25 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
           <comment>Crucible modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="High-output burst cannon" hidden="false" id="1f4f-8704-0c7c-cb46">
+      <profiles>
+        <profile name="High-output burst cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2dba-ab63-ff24-f8e1">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="479c-1fa4-d592-a252"/>
+      </constraints>
+      <comment>BS4</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
