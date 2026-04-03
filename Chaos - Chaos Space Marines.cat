@@ -3402,6 +3402,13 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Sustained Hits D3</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Night&apos;s Whisper" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile id="362b-d3b5-cc21-5ae7" name="Hellspear" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
@@ -3413,6 +3420,13 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks, Lance, Sustained Hits D3</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Night&apos;s Whisper" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -3427,6 +3441,13 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
           <categoryLinks>
             <categoryLink name="Extra Attacks Weapon" hidden="false" id="472c-a29d-a487-e02a" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="Night&apos;s Whisper" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="2c71-f941-5829-efa1" name="Herald&apos;s Talon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3444,6 +3465,13 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Sevatar&apos;s Bitch Slap" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -3452,18 +3480,33 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="Sevatar&apos;s Bitch Slap" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sevatar " hidden="false" id="fcbf-b11d-26fb-2281">
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="Jago Sevatarion " field="name"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+        <selectionEntry type="upgrade" import="true" name="Jago Sevatarion" hidden="false" id="fcbf-b11d-26fb-2281">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="927b-50b8-6e0a-c1eb"/>
           </constraints>
+          <profiles>
+            <profile name="Dirty Fighter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a4d-e9fd-93f7-ebf2">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When in Engagement Range of an enemy unit, You can roll a D6 to fight dirty, on a 3+ This model&apos;s unit gets Fights First ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3479,6 +3522,13 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="Jago Sevatarion " field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d9e3-8baf-128f-6389" name="Huron Blackheart" hidden="false" collective="false" import="true" type="model">
       <constraints>
