@@ -3312,6 +3312,15 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 ■ RAPTORS</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="This model can be attached to the following units:
+■ RAPTORS
+■ ATRAMENTAR TERMINATOR SQUAD" field="9b8f-694b-e5e-b573">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="e67b-88c3-a824-df15" name="Haarken Worldclaimer" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
@@ -3322,16 +3331,37 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Sevatar" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="849-eef4-da9f-1f47" name="Head Taker" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model’s unit and roll one D6 for each model in this model’s unit which is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="The Condemned" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="8033-5a4b-e17b-4658" name="Herald of the Apocalypse (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within 6&quot; of this model, in the Battle-shock step of your opponent’s Command phase, if that enemy unit is below its Starting Strength, it must take a Battle-shock test. This ability cannot cause a unit to take two Battle-shock tests in the same phase.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="The Prince of Crows(Aura)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fcbf-b11d-26fb-2281" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="a962-652d-46aa-754b" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -3422,6 +3452,18 @@ Each time a ^^**Heretic Astartes^^** model from your army makes an attack that t
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sevatar " hidden="false" id="fcbf-b11d-26fb-2281">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Jago Sevatarion " field="name"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="927b-50b8-6e0a-c1eb"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -15357,11 +15399,12 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <entryLink import="true" name="Crusade" hidden="false" id="a56e-2a94-4b46-acb5" type="selectionEntryGroup" targetId="16e2-c30d-b136-1a67" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
