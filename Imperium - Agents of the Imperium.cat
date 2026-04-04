@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="133" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="efa3-2cf5-dcfb-b976">
       <categoryLinks>
@@ -16262,6 +16262,157 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vanus Assassin" hidden="false" id="2307-ca2f-06c9-2e4a">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5128-90b-e4a5-dcbd" id="579f-d66f-cc2d-dea8" primary="false" name="Faction: Agents of the Imperium"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="684f-86e3-f546-8920" primary="false" name="Infantry"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="187d-f123-04e0-a2bb" primary="false" name="Character"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="d4ac-898f-5a66-5d21" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="adf6-87e7-1736-cda5" primary="false" name="Imperium"/>
+        <categoryLink targetId="9063-fa49-9ba2-9350" id="8056-a805-9dae-aa30" primary="false" name="Callidus Assassin"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Assigned Agents" hidden="false" type="rule" id="73fd-511c-ef9b-c844" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="74c0-1fc1-45ff-fe69" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="899a-5114-07c3-d539" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Fights First" hidden="false" type="rule" id="a309-e94d-232c-00e2" targetId="24-c886-e8ba-5a89"/>
+        <infoLink name="Infiltrators" hidden="false" type="rule" id="98ed-e13e-3d1f-0791" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Shadow Assignment" id="a3c8-dcc1-86d2-f873" hidden="false" type="profile" targetId="3882-3521-d644-a482"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6c16-36a5-7481-abb9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vanus Assassin" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="de25-98d4-35f7-2b83">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Data Break" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="true" id="2b84-d217-cb9f-7215">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, after your opponent uses a Stratagem, this model can use this ability. If it does, That Stratagem is not resolved and gain 1 CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weakness exposure" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="73e0-d7fb-2f03-eab1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of command phase, Select one enemy unit, All attacks allocated to that enemy unit have 1 added to the wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Network Spy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abae-0be6-137c-4204">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent gains a CP as the result of an ability, roll one D6: on a 2+, you also gain 1CP, on a 6+, you gain 2CP instead. Add 1 to the roll if you are on the Home objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Battlefield Information" hidden="true" id="812e-35f9-14cf-a0d2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0724-9eb7-d755-4253" includeChildSelections="false"/>
+            <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="f62e-d572-8cf1-cb12" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Decoy Targets" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7adf-dd21-5b9e-f411">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can redeploy Three friendly IMPERIUM unit. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="f62e-d572-8cf1-cb12"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e203-73dc-18d9-f390" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Datashooters" hidden="false" id="be92-fc5e-4de3-2647">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a487-727a-82fe-1253"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b21a-cece-06b4-6e57"/>
+          </constraints>
+          <profiles>
+            <profile name="Datashooters" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5559-051b-244c-23cb">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 2+, Precision</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-" id="cc7d-45f3-06d2-0779" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+            <infoLink name="Precision" id="4f96-c16b-c744-68d3" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Data Tail" hidden="false" id="ae9d-f8b5-5745-d893">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="672e-1d74-b656-d9db"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbaf-a00d-69aa-e241"/>
+          </constraints>
+          <profiles>
+            <profile name="Data Tail" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ef3d-312c-8ad3-0491">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Precision" id="2ccc-b1c2-2308-30bb" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Agents visibility</comment>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="ec21-d1ae-4630-7536" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="85bd-93c3-7cb6-bde9" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Vindicare Assassin" hidden="false" id="bbce-4a66-765f-6f5f">
@@ -17518,6 +17669,19 @@ For the purposes of interacting with terrain features, all models in units with 
       </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Martial Agent [Crucible]" hidden="false" id="6a6e-9149-5485-e113" targetId="90e0-c5a9-17c5-fba4" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Vanus Assassin" hidden="false" id="3b91-1b7a-39d7-37ee" targetId="2307-ca2f-06c9-2e4a" type="selectionEntry">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
