@@ -5922,7 +5922,7 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
     </selectionEntry>
     <selectionEntry id="201e-e502-a8d1-3974" name="Venatari Custodians" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="330">
+        <modifier type="set" field="51b2-306e-1021-d207" value="200">
           <conditions>
             <condition field="selections" scope="201e-e502-a8d1-3974" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
           </conditions>
@@ -5931,12 +5931,12 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
       <profiles>
         <profile id="fd11-6ea5-03cc-0fa7" name="Strike from the Skies" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is eligible to shoot and declare a charge in a turn in which it Fell Back. In addition, In your shooting phase, after finishing your attacks, This model can move 9&quot;</characteristic>
           </characteristics>
         </profile>
-        <profile id="95ed-fba0-2edf-540c" name="Swooping Dive" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="95ed-fba0-2edf-540c" name="Revolver Roulette" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0 CP, and can do so even if you have already targeted a different unit with that Stratagem that phase.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting Phase, Once per game you can use this ability. You can re-roll the wound roll. In addition, You can also take a hazardous test but rolling an unmodified wound roll of 5+, is considered a critical Wound.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5961,64 +5961,11 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a7-9cca-8bd9-7a45" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d547-6d8a-58c7-d8d5" name="Venatari Custodian (Venatari lance)" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="358a-4a13-adf5-35b1" name="Venatari Custodian" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="ee43-82be-4542-fcab" name="Venatari Custodian" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                <profile id="af53-0829-aa6c-cdbf" name="Venatari Custodian" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Venatari lance" hidden="false" id="1a23-1ceb-fc79-af67" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e118-14e5-250e-a50-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e118-14e5-250e-a50-max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="d355-c766-b5ab-acbc" name="Venatari lance" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="7a0d-fb2b-1f72-2e8c" name="Venatari lance" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Assault" hidden="false" type="rule" id="cd87-58f1-19a1-d2e" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Lance" hidden="false" type="rule" id="b734-2e78-1518-96ca" targetId="2ebc-abdf-8129-6c57"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry id="358a-4a13-adf5-35b1" name="Venatari Custodian (Kinetic Destroyer &amp; Tarsus Buckler)" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="af53-0829-aa6c-cdbf" name="Venatari Custodian (Tarsis Buckler)" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">20&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -6039,13 +5986,13 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                   <profiles>
                     <profile id="8996-af7a-da88-622" name="Kinetic destroyer" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Sustained Hits 1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Devastating Wounds</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6066,12 +6013,12 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                     <profile id="6c54-f454-4353-4ac2" name="Tarsis buckler" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
                       <characteristics>
                         <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
                       </characteristics>
                     </profile>
                     <profile id="cfa9-7475-9b27-f8f7" name="Tarsis Buckler" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -6084,13 +6031,41 @@ Ranged weapons equipped by models in this unit have the [LETHAL HITS] ability.</
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="4fe3-b3f1-69c7-b234" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Venatari lance" hidden="false" id="1a23-1ceb-fc79-af67" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e118-14e5-250e-a50-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e118-14e5-250e-a50-max"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Venatari lance" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7a0d-fb2b-1f72-2e8c">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Assault" id="cd87-58f1-19a1-d2e" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                    <infoLink name="Lance" id="b734-2e78-1518-96ca" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+                  </infoLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="40ce-17f3-f81f-844a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
