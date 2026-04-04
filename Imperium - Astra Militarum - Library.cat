@@ -12755,6 +12755,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6083-969e-98af-8b97"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Hot-shot lasgun" hidden="false" id="54ce-7795-fb8a-f76a" type="selectionEntry" targetId="6536-7b98-3b50-d68a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63dc-8423-16b8-c783" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9a6-c169-19b6-1df9" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Tempestus Scions" hidden="false" type="profile" id="2664-7c8-ece8-c528" targetId="2cd7-38d1-8603-afb5"/>
@@ -12775,6 +12781,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4011-bccf-5c35-8cdc"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6083-969e-98af-8b97"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="2e8b-9e29-2d17-eafa" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="833c-4878-2e6b-395b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24cb-d819-7256-e877"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -12818,6 +12830,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="4a5c-5cc1-5c50-ccc8" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d610-f9d6-43d0-93a5"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476b-fbd4-73f9-9953"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2459-8134-65c5-34a4"/>
@@ -12847,6 +12865,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                           </conditions>
                         </modifier>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="5bc0-78de-cea9-76af" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8ab-2f02-d676-06b2"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93eb-c212-c354-cc1b"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -12878,6 +12902,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="a4a2-0b8b-84ac-db66" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="289a-cf62-9458-3834"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b69-413a-df2f-657a"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="85aa-6e53-7073-523a"/>
@@ -12908,6 +12938,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="4196-f204-8006-8bfe" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c779-82cc-4e42-ac09"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6d-233f-9351-be71"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e9d7-f072-1cb5-eed0"/>
@@ -12937,6 +12973,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                           </conditions>
                         </modifier>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="2e3c-c05c-e214-51bf" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e24a-d375-b014-aa39"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d41-2ca9-1d9a-4a56"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
