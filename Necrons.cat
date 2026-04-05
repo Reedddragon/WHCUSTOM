@@ -14014,7 +14014,7 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Seraptek Heavy Construct" hidden="false" id="fa11-cd65-fcf6-427c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="540"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="440"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="c37c-c0cb-61dc-54cf" primary="false" name="Faction: Necrons"/>
