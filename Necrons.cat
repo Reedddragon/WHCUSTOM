@@ -3728,7 +3728,12 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vargard Obyron [Legends]" hidden="false" id="b5c3-317e-df69-53bb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="4bcb-ceac-5d51-444b" primary="false" name="Faction: Necrons"/>
@@ -4027,7 +4032,12 @@ You can attach this model to one of the above units even if NEMESOR ZAHNDREKH h
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="70ec-2575-7972-2ce" targetId="2c98-86cf-889-2293"/>
@@ -14014,7 +14024,7 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Seraptek Heavy Construct" hidden="false" id="fa11-cd65-fcf6-427c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="440"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="540"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ee0-cf31-4fb5-6b26" id="c37c-c0cb-61dc-54cf" primary="false" name="Faction: Necrons"/>
@@ -16137,7 +16147,7 @@ Normal move or Move using deep strike mechanics. If it does so, until the end of
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hyperscientist [Crucible]" hidden="false" id="e884-dd7a-a1cd-bad8">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
